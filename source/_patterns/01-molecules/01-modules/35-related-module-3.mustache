@@ -1,0 +1,13 @@
+ <!--La clase derecho se activa según la categoría-->
+<div class="modulo-relacionado mr-opcion2 derecho defecto {{# modifier-class }}{{modifier-class }}{{/ modifier-class  }}{{^ modifier-class  }}{{/ modifier-class }}">
+    <div class="zoom-imagen-modulo">
+    <a href="#">
+      <!--Esta imagen debe ser de 500 x 305px-->
+      <img class="blog-list-2columns" src="../../images/{{# img-url }}{{img-url}}{{/ img-url }}{{^ img-url }}carrusel-home-01.png{{/ img-url}}" alt="Noticia Relacionada" />
+    </a>
+    </div>
+    <div class="info">
+      <h4 class="h4"><a href="#">{{# title }}Título{{/ title }}</a></h4>
+      <h6 class="h6"><a href="#">{{# title }}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. {{/ title }}</a></h6>        
+   </div>
+  </div>

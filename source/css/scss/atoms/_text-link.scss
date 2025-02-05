@@ -1,0 +1,12 @@
+.text-link {
+  color: #222;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: underline;
+  transition: $transition-color;
+
+  &:hover {
+    color: $verde-lima-700;
+  }
+}

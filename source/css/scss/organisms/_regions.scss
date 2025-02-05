@@ -1,0 +1,50 @@
+.regiones{
+  margin:0;
+  overflow: hidden;
+  label.dropdown{
+    margin: 20px 0 30px 0;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  @media (max-width: 400px) and (min-width: 50px){
+    .boton-grande:first-of-type {
+      border-top: thin dotted #CACACA;
+    }
+  }
+  .info{
+    h4, .h4{
+      &:after{
+        border-bottom: solid 4px $verde-lima;
+      }
+    }
+  }
+  .botones-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width:$movil-amplio02) and (min-width:$minimo){
+      border-bottom: solid 4px $verde-lima; // TODO: Validar esto cuando definamos lo del mixin de facultad
+      overflow: hidden;
+    }
+  }
+  // .ancho4 .boton-grande {
+  //   h4,
+  //   .h4 {
+  //     font-size: rem(23);
+  //     line-height: rem(24);
+  //     bottom: 10px;
+
+  //     @media (max-width:1000px) and (min-width:551px){
+  //       bottom:12px;
+  //       font-size: rem(18);
+  //       line-height: rem(15);
+  //     }
+
+  //     @media (max-width:550px) and (min-width:$movil-amplio){
+  //       bottom:12px;
+  //       font-size: rem(15);
+  //       line-height: rem(15);
+  //     }
+  //   }
+  // }
+}

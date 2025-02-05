@@ -1,0 +1,11 @@
+ <div class="lateral-single">
+          <ul>
+          {{^ onlyShare }}
+          <li>{{> atoms-time-read}}</li>
+          <li>{{> atoms-like-counter}}</li>
+          <li>{{> atoms-star-rating}}</li>
+          <li>{{> atoms-views-counter}}</li>
+           {{/ onlyShare }}
+          <li><span><svg class="icon icon-compartir-01"><use xlink:href="../../images/iconos.svg#icon-compartir-01"></use></svg></span><p class="hidden3"> Compartir</p>{{> atoms-share-buttons}}</li>
+          </ul>
+        </div>

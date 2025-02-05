@@ -1,0 +1,170 @@
+<div class=" modulo-acordeon">
+  <div id="acordeon-noticia" role="tablist" aria-multiselectable="true">
+    {{^ onlyShare }}
+    <!-- 00-->
+    <div class="panel">
+      <div role="tab" id="titulo-cero">
+        <div class="titulo-acordeon">
+          <a role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#submenu" aria-expanded="true" aria-controls="submenu">
+            <span>
+              <svg class="icon icon-calendario-02"><use xlink:href="../../images/iconos.svg#icon-calendario-02"></use></svg>
+            </span>
+            <div class="h4">Programa del evento</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="submenu" class="info collapse in texto-centrado" role="tabpanel" aria-labelledby="titulo-cero">
+       
+  <p>
+                <svg class="icon icon-calendario-02"><use xlink:href="../../images/iconos.svg#icon-calendario-02"></use></svg>
+                <strong> Fecha:</strong>
+                <span> 22 al 24 de febrero</span>
+              </p>
+              <p>
+                <svg class="icon icon-reloj"><use xlink:href="../../images/iconos.svg#icon-reloj"></use></svg>
+                <strong> Hora:</strong>
+                <span>8:00 a.m - 5:00 p.m</span>
+              </p>
+              <p>
+                <svg class="icon icon-pin-locacion"><use xlink:href="../../images/iconos.svg#icon-pin-locacion"></use></svg>
+                <strong> Lugar:</strong>
+                <span>Teatro, edificio A - 100</span>
+              </p>
+      
+      <a class="boton" href="#">Ver la agenda</a>
+      
+      </div>
+    </div>
+    <!-- /00-->
+
+    <!-- 01-->
+    <div class="panel">
+      <div role="tab" id="titulo-uno">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#informacion" aria-expanded="true" aria-controls="informacion">
+            <span>
+              <svg class="icon icon-pegar"><use xlink:href="../../images/iconos.svg#icon-pegar"></use></svg>
+            </span>
+            <div class="h4">Inscripciones y tarifas</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="informacion" class="info collapse texto-centrado" role="tabpanel" aria-labelledby="titulo-uno">
+
+        <img src="../../images/evento-tarifas.jpg">
+         
+         <p><b>Fecha límite de inscripción:</b> 11 de octubre</p>
+  
+      <p>Consulte las tarifas de la convención</p>
+      <a class="boton" href="#">Más información</a>
+       
+      </div>
+    </div>
+    <!-- /01-->
+    <!-- 02-->
+    <div class="panel">
+      <div role="tab" id="titulo-dos">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#descargas" aria-expanded="false" aria-controls="descargas">
+            <span>
+              <svg class="icon icon-info"><use xlink:href="../../images/iconos.svg#icon-info"></use></svg>
+            </span>
+            <div class="h4">Información</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="descargas" class="info collapse" role="tabpanel" aria-labelledby="titulo-dos">
+      <p>El Departamento de Derecho del Medio Ambiente lleva a cabo una campaña de sensibilización acerca de la importancia del recurso hídrico con esta muestra, que estará disponible durante todo el mes de octubre.</p>
+        <ul>
+          <li><a href="#">Exposición fotográfica</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /02-->
+    <!-- 03-->
+    <div class="panel">
+      <div role="tab" id="titulo-tres">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#videos" aria-expanded="false" aria-controls="videos">
+            <span>
+              <svg class="icon icon-play"><use xlink:href="../../images/iconos.svg#icon-play"></use></svg>
+            </span>
+            <div class="h4">Videos</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="videos" class="info collapse" role="tabpanel" aria-labelledby="titulo-tres">
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/KkPpOdf8DG4?list=PLLdYhVJsMEXICXD9BpVVPEJkI7oDnLBOF" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- /03-->
+    <!-- 04-->
+    <div class="panel">
+      <div role="tab" id="titulo-cuatro">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#fotografias" aria-expanded="false" aria-controls="fotografias">
+            <span>
+              <svg class="icon icon-foto-02"><use xlink:href="../../images/iconos.svg#icon-foto-02"></use></svg>
+            </span>
+            <div class="h4">Fotografías</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="fotografias" class="info collapse" role="tabpanel" aria-labelledby="titulo-cuatro">
+        <div class="galleria">
+          <!-- Estas imágenes como son los thumbnails deben ser de 300px de ancho, cuando se haga click y se abra al carrusel debe ser de 900px de ancho-->
+          <!-- Para ver funcionando el carrusel, da click en el engrane de patternlab, y "open in a new window" -->
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb01" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb02" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb03" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb04" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb05" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb06" /></a>
+        </div>
+      </div>
+    </div>
+    <!-- /04-->
+    {{/ onlyShare }}
+    <!-- 05-->
+    <div class="panel">
+      <div role="tab" id="titulo-cinco">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#compartir" aria-expanded="false" aria-controls="compartir">
+            <span>
+              <svg class="icon icon-compartir-01"><use xlink:href="../../images/iconos.svg#icon-compartir-01"></use></svg>
+            </span>
+            <div class="h4">Compartir</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="compartir" class="info collapse" role="tabpanel" aria-labelledby="titulo-cinco">
+        {{> atoms-share-buttons}}
+      </div>
+    </div>
+    <!-- /05-->
+  </div>
+</div>

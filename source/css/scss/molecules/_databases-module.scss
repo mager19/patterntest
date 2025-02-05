@@ -1,0 +1,404 @@
+.modulo-bases-datos {
+  height: auto;
+  padding: 15px 25px;
+  border: $solid-border;
+  background-color: white;
+  position: relative;
+  z-index: 0;
+  margin: 20px 0;
+
+  @media (max-width: $ipad) {
+    padding: 10px;
+  }
+
+  .titulo-db {
+    margin-bottom: 15px;
+
+    @media (max-width: $ipad) {
+      margin-bottom: 5px;
+    }
+
+    h6.entidad-tit,
+    div.entidad-tit {
+      color: $verde-lima-700 !important;
+    }
+    .h4 {
+      color: #222;
+    }
+    h6.facultad-profesores {
+      margin-top: 1rem;
+      color: $gris-acero;
+    }
+    .box-fecha {
+      text-align: right;
+      font-size: 0.8125rem;
+      line-height: 0.8125rem;
+      @media (max-width: $ipad) {
+        text-align: left;
+        margin: 0;
+      }
+    }
+    p {
+      font-size: 1.1875rem;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+  }
+  audio {
+    width: 100%;
+  }
+  .spreaker-iframe {
+    margin: 5px auto;
+  }
+  .lateral-single {
+    justify-content: center;
+  }
+  .bt-descargar {
+    font-size: 0.9rem;
+  }
+  .informacion-db {
+    p {
+      font-size: 1.05rem;
+      line-height: 1.4;
+      margin: 0px 0 10px 0;
+    }
+    img {
+      border: 1px solid #cacaca;
+      margin: 5px auto;
+    }
+    .submodulo-db {
+      border-bottom: thin dotted #cacaca;
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+
+      @media (max-width: $ipad) {
+        padding: 5px 0;
+        margin: 0;
+      }
+
+      .consultar {
+        a {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .acceso,
+      .guia {
+        padding: 10px 0;
+        @media (max-width: $ipad) {
+          padding: 0px 0;
+        }
+      }
+      .autor {
+        margin: 0;
+        display: inline;
+        p,
+        a {
+          font-size: 1.05rem;
+          display: inline;
+          border-bottom: none;
+          font-weight: 500;
+          color: $azul-carbon;
+          &:after {
+            content: ",";
+            display: inline-flex;
+            margin: 0 4px 0 1px;
+          }
+          &:last-child:after {
+            display: none;
+          }
+        }
+        a {
+          &:hover {
+            color: $default;
+            text-decoration: none;
+          }
+        }
+      }
+      .image-podcast {
+        @media (max-width: $ipad) {
+          width: 24%;
+          margin: 0 10px 0 0;
+          height: fit-content;
+        }
+      }
+      .lead-podcast {
+        width: inherit;
+        @media (max-width: $ipad) {
+          width: 70%;
+        }
+      }
+      .lateral {
+        border-right: thin dotted #cacaca;
+        margin-bottom: 5px;
+        @media (max-width: $ipad) {
+          border-right: none;
+          border-bottom: thin dotted #cacaca;
+          padding-bottom: 0.5rem;
+        }
+      }
+      .lateral2 {
+        margin-bottom: 5px;
+        @media (max-width: $ipad) {
+          border-right: none;
+          border-bottom: thin dotted #cacaca;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+    .submodulo2-db {
+      border-radius: 5px;
+      background: $blanco-humo;
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      .lateral {
+        border-right: thin dotted #cacaca;
+        margin-bottom: 5px;
+        @media (max-width: $ipad) {
+          border-right: none;
+          border-bottom: thin dotted #cacaca;
+          padding-bottom: 0.5rem;
+        }
+      }
+      .lateral2 {
+        margin-bottom: 5px;
+        @media (max-width: $ipad) {
+          border-right: none;
+          border-bottom: thin dotted #cacaca;
+          padding-bottom: 0.5rem;
+        }
+      }
+      .field {
+        margin: 1%;
+        padding: 0 1rem;
+        background: #fbfbfb;
+        border-radius: 5px;
+        @media (max-width: $ipad) {
+          width: 100%;
+          padding-bottom: 0.5rem;
+          margin: 2% 1%;
+        }
+        .subtit-db {
+          padding-top: 1rem;
+        }
+      }
+      .fila-info-repositorio {
+        border-bottom: thin dotted #cacaca;
+        margin-bottom: 10px;
+        @media (max-width: $ipad) {
+          border-bottom: none;
+        }
+        li {
+          display: flex;
+        }
+        button {
+          border: none;
+          background: 0 0;
+          margin: none;
+          padding: 0;
+        }
+      }
+      .box {
+        overflow: visible;
+      }
+      .box-padding {
+        padding-bottom: 10px;
+      }
+      .licencia-cc {
+        font-size: 0.8em;
+        line-height: 1.1rem;
+        display: block;
+        border-bottom: none;
+        font-weight: 500;
+        color: $gris-acero;
+      }
+      .copy-right-img {
+        max-width: 100px;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        border: none;
+      }
+      .autor {
+        margin: 0;
+        p,
+        a {
+          font-size: 1.05rem;
+          display: inline;
+          border-bottom: none;
+          font-weight: 500;
+          color: $azul-carbon;
+          &:after {
+            content: ",";
+            display: inline-flex;
+            margin: 0 4px 0 1px;
+          }
+          &:last-child:after {
+            display: none;
+          }
+        }
+        a {
+          &:hover {
+            color: $default;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .destacado {
+      font-weight: 600;
+      color: $gris-acero;
+      font-size: 1.3rem;
+      margin: 0;
+      @media (max-width: $ipad) {
+        font-size: 1.1rem;
+      }
+    }
+    .columnas-alto-fijo {
+      display: -webkit-flex;
+      display: flex;
+    }
+    .centrar-texto {
+      align-items: baseline;
+    }
+    .sin-borde-inferior {
+      border-bottom: none !important;
+      padding: 10px 10px 0;
+    }
+    .sin-borde {
+      border: none !important;
+    }
+    .subtit-db {
+      font-size: 0.85rem;
+      color: $gris-acero;
+      margin: 0 0 5px 0;
+      align-items: center;
+      display: flex;
+    }
+    .fecha {
+      font-size: 0.875rem;
+    }
+    .info-box {
+      width: 100%;
+    }
+    .guia a {
+      color: $verde-lima-700;
+    }
+    .icon,
+    svg.color-icon {
+      color: $verde-lima-700;
+      font-size: 1.2rem;
+      margin-right: 3px;
+    }
+    .consultar {
+      a {
+        .icon {
+          color: white;
+        }
+      }
+    }
+    .color {
+      background: $default;
+      @each $faculty in $faculties {
+        &.#{nth($faculty, 1)} {
+          @include text-contrast(nth($faculty, 2));
+          background-color: nth($faculty, 2);
+        }
+      }
+      &:hover {
+        background: $azul-cienaga;
+        color: white;
+      }
+    }
+    .tags {
+      color: black;
+      margin: 0 0 10px 0;
+      span {
+        font-size: rem(18);
+      }
+      ul {
+        li {
+          font-size: rem(14);
+          margin-left: 4px;
+          @media (max-width: $ipad) {
+            display: contents;
+          }
+          a {
+            display: inline-flex;
+            @media (max-width: $ipad) {
+              display: contents;
+            }
+          }
+          button {
+            border: none;
+            background: none;
+          }
+          button:hover {
+            color: $default;
+            text-decoration: none;
+          }
+          &:after {
+            content: "·";
+            display: inline-flex;
+            margin-left: 6px;
+          }
+          &:last-child:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .list {
+    ul {
+      margin: 5px 0 5px 20px;
+      padding-left: 20px;
+      & > li {
+        font-size: rem(15);
+        padding: 0 0 5px;
+        &:before {
+          color: $verde-lima-700;
+          font-size: rem(12);
+          content: "●";
+          position: relative;
+          left: -15px;
+          top: 5px;
+          width: 5px;
+          height: 5px;
+          display: block;
+        }
+        a {
+          color: $verde-lima-700;
+          display: contents;
+          &:hover {
+            text-decoration: underline;
+          }
+          .icon {
+            font-size: 0.9rem;
+            line-height: 0.9rem;
+            color: $default !important;
+          }
+        }
+      }
+    }
+    ol {
+      margin: 5px 0;
+      padding-left: 20px;
+      & > li {
+        font-size: rem(15);
+        &:before {
+          font-size: rem(15);
+        }
+      }
+    }
+  }
+}
+
+/* Margen modulos Grilla*/
+.margen-modulo-grilla {
+  margin: 20px 1%;
+}

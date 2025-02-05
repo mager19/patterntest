@@ -1,0 +1,33 @@
+.podcast-module {
+  .info{
+   audio{width: 90%;}
+  }
+
+  img {
+    margin: 0;
+  }
+  .margen-corto {padding: 5px 15px 0}
+  .contenedor-tit-spreaker {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+
+    audio {
+      width: 90%;
+    }
+    .iframe-spreaker {
+         width: 50px;
+    margin-right: 10px;
+    height: 52px;
+    overflow: hidden;
+      @media (max-width: $ipad) {
+      
+      }
+    }
+    .title-spreaker {
+      width: 70%;
+      text-align: left;
+     
+    }
+  }
+}

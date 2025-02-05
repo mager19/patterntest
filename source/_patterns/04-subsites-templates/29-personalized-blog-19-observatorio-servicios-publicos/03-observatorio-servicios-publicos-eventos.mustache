@@ -1,0 +1,47 @@
+<div class="faculty-color faculty-observatorio-familia-infacia-adolecencia">
+   {{> organisms-header-blogs(nombre:"Observatorio de Servicios Públicos", facultad:"Área servicios públicos Departamento Derecho Economía") }}
+   <div class="faculty-defecto">
+      <div class="centrar overflow">
+         <main class="fondo-completo">
+            <div class="centrar margin-s padding-minimo">
+               {{> molecules-main-date }}
+            </div>
+            <div class="centrar calendario-comunidad-virtual">
+               {{> organisms-calendar-for-home(calendar-title:"Agéndese") }}
+               <div class="eventos-blog">
+                  {{> organisms-carousel-3columns(calendar-subtitle:"Próximos eventos de Fomento y Formación Docente") }}
+               </div>
+            </div>
+         </main>
+         <div class="centrar">
+            <aside class="columna04 aside"> 
+               {{> organisms-accordion-events-filter-servicios-publicos }}
+            </aside>
+            <div class="columna08 contenido">
+               <h2 class="h3 margen-inferior-cajas">Histórico de eventos</h2>
+               {{> molecules-event-video-card(class-faculty:"derecho") }}
+               {{> molecules-event-video-card(class-faculty:"derecho") }}
+               {{> molecules-event-video-card(class-faculty:"derecho") }}
+               {{> molecules-event-video-card(class-faculty:"derecho") }}
+               {{> molecules-pagination}}
+            </div>
+         </div>
+      </div>
+      <div class="columna12">
+         <div class="centrar">
+            <h2 class="h1">Artículos Recientes</h2>
+         </div>
+         <div class="carrusel-relacionadas">
+            <!--Máxiumo 4 noticias relacionadas-->
+            {{> molecules-related-module }}
+            {{> molecules-related-module }}
+            {{> molecules-related-module }}
+            {{> molecules-related-module }}
+
+         {{> molecules-pagination}}
+
+         </div>
+      </div>
+   </div>
+</div>
+{{> organisms-footer-blogs }}

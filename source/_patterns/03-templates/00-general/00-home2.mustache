@@ -1,0 +1,74 @@
+<!-- El div contenedor .home no es necesario cuando el sitio esté montado en WP ya que el gestor automáticamente le generaría esa clase al body. Sin embargo aqui puse la clase manualemnte para que los estilso que afectan al header de la plantilla home se reflejaran-->
+<div class="home">
+{{> organisms-header }}
+</div>
+<h1 class="hidden" aria-label="Universidad Externado de Colombia">Universidad Externado de Colombia</h1>
+{{> organisms-organisms-opening-basic}}
+    {{> organisms-news-carousel(class-box-button:"centrar-bt", bts-home: true, btn-general: false) }}
+
+{{> molecules-main-date-title(agenda-title:"Agenda")}}
+  <div class="centrar">
+    <div class="slider-eventos">{{> organisms-carousel-1column }}</div>
+    {{> organisms-event-list }}
+  </div>
+  <hr>
+  <div class="centrar">
+    {{> molecules-search-date-event }}
+  </div>
+
+
+<div style="clear:both"></div>
+<div class="blanco-humo box-shadow" role="region">
+<div class="centrar">
+  <div class="columnas-alto-fijo">
+    <div class="columna06"> {{> atoms-banner-1200x100(url-banner:"https://zonadigital.uexternado.edu.co/", banner-image:"banners/banner-zona-digital-550x100.jpg", banner-alt:"Zona digital")}}</div>
+    <div class="columna06"> {{> atoms-banner-1200x100(url-banner:"https://www.uexternado.edu.co/ceremonia-de-grados/", banner-image:"banners/banner-grados.jpg", banner-alt:"Fotos grados")}}</div>
+  </div>
+</div>
+</div>
+<main>
+
+  {{> organisms-admissions }}
+  
+    <div class="blanco-humo">
+  <div class="centrar">
+    <div class="columnas-alto-fijo">
+      <div class="columna12 hidden3"> {{> atoms-banner-1200x100(url-banner:"https://www.uexternado.edu.co/categoria/edicion-81/", banner-image:"banners/banner-home-1200x300.png", banner-alt:"Informativo edición 81")}}</div>
+       <div class="columna12 show3"> {{> atoms-banner-1200x100(url-banner:"https://www.uexternado.edu.co/categoria/edicion-81/", banner-image:"banners/banner-home-responisve-600x250.png", banner-alt:"Informativo edición 81")}}</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="fondo-completo">
+    <div class="centrar"> 
+      <div class="columna04">
+                {{> atoms-media-button(text:"Documental 30 años de la Constitución de 1991", icon-selector:"video", url:"https://youtu.be/648MNdzi_Jc") }}
+      </div>
+       <div class="columna04">
+        {{> atoms-media-button(text:"Revista Experto", icon-selector:"libro-01", url:"https://digital.uexternado.co/revista-experto") }}
+          
+        </div>
+        <div class="columna04">
+             {{> atoms-media-button(text:"Informe de gestión", icon-selector:"documento", url:"https://www.uexternado.edu.co/la-universidad/informe-de-gestion/") }}
+        </div>
+
+    </div>
+  </div>
+
+  <div class="fondo-completo regiones">
+    <div class="centrar">
+      <div class="columna08 contenido">
+        {{> organisms-regions }}
+
+        {{> organisms-blog-list }}
+      </div>
+
+      <aside class="columna04 aside">
+        {{> organisms-summary-list }}
+        {{> molecules-rectangle-ad }}
+
+      </aside>
+    </div>
+  </div>
+</main>
+{{> organisms-footer }}

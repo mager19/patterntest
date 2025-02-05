@@ -1,0 +1,16 @@
+.carrusel-interno-1columna{
+	visibility: hidden;
+	.fondo {
+		span:first-of-type{
+        color: white;
+      }
+      span:nth-of-type(2){
+        color: white;
+      }
+	}
+	.slick-slide{
+		&>div{
+			margin: 0 auto;
+		}
+	}
+}

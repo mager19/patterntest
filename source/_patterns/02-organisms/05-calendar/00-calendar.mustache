@@ -1,0 +1,12 @@
+<div class="botonera-mode-events centrar">
+  <div class="buscador-eventos">{{> atoms-search-form(tit-search-form:"Encuentre el evento")}}</div>
+  <div class="botones-select-visualizacion">
+    <h6>Modo de visualización</h6>
+    {{> atoms-button-gray(text:"lista", icon:"icon-lista")}}
+    {{> atoms-button(text:"Calendario", icon:"icon-calendario-02")}}
+  </div>
+    <div style="clear: both;"></div>
+    <div class="contenedor-eventos">
+      {{> molecules-simple-calendar }}
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="faculty-color" style="background: #4D7B19;">
+{{> organisms-header-blogs(nombre:"Ágora Mercatorum", slogan:"Blog de Derecho Comercial") }}
+
+{{> organisms-faculty-carousel}}
+
+  <aside class="fondo-completo">
+    <div class="centrar titulo-categoria-noticias-home">
+      <h2 class="h1">Últimas publicaciones</h2>
+        <a href="">Ver más publicaciones<span><svg class="icon icon-derecha"><use xlink:href="../../images/iconos.svg#icon-derecha"></use></svg></span></a>
+    </div>
+    <div class="carrusel-relacionadas">
+      <!--Máxiumo 4 noticias relacionadas-->
+      {{> molecules-related-module }}
+      {{> molecules-related-module }}
+      {{> molecules-related-module }}
+      {{> molecules-related-module }}
+      {{> molecules-related-module }}
+      {{> molecules-related-module }}
+    </div>
+  </aside>
+  <div style="clear: both;"></div>
+  <main class="fondo-completo">
+  <div class="centrar" style="border-top: solid 5px #78b92f; ">{{> molecules-main-date }}</div>
+    <div class="centrar calendario-comunidad-virtual">
+      {{> organisms-calendar-for-home(calendar-title:"Agéndese") }}
+    </div>
+  </main>
+<div style="clear: both;"></div>
+
+</div>
+{{> organisms-footer-blogs }}

@@ -1,0 +1,98 @@
+.buscador {
+  display  : inline-block;
+  float    : left;
+  position : relative;
+  background-color: $universidad-800;
+  z-index: 0;
+
+  &:before {
+    border-bottom : 36px inset transparent;
+    border-right  : 23px solid $universidad-800;
+    content       : '';
+    left          : -22px;
+    position      : absolute;
+    top           : 0;
+
+    @media (max-width: 880px) and (min-width:$ipad){
+      border-right  : 15px solid $universidad-800;
+       left          : -15px;
+    } 
+
+  }
+
+  input[type="search"] {
+    border      : none;
+    color       : white;
+    display     : block;
+    font-size   : rem(16);
+    height      : 35px;
+    margin: 0 0 0 -4px;
+    padding     : 0 0 0 30px;
+    position    : relative;
+    z-index: 1;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 2px 5px $azul-carbon;
+      }
+
+    &::placeholder {
+      -moz-osx-font-smoothing : grayscale;
+      -webkit-font-smoothing  : antialiased;
+      color                   : white;
+      font-weight             : bold;
+    }
+  }
+
+  span {
+    position: absolute;
+    z-index: 0;
+    top:0;
+    color: white;
+    left:0;
+    font-size: rem(25);
+    line-height: rem(30);
+  }
+
+  @media (max-width:$maximo) and (min-width:$ipad) {
+    input{
+      width:35px;
+
+      &:focus {
+        width:160px;
+      }
+    }
+  }
+
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    float: none;
+    display: block;
+    clear: both;
+    margin: 20px 4%;
+    overflow: hidden;
+    width: 92%;
+    background-color: $gris-hierro;
+
+    &:before {
+      display: none;
+      visibility: hidden;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      height: 50px;
+      font-size: inherit;
+      color: $verde-oscuro;
+      margin-left : 0;
+      padding     : 0 0 0 50px;
+    }
+
+    span {
+      left:10px;
+      top:5px;
+      font-size: rem(35);
+      color: $verde-oscuro;
+    }
+  }
+}

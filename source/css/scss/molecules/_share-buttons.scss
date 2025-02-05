@@ -1,0 +1,144 @@
+.modulo-acordeon{
+  .compartir-redes{
+    a{
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+      margin: 5px;
+      color: white;
+      font-size: rem(25);
+      line-height: 1;
+      text-align: center;
+
+      &.icon-facebook{
+        background-color:  #3b5998;
+        transition: $transition-background;
+        margin-left: 0;
+      }
+      &.icon-twitter{
+        background-color: #1da1f2;
+        transition: $transition-background;
+      }
+      &.icon-google-plus{
+        background-color: #c53929;
+        transition: $transition-background;
+      }
+      &.icon-linkedin{
+        background-color: #287bbc;
+        transition: $transition-background;
+      }
+      &:hover{
+        background-color: $gris-hierro;
+        color: $gris-acero;
+      }
+    }
+  }
+  .social-utilities{
+    display: flex;
+    flex-flow: wrap;
+
+    li {
+      border-top: thin dotted $blanco-humo;
+      padding: 0.5rem .5rem 0 0 !important;
+      margin: .5rem 0.5rem 0 0;
+      font-size: 12px !important;
+      color: $gris-acero;
+      text-transform: uppercase;
+      text-align: center;
+
+
+      @media (max-width:$desktop){
+        width: 100%;
+        display: inline;
+      }
+
+      a {
+        text-decoration: none !important; 
+      }      
+    }
+
+    .rating-box{width: 100%; 
+      .star-rating{display: flex; text-align-last: center; flex-flow: row;
+        @media (max-width:$desktop){
+          justify-content: center;
+        }  
+      }
+    }
+
+    p{
+      font-size: 12px !important;
+      margin: 10px 5px;
+    }
+  }
+
+}
+
+.lateral-single{
+  color: $gris-acero;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 35px;
+    li {
+    border-bottom: thin dotted $gris-acero;
+    padding: 0.5rem;
+
+    @media (max-width:$ipad){
+      display: inline;
+      border-bottom: none;
+      border-right: thin dotted $gris-acero;
+      }  
+    }
+    
+    li:last-child {border-bottom: none;}
+
+    p{
+      font-size: 12px;
+      line-height: 1rem;
+      margin: 10px 5px;
+    }
+
+  .compartir-redes{
+    display: inline-block;  
+    a{
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      margin-right: 5px;
+      color: white;
+      font-size: rem(25);
+      line-height: 1;
+      text-align: center;
+      background-color: $blanco-humo;
+      color: $gris-acero;
+
+       @media (max-width:$ipad){
+      width: 20px;
+      height: 20px;
+      font-size: rem(16);
+      }
+
+      &:hover{
+        color:  white;
+        transition: $transition-background;
+        margin-left: 0;
+      }
+      &.icon-facebook:hover{
+        background-color:  #3b5998;
+       
+      }
+      &.icon-twitter:hover{
+        background-color: #1da1f2;
+        
+      }
+      &.icon-google-plus:hover{
+        background-color: #c53929;
+        
+      }
+      &.icon-linkedin:hover{
+        background-color: #287bbc;
+      }
+     
+    }
+  }  
+
+}

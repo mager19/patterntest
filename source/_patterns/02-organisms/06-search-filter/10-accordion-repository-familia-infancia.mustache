@@ -1,0 +1,93 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+              <div class="titulo-acordeon"><h4>Filtro de búsqueda</h4>
+               <button class="select_opt limpiador-busqueda">Limpiar búsqueda</button>
+             </div>
+           </div>
+         <!-- 00-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+                  {{> atoms-search-form(tit-search-form:"Título, autor o palabra clave")}}
+              </div>
+            </div>
+          <!-- /00-->
+          <!-- 02 Fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 Materia-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"materia", text:"Materia")}}
+              </div>
+
+              <div id="materia" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <input type="checkbox" name="materia1" value="materia1"><label>Materia 1</label>
+                  <input type="checkbox" name="materia2" value="materia2"><label>Materia 2</label>
+                  <input type="checkbox" name="materia3" value="materia3"><label>Materia 3</label>
+                  <input type="checkbox" name="materia4" value="materia4"><label>Materia 4</label>
+                  <input type="checkbox" name="materia5" value="materia5"><label>Materia 5</label>
+                  </form>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 normatividad -->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                {{> atoms-accordion-filter-button(target:"normatividad", text:"Temas")}}
+              </div>
+
+              <div id="tema" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                 <form>
+                  <input type="checkbox" name="tema1" value="tema1"><label>Tema 1</label>
+                  <input type="checkbox" name="tema2" value="tema2"><label>Tema 2</label>
+                  <input type="checkbox" name="tema3" value="tema3"><label>Tema 3</label>
+                  <input type="checkbox" name="tema4" value="tema4"><label>Tema 4</label>
+                  <input type="checkbox" name="tema5" value="tema5"><label>Tema 5</label>
+                  </form>
+              </div>
+            </div>
+            <!-- /04-->
+
+            <!-- 05 doctrina-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                {{> atoms-accordion-filter-button(target:"doctrina", text:"Tipo de documento")}}
+              </div>
+
+              <div id="tipo" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                 <form>
+                  <input type="checkbox" name="tipo1" value="tipo1"><label>Tipo 1</label>
+                  <input type="checkbox" name="tipo2" value="tipo2"><label>Tipo 2</label>
+                  <input type="checkbox" name="tipo3" value="tipo3"><label>Tipo 3</label>
+
+                  </form>
+              </div>
+            </div>
+            <!-- /05-->
+       
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

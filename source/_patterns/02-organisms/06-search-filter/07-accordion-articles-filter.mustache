@@ -1,0 +1,90 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div>
+       <div class="panel">
+          <div class="info">
+            <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button></div></div>
+      
+      </div></div>
+            <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+
+                  {{> atoms-search-form(tit-search-form:"Título, autor o palabra clave")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+          <!-- 02 fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha de publicación")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 volumne-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"volumen", text:"Número revista")}}
+              </div>
+
+              <div id="volumen" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Todas</option>
+                      <option value="Administrativo">Vol. 18 Núm. 2 (2019)</option>
+                      <option value="Aduanero">Vol. 18 Núm. 1 (2019)</option>
+                      <option value="Arte">Vol. 17 Núm. 2 (2018)</option>
+                      <option value="Civil">Vol. 17 Núm. 1 (2018)</option>
+                      <option value="Constitucional">Vol. 16 Núm. 2 (2017)</option>
+                      <option value="Comercial">Vol. 16 Núm. 1 (2017) </option>
+                      <option value="Comparado">Vol. 15 Núm. 2 (2016)</option>
+                      <option value="Electoral">Vol. 15 Núm. 1 (2016)</option>
+                      <option value="Económico">Vol. 14 Núm. 2 (2015)</option>
+                      <option value="Familia">Vol. 14 Núm. 1 (2015)</option>
+                      <option value="Fiscal">Vol. 13 Núm. 2 (2014)</option>
+                      <option value="Filosofía del derecho">Vol. 13 Núm. 1 (2014)</option>
+                      <option value="Genética">Vol. 12 Núm. 2 (2013)</option>
+                      <option value="Geopolítica">Vol. 12 Núm. 1 (2013)</option>
+                      <option value="Historia">Vol. 11 Núm. 2 (2012)</option>
+                      <option value="Internacional">Vol. 11 Núm. 1 (2012)</option>
+                      <option value="Laboral">Vol. 10 Núm. 2 (2011)</option>
+                      <option value="Literatura">Vol. 10 Núm. 1 (2011)</option>
+                      <option value="Médico">Vol. 9 Núm. 2 (2010)</option>
+                      <option value="Medio ambiente">Vol. 9 Núm. 1 (2010)</option>
+                      <option value="Minero">Vol. 8 Núm. 2 (2009) </option>
+                      <option value="Negocios">Vol. 8 Núm. 1 (2009)</option>
+                      <option value="Penal">Vol. 7 Núm. 2 (2008)</option> 
+                      <option value="Procesal">Vol. 7 Núm. 1 (2008)</option>
+                      <option value="Romano">Vol. 7 Núm. 1 (2008)</option>
+                      <option value="Sociología">Vol. 6 Núm. 2 (2007)</option>
+                      <option value="TICS">Vol. 6 Núm. 1 (2007)</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /03-->
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.digital-zone {
+  @include widget;
+  text-align: center;
+  padding: 20px 15px;
+  p {
+    display: inline;
+    
+      &:first-child{
+        padding-left: 26px;
+        position: relative;
+        &:before{
+      content: url(../images/play.svg);
+      height: 30px;
+      background-color: $gris-hierro;
+      background-color: #cacaca;
+      border-radius: 50%;
+      padding: 3px 3px 2px 6px;
+      margin-right: 10px;
+      position: absolute;
+      width: 30px;
+      left: -10px;
+      }
+    }
+  }
+  .text-link {
+    color: $verde-lima;
+    display: inline-block;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.1875rem;
+  }
+  .boton {
+    margin: 0.75rem 1%;
+    min-width: 9.125rem;
+    padding: 5px;
+    text-align: center;
+    &:after{
+    content: url(../images/derecha.svg);
+      }
+
+  }
+}

@@ -1,0 +1,18 @@
+<article class="live">
+<div class="content">
+<section class="titulo">
+
+  {{> atoms-live-play(class:"live-play-on") }}
+  
+  <p class="h3">{{# tit }}{{tit}}{{/ tit }}{{^ tit }}Título de la transmisión en vivo con un máximo de 75 caracteres de texto{{/ tit}}</p>
+
+   <p>{{> atoms-button(modifier-class:"boton-claro", text:"Más información") }}</p>
+
+</section>
+<div class="video">
+  
+  {{> atoms-iframe }}
+
+</div>
+</div>
+</article>

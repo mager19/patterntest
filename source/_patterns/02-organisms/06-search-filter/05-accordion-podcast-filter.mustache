@@ -1,0 +1,108 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div>
+       <div class="panel">
+          <div class="info">
+            <button class="select_opt limpiador-busqueda">Limpiar búsqueda</button></div></div>
+      
+      </div></div>
+      <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+
+                  {{> atoms-search-form(tit-search-form:"Palabra clave, entrevistador o invitado")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+          <!-- 01 fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha de publicación")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /01-->
+          
+            <!-- 04 categoria -->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                {{> atoms-accordion-filter-button(target:"categoria", text:"Categoría")}}
+              </div>
+
+              <div id="categoria" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                 <form>
+                  <input id="abc-derecho" type="checkbox" name="abc-derecho" value="abc-derecho"><label for="abc-derecho">ABC del derecho</label>
+                  <input id="coyuntura" type="checkbox" name="coyuntura" value="coyuntura"><label for="coyuntura">Coyuntura</label>
+                  <input id="entrevista-evento" type="checkbox" name="entrevista-evento" value="entrevista-evento"><label for="entrevista-evento">Entrevista/evento académico</label>
+                  <input id="homenaje" type="checkbox" name="homenaje" value="homenaje"><label for="homenaje">Homenaje </label>
+                  <input id="novedad-bibliografica" type="checkbox" name="novedad-bibliografica" value="novedad-bibliografica"><label for="novedad-bibliografica">Novedad bibliográfica</label>
+                  </form>
+              </div>
+            </div>
+            <!-- /04-->
+            <!-- 05 materia-->
+            <div class="panel">
+              <div role="tab" id="titulo-seis">
+                {{> atoms-accordion-filter-button(target:"materia", text:"Materia")}}
+              </div>
+
+              <div id="materia" class="info collapse in" role="tabpanel" aria-labelledby="titulo-seis">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Todas</option>
+                      <option value="Administrativo">Administrativo</option>
+                      <option value="Aduanero">Aduanero</option>
+                      <option value="Arte">Arte</option>
+                      <option value="Civil">Civil</option>
+                      <option value="Constitucional">Constitucional</option>
+                      <option value="Comercial">Comercial </option>
+                      <option value="Comparado">Comparado</option>
+                      <option value="Electoral">Electoral</option>
+                      <option value="Económico">Económico</option>
+                      <option value="Familia">Familia</option>
+                      <option value="Fiscal">Fiscal</option>
+                      <option value="Filosofía del derecho">Filosofía del derecho</option>
+                      <option value="Genética">Genética</option>
+                      <option value="Geopolítica">Geopolítica</option>
+                      <option value="Historia">Historia</option>
+                      <option value="Internacional">Internacional</option>
+                      <option value="Laboral">Laboral</option>
+                      <option value="Literatura">Literatura</option>
+                      <option value="Médico">Médico</option>
+                      <option value="Medio ambiente">Medio ambiente</option>
+                      <option value="Minero">Minero </option>
+                      <option value="Negocios">Negocios</option>
+                      <option value="Penal">Penal</option> 
+                      <option value="Procesal">Procesal</option>
+                      <option value="Romano">Romano</option>
+                      <option value="Sociología">Sociología</option>
+                      <option value="TICS">TICS</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /05-->
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

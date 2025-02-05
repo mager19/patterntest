@@ -1,0 +1,86 @@
+<section class="card-image-professor">
+    <div class="round">{{> atoms-avatar(avatar-img:"profile.jpg")}}</div>
+    <!--En caso de no tener indormación no se desplegará-->
+    <article class="info">
+        <p><span><svg class="icon icon-directorio">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-directorio">
+                    </use>
+                </svg></span> <strong>Cargo:</strong> Docente - investigador</p>
+    </article>
+    <article class="info">
+        <p><span><svg class="icon icon-diploma">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-diploma">
+                    </use>
+                </svg></span><strong>Formación académica:</strong>
+            Posdoctorado
+            <!--Campo de selector de:    
+                * Posdoctorado
+               * Doctorado
+               * Maestría
+               * Especialización
+               * Pregrado-->
+        </p>
+    </article>
+    <article class="info">
+        <p><span><svg class="icon icon-globo-02">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-globo-02">
+                    </use>
+                </svg></span><strong>Nacionalidad:</strong>
+            Colombiana </p>
+
+    </article>
+    <article class="info">
+        <p><span><svg class="icon icon-correo">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-correo">
+                    </use>
+                </svg></span> <strong>Correo institucional: </strong>
+            nombre.apellido@uexternado.edu.co</p>
+        <p><span><svg class="icon icon-telefono">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-telefono">
+                    </use>
+                </svg></span> <strong>Teléfono:</strong>
+            (57) 601-3537000, ext.: 1234</p>
+
+        <p><span><svg class="icon icon-pin-locacion">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-pin-locacion">
+                    </use>
+                </svg></span> <strong>Ubicación:</strong>
+             Calle 12 No. 1-17 Este. Edificio A. 5 piso. Bogotá.</p>
+
+    </article>
+    <article class="info">
+        <p><span><svg class="icon icon-info">
+            <use
+                xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-info">
+            </use>
+        </svg></span> <strong>Redes o perfiles académicos:</strong></p>
+        <ul>
+            <li><a href="">CvLAC</a></li>
+            <li><a href="">Orcid</a></li>
+            <li><a href="">Google Scholar</a></li>
+            <li><a href="">Web of Science/Publons</a></li>
+            <li><a href="">Research Gate</a></li>
+        </ul>
+
+    </article>
+    <article class="info">
+
+        {{> molecules-social-network(networks_title:"Redes sociales") }}
+
+        <p><span><svg class="icon icon-link">
+                    <use
+                        xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-link">
+                    </use>
+                </svg></span> <strong>Otros enlaces:</strong></p>
+        <ul>
+            <li> <a href="#" target="_blank">Sitio web</a> </li>
+            <li> <a href="#" target="_blank">Blog</a> </li>
+        </ul>
+    </article>
+</section>

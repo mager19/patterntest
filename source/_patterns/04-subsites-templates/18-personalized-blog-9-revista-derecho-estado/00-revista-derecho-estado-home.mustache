@@ -1,0 +1,37 @@
+{{> organisms-header-blogs(nombre:"Revista de Derecho del Estado", facultad:"Derecho") }}
+
+<div class="faculty-defecto">
+
+  {{> organisms-faculty-carousel}}
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> molecules-pagination}}
+    </div>
+
+    <aside class="columna04 aside">
+      {{> molecules-text-link-widget }}
+      {{> molecules-menu-widget }}
+      {{> molecules-tag-cloud-widget }}
+      {{> molecules-calendar-wp-widget }}
+    </aside>
+  </div>
+    <div class="centrar">
+        <hr>
+    </div>
+    <div class="centrar">
+      {{> organisms-group-subtitle-button }}
+    </div>
+</div>
+
+{{> organisms-footer-blogs }}

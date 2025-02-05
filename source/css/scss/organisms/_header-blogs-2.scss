@@ -1,0 +1,117 @@
+header.blogs{
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    position   : relative;
+    top: 0;
+  }
+}
+.menu-blogs-2{
+
+  .secondary-header-menu{
+    background-color: $blanco-humo;
+
+    .centrar{width: 100%;}
+
+    .imagen-izquierda-top-blogs {
+      display: block;
+      float: right;
+      text-align: right;
+      width: 100%;
+      margin: 10px 0;
+     
+      img{
+        max-height: 62px;
+
+      }
+
+      @media (max-width: 769px){
+        float: center;
+        text-align: center;
+      }
+    }
+
+
+    .menu-secundario {
+      background: rgba(255, 255, 255, 0.6);
+      z-index: 2;
+      padding: 1rem 0;
+      @media (max-width:$ipad) {
+          background: darken($blanco-humo, 5%);
+          padding: 0;
+      }
+      .mini-boton{
+        margin-right: 1rem;
+        color: white;
+        font-weight: 400;
+          &:hover{
+          color: $azul-cienaga !important;
+          }
+      }
+      ul{
+        li{
+          color: $azul-carbon;
+            &:hover {
+            background-color: darken($blanco-humo, 10%) !important;
+            }
+            .sub-menu{
+                max-width: 250px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: normal;
+            }
+            .sub-menu li:hover {
+            background-color: #fff !important; 
+            }
+        }
+      }
+    }
+    .menu-secundario{
+      .show-secondary-menu{
+        color: $azul-carbon;
+      }
+    }
+    h3{
+      color: $azul-carbon;
+      margin: 0;
+    }
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      margin-top: 0;
+    }
+  }
+
+
+
+  .slicknav_menu {
+    background-color: $blanco-humo;
+    .slicknav_nav{
+      a {
+        color: $azul-carbon;
+      }
+      .mini-boton{
+      background-color: $blanco-humo;
+      margin-right: 0px;
+      padding: 0px;
+      }
+    }
+
+    li.slicknav_parent.slicknav_open {
+      background-color: darken($blanco-humo, 4%);
+      .sub-menu{
+        .slicknav_open{
+          background-color: darken($blanco-humo, 8%);
+        }
+      }
+    }
+
+    li:hover {
+      background-color: darken($blanco-humo, 4%);
+      li:hover {
+        background-color: darken($blanco-humo, 8%);
+        li:hover {
+          background-color: darken($blanco-humo, 12%);
+        }
+      }
+    }
+  }
+}

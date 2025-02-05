@@ -1,0 +1,22 @@
+<!-- El div contenedor .home no es necesario cuando el sitio esté montado en WP ya que el gestor automáticamente le generaría esa clase al body. Sin embargo aqui puse la clase manualemnte para que los estilso que afectan al header de la plantilla home se reflejaran-->
+
+<div class="faculty-comunidad-virtual">
+{{> organisms-header-blogs(logo:"../../images/logos/comunidadvirtual.png") }}
+
+<div class="magnetic-menu">{{> molecules-magnetic-buttons }}</div>
+
+{{> organisms-faculty-carousel}}
+
+{{> organisms-news-carousel(class-box-button:"centrar-bt", bts-home: true, btn-general: false) }}
+
+<main class="fondo-completo">
+<div class="centrar" style="border-top: solid 5px #78b92f; ">{{> molecules-main-date }}</div>
+  <div class="centrar calendario-comunidad-virtual">
+    {{> organisms-calendar-for-home(calendar-title:"Agéndese") }}
+   <div class="eventos-blog">{{> organisms-carousel-3columns(calendar-subtitle:"Próximos eventos de Fomento y Formación Docente") }}</div>
+    </div>
+</main>
+<div style="clear: both;"></div>
+{{> organisms-allied-carousel }}
+</div>
+{{> organisms-footer-blogs }}

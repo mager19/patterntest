@@ -1,0 +1,28 @@
+.carrusel-lead{
+	.carousel-inner{display: contents;}
+
+	.carousel-caption{
+		 @media (max-width:$ipad) and (min-width:$minimo){
+		    left: 0;
+    		right: 0;
+    		padding-bottom: 2rem;
+		  }
+
+		  .h6 {
+		    display: block;
+			}
+
+		  .boton{
+		  	display: block;
+    		width: fit-content;
+    		width: -webkit-fit-content;
+    		font-size: 1rem;
+    		letter-spacing: .0125rem;
+    		padding: 4px 8px;
+    		margin-top: 12px;
+    		text-shadow: none;
+		  }
+
+		 
+	}
+}

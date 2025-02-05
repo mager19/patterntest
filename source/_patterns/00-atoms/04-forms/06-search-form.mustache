@@ -1,0 +1,13 @@
+<!--Estas clases las dejé tal como las pone WP-->
+<form class="search" method="get" role="search">
+  {{^ tit-search-form }}
+  <input type="search" name="s" placeholder="Buscar">
+  {{/ tit-search-form }}
+
+	{{# tit-search-form }}
+	<input type="search" name="s" placeholder="{{ tit-search-form }}">
+	{{/ tit-search-form }}
+	<button type="submit" role="button" title="Buscar ahora">
+	  <svg class="icon icon-lupa"><use xlink:href="../../images/iconos.svg#icon-lupa"></use></svg>
+	</button>
+</form>

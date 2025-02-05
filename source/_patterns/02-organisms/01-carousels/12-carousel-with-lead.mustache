@@ -1,0 +1,25 @@
+<div class="carrusel-facultad carrusel-lead">
+  <div class="carousel slide" id="carrusel-facultad-home" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carrusel-facultad-home" data-slide-to="0" class="active"></li>
+      <li data-target="#carrusel-facultad-home" data-slide-to="1" class=""></li>
+      <li data-target="#carrusel-facultad-home" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner" role="listbox" aria-label="Noticias">
+
+      {{> molecules-prominent-image-lead(class-on:"active", class-category:"bienestar-universitario" , text-category:"Bienestar", class-color:"dark")}}
+      {{> molecules-prominent-image-lead(class-color:"light", class-category:"biblioteca", text-category:"Biblioteca") }}
+      {{> molecules-prominent-image-lead(class-color:"dark", class-category:"finanzas-gobierno-y-relaciones-internacionales", text-category:"Finanzas") }}
+
+    </div>
+
+    <!-- Carousel nav -->
+    <a class="left carousel-control" data-target="#carrusel-facultad-home" role="button" data-slide="prev" aria-label="anterior">
+      <span></span>
+    </a>
+    <a class="right carousel-control" data-target="#carrusel-facultad-home"  role="button" data-slide="next" aria-label="siguiente">
+      <span></span>
+    </a>
+
+  </div>
+</div>

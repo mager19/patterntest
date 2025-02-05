@@ -1,0 +1,107 @@
+.informacion-facultad {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+  background-color: $dorado-100;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  margin: 40px 0 0 0;
+
+  .titulo {
+    display: flex;
+    align-items: center;
+    span {
+      line-height: 0;
+      @media (max-width: $maximo) and (min-width: $ipad) {
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+      }
+    }
+    h3,
+    .h3 {
+      width: calc(100% - 80px);
+    }
+  }
+
+  .info {
+    @media (max-width: $maximo) and (min-width: $ipad) {
+      -webkit-column-rule: $dotted-border;
+      -moz-column-rule: $dotted-border;
+      column-rule: $dotted-border;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      -webkit-column-gap: 30px;
+      -moz-column-gap: 30px;
+      column-gap: 30px;
+      margin: 30px 0 30px 80px;
+    }
+    @media (max-width: $ipad) and (min-width: $minimo) {
+      margin: 30px 0 30px 40px;
+
+      &.subsite-info {
+        margin: 10px 20px;
+      }
+    }
+    p,
+    li {
+      margin: 0 0 20px 0;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: $verde-lima-500;
+      }
+    }
+  }
+
+  .redes-sociales {
+    width: calc(100% - 80px);
+    padding-top: 20px;
+    &:before {
+      content: "";
+      border-top: 2px solid;
+      width: 260px;
+      position: absolute;
+      top: 0;
+      @media (max-width: $movil-amplio) and (min-width: $minimo) {
+        width: 100%;
+      }
+    }
+    .icono {
+      background-color: black;
+    }
+    @media (max-width: $maximo) and (min-width: $ipad) {
+      margin-left: 80px;
+    }
+    @media (max-width: $ipad) and (min-width: $minimo) {
+      margin-left: 40px;
+    }
+  }
+}
+
+/*Esta clase se coloca específicamente para Safari porque no toma los estilos del -webkit automáticamente */
+.safari {
+  .informacion-facultad {
+    .info {
+      @media (max-width: $maximo) and (min-width: $ipad) {
+        p,
+        li {
+          -webkit-column-break-inside: avoid;
+        }
+      }
+    }
+  }
+}

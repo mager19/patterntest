@@ -1,0 +1,160 @@
+.before-footer {
+  float: none;
+
+  .footer-logos {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: auto auto auto auto auto;
+
+    a {
+      justify-self: center;
+
+      &:hover {
+        img {
+          filter: grayscale(100%);
+        }
+      }
+      img {
+        transition: filter 0.3s ease-in;
+      }
+    }
+
+    @media (max-width: $movil-amplio) {
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+footer.footer-general {
+  width: 100%;
+  height: auto;
+  background: $azul-cienaga;
+  background-size: cover;
+  border-bottom: 4px solid $verde-lima-700;
+  display: block;
+  overflow: hidden;
+  color: white;
+  padding-top: 40px;
+  background-position: center;
+
+  .logo img {
+    width: 68%;
+  }
+
+  a {
+    transition: $transition-color, $transition-background;
+
+    &:hover {
+      color: $verde-lima-500;
+    }
+
+    &.icono:hover {
+      color: white;
+    }
+  }
+
+  h4,
+  .h4 {
+    font-size: rem(19);
+    font-weight: 900 /*bolder*/;
+    text-transform: none;
+    margin: 5px 0;
+    @include fuente-suave;
+  }
+
+  p {
+    font-size: rem(16.4);
+    line-height: rem(27);
+    font-weight: 300;
+    &.disclaimer {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+  .documentos {
+    border-top: 1px solid $verde-lima-700;
+    border-bottom: 1px solid $verde-lima-700;
+    padding: 10px 0;
+    margin-bottom: 10px !important;
+  }
+
+  section,
+  nav {
+    &:not(.vigilado-men) {
+      margin-bottom: 28px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+
+      li {
+        font-size: rem(16.4);
+        line-height: rem(23);
+        margin-bottom: 0.4em;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .columna04:nth-child(1) a {
+    &:nth-child(3) {
+      color: $verde-lima-700;
+      font-size: 1.05em;
+      padding: 5px 0;
+      text-decoration: none;
+      border-top: 1px solid $verde-lima-700;
+      border-bottom: 1px solid $verde-lima-700;
+    }
+  }
+
+  .columna04:nth-child(1),
+  .columna04:nth-child(2) {
+    @media (max-width: $ipad) and (min-width: $movil-amplio) {
+      width: 48%;
+      margin: 0 1%;
+      float: left;
+      overflow: hidden !important;
+      display: inline-block !important;
+    }
+
+    .contactenos ul span {
+      color: $verde-lima;
+    }
+    @media (max-width: $movil-amplio02) and (min-width: $minimo) {
+      width: 98%;
+    }
+  }
+  .columna04:nth-child(3) {
+    .icono {
+      background-color: $azul-cienaga;
+    }
+    @media (max-width: $ipad) and (min-width: $movil-amplio) {
+      clear: both;
+      float: none;
+      display: block;
+      width: 98%;
+
+      section,
+      nav {
+        &:nth-child(2) {
+          margin: 0 1% 0 2%;
+        }
+      }
+    }
+  }
+}
+
+.safari {
+  footer {
+    p {
+      font-weight: 400;
+    }
+
+    ul {
+      li {
+        font-weight: 400;
+      }
+    }
+  }
+}

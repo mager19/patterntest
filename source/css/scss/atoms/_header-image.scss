@@ -1,0 +1,41 @@
+.header-top-img {
+    background-image: url(../images/textura-izq.png),  url(../images/textura-der.png);
+    background-color: #e1c6ed;
+    background-position: center left, center right;
+    background-repeat:  no-repeat   no-repeat;
+    background-size: contain;
+    display: flex;
+    display: -ms-flexbox;
+
+
+    .box-titulo-top{
+      display: flex;
+    
+
+    .titulo-top {
+      padding: 2% 0;
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1180px) and (min-width:$minimo ){
+      padding: 1% 0;
+      width: 100%;
+      }   
+    }
+
+    .imagen-titulo-top {
+      width: 50%;
+      display: flex;
+
+      img{
+        margin: 0 auto;
+      }
+
+        @media (max-width: 1180px) and (min-width:$minimo ){
+        display: none;
+        }  
+
+     }
+  }
+}     

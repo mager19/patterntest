@@ -1,0 +1,16 @@
+<div class="modulo-bases-datos {{# class }}{{class}}{{/ class }}{{^ class }}margen-modulo-grilla padding-minimo{{/ class}} "> 
+      <!--imagen destacada-->
+      <a href="#" target="_blank"><img class="aligncenter margin-none" src="../../images/{{# imagen }}{{imagen}}{{/ imagen }}{{^ imagen }}boton-subtitulo-01.png{{/ imagen}}" alt="" /></a>
+
+  <div class="columna12 informacion-db">
+
+        <!--Los campos que no se llenen quedarán con la clase hidden-->
+        <div class="titulo-db">
+        <h4 class="columna12 submodulo-db">{{# titulo }}{{titulo}}{{/ titulo }}{{^ titulo }}Título{{/ titulo}}</h4>
+      </div>
+        <div class="columna12 submodulo-db">
+          {{> atoms-line-button(icon-selector:"derecha", modifier-class:"boton-linea-2", text: "Ver servicio") }}
+        </div>
+   </div>
+    <div style="clear: both"></div>
+</div>

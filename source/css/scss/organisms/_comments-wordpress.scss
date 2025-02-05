@@ -1,0 +1,96 @@
+.comments-area{
+	background: $blanco-humo;
+	padding: 1rem;
+
+	hr{display: none}
+	
+	.comments-title{
+		color: $azul-carbon;
+		font-size: 1.8rem;
+    	line-height: 2rem;
+    	margin: 0 1rem 1rem;
+    	 @media (max-width:$small ) and (min-width:$minimo){
+    	   font-size: 1.5rem;
+    		line-height: 1.7rem;
+ 		}
+    }
+
+    .comment-list{
+    	padding-left: 30px;
+
+    	 @media (max-width:$small ) and (min-width:$minimo){
+    	padding-left: 10px;
+ 		}
+
+    	li{
+    		background: white;
+    		margin-bottom: 1rem;
+    		display: flex;
+    		padding: 0;
+
+
+      	&:before{
+    	text-align: center;
+        color: white;
+        background: $azul-carbon;
+        font-size: rem(16);
+    	left: 0px;
+    	top: 0px;
+    	width: 25px;
+    	height: 25px;
+    	padding: 0 5px;
+      		}
+      		ol	{
+
+      			li{ &:before{content: "➔";} }}
+      	
+
+      	.comment-body{ padding: 10px 1rem;
+		@media (max-width:$small ) and (min-width:$minimo){
+    	padding: 10px;
+ 		}
+      	}
+      	.comment-author{
+      		img{display: none}
+
+      		cite{font-weight: 700;}
+      		}
+      	.comment-meta{
+
+      		a{font-size: 1rem;}
+      	}
+      	.reply{
+      		.comment-reply-link{
+      			text-transform: uppercase;
+      		}
+      	}
+    	}
+    }
+
+    .comment-respond{
+
+    	.comment-form{
+
+    		input[type=date], input[type=email], input[type=text], select, textarea {background-color: white;}
+
+    		.comment-form-comment{ textarea {height: 10rem;}}
+    		
+
+    	.comment-form-author, .comment-form-email {
+    		width: 50%;
+    		padding: 0 10px;
+    		float: left;
+    		@media (max-width:$small ) and (min-width:$minimo){
+    		width: 100%;
+    		float: none;
+    		padding: 0;
+ 			}
+    	}
+    	.comment-form-cookies-consent{ display: inline-block; }
+
+    	}
+
+    }
+
+
+}

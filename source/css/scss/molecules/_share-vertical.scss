@@ -1,0 +1,94 @@
+.lateral-sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 130px 5px 0;
+
+  @media (max-width:$ipad){
+  position: initial;
+  padding: 10px 0;
+  }
+}
+
+.share-vertical{
+  color: $gris-600;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 1%;
+  width: fit-content;
+
+  @media (max-width:$ipad){
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
+    }
+
+    li {
+    padding: 0.5rem;
+
+    @media (max-width:$ipad){
+      display: inline;
+      border-bottom: none;
+      border-right: thin dotted $gris-600;
+      }  
+    }
+    
+    li:last-child {border-bottom: none;}
+
+    p{
+      font-size: 10px;
+      line-height: 1rem;
+      margin: 10px 5px;
+    }
+
+  .compartir-redes{
+     display: flex;
+    flex-direction: column;
+
+      @media (max-width:$ipad){
+       -ms-flex-direction: row;
+        flex-direction: row;
+        }
+
+    a {
+      color: $gris-600;
+      background-color: $gris-50;
+      display: inline-block;
+      font-size: rem(25);
+      line-height: 1;
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      margin: 5px;
+
+      &:hover{
+        color:  white;
+        
+      }
+      &.icon-facebook:hover{
+        background-color:  #3b5998;
+       
+      }
+      &.icon-twitter:hover{
+        background-color: #1da1f2;
+        
+      }
+      &.icon-google-plus:hover{
+        background-color: #c53929;
+        
+      }
+      &.icon-linkedin:hover{
+        background-color: #287bbc;
+      }
+      &.icon-tiktok:hover{
+        background-color: #F64E6A;
+      }
+     
+    }
+  }  
+
+}

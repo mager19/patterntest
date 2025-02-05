@@ -1,0 +1,19 @@
+.image-list{
+	padding: 1rem;
+	margin: 1rem 0;
+	box-sizing: border-box;
+	column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-gap: 20px;
+	column-gap: 20px;
+
+
+	 @media (max-width: $ipad  ) {
+	 	column-count: 2;
+	 }
+	 @media (max-width: $small  ) {
+	 	column-count: 1;
+	 }
+
+	 
+}

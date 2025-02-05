@@ -1,0 +1,543 @@
+<div class="faculty-administracion-de-empresas">
+  {{> organisms-secondary-header-menu(faculty-home:"Administración de Empresas") }}
+  <main>
+    <article class="image-destacada-lead" style="background-color: #FFF;">
+      <figure class="ajuste-imagen imagen-destacada" style="margin: 0;">
+        <img src="../../images/carrusel-home-05.png" alt="Noticia">
+      </figure>
+      <div class="contenedor-lead texto" style="border-top: 7px solid #197bbd; padding: 32px 45px; margin: -170px auto 0rem; background-color: #fff; position: relative; width: 90%;">
+        <!-- El border-top debe ser del color de cada facultad -->
+        <div class="title-top centrar" style="width: 75%; padding: 0rem; margin: 0;">
+          <h6>Inscripciones Abiertas</h6>
+          <h1>Especialización en Gerencia y Negocios Digitales</h1>
+          <div class="lead">
+            El contexto global, protagonizado por la era digital y el desarrollo de la sociedad del conocimiento, se ha fomentado una mayor competencia en el mercado.
+          </div>
+          <div class="info">
+            {{> atoms-data-item(icon:"pin-locacion", item:"Bogotá - presencial", text:" ") }} 
+            {{> atoms-data-item(icon:"reloj", item:"4 períodos", text:" ") }}
+            {{> atoms-data-item(icon:"calendario-02", item:"Inicio: 6 de febrero 2025", text:" ") }}
+          </div>
+          <div class="margin-xs">
+            {{> atoms-alert(text:"*Obtén 10% de descuento por pronto pago") }}
+          </div>
+        </div>
+      </div>
+    </article>
+    <div style="clear: both"></div>
+    <div class="menu-interno">
+        <div class="columnas-alto-fijo">
+          <div class="columna09" style="margin: 0;">
+            <div class="columna03" style="text-align: center;"><a class="boton-linea margin-xs" href="https://pattern-lab-externado-dev.web.app/?p=templates-program-3#presentacion"> Presentación</a></div>
+            <div class="columna03" style="text-align: center;"><a class="boton-linea margin-xs" href="https://pattern-lab-externado-dev.web.app/?p=templates-program-3#plan-de-estudios"> Plan de estudios</a></div>
+            <div class="columna03" style="text-align: center;"><a class="boton-linea margin-xs" href="https://pattern-lab-externado-dev.web.app/?p=templates-program-3#proceso-de-admision"> Proceso de admisión</a></div>
+            <div class="columna03" style="text-align: center;"><a class="boton-linea margin-xs" href="https://pattern-lab-externado-dev.web.app/?p=templates-program-3#profesores"> Profesores</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <!--En caso que algún ítem no tenga información se deshabilitará -->
+    <div class="centrar">
+      <div class="columna09 margin-l">
+        {{> atoms-data-item(modifier-class:"list", icon:"legal", item:"SNIES: ", text:"108901 - Resolución MEN: 015293 del 18 de diciembre de 2019. Vigencia: 7 años") }}
+
+        {{> atoms-iframe}}
+      </div>
+      <div class="columna03" style="position: fixed; top: 17%; z-index: 800; opacity: .98;">
+        <div class="columna12 blanco-humo padding-minimo border-radius-s" style="background: white; border: thin solid #ccc;">
+          <h5 class="texto-centrado">Solicite información personalizada</h5>
+          <!-- Form - SUMR CRM -->
+          <iframe id="SUMR-FM-b7855c5e6cb187a6efd70db8bba5654830e48af0" style="margin-bottom: -1rem; width: 100%;" frameborder="0" data-icon="ok" data-width="100%" data-g="ok"></iframe> <script async> (function(w,d,s,l){ var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src= 'https://js.sumr.co/mdl/uexternado/g/b7855c5e6cb187a6efd70db8bba5654830e48af0.js'; f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer'); </script>
+        </div>
+        <div class="columna12">
+          <a href="{{url}}" class="btn-icon-round"> 
+          <span style="background-color: #25CC64;"><svg class="icon icon-{{# icon-selector }}{{icon-selector}}{{/ icon-selector }}{{^ icon-selector }}whatsapp{{/ icon-selector}}"><use xlink:href="../../images/iconos.svg#icon-{{# icon-selector }}{{icon-selector}}{{/ icon-selector }}{{^ icon-selector }}whatsapp{{/ icon-selector}}"></use></svg></span>  
+          <p>{{^ text }}Contáctanos por WhatsApp{{/ text }} {{# text }}{{text}}{{/ text }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+      <div style="clear:both;"></div>
+      <section class="centrar-flex" style="display: flex; background-color: #f2f2f2;">
+        <div class="centrar margin-m">
+          <div class="columna09">
+            <div class="tabs-vertical">
+              <div class="info">
+                <div class="tabs" id="tab-font">
+                <a class="itemtag light-tab{{^ modifier-tab-class  }}{{/ modifier-tab-class }}{{# modifier-tab-class }}{{modifier-tab-class}}{{/ modifier-tab-class }} {{^ active }}{{/ active }} {{# active }}active-tab{{/ active }}" href="#" id="tab1" class="active-tab">{{^ text }} <h4 class="icon-mini"><span><svg class="icon icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }} {{/ icon1}}"><use xlink:href="../../images/iconos.svg#icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }}diploma{{/ icon1}}"></use></svg></span></h4>  Ut enim ad minim veniam {{/ text }} {{# text }}{{text}}{{/ text }} </a>
+
+                <a class="itemtag light-tab{{^ modifier-tab-class  }}{{/ modifier-tab-class }}{{# modifier-tab-class }}{{modifier-tab-class}}{{/ modifier-tab-class }} {{^ active }}{{/ active }} {{# active }}active-tab{{/ active }}" href="#" id="tab2">{{^ text }} <h4 class="icon-mini"><span><svg class="icon icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }} {{/ icon1}}"><use xlink:href="../../images/iconos.svg#icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }}checkbox{{/ icon1}}"></use></svg></span></h4>  Nemo enim ipsam voluptatem {{/ text }} {{# text }}{{text}}{{/ text }} </a>
+
+                <a class="itemtag light-tab{{^ modifier-tab-class  }}{{/ modifier-tab-class }}{{# modifier-tab-class }}{{modifier-tab-class}}{{/ modifier-tab-class }} {{^ active }}{{/ active }} {{# active }}active-tab{{/ active }}" href="#" id="tab3">{{^ text }} <h4 class="icon-mini"><span><svg class="icon icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }} {{/ icon1}}"><use xlink:href="../../images/iconos.svg#icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }}libros{{/ icon1}}"></use></svg></span></h4><span style="margin-right: 5px;"></span> Neque porro quisquam {{/ text }} {{# text }}{{text}}{{/ text }} </a>
+
+                <a class="itemtag light-tab{{^ modifier-tab-class  }}{{/ modifier-tab-class }}{{# modifier-tab-class }}{{modifier-tab-class}}{{/ modifier-tab-class }} {{^ active }}{{/ active }} {{# active }}active-tab{{/ active }}" href="#" id="tab4">{{^ text }} <h4 class="icon-mini"><span><svg class="icon icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }} {{/ icon1}}"><use xlink:href="../../images/iconos.svg#icon-{{# icon1 }}{{icon1}}{{/ icon1 }}{{^ icon1 }}medalla{{/ icon1}}"></use></svg></span></h4>  Consectetur adipiscing {{/ text }} {{# text }}{{text}}{{/ text }} </a>
+                </div>
+                <div class="links">
+                  {{> atoms-content-tab(text:"Ut enim ad minim veniam", id:"tab1", active:"true", content:"Contenido 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor metus, elementum in ante in, elementum mattis risus. Maecenas tristique sit amet turpis vel dapibus. Sed lobortis augue sapien, a pharetra eros cursus ac. Fusce sollicitudin leo ac maximus ultrices. Donec eget finibus orci. Vestibulum pretium orci eget elementum varius. Phasellus condimentum elit ac massa volutpat, id blandit risus vehicula. Quisque ac justo vitae leo aliquet feugiat. Curabitur luctus sem ac aliquam vestibulum.")}}
+
+                  {{> atoms-content-tab(text:"Nemo enim ipsam voluptatem", id:"tab2", content:"Contenido 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor metus, elementum in ante in, elementum mattis risus. Maecenas tristique sit amet turpis vel dapibus. Sed lobortis augue sapien, a pharetra eros cursus ac. Fusce sollicitudin leo ac maximus ultrices. Donec eget finibus orci. Vestibulum pretium orci eget elementum varius. Phasellus condimentum elit ac massa volutpat, id blandit risus vehicula. Quisque ac justo vitae leo aliquet feugiat. Curabitur luctus sem ac aliquam vestibulum.")}}
+
+                  {{> atoms-content-tab(text:"Neque porro quisquam est", id:"tab3", content:"Contenido 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor metus, elementum in ante in, elementum mattis risus. Maecenas tristique sit amet turpis vel dapibus. Sed lobortis augue sapien, a pharetra eros cursus ac. Fusce sollicitudin leo ac maximus ultrices. Donec eget finibus orci. Vestibulum pretium orci eget elementum varius. Phasellus condimentum elit ac massa volutpat, id blandit risus vehicula. Quisque ac justo vitae leo aliquet feugiat. Curabitur luctus sem ac aliquam vestibulum.")}}
+
+                  {{> atoms-content-tab(text:"Consectetur adipiscing elit", id:"tab4", content:"Contenido 4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor metus, elementum in ante in, elementum mattis risus. Maecenas tristique sit amet turpis vel dapibus. Sed lobortis augue sapien, a pharetra eros cursus ac. Fusce sollicitudin leo ac maximus ultrices. Donec eget finibus orci. Vestibulum pretium orci eget elementum varius. Phasellus condimentum elit ac massa volutpat, id blandit risus vehicula. Quisque ac justo vitae leo aliquet feugiat. Curabitur luctus sem ac aliquam vestibulum.")}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div style="clear:both;"></div>
+      <div class="centrar">
+        <div class="columna09">
+          <h2 id="presentacion" class="subrayado-der margin-m" style="color: #32464d">Presentación</h2>
+          <figure class="wp-caption alignright"><img src="../../images/carrusel-home-01.png" width="400"></figure>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="columna09">
+          {{> atoms-blockquote }}
+        </div>
+        <div style="clear:both;"></div>
+        <hr/>
+        <div class="columna09">
+          <h2 id="plan-de-estudios" class="subrayado-der margin-s" style="color: #32464d">Plan de estudios</h2>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+
+          <h4 style="margin: 2rem 0;">Créditos</h4>
+          <div class="columnas-alto-fijo centrar-flex" style="margin-bottom: 3rem;">
+            <div class="columna03 card" style="border-bottom: 7px solid #197bbd; position: relative; padding: 1rem; text-align: center; background-color: #fff; text-decoration: none; color: inherit; border-radius: 4px; box-shadow: 0 0 8px rgba(136, 136, 136, .18);">
+              <article class="info">
+                <label for="file"><b>Electiva I:</b></label>
+                <div class="progress" style="height: 25px; width: 30%; border-radius: 15px; background-color: #e6f3fa; margin-bottom: 15px; margin-top: 1rem; text-align: center;">
+                  <div class="progress-bar" style="height: 100%; background: #78b92f; display: flex; align-items: center; transition: width 0.25s; border-radius: 15px;" role="progressbar" max="100" value="20">
+                    <p style="margin: 10px; font-weight: bold; color: #FFF; font-size: 1rem;">20%</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="columna03 card" style="border-bottom: 7px solid #197bbd; position: relative; padding: 1rem; text-align: center; background-color: #fff; text-decoration: none; color: inherit; border-radius: 4px; box-shadow: 0 0 8px rgba(136, 136, 136, .18);">
+              <article class="info">
+                <label for="file"><b>Electiva II:</b></label>
+                <div class="progress" style="height: 25px; width: 45%; border-radius: 15px; background-color: #e6f3fa; margin-bottom: 15px; margin-top: 1rem; text-align: center;">
+                  <div class="progress-bar" style="height: 100%; background: #0b6f74; display: flex; align-items: center; transition: width 0.25s; border-radius: 15px;" role="progressbar" max="100" value="30">
+                    <p style="margin: 10px; font-weight: bold; color: #FFF; font-size: 1rem;">40%</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="columna03 card" style="border-bottom: 7px solid #197bbd; position: relative; padding: 1rem; text-align: center; background-color: #fff; text-decoration: none; color: inherit; border-radius: 4px; box-shadow: 0 0 8px rgba(136, 136, 136, .18);">
+              <article class="info">
+                <label for="file"><b>Electiva III:</b></label>
+                <div class="progress" style="height: 25px; width: 30%; border-radius: 15px; background-color: #e6f3fa; margin-bottom: 15px; margin-top: 1rem; text-align: center;">
+                  <div class="progress-bar" style="height: 100%; background: #C2443E; display: flex; align-items: center; transition: width 0.25s; border-radius: 15px;" role="progressbar" max="100" value="50">
+                    <p style="margin: 10px; font-weight: bold; color: #FFF; font-size: 1rem;">20%</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="columna03 card" style="border-bottom: 7px solid #197bbd; position: relative; padding: 1rem; text-align: center; background-color: #fff; text-decoration: none; color: inherit; border-radius: 4px; box-shadow: 0 0 8px rgba(136, 136, 136, .18);">
+              <article class="info">
+                <label for="file"><b>Electiva IV:</b></label>
+                <div class="progress" style="height: 25px; width: 30%; border-radius: 15px; background-color: #e6f3fa; margin-bottom: 15px; margin-top: 1rem; text-align: center;">
+                  <div class="progress-bar" style="height: 100%; background: #A32E80; display: flex; align-items: center; transition: width 0.25s; border-radius: 15px;" role="progressbar" max="100" value="10">
+                    <p style="margin: 10px; font-weight: bold; color: #FFF; font-size: 1rem;">20%</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="modulo-acordeon-content accordion-content-icons">
+            <div id="acordeon-content" role="tablist" aria-multiselectable="true">
+              <!-- 00-->
+              <div class="panel">
+                <div role="tab" id="titulo-cero">
+                  <div class="titulo-acordeon">
+                    <a role="button" data-toggle="collapse" data-parent="#acordeon-content" href="#item01" aria-expanded="true" aria-controls="item01">
+                      <h4> 
+                         {{# tit1 }}{{tit1}}{{/ tit1 }}{{^ tit1 }}Primer Semestre{{/ tit1}} </h4>
+                      <span class="flecha">
+                        <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div id="item01" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cero">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  
+                  {{> atoms-iframe }}
+                 
+                  <ul class="margin-m">
+                    <li>Revista digital de derecho Administrativo digital de derecho Administrativo</li>
+                    <li>Grupo de investigación</li>
+                    <li>Líneas de investigación</li>
+                    <li>Revista digital de derecho Administrativo</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /00-->
+              <!-- 01-->
+              <div class="panel">
+                <div role="tab" id="titulo-uno">
+                  <div class="titulo-acordeon">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-content" href="#item02" aria-expanded="true" aria-controls="item02">
+                      <h4> 
+                        {{# tit2 }}{{tit2}}{{/ tit2 }}{{^ tit2 }}Segundo Semestre{{/ tit2}} </h4>
+                      <span class="flecha">
+                        <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div id="item02" class="info collapse" role="tabpanel" aria-labelledby="titulo-uno">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <!-- /01-->
+              <!-- 02-->
+              <div class="panel">
+                <div role="tab" id="titulo-dos">
+                  <div class="titulo-acordeon">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-content" href="#item03" aria-expanded="false" aria-controls="item03">
+                      <h4> 
+                        {{# tit3 }}{{tit3}}{{/ tit3 }}{{^ tit3 }}Tercer Semestre{{/ tit3}}</h4>
+                      <span class="flecha">
+                        <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div id="item03" class="info collapse" role="tabpanel" aria-labelledby="titulo-dos">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <ul>
+                    <li><a href="#">Programa del evento</a></li>
+                    <li><a href="#">Ponentes</a></li>
+                    <li><a href="#">Formularios de inscripción</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /02-->
+              <!-- 03-->
+              <div class="panel">
+                <div role="tab" id="titulo-tres">
+                  <div class="titulo-acordeon">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-content" href="#item04" aria-expanded="false" aria-controls="item04">
+                      <h4>
+                        {{# tit4 }}{{tit4}}{{/ tit4 }}{{^ tit4 }}Cuarto Semestre{{/ tit4}}</h4>
+                      <span class="flecha">
+                        <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div id="item04" class="info collapse" role="tabpanel" aria-labelledby="titulo-tres">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/KkPpOdf8DG4?list=PLLdYhVJsMEXICXD9BpVVPEJkI7oDnLBOF" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <!-- /03-->
+              <!-- 04-->
+              <div class="panel">
+                <div role="tab" id="titulo-cuatro">
+                  <div class="titulo-acordeon">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-content" href="#item05" aria-expanded="false" aria-controls="item05">
+                      <h4>
+                        {{# tit5 }}{{tit1}}{{/ tit5 }}{{^ tit5 }}Quinto Semestre{{/ tit5}}</h4>
+                      <span class="flecha">
+                        <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div id="item05" class="info collapse" role="tabpanel" aria-labelledby="titulo-cuatro">
+                  <div class="galleria">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- /04-->
+              <!-- 05-->
+              <div class="panel">
+                <div role="tab" id="titulo-cinco">
+                  <div class="titulo-acordeon">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-content" href="#item06" aria-expanded="false" aria-controls="item06">
+                      <h4> 
+                        {{# tit6 }}{{tit6}}{{/ tit6 }}{{^ tit6 }}Sexto Semestre{{/ tit6}}</h4>
+                      <span class="flecha">
+                        <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div id="item06" class="info collapse" role="tabpanel" aria-labelledby="titulo-cinco">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+              <!-- /05-->
+            </div>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="columna09">
+          <h2 id="proceso-de-admision" class="subrayado-der margin-m" style="color: #32464d">Proceso de admisión</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p> 
+
+          <div class="carrusel-interno-3columnas" style="width: 92%; margin-left: 2rem;">
+            <article class="event-card event-list-module defecto {{^ class-faculty }}defecto{{/ class-faculty }}{{# class-faculty }}{{class-faculty}}{{/ class-faculty }}" style="background-color: #f2f2f2; border: thin solid #FFF;">
+              <div class="fecha-evento">
+                <div class="fondo">
+                <span>Paso 1</span>
+                </div>
+              </div>
+              <section class="administracion">
+                <div class="modulo-relacionado">
+                  <a href="#" aria-label="Ver noticia">
+                    <!--Esta imagen debe ser de 500 x 305px-->
+                    <div class="zoom-imagen-modulo" style="background: black;">
+                    <img src="../../images/carrusel-home-01.png" alt="Noticia Relacionada" />
+                  </a></div>
+                  <div class="info">
+                    <h5 class=""><a href="#">Inscripción</a></h5>
+                  </div>
+              </section>
+            </article>
+            <article class="event-card event-list-module defecto {{^ class-faculty }}defecto{{/ class-faculty }}{{# class-faculty }}{{class-faculty}}{{/ class-faculty }}" style="background-color: #f2f2f2; border: thin solid #FFF;">
+              <div class="fecha-evento">
+                <div class="fondo">
+                <span>Paso 2</span>
+                </div>
+              </div>
+              <section class="administracion">
+                <div class="modulo-relacionado">
+                  <a href="#" aria-label="Ver noticia">
+                    <!--Esta imagen debe ser de 500 x 305px-->
+                    <div class="zoom-imagen-modulo" style="background: black;">
+                    <img src="../../images/carrusel-home-01.png" alt="Noticia Relacionada" />
+                  </a></div>
+                  <div class="info">
+                    <h5 class=""><a href="#">Formulario</a></h5>
+                  </div>
+              </section>
+            </article>
+            <article class="event-card event-list-module defecto {{^ class-faculty }}defecto{{/ class-faculty }}{{# class-faculty }}{{class-faculty}}{{/ class-faculty }}" style="background-color: #f2f2f2; border: thin solid #FFF;">
+              <div class="fecha-evento">
+                <div class="fondo">
+                <span>Paso 3</span>
+                </div>
+              </div>
+              <section class="administracion">
+                <div class="modulo-relacionado">
+                  <a href="#" aria-label="Ver noticia">
+                    <!--Esta imagen debe ser de 500 x 305px-->
+                    <div class="zoom-imagen-modulo" style="background: black;">
+                    <img src="../../images/carrusel-home-01.png" alt="Noticia Relacionada" />
+                  </a></div>
+                  <div class="info">
+                    <h5 class=""><a href="#">Admisión</a></h5>
+                  </div>
+              </section>
+            </article>
+            <article class="event-card event-list-module defecto {{^ class-faculty }}defecto{{/ class-faculty }}{{# class-faculty }}{{class-faculty}}{{/ class-faculty }}" style="background-color: #f2f2f2; border: thin solid #FFF;">
+                <div class="fecha-evento">
+                  <div class="fondo">
+                  <span>Paso 4</span>
+                  </div>
+                </div>
+                <section class="administracion">
+                  <div class="modulo-relacionado">
+                    <a href="#" aria-label="Ver noticia">
+                      <!--Esta imagen debe ser de 500 x 305px-->
+                      <div class="zoom-imagen-modulo" style="background: black;">
+                      <img src="../../images/carrusel-home-01.png" alt="Noticia Relacionada" />
+                    </a></div>
+                    <div class="info">
+                      <h5 class=""><a href="#">Matrícula</a></h5>
+                    </div>
+                </section>
+              </article>
+              <article class="event-card event-list-module defecto {{^ class-faculty }}defecto{{/ class-faculty }}{{# class-faculty }}{{class-faculty}}{{/ class-faculty }}" style="background-color: #f2f2f2; border: thin solid #FFF;">
+                <div class="fecha-evento">
+                  <div class="fondo">
+                  <span>Paso 5</span>
+                  </div>
+                </div>
+                <section class="administracion">
+                  <div class="modulo-relacionado">
+                    <a href="#" aria-label="Ver noticia">
+                      <!--Esta imagen debe ser de 500 x 305px-->
+                      <div class="zoom-imagen-modulo" style="background: black;">
+                      <img src="../../images/carrusel-home-01.png" alt="Noticia Relacionada" />
+                    </a></div>
+                    <div class="info">
+                      <h5 class=""><a href="#">Entrevista</a></h5>
+                    </div>
+                </section>
+              </article>
+          </div>
+        </div>
+        <div class="columna09" style="margin: 2rem 0">
+          <h2 id="profesores" class="subrayado-der margin-s" style="color: #32464d">Profesores</h2>
+          <div class="grilla-4-portal" style="margin: 2rem 0;">
+                 
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+             {{> molecules-profile-module-team-2 }}
+
+          </div>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+      <div class="centrar-flex" style="display: flex; background-color: #f2f2f2; margin-bottom: -3rem;">
+         <div class="centrar margin-m" style="width: 100%">
+            <div class="columna08">
+              <aside class="fondo-completo" style="padding-top: 1rem;">
+                <div class="centrar">
+                  <h4 class="h3">{{^ text }}Programas Relacionados{{/ text }} {{# text }}{{text}}{{/ text }}</h4>
+                </div>
+                <div class="grilla-portal-2columnas">
+                  <!--Máximo 4 noticias relacionadas -->
+                  {{> molecules-related-module }}
+                  {{> molecules-related-module }}
+                </div>
+                {{^ button }}{{/ button }}
+                {{# button }}
+                <div class="centrar texto-centrado">
+                   {{> atoms-button(text:"ver todas")}}
+                </div>
+                <div class="centrar">
+                  <hr>
+                </div>
+                {{/ button }}
+              </aside>
+            </div>
+          </div>
+        </div>
+      <div style="clear:both;"></div>
+    </main>
+    {{> organisms-faculty-info }}
+</div>
+
+{{> organisms-footer }}
+
+
+<style>
+
+  @media (max-width: 768px) and (min-width: 50px) {
+    .padding-minimo, .padding_minimo {
+        display: block;
+        height: 113px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin: 39rem 0px;
+    }
+  }
+
+  @media (max-width: 768px) and (min-width: 50px) {
+    .btn-icon-round {
+        padding: 10px;
+        display: none !important;
+    }
+  }
+
+  @media (max-width: 3000px) and (min-width: 768px) {
+    .imagen-destacada {
+        margin: 0px 0 0 0;
+    }
+  }
+
+  .tabs-vertical .info .links .section {
+    background-color: #fff;
+  }
+
+  .menu-interno{  
+    padding: 2rem;
+    margin: 0rem auto 0rem;
+    background-color: #f9f5f1;
+    position: relative;
+    width: 90%;
+  }
+
+  .btn-icon-round p {
+    font-size: 1rem;
+  }
+
+  .SUMR_Form .__fm ._btn_snd button {
+    padding: 5px 5px;
+    border-radius: 5px;
+    width: 45%;
+  }
+
+  @media (max-width: 1200px) and (min-width: 50px) {
+    .contenedor-lead {
+      padding: 40px 40px;
+    }
+  }
+
+  @media (max-width: 3000px) and (min-width: 768px) {
+    .columna04 {
+        width: 31.33%;
+        margin: 0 1%;
+        min-height: 1px;
+        top: 17% !important;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 50px) {
+    .centrar {
+        padding: 0 2%;
+        width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    .section .title {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        text-transform: capitalize;
+        margin: 1rem 0;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 50px) {
+    .menu-interno {
+        padding: 1rem;
+        margin-bottom: 0rem;
+    }
+  }
+
+  .boton-linea {
+    font-size: 1rem;
+    letter-spacing: .0125rem;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px;
+    color: #666;
+    cursor: pointer;
+    background-color: transparent;
+    border: #666 2px solid;
+    transition: color ease-in-out .3s, border-color ease-in-out .3s;
+    text-transform: none;
+    font-weight: 600;
+    width: 96%;
+  }
+  
+  .tabs-vertical .info .tabs {
+    width: 35%;
+  }
+
+  .icon-mini{
+    margin: 0px 10px 0px 0 !important;
+  }
+
+</style>

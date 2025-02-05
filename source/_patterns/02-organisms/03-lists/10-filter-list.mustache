@@ -1,0 +1,14 @@
+<div class="filtro-tarjetas">
+  <div id="myBtnContainer" class="grilla-portal-5cols botones-destacados ">
+    <button class="mini-boton btn active" onclick="filterSelection('all')"> Todos </button><button class="mini-boton btn" onclick="filterSelection('regular')"> Cursos Regulares </button><button class="mini-boton btn" onclick="filterSelection('particular')"> Cursos para particulares y egresados </button><button class="mini-boton btn" onclick="filterSelection('derecho')">Para Estudiantes de Derecho  </button><button class="mini-boton btn" onclick="filterSelection('egresados')">Para Egresados Asociación Antiguos Alumnos    </button>
+    </div>
+
+<div class="grilla-portal container">
+  {{> molecules-related-module-2(modifier-class:"regular  filterDiv show", title:"Programa 1 -regular") }}
+  {{> molecules-related-module-2(modifier-class:"particular  filterDiv show", title:"Programa 2 - particular") }}
+  {{> molecules-related-module-2(modifier-class:"regular derecho  filterDiv show", title:"Programa 3 - regular y derecho") }}
+  {{> molecules-related-module-2(modifier-class:"egresados  filterDiv show", title:"Programa 4 - egresados") }}
+  {{> molecules-related-module-2(modifier-class:"regular particular  filterDiv show", title:"Programa 5 -regular y particular") }}
+  {{> molecules-related-module-2(modifier-class:"regular  filterDiv show", title:"Programa 6 -regular") }}
+  
+</div>

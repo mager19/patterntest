@@ -1,0 +1,60 @@
+/*Ajustes para color top  Escuela de Relaciones Internacionales*/
+
+.faculty-escuela-de-relaciones-internacionales {
+
+	.news-resume {
+    margin-top: 10px;
+    padding-top: 0px;
+    border-top: none;   
+	}
+
+	.modulo-relacionado {
+    border: none;
+    text-align: left;
+    margin: 15px 5px;
+
+    .info .tags {
+    justify-content: left;
+    	}
+
+   .info {
+    padding: 15px 0;
+		}
+	}
+
+	.informacion-facultad{
+		margin: 0;
+	}
+
+	.titulo-tema{
+		.boton-facultad {
+			width: 100%;
+			text-transform: none;
+		}
+	}
+	.contenedor-tema{
+		border: 1px solid $blanco-humo;
+		margin-bottom: 2rem;
+		padding: 0 10px;
+	}
+
+	.profile-preview-cm{
+		.modulo-relacionado {
+			border-top: solid 5px $finanzas;
+			background-color: $blanco-humo;
+    		margin: 15px 10px;
+    		text-align: center;
+
+    	.info .tags {
+    		justify-content: center;
+    		}
+    	img	{
+    		padding: 10px;
+    	}
+
+   		.info {
+    		padding: 0 15px 15px;
+			}
+		}
+	}
+}

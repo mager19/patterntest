@@ -1,0 +1,158 @@
+.contenido{
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+    margin:30px 0;
+    border-bottom:3px solid $gris-mina;
+    font-size: rem(16);
+    line-height: 1.5;
+
+    thead {
+      background-color: $azul-carbon;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    tr{
+      border:none;
+      min-height:40px;
+
+      &:nth-child(2n+2){
+        background-color: $blanco-humo;
+      }
+    }
+
+    td{
+      padding: 5px;
+      border-left: thin solid $gris-hierro;
+      border-right: thin solid $gris-hierro;
+      vertical-align: top;
+
+      &:first-child{
+        border-left: none;
+      }
+      &:last-child{
+        border-right: none;
+      }
+
+      ul, ol{
+        padding: 0 5px 0 30px;
+        margin: 5px 0;
+      }
+
+      li{
+        font-size: rem(16);
+        line-height: 1.4em;
+        padding: 3px 0;
+        &:before{
+          top: 6px;
+        }
+      }
+      p, a{
+        font-size: rem(16);
+        line-height: 1.4em;
+        margin: 3px 0 5px 0;
+      }
+    }
+
+    th{
+      border-right: thin solid white;
+      padding: 0 5px;
+      height: 45px;
+    }
+
+    @media (max-width:920px) and (min-width:$ipad){
+      border-top: 5px solid $azul-carbon;
+      border-bottom: 5px solid $azul-carbon;
+      /* Se esconden los titulos, pero no con display:none; por accesibilidad */
+      thead{
+        tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        border: 1px solid #ccc;
+        }
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid $gris-hierro;
+        position: relative;
+        min-height: 45px;
+        padding: 10px 10px 10px 40%;
+        width: 100%;
+        height: auto;
+
+        &:before {
+          /* Ahora son los header de las tablas */
+          position: absolute;
+          top:0;
+          left: 6px;
+          width: 35%;
+          content: attr(data-table-header);
+          font-weight: 700;
+          padding: 10px 10px 10px 0;
+        }
+      }
+    }
+
+    @media (max-width:580px) and (min-width:$minimo){
+      border-top: 5px solid $azul-carbon;
+      border-bottom: 5px solid $azul-carbon;
+      /* Se esconden los titulos, pero no con display:none; por accesibilidad */
+      thead{
+        tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        border: 1px solid #ccc;
+        }
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid $gris-hierro;
+        position: relative;
+        min-height: 45px;
+        padding: 10px 10px 10px 40%;
+        width: 100%;
+
+        &:before {
+          /* Ahora son los header de las tablas */
+          position: absolute;
+          top:0;
+          left: 6px;
+          width: 35%;
+          content: attr(data-table-header);
+          font-weight: 700;
+          padding: 5px 10px 5px 0;
+    line-height: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width:920px) and (min-width:$ipad){
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  }
+  @media (max-width:580px) and (min-width:$minimo){
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  }
+}

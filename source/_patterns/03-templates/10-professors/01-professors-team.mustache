@@ -1,0 +1,66 @@
+{{> organisms-header }}
+
+<div class="faculty-la-universidad">
+  {{> organisms-secondary-header-menu(faculty-home:"La Universidad") }}
+<div class="contenedor">
+  <div class="centrar overflow">
+    <main>
+      <div class="centrar">
+        <h3 class="texto-centrado margen-titulo">Directorio de profesores</h3>
+        <div class="columna12">{{> organisms-filter-horizontal-faculties-repository }} </div>
+      </div>
+    </div>
+    <div class="centrar">
+      <div class="columnas-alto-fijo">
+        <div class="columna09 columnas-alto-fijo centrar-horizontalmente nodule-tags margen-sencillo padding-minimo">
+  
+          <div class="tags">
+            <!--Aquí se carga la palabra clave, la categoría o tipo de servicio-->
+                <ul>
+                  <li><a href="#">Derecho </a></li>
+                  <li><a href="#">Maestría en Regulación Económica</a></li>
+                </ul>
+              </div>
+          </div>
+        <div class="columna03 columnas-alto-fijo centrar-horizontalmente">
+            <form class="columna12">
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Ordenar por</option>
+                        <option value="orden-alfabetico">Ordenar (A - Z)</option>
+                        <option value="Recientes">Ordenar (Z - A)</option>
+                      </select>
+                    </label>
+                  </form>
+  
+        </div>
+      </div>
+      <div class="columna12 contenido pagina-completa">
+      <!--Estas son las categorías, que pueden ser creadas desde Wordpress-->
+
+        <div class="grilla-portal">
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+          {{> molecules-profile-module(nombre:"Nombre apellido", cargo:"Docente-investigador",  lead-perfil:" ") }}
+
+
+        </div>
+        {{> molecules-pagination}}
+      </div>
+    </main>
+  </div>
+  </div>
+
+  {{> organisms-faculty-info(title-footer:"La Universidad") }}
+</div>
+
+{{> organisms-footer }}

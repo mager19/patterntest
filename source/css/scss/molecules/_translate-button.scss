@@ -1,0 +1,43 @@
+.translate-button-container {
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+
+  &.opened #google_translate_element {
+    display: block;
+  }
+
+  .magnetic {
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: rem(12px);
+
+    span .icon {
+      height: rem(20px);
+      width: rem(20px);
+    }
+  }
+
+  #google_translate_element {
+    display: none;
+    left: rem(50px);
+    position: relative;
+    top: rem(-56px);
+
+    .skiptranslate {
+      font-size: 0;
+
+      select {
+        padding-right: rem(10px);
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+
+{{# nombre }}
+  <a href="#" class="logo-blog">
+    <h3>
+      {{# nombre }}
+        {{ nombre }}
+      {{/ nombre}}
+      {{^ nombre }}
+        Blog de la Universidad
+      {{/ nombre}}
+    </h3>
+    {{# slogan }}
+      <p class="slogan">
+          {{ slogan }}
+      </p>
+    {{/ slogan}}
+  </a>
+{{/ nombre }}
+
+{{# logo }}
+  <a href="#" class="logo-blog">
+    <img src="{{logo}}" alt="Blog Externado">
+  </a>
+{{/ logo }}

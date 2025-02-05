@@ -1,0 +1,23 @@
+.faculty-derecho-a-la-carta{
+	
+	.carrusel-relacionadas{border-top: none;}
+
+	.lista-blogs{ 
+		margin: 0px 0px 40px;
+		.modulo-blog {
+			width: 100%;
+			img{border-color: $gris-hierro;}
+		}
+	}
+
+	.boton-icono{margin-bottom: 20px;}
+
+	.modulo-blog .info {
+	    padding-top: 30px;
+	}
+
+	.contenido{
+		.modulo-bases-datos{margin: 0 0 20px 0;}
+	}
+
+}

@@ -1,0 +1,21 @@
+<h2 class="{{# tit-class }}{{tit-class}}{{/ tit-class }}"> {{^ text }}Eventos de nuestra facultad{{/ text }} {{# text }}{{text}}{{/ text }}</h2>
+  <div class="carrusel-relacionadas {{# mode-class }}{{mode-class}}{{/ mode-class }}">
+    <!--Máxiumo 4 noticias relacionadas-->
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica") }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+    {{> molecules-event-module-slider-image(faculty-class:"contaduria-publica")  }}
+  </div>
+  {{^ button }}{{/ button }}
+  {{# button }}
+  <div class="centrar texto-centrado">
+     {{> atoms-button(text:"Ver más eventos")}}
+  </div>
+  <div class="centrar">
+    <hr>
+  </div>
+  {{/ button }}

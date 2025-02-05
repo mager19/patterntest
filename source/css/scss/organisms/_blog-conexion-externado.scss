@@ -1,0 +1,198 @@
+.faculty-conexion {
+
+    .logo-blog {
+        width: auto;
+        padding-bottom: 0;
+    }
+
+  .fondo-oscuro,
+  .menu-blogs 
+  .secondary-header-menu  {
+    background: #000
+  }
+
+  .secondary-header-menu {
+        padding: 2rem;
+      }
+
+  .secondary-header-menu
+  .info-secondary-header
+  .texto-lateral {
+  color: white;
+  }
+
+  .secondary-header-menu
+  .info-secondary-header
+  .redes-sociales
+  .icono {
+  background-color: transparent;
+  color: white;
+  margin: 0;
+  }
+
+
+.modulo-relacionado {
+    background-color: #fff; 
+    margin: 0; 
+    border: none; 
+    text-align: initial;
+
+        div.h6 {
+        padding: 0.5rem 1rem; 
+        margin: 0;
+
+        a  {
+            color: #000;
+        }
+
+        img {
+            margin: 0;
+        }
+
+        .info {
+            padding: 0rem 0px 0.3rem 1rem;
+        }
+    }
+}
+
+  .modulo-relacionado
+      .info
+      .h4 {
+          text-align: left;
+          font-size: 2rem;
+          color: #1a1a1a;
+      }
+
+  .modulo-relacionado-secundario {
+
+      margin: 0 0 20px 0;
+      
+      h5 {
+          font-size: 1.2rem; 
+          line-height: normal;   
+      }
+      h4  {
+          margin: 0;
+              a  {
+                  color: #7DC3C6;
+              }
+      } 
+      p   {
+          font-size: 1rem; 
+          font-weight: 400; 
+          line-height: normal; 
+          margin: 8px 0 8px 0;
+      }
+      img {
+          margin: 0;
+      }
+
+  }
+
+  .texto-vertical {
+      writing-mode: vertical-lr; 
+      transform: rotate(180deg); 
+      color: white; 
+      padding-right: 1rem; 
+      letter-spacing: .2rem;
+  }    
+
+  .circle-icon-button {
+      height: auto;
+      span.icon {
+              color: #000; 
+              background-color: #e1f9d2;
+      }
+      p   {
+          font-size: 1.1rem; 
+          color: #FFF; 
+          line-height: normal;
+      }
+  }
+
+  .tipo-usuario li a {
+      padding: 0 15px 0 0px;
+  }
+  
+.modulo-relacionado time.fecha {
+    margin-top: -2rem; 
+    position: absolute; 
+    padding-left: 1rem; 
+    font-weight: 600; 
+    color: white; font-size: 1rem;
+}
+
+.modulo-relacionado-secundario {
+    time.fecha {
+            color: #F29251;
+            text-transform: uppercase;
+    }
+}
+
+.menu-interior-header {
+    li  {
+        font-size: 1rem; 
+        padding: 8px 20px 8px 3px; 
+        margin-left: 15px; 
+        color: white;
+        border-right: 1px solid #9AD25B;
+        background-color: transparent;
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    li:last-child, a {
+        border-right: none;
+    }
+}
+
+    @media (max-width: 780px) and (min-width: 50px) {
+        .secondary-header-menu { 
+            padding: 2rem 0 0;
+            .columnas-alto-fijo{ 
+                width: 100%;
+            }
+            .menu-secundario{ 
+                display: block;
+            }
+            .logo-blog {
+                padding: 2.5rem 0;
+            }
+        }
+    .encabezado-desktop,
+    .menu-superior-simple {
+      display: none;
+      visibility: hidden;
+    }
+
+    .encabezado-mobile {
+      display: block;
+      visibility: visible;
+    }
+  }
+
+
+
+  @media (max-width: 3000px) and (min-width: 785px) {
+    .secondary-header-menu { 
+        .columnas-alto-fijo{
+            justify-content: space-around;
+        }
+        .menu-secundario{ 
+            display: none;
+        }
+    }
+    .encabezado-desktop,
+    .menu-superior-simple {
+        display: flex;
+        align-items: center;
+        top: auto;
+        transform: none;
+    }
+    .encabezado-mobile {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+}

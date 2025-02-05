@@ -1,0 +1,127 @@
+/**
+ * This stylesheet is for styles you want to include only when displaying demo
+ * styles for grids, animations, color swatches, etc.
+ * These styles will not be your production CSS.
+ */
+#sg-patterns {
+  box-sizing : border-box !important;
+  max-width  : 100%;
+  padding    : 0 0.5em;
+}
+
+.demo-animate {
+  background    : #ddd;
+  padding       : 1em;
+  margin-bottom : 1em;
+  text-align    : center;
+  border-radius : 8px;
+  cursor        : pointer;
+}
+
+.sg-colors {
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : center;
+  list-style      : none !important;
+  margin          : 0 auto !important;
+  max-width       : 50rem;
+  padding         : 0 !important;
+}
+.sg-colors li {
+  border        : 1px solid #ddd;
+  border-radius : 8px;
+  flex          : auto;
+  margin        : 0 0.5rem 0.5rem 0;
+  padding       : 0.3rem;
+  width         : 8rem;
+}
+.sg-colors .swatch {
+  height: 7rem;
+}
+.sg-colors .name {
+  display        : block;
+  font-size      : 0.75rem;
+  font-weight    : bold;
+  margin         : 0.25rem 0 0;
+  text-align     : center;
+  text-transform : uppercase;
+}
+.sg-colors .variable {
+  display     : block;
+  font-family : monospace;
+  font-size   : 1rem;
+  text-align: center;
+}
+.sg-colors .hex {
+  display     : block;
+  font-family : monospace;
+  font-size   : 0.75rem;
+  text-align  : center;
+}
+
+.sg-fonts {
+  margin          : 0 auto !important;
+  max-width       : 20rem;
+  padding         : 0 !important;
+}
+.sg-fonts li {
+  list-style : none;
+  margin     : 0 0.5rem 0.5rem 0;
+  padding    : 0.3rem;
+}
+.sg-fonts .sg-font {
+  display    : block;
+  font-size  : 2rem;
+  text-align : center;
+}
+.sg-fonts .name {
+  display        : block;
+  font-size      : 0.75rem;
+  font-weight    : bold;
+  margin         : 0.25rem 0 0;
+  text-transform : uppercase;
+  text-align     : center;
+}
+.sg-fonts .variable {
+  display     : block;
+  font-family : monospace;
+  font-size   : 1rem;
+  text-align  : center;
+}
+
+.sg-text {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.sg-headings {
+  text-align: center;
+}
+
+.sg-icons{
+  display         : flex;
+  flex-wrap       : wrap;
+  justify-content : center;
+  list-style      : none !important;
+  margin          : 0 auto !important;
+  max-width       : 50rem;
+  padding         : 0 !important;}
+
+.sg-icons li{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: wrap;
+  text-align: center;
+  margin        : 0 0.5rem 0.5rem 0;
+  padding       : 0.3rem;
+  width         : 6rem;
+}
+
+.sg-icons span{
+  font-size: .85rem
+}
+
+.sg-icons svg{
+  width: 70%;
+  height: 80px;
+  color: #31464D;
+}

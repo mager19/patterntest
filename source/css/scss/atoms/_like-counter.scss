@@ -1,0 +1,13 @@
+.touch-like{
+	display: flex;
+	color: $gris-acero;
+	text-transform: uppercase;
+
+	.icon-touch-like{
+		display: inline;
+		margin-right: 5px;
+		vertical-align: text-bottom;
+		&:active, &:hover {color: $rojo-carmin;
+		}
+	}
+}

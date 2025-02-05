@@ -1,0 +1,39 @@
+{{# facultad }}
+  {{> organisms-header-top-blogs(facultad:"{{facultad}}") }}
+{{/ facultad }}
+
+{{^ facultad }}
+  {{> organisms-header-top-blogs }}
+{{/ facultad }}
+
+{{^ header_inner_menu}}
+<div class="menu-blogs">
+  {{# logo }}
+    {{> organisms-header-menu-blogs(logo:"{{logo}}") }}
+  {{/ logo }}
+  {{# nombre }}
+    {{> organisms-header-menu-blogs(nombre:"{{{nombre}}}", slogan:"{{slogan}}") }}
+  {{/ nombre }}
+
+  {{^ logo }}
+    {{^ nombre }}
+      {{> organisms-header-menu-blogs(nombre:"Sitio", slogan:"Slogan del sitio") }}
+    {{/ nombre }}
+  {{/ logo }}
+
+</div>
+{{/ header_inner_menu}}
+
+{{# header_inner_menu}}
+<div class="menu-blogs">
+
+<section class="secondary-header-menu">
+    <div class="columnas-alto-fijo centrar-flex">
+      <img src="{{logo}}">      
+        {{> molecules-blog-header-inner-menu}}
+    </div>
+  </section>
+  <div id="responsive-secondary-menu">
+  </div>
+</div>
+{{/ header_inner_menu}}

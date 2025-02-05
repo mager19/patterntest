@@ -1,0 +1,52 @@
+.zero {
+  .layout-normal {
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+
+      .img {
+        margin-left: 8rem;
+        width: 85%;
+        float: left;
+        margin-top: 3rem;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        height: calc(68vh - 100px);
+        position: absolute;
+      }
+
+      .franja {
+        display: block;
+        background-color: #f15a24;
+        width: calc(30%);
+        height: 68vh;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .zero {
+    .layout-normal {
+      .intro {
+        .img {
+          width: 74%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .zero {
+    .layout-normal {
+      .intro {
+        .img {
+          width: calc(100% - (30% + 52px));
+        }
+      }
+    }
+  }
+}

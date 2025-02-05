@@ -1,0 +1,71 @@
+::placeholder {
+  color: $gris-acero;
+}
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select,
+textarea{
+	background-color:$blanco-humo;
+	border:$solid-border;
+	width:100%;
+  color: $gris-mina;
+  font-size: rem(19);
+  padding-left: 10px;
+  border-radius:4px;
+  font-weight: 300;
+  appearance: none;
+  @media (max-width:$movil-amplio) and (min-width:$minimo){
+    font-size: rem(18);
+  }
+}
+input[type="date"].hasDatepicker,
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select{
+  height:45px;
+  appearance: none;
+}
+
+label{
+  font-size: rem(18);
+}
+input[type="date"].hasDatepicker,
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea{
+  margin:10px 0;
+  &:focus{
+    box-shadow: 0 0 5px $verde-mineral;
+    border: 1px solid $verde-lima;
+    outline: none;
+  }
+}
+
+.safari{
+  input[type="date"].hasDatepicker,
+  input[type="password"],
+  input[type="search"],
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  textarea{
+    font-weight: 400;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

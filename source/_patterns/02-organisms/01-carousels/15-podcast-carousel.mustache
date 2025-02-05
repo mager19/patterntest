@@ -1,0 +1,23 @@
+<aside class="fondo-completo">
+  <div class="centrar">
+    <h2 class="h1">{{^ text }}Relacionados{{/ text }} {{# text }}{{text}}{{/ text }}</h2>
+  </div>
+  <div class="carrusel-relacionadas">
+    <!--Máxiumo 4 noticias relacionadas-->
+    {{> molecules-news-spreaker-module }}
+    {{> molecules-news-spreaker-module }}
+    {{> molecules-news-spreaker-module }}
+    {{> molecules-news-spreaker-module }}
+    {{> molecules-news-spreaker-module }}
+    {{> molecules-news-spreaker-module }}
+  </div>
+  {{^ button }}{{/ button }}
+  {{# button }}
+  <div class="centrar texto-centrado">
+      {{> atoms-button(text:"Ver todas", icon:"icon-derecha")}}
+  </div>
+  <div class="centrar">
+    <hr>
+  </div>
+  {{/ button }}
+</aside>

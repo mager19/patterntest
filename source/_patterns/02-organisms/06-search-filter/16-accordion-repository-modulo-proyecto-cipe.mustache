@@ -1,0 +1,98 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+              <div class="titulo-acordeon"><h4>Filtro de búsqueda</h4>
+               <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button>
+             </div>
+           </div>
+         <!-- 00-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+                  {{> atoms-search-form(tit-search-form:"Grupo, título o palabra clave")}}
+              </div>
+            </div>
+          <!-- /00-->
+            <!-- 03 RECURSO-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"recurso", text:"Línea de investigación")}}
+              </div>
+
+              <div id="recurso" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <input type="checkbox" name="materia1" value="documento"><label><span class="icon-category-color defecto"><svg class="icon icon-articulo"><use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-articulo"></use></svg></span> Estudios regionales</label>
+                  <input type="checkbox" name="materia2" value="presentacion-pdf"><label><span  class="icon-category-color defecto"><svg class="icon icon-globo-01"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-globo-01"></use></svg></span> Gobernanza global</label>
+                  <input type="checkbox" name="materia3" value="infografia"><label><span  class="icon-category-color defecto"><svg class="icon icon-convenio"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-convenio"></use></svg></span> Teoría de las relaciones internacionales</label>
+                  <input type="checkbox" name="materia4" value="Poster"><label><span  class="icon-category-color defecto"><svg class="icon icon-grafica"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-grafica"></use></svg></span> Modelación financiera y finanzas cuantitativas</label>
+                  <input type="checkbox" name="materia5" value="video"><label><span  class="icon-category-color defecto"><svg class="icon icon-grafico-barras"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-grafico-barras"></use></svg></span> Finanzas sostenibles</label>
+                  <input type="checkbox" name="materia5" value="pagina-web"><label><span  class="icon-category-color defecto"><svg class="icon icon-ecologia"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-ecologia"></use></svg></span> Desarrollo sostenible y territorial</label>
+                  <input type="checkbox" name="materia5" value="revista-digital"><label><span  class="icon-category-color defecto"><svg class="icon icon-bandera-01"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-bandera-01"></use></svg></span> Conflicto, paz y seguridad</label>
+                  <input type="checkbox" name="materia5" value="podcast"><label><span  class="icon-category-color defecto"><svg class="icon icon-mano-apuntador-01"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-mano-apuntador-01"></use></svg></span> Procesos políticos y electorales</label>
+                  <input type="checkbox" name="materia5" value="podcast"><label><span  class="icon-category-color defecto"><svg class="icon icon-legal"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-legal"></use></svg></span> Administración pública, políticas públicas y gobernanza</label>
+                  <input type="checkbox" name="materia5" value="podcast"><label><span  class="icon-category-color defecto"><svg class="icon icon-publicaciones"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-publicaciones"></use></svg></span> Teoría e historia del pensamiento político</label>
+      
+                  </form>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 ÁREA -->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                {{> atoms-accordion-filter-button(target:"area", text:"Tipo de proyecto")}}
+              </div>
+
+              <div id="area" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                 <form>
+                  <input type="checkbox" name="individual" value="individual"><label>Individual</label>
+                  <input type="checkbox" name="grupal" value="grupal"><label>Grupal</label>
+             
+                  </form>
+              </div>
+            </div>
+            <!-- /04-->
+
+            <!-- 05 semestre-->
+             <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"semestre", text:"ODS")}}
+              </div>
+
+              <div id="semestre" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Ninguno</option>
+                      <option value="1-semestre">Agenda 2030</option>
+                      <option value="2-semestre">Alianzas para los objetivos</option>
+                      <option value="3-semestre">Ciudades y comunidades sostenibles</option>
+                      <option value="4-semestre">Desarrollo</option>
+                      <option value="5-semestre">Desarrollo sostenible</option>
+                      <option value="6-semestre">Educación de calidad</option>
+                      <option value="7-semestre">Igualdad de Género</option>
+                      <option value="8-semestre">ODS</option>
+                      <option value="9-semestre">Paz, justicia e instituciones sólidas</option>
+                      <option value="10-semestre">Salud y Bienestar</option>
+
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /05-->
+       
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

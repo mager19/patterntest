@@ -1,0 +1,24 @@
+{{# facultad }}
+  {{> organisms-header-top-blogs(facultad:"{{facultad}}") }}
+{{/ facultad }}
+
+{{^ facultad }}
+  {{> organisms-header-top-blogs }}
+{{/ facultad }}
+
+<div class="menu-blogs">
+  {{# logo }}
+    {{> organisms-header-menu-blogs-zero(logo:"{{logo}}") }}
+  {{/ logo }}
+  {{# nombre }}
+    {{> organisms-header-menu-blogs-zero(nombre:"{{{nombre}}}", slogan:"{{slogan}}") }}
+  {{/ nombre }}
+
+  {{^ logo }}
+    {{^ nombre }}
+      {{> organisms-header-menu-blogs-zero(nombre:"Sitio", slogan:"Slogan del sitio") }}
+    {{/ nombre }}
+  {{/ logo }}
+
+
+</div>

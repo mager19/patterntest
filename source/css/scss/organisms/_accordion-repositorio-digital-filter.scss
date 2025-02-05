@@ -1,0 +1,33 @@
+.modulo-acordeon.filtro{
+	h1.h4{
+		color: #78b92f;
+	}
+	#busqueda-general {
+		form{
+			overflow: visible;
+		}
+	}
+
+	.cajon-busqueda-db {
+	padding-bottom: 1.5rem;
+
+	}
+
+	.child-category {
+       margin: 0 20px 12px 30px;
+       font-size: 0.9rem;
+  	}
+
+  	.limpiador-busqueda{
+		cursor: pointer;
+	    border: none;
+	    background-color: white;
+	    text-transform: uppercase;
+	    color: $verde-lima-700;
+  		&:hover{
+      color: $azul-carbon;
+      text-decoration: none;
+    	}
+  	}
+
+}

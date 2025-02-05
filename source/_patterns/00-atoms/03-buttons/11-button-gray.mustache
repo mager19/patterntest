@@ -1,0 +1,9 @@
+<a class="boton-gris" href="" >
+  {{^ icon }}
+  {{/ icon }}
+  {{# icon }}
+  <span>
+    <svg class="icon {{icon}}"><use xlink:href="../../images/iconos.svg#{{icon}}"></use></svg>
+  </span>
+  {{/ icon }}{{# text }}{{text}}{{/ text }}{{^ text }}Ver todos{{/ text}}
+</a>

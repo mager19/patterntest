@@ -1,0 +1,36 @@
+#creative-commons{
+	h4.logo-cc{
+    width: 46px;
+    height: 46px;
+    margin: 10px 10px 0 0;
+    padding: 6px 0;
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    color: #fff;
+    border-radius: 50px;
+    border: solid 3px #fff;
+    float: left;
+    opacity: .6;
+    @media (max-width:$ipad) and (min-width:600px) {
+      width: 40px;
+      height: 40px;
+      font-size: rem(18);
+    }
+  }
+  p{
+    width: calc(100% - 68px);
+    float: left;
+    font-size: rem(16);
+    line-height: rem(17);
+    font-weight: 400;
+    @include fuente-suave;
+    opacity: .7;
+    @media (max-width:$ipad) and (min-width:600px) {
+      font-size: rem(15);
+      line-height: rem(16);
+      width: calc(100% - 50px);
+
+    }
+  }
+}

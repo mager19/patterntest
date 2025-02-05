@@ -1,0 +1,720 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $lato;
+  /*Solo para la home se necesita width y height 100%*/
+  width: 100%;
+  height: 100%;
+
+  &.home {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* contenedor: esta clase hace que cuando se utiliza la imagen-scroll el body no se desborde */
+.contenedor {
+  overflow: hidden;
+}
+/* contenido */
+.contenido,
+.aside,
+aside {
+  margin: 30px 1%;
+}
+aside.fondo-completo {
+  margin: 0;
+}
+/*centrar*/
+.centrar {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: 1200px) and (min-width: $minimo) {
+    padding: 0 2%;
+    width: 100%;
+  }
+}
+
+.centrar-flex {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+/* Estilos para modulos igual alto*/
+.columnas-alto-fijo {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* Estilo para central horizontamente los contenidos*/
+.centrar-horizontalmente {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*Fondo completo $blanco-humo*/
+.fondo-completo {
+  background-color: $blanco-humo;
+  width: 100%;
+  height: auto;
+  clear: both;
+  overflow: hidden;
+  @media (max-width: $maximo) and (min-width: $ipad) {
+    padding: 50px 0;
+  }
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    padding: 40px 0;
+  }
+  &.regiones {
+    @media (max-width: $maximo) and (min-width: 1001px) {
+      padding-top: 30px;
+    }
+    @media (max-width: 1000px) and (min-width: $movil-amplio) {
+      padding-top: 0;
+    }
+    @media (max-width: $movil-amplio02) and (min-width: $minimo) {
+      padding-top: 0;
+    }
+    @media (max-width: $ipad) and (min-width: $minimo) {
+      .contenido {
+        width: 98%;
+        margin: 15px 1% 10px 1%;
+      }
+    }
+    .contenido {
+      margin-top: 15px;
+    }
+  }
+}
+
+/*Fondo completo $comunidad-virtual*/
+.fondo-com-virtual {
+  padding: 1rem;
+}
+
+/*Plantilla página completa*/
+.pagina-completa {
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    margin-top: 40px;
+  }
+}
+/*Imágenes*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  img {
+    opacity: 1;
+    transition: ease-in-out 300ms;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+}
+
+.info {
+  padding: 0;
+  h6,
+  .h6 {
+    display: block;
+    color: $verde-plantacion /* Color de facultad */;
+    a {
+      &:after {
+        content: "·";
+        margin: 0 0 0 4px;
+      }
+    }
+  }
+}
+
+/*Cajas responsive para imagenes full*/
+.ajuste-imagen {
+  width: 100%;
+  overflow: hidden;
+  transition: height ease-in-out 300ms;
+  img {
+    width: 100%;
+    margin: -100% auto;
+  }
+
+  &.has-video {
+    img {
+      display: inline;
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+    video {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      @media (min-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: $maximo) and (min-width: 1200px) {
+    height: 520px;
+    line-height: 590px;
+  }
+  @media (max-width: 1200px) and (min-width: $ipad) {
+    height: 430px;
+    line-height: 500px;
+  }
+  @media (max-width: $ipad) and (min-width: 600px) {
+    height: 395px;
+    line-height: 385px;
+  }
+  @media (max-width: 600px) and (min-width: $movil-amplio) {
+    height: 265px;
+    line-height: 262px;
+  }
+  @media (max-width: $movil-amplio) and (min-width: 361px) {
+    height: 240px;
+    line-height: 238px;
+    img {
+      width: 115%;
+      margin: -115% auto;
+    }
+  }
+  @media (max-width: 360px) and (min-width: 320px) {
+    height: 212px;
+    line-height: 205px;
+    img {
+      width: 115%;
+      margin: -115% auto;
+    }
+  }
+
+  @media (max-width: 319px) and (min-width: $minimo) {
+    height: 180px;
+    line-height: 175px;
+    img {
+      width: 115%;
+      margin: -115% auto;
+    }
+  }
+}
+
+/*Cajas responsive para imagenes +full*/
+.hero-img {
+  width: 100%;
+  overflow: hidden;
+  transition: height ease-in-out 300ms;
+  img {
+    width: 100%;
+    margin: -100% auto;
+  }
+
+  @media (max-width: $maximo) and (min-width: 1200px) {
+    height: 820px;
+    line-height: 820px;
+  }
+  @media (max-width: 1200px) and (min-width: $ipad) {
+    height: 550px;
+    line-height: 500px;
+  }
+  @media (max-width: $ipad) and (min-width: 600px) {
+    height: 400px;
+    line-height: 400px;
+  }
+  @media (max-width: 600px) and (min-width: $movil-amplio) {
+    height: 310px;
+    line-height: 290px;
+    img {
+      min-width: 110%;
+      margin: -50% auto;
+    }
+  }
+  @media (max-width: $movil-amplio) and (min-width: 361px) {
+    height: 230px;
+    line-height: 220px;
+    img {
+      min-width: 110%;
+      margin: -50% auto;
+    }
+  }
+  @media (max-width: 360px) and (min-width: 320px) {
+    height: 230px;
+    line-height: 220px;
+    img {
+      min-width: 110%;
+      margin: -50% auto;
+    }
+  }
+
+  @media (max-width: 319px) and (min-width: $minimo) {
+    height: 175px;
+    line-height: 170px;
+    img {
+      min-width: 110%;
+      margin: -50% auto;
+    }
+  }
+}
+
+/*Estilos para personalizaciones*/
+
+.overflow {
+  overflow: hidden;
+}
+
+.padding-none {
+  padding: 0 !important;
+}
+
+.padding-minimo, .padding_minimo {
+  padding: 1rem !important;
+  @media (max-width: $movil-amplio) and (min-width: $minimo) {
+    padding: 0.5rem 0.5rem !important;
+  }
+}
+
+.padding-medio {
+  padding: 2rem 1rem !important;
+
+  @media (max-width: $movil-amplio) and (min-width: $minimo) {
+    padding: 1rem 0.5rem !important;
+  }
+}
+
+.padding-amplio {
+  padding: 3rem 1rem !important;
+
+  @media (max-width: $movil-amplio) and (min-width: $minimo) {
+    padding: 1.5rem 0.5rem !important;
+  }
+}
+
+.padding-inferior-min {
+  padding-bottom: 10px !important;
+
+  @media (max-width: $movil-amplio) and (min-width: $minimo) {
+    padding-bottom: 7px !important;
+  }
+}
+
+.margin-none {
+  margin: 0 !important;
+}
+
+.margin-xs {
+  margin: 5px !important;
+}
+
+.margin-s {
+  margin: 1rem auto !important;
+}
+
+.margin-m {
+  margin: 2rem auto !important;
+}
+
+.margin-l {
+  margin: 3rem auto !important;
+}
+
+.border-top {
+  border-top: $dotted-border;
+  padding-top: 0.9rem;
+}
+
+.border-bottom {
+  border-bottom: $dotted-border;
+  padding-bottom: 0.9rem;
+}
+
+.border-none {
+  border: none !important;
+  padding: 0;
+}
+
+.border-line-s{
+  border: $border-s;
+}
+.border-line-m{
+  border: $border-m;
+}
+
+.border-line-l{
+  border: $border-l;
+}
+
+.full-image {
+  width: 100%;
+}
+
+.border-radius-s {
+  border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+}
+
+.border-radius-m {
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+}
+
+.round,
+.round img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/*Estilos para galeria de imágenes de los acordeones. Se deben reubicar cuando la hoja de estilo lightgallery no esté minimizada*/
+.lg-backdrop {
+  background-color: $azul-carbon !important;
+  opacity: 0.85 !important;
+}
+
+.lg-actions {
+  .lg-prev,
+  .lg-next {
+    background-color: $verde-lima !important;
+    border-radius: 0 !important;
+    &:hover {
+      background-color: $azul-carbon;
+    }
+  }
+  .lg-prev:after {
+    content: "" !important;
+    background: url(../images/izquierda.svg) no-repeat;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 20px;
+  }
+  .lg-next:before {
+    content: "" !important;
+    background: url(../images/derecha.svg) no-repeat;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
+  }
+}
+
+#lg-actual-size:after,
+#lg-zoom-in:after,
+#lg-zoom-out:after,
+.lg-fullscreen:after,
+.lg-fullscreen-on .lg-fullscreen:after,
+.lg-autoplay-button:after,
+.lg-outer .lg-toogle-thumb:after,
+.lg-toolbar .lg-download:after,
+.lg-toolbar .lg-close:after {
+  content: "" !important;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
+
+.titulo-seccion {
+  margin-bottom: 2rem;
+  border-bottom: $dotted-border;
+  padding-bottom: 1rem;
+}
+
+.subtitulo-seccion {
+  font-size: 1.75rem;
+}
+
+#lg-actual-size:after {
+  background: url(../images/actual-size.svg) no-repeat;
+}
+#lg-zoom-in:after {
+  background: url(../images/zoom-in.svg) no-repeat;
+}
+#lg-zoom-out:after {
+  background: url(../images/zoom-out.svg) no-repeat;
+}
+.lg-fullscreen:after {
+  background: url(../images/fullscreen.svg) no-repeat;
+}
+.lg-fullscreen-on .lg-fullscreen:after {
+  background: url(../images/exit-fullscreen.svg) no-repeat;
+}
+.lg-autoplay-button:after {
+  background: url(../images/play.svg) no-repeat;
+}
+.lg-outer .lg-toogle-thumb:after {
+  background: url(../images/thumbnails.svg) no-repeat;
+  margin: 7px auto 0 auto;
+}
+.lg-toolbar .lg-download:after {
+  background: url(../images/download.svg) no-repeat;
+}
+.lg-toolbar .lg-close:after {
+  background: url(../images/close-x.svg) no-repeat;
+}
+
+.lg-progress-bar .lg-progress {
+  background-color: $verde-lima !important;
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: $verde-lima !important;
+}
+
+/* error 404 */
+.error-404 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  a {
+    display: inline-block;
+    color: $verde-lima-700;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+/* Menú lateral para quitar después de implementación*/
+.postid-7984 li#nav_menu-3 {
+  display: none;
+  visibility: hidden;
+}
+
+/* Used @ Librepensasdor */
+.ammap {
+  margin-bottom: 2rem;
+
+  #mapdiv {
+    margin-top: 20px;
+    height: 500px;
+    float: left;
+    margin-right: 1%;
+    clear: left;
+    display: block;
+    width: 65%;
+    @media screen and (max-width: 620px) {
+      width: 100%;
+    }
+  }
+
+  .rss-feed {
+    overflow: hidden;
+    border-left: thin solid #999;
+    padding-left: 1%;
+    @media screen and (max-width: 620px) {
+      height: 250px;
+    }
+  }
+}
+
+/* Grilla DIRTIC PARA TABLAS-NO AJUSTAR-ESTILO DE APLICACIONES EXTERNAS*/
+.grilla {
+  display: initial;
+}
+
+// Grids
+.grilla-3, .grilla-4{
+  display: grid;
+  margin: 1.5rem 0;
+  .boton-grande{
+    margin: 0;
+  }
+}
+
+.grilla-3{
+  grid-template-columns: repeat(auto-fill,minmax(298px,1fr));
+}
+.grilla-4{
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 860px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $small){
+    grid-template-columns: 1fr;
+  }
+}
+
+.gap-1{
+  grid-gap: 1rem;
+}
+.gap-2{
+  grid-gap: 2rem;
+}
+
+/* Grilla PORTAL MODULOS HORIZONTALES*/
+.grilla-portal {
+  display: grid;
+  justify-items: center;
+  @media (max-width: $maximo) and (min-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, 33%);
+  }
+  @media (max-width: 1000px) and (min-width: $ipad) {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+  article {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+/* Used in Exalumnos */
+.convenio {
+  width: 86%;
+  & > a {
+    height: 173px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-height: 88%;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+/* Used in grilla people */
+.grayscale-foto {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* Grilla PORTAL Eventos*/
+.grilla-portal-2cols {
+  display: grid;
+  justify-items: center;
+  @media (max-width: $maximo) and (min-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, 33%);
+  }
+  @media (max-width: 1000px) and (min-width: $ipad) {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+  article {
+    margin: 0 auto;
+  }
+}
+
+/* Grilla PORTAL MODULOS HORIZONTALES-2columnas*/
+.grilla-portal-2columnas {
+  display: grid;
+  justify-items: center;
+  @media (max-width: $maximo) and (min-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+  @media (max-width: 1000px) and (min-width: $ipad) {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+  article {
+    margin: 0 auto;
+  }
+}
+
+/* Grilla PORTAL MODULOS HORIZONTALES-4columnas*/
+.grilla-portal-4cols {
+  display: grid;
+  justify-items: center;
+  @media (max-width: $maximo) and (min-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, 25%);
+  }
+  @media (max-width: 1000px) and (min-width: $ipad) {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+  article {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+
+/* Grilla PORTAL MODULOS HORIZONTALES-5columnas*/
+.grilla-portal-5cols {
+  display: grid;
+  justify-items: center;
+  @media (max-width: $maximo) and (min-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, 20%);
+  }
+  @media (max-width: 1000px) and (min-width: $ipad) {
+    grid-template-columns: repeat(auto-fill, 50%);
+  }
+  article {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+
+.grecaptcha-badge {
+  display: none !important;
+}
+
+p {
+  &:before {
+    content: none !important;
+  }
+}
+
+/*Directorio de Profesores*/
+.dirprofesores {
+  .grilla-portal-4columnas{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.page-template-page-full-content{
+  main.contenido{
+    margin: 0;
+  }
+}
+
+// asidetemplate 3
+.aside__template3 {
+	opacity: 0.98;
+	position: fixed;
+	top: 17%;
+	z-index: 800;
+
+	.btn-icon-round span:nth-of-type(1) {
+		background-color: #25cc64 !important;
+	}
+}
+
+.informacion-facultad {
+	position: relative;
+	z-index: 900;
+}

@@ -1,0 +1,163 @@
+<div class=" modulo-acordeon">
+  <div id="acordeon-noticia" role="tablist" aria-multiselectable="true">
+    {{^ onlyShare }}
+    <!-- 00-->
+    <div class="panel">
+      <div role="tab" id="titulo-cero">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#submenu" aria-expanded="false" aria-controls="submenu">
+            <span>
+              <svg class="icon icon-lista-desordenada"><use xlink:href="../../images/iconos.svg#icon-lista-desordenada"></use></svg>
+            </span>
+            <div class="h4">Submenú </div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="submenu" class="info collapse" role="tabpanel" aria-labelledby="titulo-cero">
+        <ul>
+          <li><a href="#">Revista digital de derecho Administrativo digital de derecho Administrativo</a></li>
+          <li><a href="#">Grupo de investigación</a></li>
+          <li><a href="#">Líneas de investigación</a></li>
+          <li><a href="#">Revista digital de derecho Administrativo</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /00-->
+
+    <!-- 01-->
+    <div class="panel">
+      <div role="tab" id="titulo-uno">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#informacion" aria-expanded="false" aria-controls="informacion">
+            <span>
+              <svg class="icon icon-info"><use xlink:href="../../images/iconos.svg#icon-info"></use></svg>
+            </span>
+            <div class="h4">Información </div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="informacion" class="info collapse" role="tabpanel" aria-labelledby="titulo-uno">
+        <ul>
+          <li><strong>Fecha:</strong><br> Sábado 22 de Marzo de 2016</li>
+          <li><strong>Hora:</strong><br>7:00 a.m - 10:00 a.m</li>
+          <li><strong>Lugar:</strong><br>Auditorio principal</li>
+        </ul>
+      </div>
+    </div>
+    <!-- /01-->
+    <!-- 02-->
+    <div class="panel">
+      <div role="tab" id="titulo-dos">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#descargas" aria-expanded="false" aria-controls="descargas">
+            <span>
+              <svg class="icon icon-descargar-01"><use xlink:href="../../images/iconos.svg#icon-descargar-01"></use></svg>
+            </span>
+            <div class="h4">Descargas</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="descargas" class="info collapse" role="tabpanel" aria-labelledby="titulo-dos">
+        <ul>
+          <li><a href="#">Programa del evento</a></li>
+          <li><a href="#">Ponentes</a></li>
+          <li><a href="#">Formularios de inscripción</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /02-->
+    <!-- 03-->
+    <div class="panel">
+      <div role="tab" id="titulo-tres">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#videos" aria-expanded="false" aria-controls="videos">
+            <span>
+              <svg class="icon icon-play"><use xlink:href="../../images/iconos.svg#icon-play"></use></svg>
+            </span>
+            <div class="h4">Videos</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="videos" class="info collapse" role="tabpanel" aria-labelledby="titulo-tres">
+        {{> atoms-iframe }}
+      </div>
+    </div>
+    <!-- /03-->
+    <!-- 04-->
+    <div class="panel">
+      <div role="tab" id="titulo-cuatro">
+        <div class="titulo-acordeon">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#fotografias" aria-expanded="false" aria-controls="fotografias">
+            <span>
+              <svg class="icon icon-foto-02"><use xlink:href="../../images/iconos.svg#icon-foto-02"></use></svg>
+            </span>
+            <div class="h4">Fotografías</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="fotografias" class="info collapse" role="tabpanel" aria-labelledby="titulo-cuatro">
+        <div class="galleria">
+          <!-- Estas imágenes como son los thumbnails deben ser de 300px de ancho, cuando se haga click y se abra al carrusel debe ser de 900px de ancho-->
+          <!-- Para ver funcionando el carrusel, da click en el engrane de patternlab, y "open in a new window" -->
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb01" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb02" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb03" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb04" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb05" /></a>
+          <a href="../../images/modulo-noticia.png"><img src="../../images/modulo-noticia.png" alt="thumb06" /></a>
+        </div>
+      </div>
+    </div>
+    <!-- /04-->
+    {{/ onlyShare }}
+    <!-- 05-->
+    <div class="panel">
+      <div role="tab" id="titulo-cinco">
+        <div class="titulo-acordeon">
+          <a role="button" data-toggle="collapse" data-parent="#acordeon-noticia" href="#compartir" aria-expanded="true" aria-controls="compartir">
+            <span>
+              <svg class="icon icon-compartir-01"><use xlink:href="../../images/iconos.svg#icon-compartir-01"></use></svg>
+            </span>
+            <div class="h4">Compartir</div>
+            <span class="flecha">
+              <svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div id="compartir" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+        {{> atoms-share-buttons}}
+        <ul class="social-utilities hidden">
+          <!--Para las siguientes opciones si no está lleno el valor, se desabilitan con display: none;-->
+          <li>{{> atoms-like-counter}}</li>
+          <li>{{> atoms-views-counter}}</li>
+           <li>{{> atoms-time-read}}</li>
+          <li class="rating-box">{{> atoms-star-rating}}</li>
+      
+        </ul>
+      </div>
+    </div>
+    <!-- /05-->
+  </div>
+</div>

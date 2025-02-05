@@ -1,0 +1,65 @@
+.widget-texto {
+  @include widget;
+  .boton {
+    font-size: rem(15);
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+  p {
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+      display: inline-block;
+      transition: $transition-color;
+      &:hover {
+        color: $verde-lima;
+      }
+    }
+  }
+
+ /*css Lista con excerpt */
+
+      
+  article {
+
+     h4 {
+        border-top: $dotted-border;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 800;
+        
+        &:first-of-type {
+          color: $azul-carbon;
+          font-size: 1.5rem;
+          font-weight: 900;
+           margin-top: 0;
+           border-top: none;
+        }  
+
+        a:hover {
+        color: $verde-lima;
+        text-decoration: none;
+        background: none;
+        }
+        
+      }
+
+      .h4 {
+        a:hover {
+        color: $verde-lima;
+        text-decoration: none;
+        background: none;
+        }
+      }
+  
+      img {
+        display: block;
+        margin: 10px auto;
+
+      }
+      
+  }
+}

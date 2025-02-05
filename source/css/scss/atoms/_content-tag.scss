@@ -1,0 +1,77 @@
+.section {
+  position: relative;
+  background-color: $blanco-humo;
+
+  .title {
+    height: 60px;
+    display: none;
+    text-transform: uppercase;
+    font-size: rem(19);
+    line-height: rem(18);
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    padding: 0 7% 0 4%;
+    position: relative;
+    color: white;
+    background-color: $azul-cienaga;
+    border-top: solid 2px $azul-carbon;
+
+    @media screen and (max-width: 620px) {
+      display: flex;
+      align-items: center;
+    }
+
+    &:before,
+    &:after {
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 19px;
+      right: 10px;
+      color: white;
+    }
+
+
+		&:before {
+			content: url(../images/tab-abajo.svg);
+			display: block;
+			visibility: visible;
+		}
+
+    &.active {
+      //Esta clase se debe crear para que el color cambie en el titulo
+      background-color: $blanco-humo;
+      color: black;
+      
+      &:before {
+        content: url(../images/tab-arriba.svg);
+        display: block;
+        visibility: visible;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: $azul-carbon;
+    }
+  }
+  .box {
+    overflow: hidden;
+    display: none;
+    padding: 25px 3% 30px 3%;
+
+    @media screen and (max-width: 620px) {
+      padding: 2px 4%;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    p,
+    li {
+      font-size: rem(18);
+      line-height: rem(30);
+    }
+  }
+}

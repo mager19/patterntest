@@ -1,0 +1,28 @@
+.vigilado-men{
+	clear: both;
+	background-color: $azul-cienaga;
+	overflow: hidden;
+	color: white;
+	margin: 15px 0 0 0;
+	padding: 0 4% 10px 4%;
+
+	a{
+		text-decoration: underline;
+		&:hover{
+			color: $verde-lima-400;
+		}
+	}
+	h4{
+		margin-bottom: 0;
+		font-size: rem(16);
+	}
+	span{
+		font-size:rem(12);
+	}
+
+
+	@media (max-width:$maximo) and (min-width:$movil-amplio){
+			text-align: center;
+			padding-bottom: 10px;
+		}
+}

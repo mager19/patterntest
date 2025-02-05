@@ -1,0 +1,33 @@
+.alerta{
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  font-weight: 600;
+  font-family: $lato;
+  margin: 0.5rem 0;
+	padding: .75rem;
+
+}
+
+.alerta-success {
+  background-color: #E1F9D2;
+  border-color: #E1F9D2;
+	color: #30670E;
+}
+
+.alerta-danger {
+  background-color: #F9E7E7;
+  border-color: #F9E7E7;
+	color: #BF3537;
+}
+
+.alerta-warning {
+  background-color: #FEF6E2;
+  border-color: #FEF6E2;
+	color: #945F10 ;
+}
+
+.alerta-help {
+  background-color: #DAF9FB;
+  border-color: #DAF9FB;
+  color: #0B6F74;
+}

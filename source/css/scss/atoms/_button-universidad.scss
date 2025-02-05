@@ -1,0 +1,21 @@
+.boton-universidad,
+.texto a.boton-universidad{
+    @include boton;
+    background-color: $universidad;
+    font-size: 1.125rem;
+    letter-spacing: .0125rem;
+    text-transform: none;
+    display: inline-block;
+    padding: 8px;
+    color: #fff;
+    transition: background ease-in-out .3s;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+ &:hover{
+      background-color: #896029;
+      box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+      text-decoration: none;
+ 
+    }
+}

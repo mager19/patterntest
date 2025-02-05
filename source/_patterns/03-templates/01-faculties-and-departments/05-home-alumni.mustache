@@ -1,0 +1,49 @@
+{{> organisms-header }}
+
+<div class="faculty-oficina-de-egresados">
+  {{> organisms-secondary-header-menu(faculty-home:"Oficina de Egresados")}}
+  <main>
+    {{> organisms-faculty-carousel}}
+    <!--Modulo fin-->
+
+     <div class="centrar">
+
+      {{> organisms-group-button-08}}
+    </div>
+
+    <div class="centrar">
+      {{> molecules-mini-buttons}}
+    </div>
+
+
+    <div class="centrar">
+      <div class="contenido pagina-completa texto">
+        
+        CONTENIDO AL 100% PARA MÓDULO ACTUAL (Contenido Opcional 2)
+      </div>
+    </div>
+
+  <div class="centrar  margin-l">
+     <h2 class="h1">Noticias</h2>
+      {{> organisms-carousel-3columns }}
+      <div class="centrar-bt">
+     {{> atoms-button(text:"Ver más noticias", modifier-class :"border-radius-s")}}
+      </div>
+  </div>
+  <div class="gris-700">
+    <div class="centrar padding-amplio">
+      {{> organisms-events-carousel(tit-class:"texto-blanco texto-centrado", mode-class:"light",text:"Eventos para egresados",faculty-class:"oficina-de-egresados" ) }}
+      <div class="centrar-bt">{{> atoms-button(text:"Ver más eventos", modifier-class:"boton-facultad border-radius-s")}}</div>
+    </div>
+  </div>
+  <div class="centrar">
+      <div class="contenido pagina-completa texto">
+        
+        CONTENIDO AL 100% (activar un Contenido Opcional al final)
+      </div>
+    </div>
+
+  <main>
+  {{> organisms-faculty-info }}
+</div>
+{{> organisms-footer }}

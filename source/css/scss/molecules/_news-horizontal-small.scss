@@ -1,0 +1,135 @@
+.news-horizontal-small{
+	color: $gris-acero;
+	background-color: $blanco-humo;
+	max-width: 920px;
+	max-height: 250px;
+	display: flex;
+
+
+	&:hover{
+		color: $verde-lima-400;
+		background-color: $azul-carbon-700;
+
+			@media (max-width:1023px) and (min-width:$minimo){
+				background-color: transparent;
+			}
+
+		.content .imagen{
+			 img {
+       			-webkit-transform: scale(1.05);
+        		-ms-transform: scale(1.05);
+        		transform: scale(1.05);
+		
+			}
+		}
+
+	}
+
+
+
+	@media (max-width:1145px) and (min-width:1024px){
+		border-bottom: none;	
+		
+	}
+
+	@media (max-width:1023px) and (min-width:$minimo){
+		border-bottom: $dotted-border;
+		margin:0 1% 0 0;
+		background-color: white;  
+
+		&:last-child{
+		  	border-bottom: none;
+		  	padding-bottom: 1rem;
+		  }
+	}
+
+	.content{
+    	width: 100%;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-ms-flex-direction: row;
+    	flex-direction: row;
+
+    	
+
+    	@media (max-width:$ipad) and (min-width:$minimo){
+    		-ms-flex-direction: row-reverse;
+		    flex-direction: row-reverse;
+		}
+
+		section.titulo{
+
+			width: 50%;
+			text-align: center;
+			border-left: 4px solid ;
+
+			a{
+				font-weight: 600;
+				padding: 10px;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+
+				&:hover{
+				    color: $verde-lima-400;
+				  }
+
+  				p{
+				  	margin: 0;
+    				align-self: center;
+    				text-align: center;
+				 }
+
+			}
+
+			@media (max-width:1145px) and (min-width:1024px){
+				width: 50%;
+				border-left: none;
+
+				a{padding: 5px 10px;}
+			}
+		
+			@media (max-width:1023px) and (min-width:$minimo){
+				width: 70%;
+				padding: 0;
+				border-left: none;
+				
+				a{
+					&:hover{
+						color: $verde-lima-700;
+				    	background-color: transparent;
+				  }
+				}
+			}
+		}
+
+
+		.imagen{
+			width: 50%;
+			overflow: hidden;
+			
+			@media (max-width:1145px) and (min-width:1024px ){
+			width: 50%;
+			}
+
+			@media (max-width:1023px) and (min-width:$minimo){
+				width: 29%;
+				margin: 1%;
+				border-right: none;
+
+			}
+
+			.figure{
+				margin:0;
+
+				img {
+					border-radius: 0;
+					@media (max-width:$ipad) and (min-width:$minimo){
+					border-radius:3px;
+					}
+				}
+			}
+		}
+	}
+}

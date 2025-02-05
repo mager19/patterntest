@@ -1,0 +1,168 @@
+.widget-news-list{
+  @include widget;
+  .boton{
+    margin-bottom: 20px;
+  }
+  article{
+    padding-bottom: 10px;
+  }
+  .modulo-noticia{
+    &:first-child{
+      border-top: $dotted-border;
+      padding-top: 15px;
+    }
+    border-top: 0;
+    padding-top: 0;
+    a:first-child{
+      width: calc(27% - 14px);
+      img{
+        width: 100%;
+        margin: 7px 14px 0 0;
+      }
+    }
+    img{
+      @media (max-width:1000px) and (min-width:$ipad){
+        display: none;
+        visibility: hidden;
+      }
+      @media (max-width:$movil-amplio ) and (min-width:$minimo){
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    .info{
+      width: 73%;
+      float: left;
+      display: block;
+      @media (max-width:1000px) and (min-width:$ipad){
+        width: 100%;
+      }
+      @media (max-width:$movil-amplio ) and (min-width:$minimo){
+        width: 100%;
+      }
+    }
+    .info{
+      h4, .h4{
+        font-size: rem(16);
+        line-height: rem(22.4);
+        margin: 0 0 11px 0;
+        font-weight: 600;
+        a{width: 100%;}
+      }
+      h6, .h6{
+        font-size: rem(12);
+        margin-bottom: 0;
+        a {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .lista-noticias article:last-of-type {
+    border-bottom: $dotted-border;
+    margin-bottom: 20px;
+  }
+}
+
+
+.widget-news-list{
+
+  .post-box {
+    border-bottom: thin dotted #cacaca;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-flow: column;
+
+
+    h3, .h3{
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin: 5px 0;
+    font-weight: 800;
+    }
+
+     .date{
+      order: -1;
+        color:$azul-carbon;
+        font-size: .85rem;
+        font-weight: 400;
+        line-height: .8125rem;
+        text-transform: uppercase;
+        margin: 5px 0;
+        padding: 5px 0;
+        display: flex;
+      }
+
+      a:only-of-type {
+          color: black;
+          background-color: transparent !important;
+          margin: 1rem auto !important;
+          font-size: inherit !important;
+          letter-spacing: inherit !important;
+          text-transform: inherit !important;
+          padding: inherit !important;
+          color: inherit !important;
+          cursor: pointer;
+         
+          &:hover{
+            box-shadow: none !important;
+            text-decoration: none !important;
+            color:$verde-lima !important;
+
+            }
+          h3 {
+            margin: 0;
+            cursor: pointer;
+            &:hover{ color:$verde-lima; }
+          }
+            
+        }
+
+      a{
+        display: contents;
+        margin-left: 10px;
+        color: $gris-acero;
+        font-size: .75rem;    
+      }
+
+      a:last-of-type {
+        @include boton;
+        background-color: $verde-lima;
+        margin: 10px auto;
+        width: fit-content;
+
+        &:hover{
+          background-color: $azul-carbon;
+          box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+          text-decoration: none;
+         }
+        }
+        img {padding-bottom: 10px;}
+      }
+   .post-box:last-of-type {
+    border-bottom: none;
+    } 
+  }
+  
+/* CSS for new mailpoet plugin */
+
+.modal-content.widget-news-list{
+  padding: 20px 15px 0 15px!important;
+  font-family: $lato;
+
+  a{
+    color: $verde-lima }
+
+    .mailpoet_text_label, .mailpoet_hp_email_label, .mailpoet_form_html input, .mailpoet_form_iframe input {
+        font-family: $lato!important;
+    }
+    .wp-caption-text{
+      font-size: .875rem;
+    }
+
+    .mailpoet_form_html button, .mailpoet_form_html input[type=button], .mailpoet_form_html input[type=reset], .mailpoet_form_html input[type=submit], .mailpoet_form_iframe button, .mailpoet_form_iframe input[type=button], .mailpoet_form_iframe input[type=reset], .mailpoet_form_iframe input[type=submit] {
+      font-family: $lato!important;
+    }
+}      

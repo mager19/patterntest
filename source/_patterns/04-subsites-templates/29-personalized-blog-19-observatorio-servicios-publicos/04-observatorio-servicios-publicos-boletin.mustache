@@ -1,0 +1,42 @@
+<div class="faculty-color faculty-observatorio-familia-infacia-adolecencia">
+   {{> organisms-header-blogs(nombre:"Observatorio de Servicios Públicos", facultad:"Área servicios públicos Departamento Derecho Economía") }}
+   <div class="faculty-defecto">
+      <div class="fondo-completo busqueda-wpsolr padding-none">
+         <div class="centrar">
+            <div class="columnas-alto-fijo">
+               <div class="columna09 columnas-alto-fijo centrar-horizontalmente margen-sencillo padding-minimo">
+                  {{> molecules-results }}
+               </div>
+               <div class="columna03 columnas-alto-fijo centrar-horizontalmente">
+                  <form class="columna12">
+                     <label class="dropdown">
+                        <select>
+                           <option value="" selected="selected">Ordenar por</option>
+                           <option value="orden-alfabetico">Más reciente</option>
+                           <option value="Recientes">Menos reciente</option>
+                        </select>
+                     </label>
+                  </form>
+               </div>
+            </div>
+            <aside class="columna04 aside"> 
+               {{> organisms-accordion-repository-observatorio-justicia }}
+            </aside>
+            <div class="columna08 contenido">
+               <h2 class="h3">Repositorio de Intervenciones</h2>
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-repository-observatorio-servicios-publicos }}
+               {{> molecules-pagination}}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{{> organisms-footer-blogs }}

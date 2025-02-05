@@ -1,0 +1,24 @@
+{{> organisms-header }}
+<div class="faculty-biblioteca">
+  {{> organisms-secondary-header-menu(faculty-home:"Biblioteca") }}
+  <div class="fondo-completo busqueda-wpsolr padding-none">
+    <h1 class="hidden">Recursos digitales</h1>
+    <div class="centrar">
+      <aside class="columna04 aside"> {{> organisms-accordion-data-bases }} </aside>
+      <div class="columna08 contenido">
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+        {{> molecules-databases-library-card }}
+
+        {{> molecules-pagination}} </div>
+    </div>
+  </div>
+  <div style="margin-top: -40px">{{> organisms-faculty-info }}</div> </div>
+{{> organisms-footer }}

@@ -1,0 +1,236 @@
+.modulo-acordeon {
+  border: $solid-border;
+  border-top: solid 5px $verde-lima-700;
+  padding: 10px;
+  margin-bottom: 40px;
+  background-color: white;
+  .panel {
+    .titulo-acordeon {
+      color: $verde-lima-700;
+      text-transform: uppercase;
+      border-bottom: thin dotted $gris-hierro;
+      min-height: 65px;
+      padding: 10px 0;
+      a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: $transition-color;
+        &.collapsed {
+          color: $gris-acero;
+          &:hover,
+          &:hover span {
+            color: $gris-bunker;
+            span.flecha {
+              color: $gris-bunker;
+            }
+          }
+          span {
+            background-color: $blanco-humo;
+            color: $gris-acero;
+            &.flecha {
+              color: $gris-acero;
+              transform: rotate(0deg) translateY(6px);
+            }
+          }
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        span {
+          background-color: $verde-lima-700;
+          width: 45px;
+          height: 45px;
+          margin: 0 10px 0 0;
+          padding: 0;
+          display: block;
+          display: flex;
+          align-items: center;
+          float: left;
+          text-align: center;
+          font-size: rem(30);
+          line-height: rem(30);
+          color: white;
+          &.flecha {
+            color: $verde-lima-700;
+            width: 25px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: transparent;
+            transform: rotate(-180deg) translateY(0px);
+            transition: $transition-all;
+            font-size: rem(25);
+            svg {
+              stroke-width: 1px;
+            }
+          }
+          svg {
+            margin: 0 auto;
+          }
+        }
+        h4,
+        .h4 {
+          width: calc(100% - 85px);
+          overflow: hidden;
+          letter-spacing: 0.3px;
+          @media (max-width: $maximo) and (min-width: 901px) {
+            font-size: rem(18);
+          }
+          @media (max-width: 900px) and (min-width: $ipad) {
+            font-size: rem(15);
+          }
+        }
+      }
+    }
+
+    &:first-child {
+      .titulo-acordeon {
+        border-top: thin dotted $gris-hierro;
+      }
+    }
+
+    .info {
+      border-bottom: thin dotted $gris-hierro;
+      padding: 8px 0;
+      p,
+      li {
+        font-size: rem(17);
+      }
+
+      a {
+        text-decoration: underline;
+        transition: $transition-color;
+        display: inline-block;
+      }
+
+      iframe {
+        border: 0;
+        width: 100%;
+        margin: 0;
+      }
+
+      .compartir-redes {
+        a:hover {
+          color: $gris-acero;
+        }
+      }
+
+      .galleria {
+        a {
+          display: inline-block;
+          width: 31.4%;
+          margin: 4px 1% 4px 0;
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      ul {
+        margin: rem(16px) 0;
+        padding-left: rem(40px);
+
+        &:not(.wpsolr_facet_checkbox) {
+          list-style: circle;
+        }
+      }
+
+      li {
+        padding-bottom: 10px;
+      }
+    }
+
+    &:last-child {
+      .info {
+        border-bottom: none;
+      }
+    }
+
+    ul.selectSolrFilter {
+      padding-left: 0 !important;
+      height: rem(45px);
+      color: rgb(60, 60, 60);
+      font-size: 1.1875rem;
+      width: 100%;
+      font-weight: 300;
+      -webkit-appearance: none;
+      border-width: thin;
+      border-style: solid;
+      border-color: $gris-hierro;
+      border-radius: 4px;
+      display: block;
+      -webkit-appearance: none;
+      cursor: pointer;
+      background-color: $blanco-humo;
+      outline: none;
+
+      &.duration-selector {
+        position: absolute;
+        max-height: 150px;
+        overflow: hidden;
+      }
+
+      &.open {
+        height: 150px;
+        overflow-y: scroll;
+      }
+
+      li {
+        padding: 0.3125rem 0.625rem;
+        z-index: 2;
+
+        &.init {
+          height: rem(45px);
+        }
+
+        .selected:not(.init) {
+          background-color: $azul-mar;
+        }
+
+        &:not(.init) {
+          float: left;
+          width: 92%;
+          display: none;
+          background-color: $blanco-humo;
+          z-index: 2;
+          position: relative;
+
+          &:hover {
+            background-color: $azul-mar;
+          }
+        }
+      }
+    }
+
+    .ciudad_str li.init {
+      cursor: pointer;
+    }
+
+    #submenu {
+      li a {
+        margin: 3px 0;
+      }
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        margin: 15px 0;
+        display: inline-block;
+      }
+      p a {
+        margin: 0;
+      }
+    }
+
+    a.boton {
+      text-decoration: none;
+      transition: $transition-all;
+      &:hover {
+        background-color: $azul-carbon;
+        color: white;
+      }
+    }
+  }
+}

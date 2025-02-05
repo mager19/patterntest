@@ -1,0 +1,199 @@
+.margen-menu{
+	display: block;
+	margin-bottom: 56px;
+}
+
+.header-reducido{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+     .logo {
+     		top: 0;
+     	   height      : 56px;
+      		margin-left : 10px;
+      		width       : 150px;
+    
+     }
+
+     .navegacion{display: none}
+
+        
+
+     #menu {
+  	background-color : $verde-oscuro;
+    height           : 56px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 1;}
+
+
+    #vc-main-header #responsive-menu {
+	  .slicknav_btn {
+	    display: none;
+ 		 }
+		}
+
+		.slicknav_menu {
+			display: flex;
+    		visibility: visible;
+    		justify-content: flex-end;
+
+    		@media (max-width:$ipad) and (min-width:$minimo) {
+    			width: 100%;
+    		}
+
+    		.slicknav_nav{
+    			width: 25%;
+	    		@media (max-width:$ipad) and (min-width:$minimo) {
+	    			width: 100%;
+	    		}
+    		}
+		}
+
+
+	  .menu-superior{
+	  	.idioma-buscador{
+	  		position: relative;
+    		float: none;
+    		display: block;
+
+    		.idioma{
+    			width: 110px;
+			    height: 35px;
+			    padding: 0 10px;
+			    font-size: inherit;
+			    margin: 20px 0 20px 4%;
+			    border: none;
+			    background-color: $azul-carbon-500;
+
+			    &:before,
+			    &:after {
+			      height: 50px;
+			      display: none;
+			      visibility: hidden;
+    			}
+    		}
+	  	}
+
+	  	.tipo-usuario{
+	  		float: none;
+			    li a:before {
+			      content: "";
+			      width: 9px;
+			      height: 9px;
+			      margin-right: 5px;
+			      display: inline-block;
+			    }
+
+			    li {
+			    	padding: 0;
+			    	border-bottom: 1px solid $verde-oscuro;
+
+			    	.sub-menu{
+			      	position: initial;
+				    visibility: visible;
+				    background-color: transparent;
+				    width: 100%;
+				    border-bottom: none;
+				    box-shadow: none;
+
+
+				    li{
+				    	-webkit-font-smoothing: antialiased;
+					    border-bottom: 1px solid #033;
+					    color: #fff;
+					    display: block;
+					    font-weight: 700;
+					    letter-spacing: .3px;
+					    padding: 15px 5%;
+					    text-decoration: none;
+
+					    a:before {
+					      display:none;
+					    }
+
+					    &:hover a{background-color: transparent!important; color: $verde-lima!important}
+				    }
+			      }
+
+
+			    	a {
+			    	border:none;
+			    	a:before{display:none;}
+
+			      }
+
+			      &:nth-child(1) a{
+			      	&:before{background-color: $verde-lima;}
+			        
+			      }
+
+			      &:nth-child(2) a{
+			      	&:before{background-color: $rojo-carmin;}
+			        
+			      }
+
+			      
+
+			      &:nth-child(3) a:before {
+			        background-color: $contaduria;
+			      }
+
+			      &:nth-child(4) a:before {
+			        background-color: $dorado;
+			      }
+
+			      &:nth-child(5) a:before {
+			        background-color: $comunidad-virtual;
+			      }
+
+
+
+			    }
+
+			    .slicknav_parent li a {
+			      &:before {
+			        display: none;
+			        visibility: hidden;
+			      }
+
+			      &:hover {
+			        color: $rojo-carmin;
+			      }
+			    }
+
+			  }
+
+	  }
+
+	  .idioma label.dropdown{display: block;}
+
+	  .idioma-desktop{visibility: hidden;}
+	  .buscador{
+	  	float: none;
+		display: block;
+		    clear: both;
+		    margin: 20px 4%;
+		    overflow: hidden;
+		    width: 92%;
+		    background-color: #cacaca;
+
+		    input[type=search]{
+		    	width: 100%;
+			    height: 50px;
+			    font-size: inherit;
+			    color: $universidad;
+			    margin-left: 0;
+			    padding: 0 0 0 50px;
+		    }
+
+		    span{
+		    	    left: 10px;
+				    top: 5px;
+				    font-size: 2.1875rem;
+				    color: $universidad;
+		    }
+		}
+}

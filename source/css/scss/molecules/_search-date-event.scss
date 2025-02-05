@@ -1,0 +1,144 @@
+.modulo-busqueda-fecha {
+	margin-bottom: 20px;
+
+	@media (max-width: $ipad) {
+        margin-bottom: 10px;
+      }
+
+      .titulo-buscador-eventos{
+      	margin: 0;
+      	font-size: 1.25rem;
+    	font-weight: 600;
+      }
+
+	.linea-lateral {
+      border-right: thin dotted #cacaca;
+      padding-right: 10px;
+      margin-bottom: 5px;
+      @media (max-width: $ipad) {
+        border-right: none;
+        border-bottom: thin dotted #cacaca;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+  /*.columna04{
+    label {
+      position: relative;
+    }
+
+    label:after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+    }
+
+    input {
+      padding: 10px 30px;
+    }
+  }*/
+    
+
+	.button-fecha {
+	 height: 45px;
+    width: 96%;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: 300;
+    background-color: $blanco-humo;
+    
+    font-size: 1.1875rem;
+    text-transform: unset;
+    position: relative;
+    text-align: left;
+    color: #3c3c3c;
+
+
+
+    	&:hover{
+    	background-color: $azul-carbon;
+      color: white;
+    	}
+
+   		&:focus {
+    	outline: -webkit-focus-ring-color auto 0px;
+		}
+
+		&:after {
+    	content: '';
+    	background-image: url(../images/calendar.svg); ;
+    	display: inline-block;
+    	height: 20px;
+    	margin-left: 2px;
+    	width: 20px;
+    	right: 12px;
+    	top: 30%;
+    	position: absolute;
+    	pointer-events: none;
+    	z-index: 6;
+		}
+	}
+
+  label.button-fecha {
+    border: none;
+    border: thin solid #cacaca;
+    padding: 10px 0 10px 0;
+    text-transform: capitalize;
+  }
+
+  input.button-fecha {
+    height: 43px;
+  }
+
+	.button-search-event {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.1875rem;
+	}
+
+  button.button-search-event-lupa {
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    margin: 15px 5px;
+    font-size: 1.6rem;
+    line-height: 0;
+    padding: 5px;
+  }
+
+	label.dropdown.button-search-facultad select  {
+		&:hover{
+    	background-color: $azul-carbon;
+      color: white;
+    	}
+	}
+
+	label.dropdown:before {
+    background-color: transparent;
+	}
+
+  .calendario-popup{
+      width: 100%; 
+      margin-bottom: 0px;
+      margin-top: 0px;
+
+      .month-arrows{
+        display: flex;
+        padding-top: 0;
+        margin-top: 0;
+        justify-content: center;
+          
+      }
+
+      table {
+      margin-top: 0;
+      }
+  }
+
+
+	
+}

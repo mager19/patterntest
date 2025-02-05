@@ -1,0 +1,16 @@
+.lista-leyes {
+  margin: 1rem;
+
+  .laws {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.law-round {
+  border-radius: 50%;
+
+  @media(max-width: $desktop) {
+    max-width: 11rem;
+  }
+}

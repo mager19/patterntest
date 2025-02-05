@@ -1,0 +1,24 @@
+{{> organisms-header }}
+<div class="faculty-decanatura-cultural faculty-defecto">
+  {{> organisms-secondary-header-menu(faculty-home:"Decanatura Cultural") }}
+  <div class="fondo-completo busqueda-wpsolr">
+    <div class="centrar">
+      <h1><span><img width="50" style="margin-right: 10px" src="../../images/logos/un-libro-por-centavos.png" alt=""></span>Un libro por centavos</h1>
+      <aside class="columna04 aside"> {{> organisms-accordion-books-filter }} </aside>
+      <div class="columna08 contenido">
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+        {{> molecules-books-card }}
+
+        {{> molecules-pagination}} </div>
+    </div>
+  </div>
+  <div style="margin-top: -40px">{{> organisms-faculty-info }}</div> </div>
+{{> organisms-footer }}

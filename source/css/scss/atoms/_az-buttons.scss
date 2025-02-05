@@ -1,0 +1,52 @@
+.lettersearch {
+  padding: 10px;
+  width: 100%;
+
+  .letters {
+    width: 35px;
+    text-align: center;
+  }
+
+  input[type=radio] {
+    display: none;
+
+    + label {
+      background-image: none;
+
+      &[for=letter_all] {
+        width: auto;
+      }
+    }nea
+
+    &:checked + label {
+      background-color: $verde-lima-700;
+      text-decoration: none;
+      color: white !important;
+      border: 1px solid $verde-lima-700;
+    }
+  }
+
+  label,
+  input[type=radio] + label,
+  a {
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid $gris-hierro;
+    background-color: $blanco-humo;
+    border-radius: 5px;
+    padding: 0.2rem 0.6rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    text-decoration: none;
+    color: $gris-acero;
+    text-transform: uppercase;
+    text-decoration: none !important;
+
+    &:hover,
+    &:focus {
+      background-color: $verde-lima-700;
+      text-decoration: none;
+      color: white !important;
+      border: 1px solid $verde-lima-700;
+    }
+  }
+}

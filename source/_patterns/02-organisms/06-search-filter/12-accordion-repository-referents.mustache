@@ -1,0 +1,129 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+    <div class="caja-encima">
+      <div>
+        <label class="wdm_label"></label>
+        <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+        <div class="wdm_ul" id="wpsolr_section_facets">
+
+          <div class="panel">
+            <div class="titulo-acordeon">
+              <div class="h4">Búsqueda de recursos digitales</div>
+              <div class="panel">
+                 <div class="info"><button class="select_opt limpiador-busqueda">Limpiar búsqueda</button></div></div>
+                  </div>
+
+          </div>
+           <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-cero">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="Buscador">
+
+                  {{> atoms-search-form(tit-search-form:"Palabra clave")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+
+          <!-- 01-->
+          <div class="panel">
+            <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"area-conocimiento", text:"Por área del conocimiento")}}
+              </div>
+
+              <div id="area-conocimiento" class="info collapse in" role="tabpanel" aria-labelledby="titulo-uno">
+                <div class="galleria">
+                  <form style="overflow: visible;">
+                    <input id="area-feminismos" type="checkbox" name="Feminismos" value="agronomia-veterinaria-afines"><label for="area-administrativas">Feminismos </label>
+
+                    <input id="area-diversidad-sexual" type="checkbox" name="diversidad-sexual" value="ciencias-educacion"><label for="area-comunicacion">Diversidad sexual </label>
+
+                  
+                   <input id="area-genero-mascunilidades" type="checkbox" name="genero-mascunilidades" value="ciencias-educacion"><label for="area-comunicacion">Género y masculinidades </label>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /01-->
+
+            <!-- 03-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"facultades", text:"Facultades")}}
+              </div>
+              <div id="facultades" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                <form>
+                  <input type="checkbox" name="facultad" value="administracion-de-empresas">
+                  <label>
+                    Administración de Empresas
+                    <span class="circulo administracion-de-empresas"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="administracion-de-empresas-turisticas-y-hoteleras">
+                  <label>
+                    Administración de Empresas Turísticas y Hoteleras
+                    <span class="circulo administracion-de-empresas-turisticas-y-hoteleras"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="comunidad-virtual">
+                  <label>
+                    Centro de Educación Virtual
+                    <span class="circulo comunidad-virtual"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="ciencias-de-la-educacion">
+                  <label>
+                    Ciencias de la Educación
+                    <span class="circulo ciencias-de-la-educacion"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="ciencias-sociales-y-humanas">
+                  <label>
+                    Ciencias Sociales y Humanas
+                    <span class="circulo ciencias-sociales-y-humanas"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="comunicacion-social-periodismo">
+                  <label>
+                    Comunicación Social - Periodismo
+                    <span class="circulo comunicacion-social-periodismo"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="contaduria-publica">
+                  <label>
+                    Contaduría Pública
+                    <span class="circulo contaduria-publica"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="derecho">
+                  <label>
+                    Derecho
+                    <span class="circulo derecho"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="economia">
+                  <label>
+                    Economía
+                    <span class="circulo economia"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="finanzas-gobierno-y-relaciones-internacionales">
+                  <label>
+                    Finanzas, Gobierno y Relaciones Internacionales
+                    <span class="circulo finanzas-gobierno-y-relaciones-internacionales"></span>
+                  </label>
+                  <input type="checkbox" name="facultad" value="estudios-del-patrimonio-cultural">
+                  <label>
+                    Estudios del Patrimonio Cultural
+                    <span class="circulo estudios-del-patrimonio-cultural"></span>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /03-->
+
+    
+
+          
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

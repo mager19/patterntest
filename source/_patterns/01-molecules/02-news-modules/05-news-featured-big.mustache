@@ -1,0 +1,10 @@
+<article class="news-featured-big {{# faculty-class }}{{ faculty-class }}{{/ faculty-class }}{{ ^ faculty-class}}defecto{{/ faculty-class }}">
+  <div class="content">
+  <div class="imagen"> 
+    <a href="">{{> atoms-image(img-class:"alignnone")}}</a> </div>
+  <section class="titulo"> 
+    <a href=""><p class="h3">{{# tit }}{{tit}}{{/ tit }}{{^ tit }}Título de la noticia principal con un máximo de 75 caracteres de texto{{/ tit}}</p>
+    </a>
+  </section>
+  </div>
+</article>

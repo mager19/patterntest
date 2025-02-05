@@ -1,0 +1,23 @@
+<button type="button" class="btn btn-primary boton" data-toggle="modal" data-target=".bs-example-modal-sm">Subscription modal</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close cerrar-circular" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        
+        <h4 class="modal-title texto-centrado" id="myModalLabel"><span class="default-color"><svg class="icon icon-correo"><use xlink:href="../../images/iconos.svg#icon-correo"></use></svg></span> Boletín Virtual</h4>
+      </div>
+		<div class="modal-body">
+        <h5 class="texto-centrado">Ingrese su dirección de correo electrónico y suscríbase a nuestro Boletín Virtual</h5> 
+
+        <p class="texto-centrado subscription-texto">Correo electrónico</p>
+<div style="order: 2;">{{> atoms-text }}</div>
+<div class="botones-subscription">
+  <a class="boton" href="#">Suscribirse</a> <button type="button" class="close boton-gris" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">No, gracias</span></button></div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

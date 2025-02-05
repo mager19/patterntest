@@ -1,0 +1,47 @@
+.filtro-tarjetas {
+  
+	.botones-destacados {
+    overflow: visible;
+
+  }
+
+  .modulo-relacionado {
+    width: 94%;
+  }
+
+.filterDiv {
+  display: none; 
+}
+
+/* The show class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #78b92f !important;
+    color: #032e1a;
+    font-weight: 900;
+position: relative;
+}
+.btn.active::after {
+    content: '';
+    background: url(https://www.uexternado.edu.co/wp-content/uploads/2022/11/abajo.svg) no-repeat;
+    bottom: -30px;
+    right: 44%;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+.texto a:hover {
+        background: none;
+}
+@media (max-width: 1000px){
+.btn.active::after {display:none;}
+}
+}

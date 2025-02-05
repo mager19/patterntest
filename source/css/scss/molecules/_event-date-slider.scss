@@ -1,0 +1,86 @@
+.event-date-slider {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 40px;
+  .fecha-evento{
+    width: 47px;
+    margin: 0 -15px 0 0;
+  	text-align: center;
+    z-index: 1;
+  	.fondo{
+      width: 47px;
+    	height: 47px;
+      min-width: 100%;
+    	border-radius: 47px;
+      // El background-color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+      span:first-of-type{
+       	font-size: rem(25);
+      	line-height: rem(14);
+      	font-weight: 900;
+        padding-top: 8px;
+      	width: 100%;
+        display: block;
+        @media (max-width:$ipad) and (min-width:$minimo){
+          font-size: rem(18);
+
+        }
+      }
+      span:nth-child-of-type(2){
+      	font-size: rem(12);
+      	font-weight: 600;
+      	line-height: rem(.3);
+        @media (max-width:$ipad) and (min-width:$minimo){
+          font-size: rem(9);
+        }
+      }
+    }
+    hr{
+    	border-top: thin solid black;
+      width: 60%;
+      margin: 15px auto;
+    }
+  }
+
+  .info{
+    width: calc(100% - 65px);
+    background-color: white;
+    color: black;
+    padding: 10px 10px 10px 30px;
+    text-shadow: none;
+      @media (max-width:$ipad) and (min-width:$minimo){
+          width: calc(100% - 45px);
+        }
+
+
+    p{
+    	margin: 0;
+    	font-style: italic;
+    	line-height: rem(21);
+      font-size: rem(17);
+      display: block;
+      @media (max-width:$ipad) and (min-width:$minimo){
+          font-size: rem(14);
+        }
+    }
+    .h5 {
+      color: inherit;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    h6, .h6 {
+      display: block;
+      // El color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+      a{
+        &:after{
+          display: none;
+        }
+        @media (max-width:$ipad) and (min-width:$minimo){
+          font-size: rem(12);
+        }
+      }
+    }
+  }
+}

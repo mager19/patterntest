@@ -1,0 +1,547 @@
+@each $faculty in $faculties {
+  #{".faculty-#{nth($faculty, 1)}"} {
+    $faculty-color: nth($faculty, 2);
+    $faculty-color-lighten: lighten($faculty-color, 30%);
+    $faculty-color-darken: darken($faculty-color, 10%);
+
+    .secondary-header-menu {
+      background: $faculty-color;
+
+      .h3 {
+        @include text-contrast($faculty-color);
+      }
+
+      .menu-secundario {
+        background: $faculty-color-darken;
+
+        @media (max-width: $ipad) and (min-width: $minimo) {
+          background: $faculty-color-darken;
+        }
+
+        .show-secondary-menu {
+          @media (max-width: $ipad) and (min-width: $minimo) {
+            @include text-contrast($faculty-color-darken);
+          }
+        }
+
+        ul li {
+          @include text-contrast($faculty-color-darken);
+
+          &:hover {
+            @include text-contrast($faculty-color-lighten);
+            background-color: $faculty-color-lighten;
+          }
+        }
+      }
+    }
+
+    .fondo-facultad{
+    background-color: $faculty-color;
+    }
+
+    .fondo-facultad-oscuro{
+    background-color: $faculty-color-darken;
+    }
+    
+    .fondo-facultad-claro{
+    background-color: $faculty-color-lighten;
+    }
+
+    .anterior-siguiente a.anterior .flecha,
+    .anterior-siguiente a.siguiente .flecha {
+      background-color: $faculty-color;
+    }
+
+    .anterior-siguiente a.anterior:hover .flecha,
+    .anterior-siguiente a.siguiente:hover .flecha {
+      color: $faculty-color;
+    }
+
+    .autor {
+      a {
+        border-color: $faculty-color;
+        &:hover {
+          color: $faculty-color;
+        }
+      }
+    }
+
+    .modulo-acordeon-content {
+      .panel {
+        .titulo-acordeon {
+          a {
+            background-color: $faculty-color;
+            &.collapsed {
+              span.flecha {
+                color: $faculty-color;
+              }
+              &:hover {
+                background-color: $faculty-color;
+              }
+            }
+          }
+        }
+        .info {
+          border-color: $faculty-color;
+        }
+      }
+      &.accordion-content-icons{
+        .panel {
+          .titulo-acordeon{
+            a{
+              span.flecha{
+                color: $faculty-color;
+              }
+              &:hover{
+                background-color: $faculty-color;
+              }
+              &.collapsed{
+                &:hover{
+                  background-color: $faculty-color;
+                }
+              }
+            }
+          }
+          .info{
+            border-color: $faculty-color;
+          }
+
+
+        }
+      }
+    }
+
+    .contenedor {
+      .info h6 a,
+      .info .h6 a {
+        color: $faculty-color;
+      }
+    }
+
+    .slicknav_menu {
+      background-color: $faculty-color-lighten;
+
+      .slicknav_nav ul li {
+        &:hover {
+          background-color: $faculty-color-darken;
+
+          a {
+            @include text-contrast($faculty-color-darken);
+          }
+        }
+
+        a {
+          @include text-contrast($faculty-color-lighten);
+        }
+      }
+
+      li.slicknav_parent.slicknav_open {
+        background-color: $faculty-color-darken;
+
+        a {
+          @include text-contrast($faculty-color-darken);
+        }
+
+        .sub-menu li:hover {
+          background-color: darken($faculty-color-darken, 5%);
+        }
+      }
+    }
+
+    .botones-destacados-iguales {
+
+      @media (max-width: $movil-amplio) and (min-width: $minimo) {
+        border-bottom: solid 4px $faculty-color;
+      }
+    }
+
+    .modulo-acordeon {
+      border-top-color: $faculty-color;
+
+      .panel .titulo-acordeon {
+        color: $faculty-color;
+
+        a span {
+          background-color: $faculty-color;
+
+          &.flecha {
+            color: $faculty-color;
+          }
+        }
+      }
+
+      .info a:hover {
+        color: $faculty-color;
+      }
+    }
+
+    .filtro-faculty {
+      .modulo-acordeon.filtro {
+        border-top-color: $faculty-color;
+
+        .panel .titulo-acordeon {
+          color: $faculty-color;
+        }
+      }
+
+      .modulo-bases-datos .informacion-db .icon,
+      .modulo-bases-datos .informacion-db svg.color-icon {
+        color: $faculty-color;
+      }
+    }
+
+    .widget {
+      border-top-color: $faculty-color;
+    }
+
+    .digital-zone {
+      border-top-color: $faculty-color;
+
+      .text-link {
+        color: $faculty-color;
+      }
+    }
+
+    .subrayado:after {
+      background-color: $faculty-color;
+    }
+
+    .subrayado-der:after {
+      background-color: $faculty-color;
+    }
+
+    #menu-magnetico {
+      li {
+        background: $faculty-color;
+      }
+    }
+
+    #responsive-menu-magnetico {
+      background: $faculty-color;
+    }
+
+    .informacion-facultad {
+      .titulo span {
+        color: $faculty-color;
+      }
+
+      .redes-sociales {
+        &::before {
+          border-top-color: $faculty-color;
+        }
+
+        .icono:hover {
+          background-color: $faculty-color;
+        }
+      }
+    }
+
+    .hover-news .hover-news-button a {
+      background: $faculty-color;
+    }
+
+    .hover-news .hover-news-title:after {
+      background-color: $faculty-color;
+    }
+
+    .titulo-tema {
+      background-color: $faculty-color;
+    }
+
+    .circle-icon-button {
+      span.icon {
+        background-color: $faculty-color;
+      }
+    }
+
+    .boton-facultad,
+    .texto a.boton-facultad {
+      background-color: $faculty-color;
+    }
+
+    .btn-linea-faculty,
+    .texto a.btn-linea-faculty {
+      border-color: $faculty-color;
+      color: $faculty-color;
+      &:hover {
+        background-color: $faculty-color;
+      }
+    }
+
+    .img-lead {
+      .h6 {
+        color: $faculty-color;
+      }
+    }
+
+    .btn-lista,
+    .texto a.btn-lista {
+      &:before {
+        background-color: $faculty-color;
+      }
+    }
+
+    .btn-icon-round span:nth-of-type(1) {
+      background-color: $faculty-color;
+    }
+
+    .links-relacionados{
+      .content {
+        section.titulo {
+          border-color: $faculty-color;
+        }
+      }
+    }
+
+    .bts-list {
+      .title-list {
+        background-color: $faculty-color;
+      }
+      .v-list {
+        &:after {
+          background-color: $faculty-color;
+        }
+      }
+    }
+  }
+}
+
+.bts-list {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .title-list {
+        background-color: $faculty-color !important;
+      }
+      .v-list {
+        &:after {
+          background-color: $faculty-color !important;
+        }
+      }
+
+      .btn-lista,
+      .texto a.btn-lista {
+        &:before {
+          background-color: $faculty-color !important;
+        }
+      }
+    }
+  }
+}
+
+.modulo-blog {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .info h6,
+      .info .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.modulo-evento {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .fecha-evento .fondo {
+        background-color: $faculty-color;
+
+        span {
+          @include text-contrast($faculty-color);
+        }
+      }
+
+      .info h6,
+      .info .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.event-date-slider {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .fecha-evento .fondo {
+        background-color: $faculty-color;
+
+        span {
+          @include text-contrast($faculty-color);
+        }
+      }
+
+      .info h6,
+      .info .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.modulo-evento-image {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .fecha-evento .fondo {
+        background-color: $faculty-color;
+
+        span {
+          @include text-contrast($faculty-color);
+        }
+      }
+
+      .info h6,
+      .info .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.event-list-module {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .fecha-evento .fondo {
+        background-color: $faculty-color;
+        &:after {
+          border-left: 5px solid $faculty-color;
+        }
+      }
+
+      .info h6,
+      .info .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.modulo-noticia {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .fondo {
+        background-color: $faculty-color;
+      }
+
+      .info h6 a,
+      .info .h6 a {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.modulo-programa,
+.shortcode-modulo-programa {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      h6,
+      .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.facultad .h6 {
+  span {
+    color: $gris-acero;
+  }
+}
+
+
+.subcategoria {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      p {
+        border-left: 5px solid $faculty-color;
+      }
+
+      p {
+        border-left: 5px solid $faculty-color;
+      }
+    }
+  }
+}
+
+.modulo-relacionado {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .info h6,
+      .info .h6 {
+        color: $gris-600;
+      }
+    }
+  }
+}
+
+.modulo-resumen {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      h6,
+      .h6 {
+        color: $faculty-color;
+      }
+    }
+  }
+}
+
+.img-lead {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .carousel-caption .h6 {
+        color: $faculty-color;
+      }
+    }
+  }
+}
+
+.news-basic-small,
+.news-basic-big,
+.news-horizontal-small {
+  @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .content {
+        section.titulo {
+          border-color: $faculty-color;
+        }
+      }
+    }
+  }
+}
+
+
+.grupo-noticias-categoria{
+      @each $faculty in $faculties {
+    #{"&.#{nth($faculty, 1)}"} {
+      $faculty-color: nth($faculty, 2);
+
+      .titulo-categoria-noticias h3 {
+      border-color: $faculty-color;}
+    }
+  }
+}

@@ -1,0 +1,337 @@
+.admissions{
+  position: relative;
+  margin: 30px 0;
+  font-weight: 300;
+
+  &.subsites-tabs {
+    width: 100%;
+
+    .section.has-paragraphs{
+        &:nth-child{
+          background: $universidad-800 !important;
+        }
+    }
+  }
+
+  .info {
+    width: 100%;
+    display: block;
+    float: left;
+    overflow: hidden;
+    color: white;
+
+
+    .tabs {
+      max-width: 1200px;
+      margin: 0 auto;
+      @media (max-width: 1220px) and (min-width: 50px){
+        padding: 0 2%;
+      }
+      @media screen and (max-width: 620px) {
+        display: none;
+      }
+
+      a {
+        height: 58px;
+        text-transform: uppercase;
+        /*display: inline-block;*/
+        display: flex;
+        float: left;
+        color: white;
+        opacity: .6;
+        position: relative;
+        z-index: 3;
+
+        &:before{
+          content: '';
+          width: 100%;
+          height: 58px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+        }
+
+        .span{
+          height: calc( 100% + 5px);
+          font-size: rem(15);
+          line-height: rem(15);
+          position: relative;
+          z-index: 1;
+          border-radius: 0 0 5px 5px;
+          padding: 0 15px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: $gris-800;
+          font-weight: 400;
+          font-family: $lato;
+          margin-top: 0;
+
+          @media (max-width:1000px) and (min-width:$ipad) {
+            font-size: rem(13);
+            line-height: rem(13);
+            padding: 0 7px;
+          }
+
+          @media (max-width:687px) and (min-width:620px) {
+            font-size: rem(13);
+            line-height: rem(13);
+            padding: 0 13px;
+          }
+
+          &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            opacity: .6;
+            border: solid 1px #999999;
+            height: 62%;
+
+            @media (max-width:1000px) and (min-width:$ipad) {
+              height: 50%;
+              top: 15px;
+            }
+
+            @media (max-width:687px) and (min-width:$movil-amplio) {
+              height: 50%;
+              top: 13px;
+            }
+          }
+        }
+
+        &.active-tab{
+          position: inherit;
+          opacity: 1;
+          font-weight: 700;
+          z-index: 2;
+          .span{
+            font-weight: 700;
+            &:after{
+              display: none;
+            }
+          }
+
+          &#doctorado{
+            &:before{
+              background-color: $verde-oscuro;
+              border-top: 4px solid $dorado;
+            }
+            .span{
+              background-color: $dorado;
+            }
+          }
+
+          &#maestria{
+            &:before{
+              background-color: $gris-bunker;
+              border-top: 4px solid $rojo-carmin;
+            }
+            .span{
+              background-color: $rojo-carmin;
+            }
+          }
+
+          &#especializacion{
+            &:before{
+              background-color: $cafe-cocoa;
+              border-top: 4px solid $azul-mar;
+            }
+            .span{
+              background-color: $azul-mar;
+            }
+          }
+
+          &#pregrado{
+            &:before{
+              background-color: $azul-cienaga;
+              border-top: 4px solid $amarillo-oro;
+            }
+            .span{
+              background-color: $amarillo-oro;
+            }
+          }
+
+          &#diplomado{
+            &:before{
+              background-color: $azul-espectro;
+              border-top: 4px solid $verde-lima;
+            }
+            .span{
+              background-color: $verde-lima;
+            }
+          }
+
+          &#virtual{
+            &:before{
+              background-color: #032d35;
+              border-top: 4px solid $contaduria;
+            }
+            .span{
+              background-color: $contaduria;
+            }
+          }
+
+          &.default-tab {
+            &:before{
+              background-color: $gris-200;
+              border-top: 4px solid $verde-lima-700;
+            }
+            .span{
+              background-color: $verde-lima-700;
+              color: $blanco;
+            }
+          }
+        }
+
+        &:first-of-type{
+          .span:after{
+            display: none;
+          }
+        }
+      }
+
+
+      .active-tab + a{
+        .span:after{
+          display: none;
+        }
+      }
+
+    }
+    .links {
+      clear: both;
+      .section {
+        position: relative;
+        background: $universidad-800;
+        &.has-paragraphs {
+          p {
+            font-size: .9375rem;
+            line-height: 1.3125rem;
+          }
+          h1, h2, h3, h4, h5,
+          .h1, .h2, .h3, .h4, .h5 {
+            margin-top: 0;
+            margin-bottom: 30px;
+          }
+        }
+
+        .title {
+          height: 60px;
+          display: none;
+          text-transform: uppercase;
+          font-size: 18px;
+          padding: 0 2%;
+          position: relative;
+
+          @media screen and (max-width: 620px) {
+            display: flex;
+            align-items: center;
+
+            &:before, &:after {
+
+            }
+            &:hover{
+              text-decoration: none;
+            }
+          }
+
+          .flecha{
+            width: 22px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            background-color: transparent;
+            color: black;
+            transform: rotate(-180deg) translateY(0px);
+            transition: $transition-all;
+            font-size: rem(22);
+            svg{
+              stroke-width:1px;
+            }
+          }
+          &.active{ //Esta clase se debe crear para que el color cambie en el titulo
+            opacity: 1;
+            .flecha{
+              transform: rotate(0deg) translateY(0px);
+            }
+          }
+        }
+        .box {
+          overflow: hidden;
+          display: none;
+          padding-bottom: 30px;
+
+          ul{
+            width: 65%;
+            margin: 30px 0;
+            @media (max-width:$ipad) and (min-width:$minimo) {
+              width: 100%;
+            }
+            li{
+              border-top: 1px dotted white;
+              padding: 10px 0;
+              &:last-of-type{
+                border-bottom: 1px dotted white;
+              }
+            }
+          }
+          &.active {
+            display: block;
+          }
+        }
+        .boton-linea{
+          box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+        }
+
+        .imagen{
+          background-image:  url(../images/doctorado01.png);
+          background-color: $verde-oscuro;
+        }
+        .title{
+          background-color: $gris-200;
+          border-top: solid 4px $verde-lima-700;
+          color: $negro;
+          &.active{
+            color: $blanco;
+            background-color: $verde-lima-700;
+            .flecha{
+              color: $blanco;
+            }
+          }
+        }
+
+        .imagen{
+          content: '';
+          width: 35%;
+          height: 120%;//EL calc no funcionó pero debería ser ( 100% - 54px)
+          position: absolute;
+          top: -54px;
+          right: 0;
+          z-index: 0;
+          background-image:  url(../images/carrusel-home-01.png);
+          background-color: $azul-espectro;
+          background-size: cover;
+          background-position: center;
+          @media (max-width:1200px) and (min-width:$ipad) {
+            width: 32%;
+          }
+          @media (max-width:$ipad) and (min-width:$minimo) {
+            display: none;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+.safari{
+  .admissions{
+    font-weight: 400;
+  }
+}

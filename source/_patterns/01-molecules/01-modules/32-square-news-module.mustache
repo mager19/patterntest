@@ -1,0 +1,14 @@
+<article class="square-news">
+    <div class="hover-news-image"> <img src="../../images/{{# img-url }}{{img-url}}{{/ img-url }}{{^ img-url }}news-hover-2-600x600.jpg{{/ img-url}}"  alt="Noticia" /></div>
+    <div class="contenido-square-news">
+      {{> atoms-date(format:"2021") }}
+      <div class="title">
+      <h4>{{^ title }}{{title}}{{/ title}}{{#  title }}Constitución y guerra en la Colombia del siglo xx. Relaciones entre la cultura constitucional y las etapas  bélicas del siglo pasado{{/ title }}</h4>
+      </div>
+      <div class="lead">
+         <p>{{# lead }}{{lead}}{{/ lead}}{{^ lead }}Cátedra unesco derechos humanos y violencia: gobierno y gobernanzalas políticas públicas frente a las violaciones a los derechos humanos{{/ lead }}</p>
+      </div>
+      <div class="news-button">{{> atoms-line-button(text:"Ver más", icon-selector:"derecha", modifier-class:"derecha") }}</div>
+    </div>
+
+</article>

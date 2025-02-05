@@ -1,0 +1,32 @@
+<div class="faculty-conexion">
+  {{> organisms-header-blogs(facultad:"Comunicación Social - Periodismo", logo:"../../images/logos/conexion-externado.png", header_inner_menu:true) }} 
+  {{> organisms-faculty-carousel }}
+ <div class="fondo-oscuro columnas-alto-fijo">
+    <div class="centrar">
+      <div class="columna12 margin-m">
+        <div class="columnas-alto-fijo centrar-flex"> 
+          {{> atoms-circle-icon-button(icon-selector:"icon-libro-01", text:"PUBLICA CON NOSOTROS") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-premio", text:"PREMIOS JOSÉ DE RECASENS") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-voz", text:"PARRILLA DE PODCAST") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-cohete", text:"SUBACHOQUE") }}
+        </div>
+      </div>
+
+      {{> organisms-news-category-group-2(main-position:false, category:"LITERATURA") }}
+      {{> organisms-news-category-group-2(main-position:true, category:"CULTURA") }}
+      {{> organisms-news-category-group-2(main-position:false, category:"DEPORTES") }}
+        
+      <div class="columna12 margin-m">
+        <div class="columnas-alto-fijo centrar-flex"> 
+          {{> atoms-circle-icon-button(icon-selector:"icon-multimedia", text:"MULTIMEDIA") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-pelicula-02", text:"VIDEO") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-audifonos-2", text:"AUDIO") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-foto-03", text:"IMAGEN") }}
+          {{> atoms-circle-icon-button(icon-selector:"icon-libro-03", text:"TEXTO") }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+{{> organisms-footer-blogs }}x

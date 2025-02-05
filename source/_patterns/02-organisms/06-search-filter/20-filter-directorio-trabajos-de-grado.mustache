@@ -1,0 +1,107 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div>
+       <div class="panel">
+          <div class="info">
+            <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button></div></div>
+      
+      </div></div>
+            <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+
+                  {{> atoms-search-form(tit-search-form:"Título, palabra clave o número")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+            <!-- 01 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                <div id="libro" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Autor</option>
+                        <option value="opcion-1">Autor 1</option>
+                        <option value="opcion-2">Autor 2</option>
+                        <option value="opcion-3">Autor 3</option>
+                        <option value="opcion-3">Autor 4</option>
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /01-->
+          <!-- 02 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Director</option>
+                        <option value="opcion-1">Director 1</option>
+                        <option value="opcion-2">Director 2</option>
+                        <option value="opcion-3">Director 3</option>
+                        <option value="opcion-3">Director 4</option>
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 Fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha de publicación")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Temáticas</option>
+                        <option value="opcion-1">Bioética</option>
+                        <option value="opcion-2">Genética</option>
+                        <option value="opcion-3">Responsabilidad</option>
+                        <option value="opcion-3">Daño</option>
+                        <option value="opcion-3">Cuerpo</option>
+                        <option value="opcion-3">Derechos fundamentales</option>
+                        <option value="opcion-3">Salud</option>
+                        <option value="opcion-3">Reforma</option>
+                        <option value="opcion-3">IVE</option>
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /04-->
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

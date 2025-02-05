@@ -1,0 +1,19 @@
+.centrar-bt {
+	text-align: center;
+	margin-top: 15px;
+}
+.minisite-bt {
+	border: 2px solid  $verde-lima-700;
+	padding: 10px;
+	overflow: hidden;
+ &:hover {
+ background-color: $verde-lima-700;
+ color: white;
+}
+}
+.centrar-vertical {
+	font-size: 1.5rem;
+	font-style: italic;
+	font-weight: bold;
+	padding: calc(19% - 15%);
+}

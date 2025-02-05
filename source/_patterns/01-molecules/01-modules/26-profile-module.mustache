@@ -1,0 +1,14 @@
+<div class="modulo-relacionado">
+    <a href="#">
+    {{> atoms-avatar(avatar-class:"grayscale-foto", avatar-img:"profile.jpg", avatar-alt:"Imagen destacada" ) }}</a>
+
+    <div class="info">
+      <h3 class="h4"><a href="#">{{# nombre }}{{nombre}}{{/ nombre }}{{^ nombre }}Nombre y apellidos{{/ nombre}}</a></h3>
+      <div class="h6">   {{# cargo }}{{cargo}}{{/ cargo }}{{^ cargo }}Cargo o País {{/ cargo}}</div>
+      <p><a class="mail" href="mailto:nombre@uexternado.edu.co"> <strong>nombre.apellido@uexternado.edu.co</strong><br> </a>
+        Extensión: 2002</p>
+      <p>{{# lead-perfil }}{{lead-perfil}}{{/ lead-perfil }}{{^ lead-perfil }}Abogada de la Universidad Externado de Colombia, Investigadora del Departamento de Derecho Procesal de la misma Universidad y abogada de litigios de la firma MORENO SERVICIOS LEGALES S.A.S.  Matrícula de [...]{{/ lead-perfil}}</p>
+      {{> atoms-button-gray(text:"Ver perfil") }} 
+      <p><a class="link" href="#" target="_blank"><strong>CvLAC</strong></a></p>
+    </div>
+ </div>

@@ -1,0 +1,44 @@
+{{> organisms-header }}
+
+<div class="faculty-la-universidad">
+  {{> organisms-secondary-header-menu(faculty-home:"La Universidad") }}
+
+
+  <div class="contenedor">
+    <div class="centrar">
+      <div class="columna08-grande contenido">
+            <h1>Nombre Apellido</h1>
+        
+        <div class="texto">
+
+          <p><a class="mail" href="mailto:nombre.apellido@uexternado.edu.co"> <strong>nombre.apellido@uexternado.edu.co</strong> </a></p>
+
+          <p class="border-top"><a href="#">Periodista</a></p>
+
+          <p class="border-top">Perifl lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis suscipit ex non nunc egestas, a lobortis odio lobortis. Nam vitae maximus orci. Nam elementum in nibh venenatis convallis. Cras tempus feugiat risus, nec ultrices mi facilisis a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sodales, eros vel condimentum condimentum, massa sem dapibus quam, in hendrerit erat ante id magna.</p>
+
+          </div>
+
+        <div class="lista-noticias">
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+        </div>
+        {{> molecules-pagination}}
+      </div>
+
+      <aside class="columna04 aside">
+         {{> organisms-accordion-news(onlyShare: true) }}
+      </aside>
+    </div>
+  </div>
+
+  {{> organisms-faculty-info }}
+</div>
+
+{{> organisms-footer }}

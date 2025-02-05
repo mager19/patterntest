@@ -1,0 +1,53 @@
+{{> organisms-header }}
+
+<div class="faculty-la-universidad">
+  {{> organisms-secondary-header-menu(faculty-home:"La Universidad") }}
+<div class="contenedor">
+  <div class="centrar overflow">
+    <main>
+      <div class="centrar">
+        <h3 class="texto-centrado margen-titulo">Docentes</h3>
+      </div>
+    </div>
+    <div class="centrar">
+      <div class="columnas-alto-fijo">
+        <div class="columna03 columnas-alto-fijo centrar-horizontalmente">
+            <form class="columna12">
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Ordenar por</option>
+                        <option value="orden-alfabetico">Ordenar (A - Z)</option>
+                        <option value="Recientes">Ordenar (Z - A)</option>
+                      </select>
+                    </label>
+                  </form>
+  
+        </div>
+      </div>
+      <div class="columna12 contenido pagina-completa">
+      <!--Estas son las categorías, que pueden ser creadas desde Wordpress-->
+
+        <div class="grilla-portal-4columnas">
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+          {{> molecules-profile-module-team-2 }}
+        </div>
+      </div>
+    </main>
+  </div>
+  </div>
+
+  {{> organisms-faculty-info(title-footer:"La Universidad") }}
+</div>
+
+{{> organisms-footer }}
+

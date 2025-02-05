@@ -1,0 +1,21 @@
+{{> organisms-header-blogs(nombre:"", slogan:"") }}
+
+<div class="faculty-defecto">
+  <div class="fondo-completo busqueda-wpsolr padding-none">
+    <div class="centrar">
+      <aside class="columna04 aside"> 
+      {{> organisms-accordion-classifieds-filter }}
+     </aside>
+      <div class="columna08 contenido">
+        <h3>Clasificados</h3>
+        {{> molecules-classified-card(nom-category:"Finza Raíz", class-category:"administracion-de-empresas")  }}
+        {{> molecules-classified-card(nom-category:"Vehículos", class-category:"comunicacion-social-periodismo")  }}
+        {{> molecules-classified-card(nom-category:"Servicios", class-category:"contaduria-publica")  }}
+        {{> molecules-classified-card(nom-category:"Mascotas", class-category:"derecho")  }}
+        {{> molecules-classified-card(nom-category:"Varios", class-category:"la-universidad")  }}
+        {{> molecules-pagination}}
+
+      </div>       
+    </div>
+  </div>
+{{> organisms-footer-blogs }}

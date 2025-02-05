@@ -1,0 +1,80 @@
+.anterior-siguiente{
+  display: block;
+  min-height: 110px;
+  // margin-top: -20px;
+		h6{
+      font-size: rem(18);
+      color:$azul-cienaga;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: rem(14);
+      line-height: rem(16);
+      margin-top: 0;
+      color: $azul-carbon;
+    }
+    a.anterior, a.siguiente{
+      width: 50%;
+      height: 110px;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      transition: $transition-all;
+      &:hover{
+        background-color: $blanco-humo;
+        .flecha{
+          background-color: $blanco-humo;
+          color: $verde-lima-700;
+        }
+      }
+      @media (max-width: 600px) and (min-width: $minimo ) {
+        width: 100%;
+        float: none;
+      }
+    }
+    .flecha{
+      display: block;
+      position: absolute;
+      top: 20px;
+      width: 42px;
+      height: 42px;
+      border-radius: 42px;
+      font-weight: bold;
+      background-color:$verde-lima-700;
+      color:white;
+      transition: $transition-all;
+      font-size: rem(28);
+      line-height: rem(34);
+      text-align: center;
+      color: white;
+      transform: rotate(0deg) translateY(6px);
+    }
+    .anterior{
+      padding: 30px 15px 15px 70px;
+      float: left;
+      .flecha{
+        left: 10px;
+      }
+      @media (max-width: 600px) and (min-width: $minimo ) {
+        border-bottom: thin dotted #CACACA;
+      }
+      &:hover{
+        .flecha{
+          @include izquierda-hover;
+        }
+      }
+    }
+    .siguiente{
+      padding: 30px 70px 15px 15px;
+      text-align: right;
+      float: right;
+      .flecha{
+        right: 10px;
+      }
+      &:hover{
+        .flecha{
+          @include derecha-hover;
+        }
+      }
+    }
+	}

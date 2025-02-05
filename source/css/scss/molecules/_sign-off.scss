@@ -1,0 +1,51 @@
+.cerrar-sesion {
+    font-size: .9rem;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+
+    .boton-linea{ 
+        font-size: 0.8rem;
+        text-align: center;
+        border-radius: 1rem;
+        border-width: 1px;
+        padding: 5px 10px;
+        min-width: 145px;
+        border-color:$verde-lima-400;
+        color:$verde-lima-400;
+
+        &:hover{
+            background-color: $blanco;
+            color:$verde-lima-700;
+        }
+
+        @media (max-width:$ipad) and (min-width:$minimo) {
+         padding: 2px 5px;
+         min-width: 115px;
+        }
+
+        span{
+        line-height: 0;
+        padding-left: 5px;   
+        @media (max-width:$ipad) and (min-width:$minimo) {
+          display: none;  
+            }
+        }
+    }
+
+    p.nombre-usuario {
+        line-height: 13px; 
+        font-size: rem(15);
+        padding: 10px;
+        width: -webkit-fit-content;
+        width: fit-content;
+        margin: 5px 5px 5px 0;
+        @media (max-width:$ipad) and (min-width:$minimo) {
+            padding: 5px;
+            font-size: .7rem;
+        }
+    }
+}
+
+
+ 

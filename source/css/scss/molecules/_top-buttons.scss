@@ -1,0 +1,312 @@
+#menu {
+  .botonera {
+    @media (max-width: $maximo) and (min-width: 1350px) {
+      align-items: center;
+      display: flex;
+      padding-left: 10px;
+      justify-content: flex-end;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 1350px) and (min-width: 880px) {
+      align-items: flex-start;
+      -ms-flex-align: flex-start;
+      display: flex;
+      padding-left: 10px;
+      justify-content: flex-end;
+      margin-right: 90px;
+    }
+
+    @media (max-width: 880px) and (min-width: $ipad) {
+      margin-right: 70px;
+    }
+
+    .icono {
+      font-size: rem(24);
+      width: 27px;
+      height: 27px;
+
+      &.tip {
+        position: relative;
+        $position-2: -1 * ($em-base / 2);
+        $position-4: -1 * ($em-base / 4);
+
+        &:before {
+          position: absolute;
+          visibility: collapse;
+          display: block;
+          opacity: 0;
+
+          content: attr(title);
+          transition: 0.5s all;
+          background: white;
+          color: #222;
+          font-size: rem(17);
+          border-radius: $position-4 * -1;
+          padding: ($position-2 * -1);
+          border: 1px solid #d3d3d3;
+          top: unquote("calc(100% + " + $em-base + ")");
+          font-family: $lato;
+          box-shadow: $position-2 $position-2 ($position-2 * -1) #aaa;
+          z-index: 99999999;
+          box-sizing: initial;
+          line-height: 24.633px;
+          //text-align: left;
+        }
+
+        &:hover,
+        &:focus {
+          &:before {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $verde-oscuro;
+      }
+    }
+
+    .otros-sitios {
+      z-index: 2;
+
+      .boton-accesos {
+        color: $gris-acero;
+        font-size: 0.875rem;
+        padding: 0;
+        visibility: hidden;
+        position: relative;
+        width: 340px;
+
+        @media (max-width: 1350px) and (min-width: 880px) {
+          visibility: visible;
+          padding: 8px 10px 0;
+          display: flex;
+          flex-flow: column;
+          width: auto;
+          min-width: 60px;
+
+          &:hover {
+            background-color: $verde-lima;
+            color: white;
+
+            .accesos-rapidos {
+              visibility: visible;
+            }
+          }
+        }
+        @media (max-width: 880px) and (min-width: $ipad) {
+          visibility: visible;
+          padding: 11px 10px 0;
+          display: flex;
+          flex-flow: column;
+          width: auto;
+          min-width: 50px;
+          font-size: 0.75rem;
+
+          &:hover {
+            background-color: $verde-lima;
+            color: white;
+
+            .accesos-rapidos {
+              visibility: visible;
+            }
+          }
+        }
+
+        a {
+          float: left;
+          @media (max-width: 1350px) and (min-width: $ipad) {
+            display: block;
+            text-align: center;
+            padding-bottom: 8px;
+          }
+        }
+      }
+
+      .accesos-rapidos {
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-end;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        height: 35px;
+        overflow: hidden;
+        z-index: 1;
+        visibility: visible;
+        width: 100%;
+        position: absolute;
+        top: 0;
+
+        @media (max-width: 1350px) and (min-width: $ipad) {
+          flex-direction: column;
+          height: auto;
+          visibility: hidden;
+          top: 35px;
+          right: 0;
+          width: 150px;
+        }
+
+        li {
+          color: $gris-acero;
+          font-size: 0.875rem;
+          padding: 8px 0 8px 3px;
+          margin-left: -1px;
+
+          @media (max-width: 1350px) and (min-width: $ipad) {
+            font-size: rem(11);
+          }
+
+          @media (max-width: 1350px) and (min-width: $ipad) {
+            background-color: white;
+            width: 101%;
+            border-bottom: 1px dotted $gris-hierro;
+
+            &:last-child {
+              border-bottom: 3px solid $verde-lima;
+            }
+          }
+
+          a {
+            padding: 0 3px 0 3px;
+            border-right: 1px solid $verde-lima;
+
+            @media (max-width: 1350px) and (min-width: $ipad) {
+              border-right: none;
+              text-align: left;
+            }
+          }
+
+          &:hover {
+            background-color: $verde-lima;
+            color: white;
+
+            @media (max-width: 1350px) and (min-width: $ipad) {
+              background-color: white;
+              color: $verde-lima;
+            }
+          }
+
+          &:last-child {
+            a {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-- slicknav botonera --*/
+.slicknav_menu {
+  .botonera {
+    display: block;
+    margin: 0 !important;
+
+    .icono {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    span {
+      width: 30px;
+      height: 30px;
+      display: block;
+      margin: 0 auto;
+      line-height: 34px;
+
+      svg {
+        font-size: rem(30);
+        text-align: center;
+      }
+    }
+
+    a {
+      position: relative;
+
+      &:before {
+        font-size: 30px;
+        padding: 0 2px;
+        line-height: 35px;
+      }
+
+      &:nth-child(1):after,
+      &:nth-child(2):after,
+      &:nth-child(3):after {
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 45px;
+        width: 350px;
+      }
+
+      &:nth-child(1) {
+        &:after {
+          content: "Bienestar Universitario";
+        }
+      }
+
+      &:nth-child(2) {
+        &:after {
+          content: "Publicaciones";
+        }
+      }
+    }
+    .otros-sitios {
+      padding: 0;
+
+      .boton-accesos {
+        a {
+          width: 100%;
+          background-color: transparent !important;
+          padding: 0;
+          margin: 0;
+          line-height: initial;
+          -webkit-font-smoothing: antialiased;
+          height: auto;
+          color: transparent;
+          height: 0;
+
+          &:after {
+            display: none;
+          }
+        }
+
+        &:hover {
+          background-color: transparent !important;
+        }
+      }
+
+      .accesos-rapidos {
+        padding: 0;
+        display: block !important;
+
+        li {
+          border-bottom: 1px solid #033;
+
+          a {
+            width: 100%;
+            background-color: transparent !important;
+            padding: 15px 5%;
+            margin: 0;
+            line-height: initial;
+            -webkit-font-smoothing: antialiased;
+            height: auto;
+            color: white;
+
+            &:after {
+              display: none;
+            }
+          }
+        }
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

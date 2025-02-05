@@ -1,0 +1,69 @@
+.magnetic {
+	border-bottom-left-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	-moz-border-radius-bottom-left: 0.5rem;
+	-moz-border-radius-top-left: 0.5rem;
+	-webkit-border-bottom-left-radius: 0.5rem;
+	-webkit-border-top-left-radius: 0.5rem;
+	color: #FFF;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 0.85rem;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	text-align: center;
+	line-height: 1rem;
+	background: $verde-lima-700 !important;
+	list-style-type: none;
+
+	&:hover{
+		background-color: $azul-carbon !important;
+		text-decoration: none;
+	}
+
+	@media (max-width:$ipad){
+		display: none; 
+		color: #FFF;
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		-moz-border-radius-bottom-left: 0;
+		-moz-border-radius-top-left: 0;
+		-webkit-border-bottom-left-radius: 0;
+		-webkit-border-top-left-radius: 0; 
+		padding: 0; 
+		background-color : $blanco-humo !important;    
+	}
+
+	a {
+
+		.icon-menu-magnetico {
+			width: 30px;
+			height: 30px;
+			display: block;
+			margin: auto;
+
+			@media (max-width:$ipad){
+				display: none;       
+			}
+		}
+		.aulas-icon{
+			background: url(../images/icons-comunidad-virtual/icono-aulas-virtuales.svg) no-repeat;
+		}
+		.comunidades-icon{
+			background: url(../images/icons-comunidad-virtual/icono-comunidades.svg) no-repeat;
+		}
+		.contacto-icon{
+			background: url(../images/icons-comunidad-virtual/icono-contactenos.svg) no-repeat;
+		}
+	} 
+}
+
+.magnetic.dark{
+
+	background: $azul-carbon !important;
+
+		&:hover{
+		background-color: $verde-efecto !important;
+
+	}
+}

@@ -1,0 +1,31 @@
+.user-online-status {
+  background-color: $gris-acero;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: rem(3);
+  bottom: rem(40);
+  color: white;
+  display: inline-block;
+  height: rem(16);
+  position: absolute;
+  right: rem(43);
+  width: rem(16);
+
+  @media (max-width: 782px) {
+    right: calc(50% - 4.75rem);
+  }
+
+  &.online {
+    background-color: $verde-lima-700;
+  }
+}
+
+// Styles for correct visualition on Pattern Lab
+#atoms-user-online-status,
+#atoms-user-online-status-online {
+  .user-online-status {
+    right: auto;
+    left: 0;
+    bottom: auto;
+  }
+}

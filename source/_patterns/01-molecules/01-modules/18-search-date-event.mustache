@@ -1,0 +1,59 @@
+<div class="modulo-busqueda-fecha">
+	<!-- Botonera -->
+<h2 class="titulo-buscador-eventos h4">Calendario de eventos</h2>
+<div class="columnas-alto-fijo">
+<div class="columna04"><label class="button-fecha"><input type="button" class="btn btn-primary boton-gris button-fecha" value="Cualquier fecha" data-toggle="modal" data-target=".busqueda-fecha"></input></label></div>
+<div class="columna04">
+	<label class="dropdown button-search-facultad">
+  <select aria-label="facultad" >
+    <option select value="">Todas las unidades</option>
+ 			<option value="">Administración de Empresas</option>
+            <option value="">Administración de Empresas Turísticas y Hoteleras</option>
+            <option value="">Ciencias de la Educación</option>
+            <option value="">Ciencias Sociales y Humanas</option>
+            <option value="">Comunicación Social – Periodismo</option>
+            <option value="">Contaduría Pública</option>
+            <option value="">Derecho</option>
+            <option value="">Decanatura Cultural</option>
+            <option value="">Economía</option>
+            <option value="">Estudios del Patrimonio Cultural</option>
+            <option value="">Finanzas, Gobierno y Relaciones Internacionales</option>
+  </select>
+</label>
+</div>
+<div class="columna04"><a class="boton button-search-event aligncenter" href="">Buscar eventos</a></div>
+</div>
+<!-- Fin Botonera -->
+<!-- Modal -->
+<div class="modal fade busqueda-fecha" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div id="modal-agenda" class="modal-dialog modal-l">
+    <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close cerrar-circular" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Búsqueda de evento por fecha</h4>
+      </div>
+		<div class="modal-body columnas-alto-fijo">
+       <div class="columna12 ">
+        <input type="radio" onclick="addDisableRange()" name="date" value=""><label>Hoy</label>
+        <input type="radio" onclick="addDisableRange()" name="date" value=""><label>Esta semana</label>
+        <input type="radio" onclick="addDisableRange()" name="date" value=""><label>Próxima semana</label>
+        <input type="radio" onclick="addDisableRange()" name="date" value=""><label style="text-transform: capitalize;">Octubre</label>
+        <input type="radio" onclick="addDisableRange()" name="date" value=""><label style="text-transform: capitalize;">Noviembre</label>
+        <input type="radio" onclick="addDisableRange()" name="date" value=""><label>Todos</label>
+        <input type="radio" onclick="removeDisableRange()" name="date" value=""><label>Rango</label>
+
+        <div class="search type-date">
+          <input type="text" id="form" class="range-filter-year" placeholder="Desde" disabled>
+          <input type="text" id="to" class="range-filter-year" placeholder="Hasta" disabled>
+        </div>
+
+
+<p class="aligncenter">{{> atoms-button(text:"Aplicar")}}</p>
+</div>
+<div style="clear: both;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin Modal -->
+</div>

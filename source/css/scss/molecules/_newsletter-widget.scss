@@ -1,0 +1,126 @@
+.widget-newsletter,
+.widget_wysija,
+.widget_newsletterwidgetminimal {
+  @include widget;
+
+  .info {
+    form.widget_wysija {
+      margin-bottom: 0px;
+      padding: 5px;
+    }
+
+    .widget_wysija_cont {
+      color: transparent;
+
+      .wysija-paragraph {
+        color: #222;
+      }
+
+      .wysija-submit {
+        background-color: $verde-lima;
+      }
+    }
+
+    .tnp-email {
+      background-color: white;
+      font-size: 1rem;
+      height: 45px;
+    }
+    .tnp-submit {
+      background-color: $verde-lima-700;
+      font-size: 1.125rem;
+      width: auto;
+      margin-top: 5%;
+    }
+
+    .wp-caption-text {
+      &:after {
+        display: none;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+    input[type="text"] {
+      font-size: 1rem;
+      background-color: white;
+    }
+    border-bottom: thin dotted #cacaca;
+    .boton {
+      margin-bottom: 20px;
+    }
+    margin-bottom: 20px;
+  }
+  /* Styles to customize newsletter error from MailPoet */
+  &.widget {
+    position: relative;
+  }
+
+  .formError {
+    bottom: 16px;
+    left: unset !important;
+    right: unset !important;
+    top: unset !important;
+    .formErrorContent {
+      font-size: 12px;
+      width: 174px;
+    }
+  }
+}
+/* Styles for newsletter  MailPoet */
+.widget_mailpoet_form {
+  @include widget;
+  article {
+    overflow: hidden;
+    @media (max-width: $ipad) and (min-width: $movil-amplio) {
+      .info {
+        width: 75%;
+        float: left;
+        display: block;
+      }
+      a.image-widget {
+        width: 23%;
+        float: left;
+        margin: 0 0 0 2%;
+      }
+    }
+    p {
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+        display: inline-block;
+        transition: $transition-color;
+        &:hover {
+          color: $verde-lima;
+        }
+      }
+    }
+
+    .boton {
+      font-size: rem(15);
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+    .mailpoet_text_label {
+      margin-bottom: 10px;
+    }
+
+    input[type="email"] {
+      background-color: white;
+    }
+
+    input.mailpoet_submit {
+      margin: 10px 0 !important;
+    }
+
+    .wp-caption-text {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

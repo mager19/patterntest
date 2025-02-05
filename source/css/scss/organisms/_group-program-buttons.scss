@@ -1,0 +1,52 @@
+.carrusel-programas {
+
+  .slick-slide {
+    margin: 0 5px;
+
+    @media (max-width:$ipad ) and (min-width:$minimo) {
+      margin: 0 20px;
+    }
+    & > div{
+      max-width: 100%;
+    }
+  }
+
+  .slick-arrow {
+    background: $gris-200;
+    border-radius: 50%;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-play-icon,
+  .slick-autoplay-toggle-button,
+  .slick-pause-text {
+    display: none;
+  }
+
+
+
+  .slick-next:before,
+  .slick-prev:before {
+    top: 11px;
+    left: 11px;
+  }
+
+
+  .slick-prev:before {
+    content: '';
+    background: url(../images/izquierda-gris.svg) no-repeat;
+  }
+
+  .slick-next:before {
+    content: '';
+    background: url(../images/derecha-gris.svg) no-repeat;
+  }
+
+}

@@ -1,0 +1,32 @@
+.lista-blogs, .subsite-areas {
+  margin: 40px 0 40px 0;
+  overflow: hidden;
+  h1{
+    border-bottom: $solid-border;
+    padding-bottom: 15px;
+  }
+  .boton{
+    float: right;
+    margin: 10px 0;
+  }
+}
+
+.subsite-areas {
+  article {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 100%;
+      &.unrounded {
+        border-radius: unset;
+      }
+    }
+
+    .info {
+      border-bottom: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

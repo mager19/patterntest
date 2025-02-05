@@ -1,0 +1,17 @@
+.titulo-acordeon {
+	color: $verde-lima;
+      a {
+        color: $azul-carbon;
+        display: flex;
+        position: relative;
+        align-items: center;
+        span {
+          &.flecha {
+            color: $verde-lima;
+          }
+        }
+        h4, .h4 {
+          width: calc( 100% - 35px);
+        }
+      }
+}

@@ -1,0 +1,192 @@
+header.blogs{
+  .logo {
+    top: 0;
+    height: 60px;
+    width: 150px;
+    margin-right: 15px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 2px 10px rgba(0,0,0,.5);
+    -moz-box-shadow: 0px 2px 10px rgba(0,0,0,.5);
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      height: 47px;
+      margin-left: 0;
+      width: 135px;
+      box-shadow: none;
+      position: relative;
+      float: left;
+    }
+    img {
+      width: 73%;
+      margin-top: -5px;
+    }
+  }
+  .idioma-buscador{
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $blanco-humo;
+
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      position: relative;
+      float: none;
+      display: block;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      border-bottom: 55px inset transparent;
+      border-right: 35px solid $blanco-humo;
+      left: -39px;
+    }
+    .buscador{
+      &:before{
+        border-bottom: 55px inset transparent;
+        border-right: 35px solid $azul-cienaga;
+        left: -35px;
+      }
+      input[type=search]{
+        height: 55px;
+        min-width: 197px;
+      }
+      span{
+        font-size: rem(30);
+        padding: 7px 0px;
+        margin-left: -6px;
+      }
+      @media (max-width:$ipad-01) and (min-width:$minimo) {
+        background: darken($blanco-humo, 10%);
+        span{
+          margin-left: 0;
+          color: $azul-carbon;
+        }
+      }
+    }
+    .idioma{
+      @media (max-width:$maximo) and (min-width:$ipad-01) {
+        width: 45px;
+        height: 55px;
+      }
+      margin-right: 38px;
+      box-shadow: -4px 0px $blanco-humo;
+      &:before{
+        border-bottom: 55px inset transparent;
+        border-right: 35px solid $azul-carbon;
+        left: -35px;
+      }
+      &:after{
+        border-left: 35px solid $azul-carbon;
+        border-top: 55px inset transparent;
+        left: 45px;
+      }
+      .idioma-desktop{
+        font-size: 19px;
+        padding: 12px 0 !important;
+      }
+    }
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .barra-superior {
+    height: 48px;
+    color: white;
+    @media (max-width:$desktop) and (min-width:$ipad) {
+      display: contents;
+    }
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      display: contents;
+    }
+    p{
+      display: block;
+      font-size: rem(15);
+      padding: 13px 10px 10px 160px;
+      margin: 0;
+      min-width: 45%;
+      float: left;
+      
+      @include fuente-suave;
+      @media (max-width:$ipad) and (min-width:$minimo) {
+          padding: 10px 10px 10px 20px;
+          font-size: rem(14);
+          min-width: auto;
+          &:before{
+            content: '';
+            height: 27px;
+            display: block;
+            border-left: 1px solid white;
+            float: left;
+            padding-right: 16px;
+          }
+        }
+    }
+    .cerrar-sesion{
+      padding-right: 290px;
+      justify-content: flex-end;
+      height: 48px;
+
+          @media (max-width:$desktop) and (min-width:$ipad) {
+            width: 100%;
+            padding-right: 0;
+            justify-content: flex-end;
+            margin-bottom: 5px;
+            display: flex;
+            max-width: 100%;
+            margin-top: 53px;
+        }
+
+          @media (max-width:$ipad) and (min-width:$minimo) {
+            width: 100%;
+            padding-right: 0;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            display: flex;
+            max-width: 100%;
+        }
+
+      p.nombre-usuario {            
+          text-align: end;
+          padding: 10px;
+          color:$blanco-humo;
+
+          @media (max-width:$desktop) and (min-width:$ipad) {
+            text-align: end;
+            color: $gris-acero;
+            width: 50%;
+          &:before{
+            display: none;
+          }
+        }
+          @media (max-width:$ipad) and (min-width:$minimo) {
+            text-align: start;
+            color: $gris-acero;
+            width: 50%;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+
+    &::after{
+      content: '';
+      width: 100%;
+      height: 48px;
+      background-color : $verde-oscuro;
+      opacity: .9;
+      position: absolute;
+      left: 0;
+      top:0;
+      z-index: -1;
+      @media (max-width:$ipad) and (min-width:$minimo) {
+        opacity: 1;
+      }
+    }
+    
+  }
+}

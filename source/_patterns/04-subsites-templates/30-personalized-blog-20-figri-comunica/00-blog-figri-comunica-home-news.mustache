@@ -1,0 +1,29 @@
+{{> organisms-header }}
+<div class="faculty-finanzas-gobierno-y-relaciones-internacionales">
+   {{> organisms-secondary-header-menu }}
+   <div class="contenedor">
+      <main>
+         {{> molecules-breaking-news(padding-class:"padding_minimo")}}
+         <div class="centrar">
+            <div class="centrar margin-l">
+               <h2 class="h1">Noticias</h2>
+               {{> organisms-carousel-3columns }}
+               <div class="centrar-bt">
+                  {{> atoms-button(text:"Ver más noticias", modifier-class :"border-radius-s")}}
+               </div>
+            </div>
+         </div>
+         <div class="centrar">
+            <div class="columna09">
+               <h4 class="subrayado-der">Figri Comunica</h4>
+               {{> organisms-group-button-4seccion}}
+            </div>
+            <aside class="columna03 aside">
+               {{> molecules-events-widget }}
+            </aside>
+         </div>
+      </main>
+   </div>
+   {{> organisms-faculty-info }}
+</div>
+{{> organisms-footer }}

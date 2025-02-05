@@ -1,0 +1,32 @@
+{{> organisms-header }}
+
+<div class="faculty-contaduria-publica">
+  {{> organisms-secondary-header-menu(faculty-home:"Contaduría Pública")}}
+  <main>
+    {{> organisms-faculty-carousel}}
+    <!--Modulo fin-->
+    <div class="centrar">
+      <div class="contenido pagina-completa texto">
+        
+        CONTENIDO AL 100% PARA MÓDULO ACTUAL (Contenido Opcional 2)
+      </div>
+    </div>
+  </main>
+
+  <div class="centrar  margin-l">
+     <h2 class="h1">Noticias</h2>
+      {{> organisms-carousel-3columns }}
+      <div class="centrar-bt">
+     {{> atoms-button(text:"Ver más noticias", modifier-class :"border-radius-s")}}
+      </div>
+  </div>
+  <div class="fondo-facultad-oscuro">
+    <div class="centrar padding-amplio">
+      {{> organisms-events-carousel(tit-class:"texto-blanco texto-centrado", mode-class:"light") }}
+      <div class="centrar-bt">{{> atoms-button(text:"Ver más eventos", modifier-class :"boton-claro border-radius-s")}}</div>
+    </div>
+  </div>
+  <main>
+  {{> organisms-faculty-info(modifier-class:"margin-none") }}
+</div>
+{{> organisms-footer }}

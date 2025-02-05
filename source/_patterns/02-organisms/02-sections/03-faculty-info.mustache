@@ -1,0 +1,39 @@
+<aside class="informacion-facultad {{^ modifier-class  }}{{/ modifier-class }}{{# modifier-class }}{{modifier-class}}{{/ modifier-class }}">
+    <div class="centrar">
+      <div class="titulo" >
+        <span>
+          <svg class="icon icon-info"><use xlink:href="../../images/iconos.svg#icon-info"></use></svg>
+        </span>
+        <h2 class="h3">{{# title-footer }}{{title-footer}}{{/ title-footer }}{{^ title-footer }}Finanzas, Gobierno y Relaciones Internacionales{{/ title-footer}}</h2>
+    </div>
+
+    <div class="info">
+      <p><strong>Dirección:</strong><br> {{# dir-footer }}{{dir-footer}}{{/ dir-footer }}{{^ dir-footer }}Calle 10A No. 3-15 este. Bogotá, Colombia.(Av. Circunvalar, junto a la iglesia del barrio Egipto).{{/ dir-footer}}</p>
+      <p><strong>Teléfono:</strong> <br> {{# tel-footer }}{{tel-footer}}{{/ tel-footer }}{{^ tel-footer }} 601-353 7000, ext. 1601 ó 1605{{/ tel-footer}}</p>
+      <p><strong>Correo:</strong> <br>{{# correo-footer }}{{correo-footer}}{{/ correo-footer }}{{^ correo-footer }}luz.hurtado2@uexternado.edu.co{{/ correo-footer}}</p>
+      {{^ onlyShare }}
+      <p><strong>Horario de atención:</strong> <br>{{# time-footer }}{{time-footer}}{{/ time-footer }}{{^ time-footer }}Lunes a viernes de 7:00 a.m. a 6:00 p.m.
+      y sábados de 7:00 a.m. a 1:00 p.m.{{/ time-footer}} </p>
+      {{/ onlyShare }}
+
+    </div>
+
+    <div class="redes-sociales">
+      <a href="#" class="icono" aria-label="facebook">
+        <span><svg class="icon icon-facebook"><use xlink:href="../../images/iconos.svg#icon-facebook"></use></svg></span>
+      </a>
+
+      <a href="#" class="icono" aria-label="twitter">
+        <span><svg class="icon icon-twitter"><use xlink:href="../../images/iconos.svg#icon-twitter"></use></svg></span>
+      </a>
+
+      <a href="#" class="icono" aria-label="youtube">
+        <span><svg class="icon icon-youtube"><use xlink:href="../../images/iconos.svg#icon-youtube"></use></svg></span>
+      </a>
+
+      <a href="#" class="icono" aria-label="linkedin">
+        <span><svg class="icon icon-linkedin"><use xlink:href="../../images/iconos.svg#icon-linkedin"></use></svg></span>
+      </a>
+    </div>
+  </div>
+</aside>

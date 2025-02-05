@@ -1,0 +1,179 @@
+.modulo-programa, .shortcode-modulo-programa{
+  height:auto;
+  padding: 25px;
+  border: $solid-border;
+  background-color: white;
+  position: relative;
+  z-index: /*2*/0;
+  margin: 30px 0;
+
+  .titulo-acordeon{
+    margin-bottom: 15px;
+
+    .h4 {
+      color: $azul-carbon;
+    }
+
+    .subcategoria {
+      background-color: $blanco-humo;
+      color: $azul-carbon-700;
+      border-radius: $radius-s;
+      display: inline-block;
+
+      p{
+        display: flex;
+        padding: 3px 5px;
+        font-size: .9rem;
+        align-items: center;
+        line-height: 1rem;
+        margin: 0;
+
+      }
+    }
+  }
+
+  .facultad{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    .h6{
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+        &:before {
+        content: '|';
+        color: $gris-acero;
+        display: inline-flex;
+        margin: 0 8px;
+        }
+       &:first-child:before {
+          display: none;
+        }
+    }
+  }
+
+  .submodulo-programa, .subshortcode-modulo-programa{
+    color: $azul-carbon;
+    border-top: $dotted-border;
+    padding: 12px 2px 12px 0;
+    background-color: transparent;
+    transition: $transition-background;
+    overflow: hidden;
+
+    @media (max-width:$maximo) and (min-width:$small){
+      align-items: center;
+      display: flex;
+    }
+    @media (max-width:$small) and (min-width:$minimo){
+      padding: 10px;
+    }
+    &:last-of-type{
+      border-bottom: $dotted-border;
+    }
+    .programa-filtro{
+      @media (max-width:$maximo) and (min-width:$small){
+        width: calc(100% - 190px);
+      }
+      width: 100%;
+      margin: 0 12px 0 -10px;
+    }
+    p{
+      position: relative;
+      padding: 4px 0 0 24px;
+      font-size: rem(18);
+      line-height: 1.2em;
+      @media (max-width:$small) and (min-width:$minimo){
+        margin: 4px;
+      }
+      svg{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        &.icon-pin-locacion{
+          font-size: rem(26);
+        }
+        &.icon-reloj{
+          font-size: rem(19);
+          margin: 4px 0;
+        }
+
+        &.icon-calendario-02{
+          font-size: rem(19);
+          margin: 5px;
+        }
+      }
+      .margen-izquierdo{margin-left: 1rem;}
+    }
+
+    .boton{
+      font-size: rem(14);
+      padding: 5px 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width:489px) and (min-width:$minimo){
+        margin: 12px 25px;
+      }
+    }
+    span.inscripciones-abiertas{
+      color: $verde-lima-700;
+      font-weight: 700;
+      display: block;
+      margin: 0;
+    }
+  }
+    .thumb {
+      img {
+      border: 1px solid #cacaca;
+      margin: 5px auto;
+      }
+    }
+}
+/* Estilos para template program*/
+.contenedor{
+  .modulo-programa{
+    border: none;
+    padding: 0;
+    margin: 15px 0 15px 0;
+
+    .submodulo-programa{
+      width: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      align-items: flex-start;
+      p{
+        margin:0 20px 0 0px;
+        &:first-of-type{
+          @media (max-width:$maximo) and (min-width:$small){
+            display: block;
+            width: -webkit-min-content;
+            width: min-content;
+            min-width: 220px;
+          }
+        }
+      }
+      &:hover{
+        background-color: transparent;
+      }
+      span.inscripciones-abiertas{
+        margin: 4px 0;
+      }
+    }
+  }
+}
+/*Estilos especiales para el shortcode*/
+.shortcode-modulo-programa{
+  .titulo-acordeon {
+    h6, .h6 {
+      display: none;
+    }
+    h4, .h4 {
+      margin: 0;
+    }
+
+  }
+}

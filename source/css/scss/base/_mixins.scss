@@ -1,0 +1,320 @@
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+// Convert pixels to rems
+// eg. for a relational value of 12px write rem(12)
+// Assumes $em-base is the font-size of <html>
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: $em-base;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+@mixin boton {
+  font-size: rem(18);
+  letter-spacing: rem(0.2);
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  transition: $transition-background;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: white;
+  }
+  @media (max-width: 640px) and (min-width: $minimo) {
+    font-size: rem(14);
+  }
+}
+
+@mixin antialised {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Widgets
+@mixin widget {
+  background-color: $blanco-humo;
+  border-top: solid 5px;
+  padding: 20px 15px 0 15px;
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  article {
+    border-bottom: $dotted-border;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    p,
+    em {
+      font-size: rem(15);
+      line-height: rem(21);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+// Animación de flechas
+@mixin derecha {
+  right: 6px;
+  position: absolute;
+  transition: $transition-all;
+}
+
+@mixin derecha-hover {
+  right: 0;
+}
+
+@mixin izquierda {
+  left: 6px;
+  position: absolute;
+  transition: $transition-all;
+}
+
+@mixin izquierda-hover {
+  left: 0;
+}
+
+// Fuente suave
+@mixin fuente-suave {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Capas transprentes para efectos: mix-blend-mode de botones grandes
+@mixin capa-tranparente {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+//Degradé Lineal
+@mixin degrade-lineal-negro {
+  background: rgba(0, 0, 0, 0);
+  /* Old Browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 88%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  /* FF3.6+ */
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(0, 0, 0, 0)),
+    color-stop(88%, rgba(0, 0, 0, 0.7)),
+    color-stop(100%, rgba(0, 0, 0, 0.7))
+  );
+  /* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 88%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 88%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 88%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  /* IE 10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 88%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+  /* IE6-9 */
+}
+
+@mixin degrade-lineal-blanco {
+  background: rgba(255, 255, 255, 0);
+  /* Old Browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 88%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  /* FF3.6+ */
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(88%, rgba(255, 255, 255, 0.7)),
+    color-stop(100%, rgba(0, 0, 0, 0.7))
+  );
+  /* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 88%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 88%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 88%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  /* IE 10+ */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 88%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+  /* IE6-9 */
+}
+
+@mixin carousel-control {
+  span {
+    background-image: url(../images/imagenes_sprite.svg);
+    height: 295px;
+    display: block;
+    position: absolute;
+  }
+  &.left span {
+    left: 0;
+
+    @media (max-width: $maximo) and (min-width: $ipad) {
+      width: 120px;
+      background-position: 0 0;
+    }
+    @media (max-width: $ipad) and (min-width: 600px) {
+      width: 82px;
+      background-position: -272px 0;
+    }
+    @media (max-width: 600px) and (min-width: $minimo) {
+      width: 65px;
+      height: 165px;
+      background-position: -456px 0;
+    }
+  }
+
+  &.right span {
+    right: 10px;
+    @media (max-width: $maximo) and (min-width: $ipad) {
+      width: 120px;
+      background-position: -123px 0;
+    }
+    @media (max-width: $ipad) and (min-width: 600px) {
+      width: 82px;
+      background-position: -360px 0;
+    }
+    @media (max-width: 600px) and (min-width: $minimo) {
+      width: 65px;
+      height: 165px;
+      background-position: -525px 0;
+    }
+  }
+}
+
+@mixin indicadores-carrusel {
+  width: 15px;
+  height: 15px;
+  margin: 6px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: $transition-all;
+  &:hover {
+    opacity: 1;
+  }
+  &.active {
+    background-color: $verde-lima;
+    border: none;
+    opacity: 1;
+  }
+  @media (max-width: $movil-amplio) and (min-width: $minimo) {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@mixin h2-carrusel {
+  @media (max-width: 800px) and (min-width: 639px) {
+    font-size: rem(26);
+    line-height: rem(28);
+  }
+  @media (max-width: 640px) and (min-width: $movil-amplio) {
+    font-size: rem(21);
+    line-height: rem(23);
+  }
+
+  @media (max-width: $movil-amplio02) and (min-width: $minimo) {
+    font-size: rem(18);
+    line-height: rem(20);
+  }
+}
+
+@mixin h4-carrusel {
+  @media (max-width: 800px) and (min-width: 639px) {
+    font-size: rem(26);
+    line-height: rem(28);
+  }
+  @media (max-width: 640px) and (min-width: $movil-amplio) {
+    font-size: rem(21);
+    line-height: rem(23);
+  }
+
+  @media (max-width: $movil-amplio02) and (min-width: $minimo) {
+    font-size: rem(18);
+    line-height: rem(20);
+  }
+}
+
+// Taken from: https://codepen.io/davidhalford/pen/ALrbEP
+@mixin text-contrast($background-color) {
+  $color-brightness: round(
+    (red($background-color) * 299) + (green($background-color) * 587) +
+      (blue($background-color) * 114) / 1000
+  );
+
+  $light-color: round(
+    (red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000
+  );
+
+  @if abs($color-brightness) < ($light-color/2) {
+    color: $blanco;
+  } @else {
+    color: $negro;
+  }
+}

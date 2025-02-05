@@ -1,0 +1,120 @@
+.secondary-header-menu {
+  .info-secondary-header{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content: center;
+    @media (max-width:$ipad-01) and (min-width:$minimo) {
+      width: 100%;
+    }
+    a {
+      display: inline-block;
+      text-decoration: underline;
+      transition: $transition-color;
+    }
+    .redes-sociales{
+      display: block;
+      float: right;
+      text-align: right;
+      @media (max-width:$ipad-01) and (min-width:$minimo) {
+        display: none;
+        visibility: hidden;
+      }
+      .icono{
+        transition: $transition-background;
+      }
+    }
+    .texto-lateral{
+      text-align: right;
+      width: 100%;
+      color: $azul-carbon;
+      @include fuente-suave;
+      a:hover{
+        color: $verde-lima;
+      }
+      @media (max-width:$ipad-01) and (min-width:$minimo) {
+        text-align: /*left */center;
+        margin-bottom: 20px;
+        font-size: rem(14);
+      }
+    }
+  }
+  section{
+    width: 100%;
+  }
+  .centrar{
+    display: flex;
+    width: 100%;
+    
+    @media (max-width:$ipad-01) and (min-width:$minimo) {
+      width: 100%;
+      display: block;
+    }
+  }
+  .menu-secundario{
+    ul li {
+      &:hover {
+        background-color: darken($blanco-humo, 10%);
+      }
+    }
+
+    .centrar{
+    display: block;
+    }
+  }
+  & + #responsive-secondary-menu{
+    background-color: $blanco-humo;
+    @media (max-width:$maximo) and (min-width:$ipad-01) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 5;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+    }
+    .idioma-buscador{
+      display:none;
+    }
+    &.active{
+      .idioma-buscador{
+        @media (max-width:$ipad) and (min-width:$minimo) {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          padding-bottom: 30px;
+          .buscador{
+            background: darken($blanco-humo, 5%);
+            span{
+              color: $gris-acero;
+            }
+          }
+          .idioma{
+            background-color: darken($blanco-humo, 5%);
+            width: 92%;
+            height: 55px;
+            label.dropdown{
+              select{
+                color: $gris-acero;
+                width: 100%;
+                height: 54px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-left: 0;
+              }
+              &:after{
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid $verde-lima;
+                right: 8px;
+                top: 25px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

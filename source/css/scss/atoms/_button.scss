@@ -1,0 +1,61 @@
+.boton,
+input[type="submit"],
+input[type="button"],
+.moreButton,
+.wp-block-button .wp-block-button__link,
+.texto a.boton,
+.botones-subscription input[type="submit"].boton,
+.botones-subscription input[type="button"].boton,
+.modulo-relacionado .info .boton {
+  @include boton;
+  background-color: $verde-lima-700;
+  color: $blanco;
+  appearance: none;
+  text-transform: none;
+  &:hover{
+    background-color:  $azul-carbon-700;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+    text-decoration: none;
+  }
+
+  &.boton-2 {
+    font-size: rem(16);
+    font-weight: 400;
+    padding: rem(8) rem(24);
+    text-transform: none;
+
+    &:disabled, &[disabled], &.disabled {
+      background-color: #8a8a8a;
+      box-shadow: none;
+      cursor: unset;
+    }
+  }
+
+  &.boton-claro {
+      color: $azul-carbon-900;
+      background: $verde-lima-400;
+
+      &:hover{
+        background-color: $azul-carbon-200;
+     }
+  }
+
+  &.boton-destacado{
+      color: white;
+      background: $informacion-700;
+
+      &:hover{
+        background-color: $azul-carbon-700;
+     }
+  }
+
+  &.boton-big{
+    font-size: 1.35rem;
+    padding: 12px;
+    font-weight: 300;
+    }
+
+  &.bottom-margin {
+    margin-bottom: 1rem;
+  }
+}

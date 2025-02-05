@@ -1,0 +1,107 @@
+.secondary-header-menu {
+    .menu-hamburguesa{
+        width: 100%;
+        background-color: #ed7a09;
+        padding: 1rem;
+        color: white;
+      }
+      
+      .ul{
+        flex-direction: column;
+      }
+      
+      .li{
+        margin: 1rem 0;
+        font-size: 2rem;
+      }
+      
+      .nav{
+        width: 100%;
+        margin: 0 4rem 3rem;
+      }
+      
+      .button{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      
+      .texto-columna03{
+          font-size: 1.8rem;
+          letter-spacing: 1px;
+          font-weight: 300;
+          margin-top: 2rem;
+      }
+      
+      img{
+        width: 2.5rem;
+        margin: 0 3rem;
+      }
+      
+      a img {
+         margin: 0;
+      }
+      
+      .menu-hamburguesa.is-active{
+        background-color:none;
+      }
+      
+      .menu-ppal.is_active{
+        transform: translate3d(0px, 0px, 0px);
+      }
+      
+  & + #responsive-secondary-menu{
+    background-color: $blanco-humo;
+    @media (max-width:$maximo) and (min-width:$ipad-01) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 5;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+    }
+    .idioma-buscador{
+      display:none;
+    }
+    &.active{
+      .idioma-buscador{
+        @media (max-width:$ipad) and (min-width:$minimo) {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          padding-bottom: 30px;
+          .buscador{
+            background: darken($blanco-humo, 5%);
+            span{
+              color: $gris-acero;
+            }
+          }
+          .idioma{
+            background-color: darken($blanco-humo, 5%);
+            width: 92%;
+            height: 55px;
+            label.dropdown{
+              select{
+                color: $gris-acero;
+                width: 100%;
+                height: 54px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-left: 0;
+              }
+              &:after{
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid $verde-lima;
+                right: 8px;
+                top: 25px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

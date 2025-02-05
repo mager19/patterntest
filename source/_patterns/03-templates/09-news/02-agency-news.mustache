@@ -1,0 +1,34 @@
+{{> organisms-header }}
+<div class="faculty-defecto">
+{{> organisms-secondary-header-menu(faculty-home:"Agencia de noticias")}}
+    <div class="contenedor">
+  <div class="centrar">
+        <main>
+        <article class="columna11 margin-m texto">
+      
+        <div class="contenido">
+          <h1>Estados Unidos: Los riesgos económicos</h1>
+
+          <!--ESTE PUEDE SER O UN VIDEO O UNA IMAGEN: Si se sube un video no debe salir la imagen destacada-->
+            {{> atoms-iframe }}
+
+          <div class="info">
+          <div class="h6"><a href="#">Categoría</a></div>
+          {{> atoms-author(author-text:"Nataly Lorena Mostacilla Herrera") }}
+          </div>
+          
+          {{> atoms-lead }}
+
+
+          <p>Contendio de la noticia: Las prácticas se realizaron dentro del proyecto de investigación de la tesis doctoral de la Universidad de Pittsburgh del arqueólogo Juan Carlos Vargas. Esta tesis está enfocada en establecer cómo para las antiguas poblaciones del Casanare,  existe una relación entre producción agrícola y el surgimiento del liderazgo.  </p>
+
+          <div class="border-top">{{> atoms-date }} </div>
+      </article>
+      </main>
+      <div class="lateral-sticky"> {{> molecules-share-vertical }}  </div> 
+            {{> molecules-module-tags }}
+        </div>
+      </div>
+  {{> organisms-faculty-info(title-footer:"Agencia de Noticias", dir-footer:"Calle 12 # 1-17 este. Edificio A, piso 6.", tel-footer:"601-353 7000, extensión: 3202", correo-footer:"luz.hurtado2@uexternado.edu.co", onlyShare: true)  }}
+</div>
+{{> organisms-footer }} 

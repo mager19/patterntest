@@ -1,0 +1,155 @@
+.btn-icon-round {
+  @include boton;
+  height: 60px;
+  width: 98%;
+  background-color: $verde-lima-700;
+  display: flex!important;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px auto;
+  overflow: visible;
+  border-radius: 2rem;
+  position: relative;
+  padding: 10px 10px 10px 16px;
+  appearance: none;
+  text-transform: none;
+
+
+  @media (max-width: $ipad) and (min-width:$minimo) {
+      padding: 10px;
+  }
+
+
+  &:hover {
+    background-color: $verde-lima-900;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+
+    span:nth-of-type(2){
+      @include derecha-hover;
+    }
+  }
+  p {
+    font-size: rem(18);
+    line-height: rem(20);
+    color:white;
+    @media (max-width: $ipad) and (min-width:$minimo) {
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+    }
+  }
+  span {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    &:nth-of-type(1) {
+      background-color: $azul-carbon-500;
+      border-radius: 50%;
+      color: white;
+      line-height: 0;
+      height: 70px;
+      width: 70px;
+      font-size: 70px;
+      padding: 10px;
+      border: 3px solid white;
+      margin-left: -1.1rem;
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: $ipad) and (min-width:$minimo) {
+        height: 60px;
+        width: 60px;
+        margin-left: -10px;
+        margin-right: 10px;
+        font-size: 2.5rem;
+      }
+    }
+    &:nth-of-type(2) {
+      line-height: 0;
+      font-size: 1.7rem;
+      position: absolute;
+      right: 1rem;
+      transition: $transition-all ;
+      color:white;
+
+      @media (max-width: $ipad) and (min-width:$minimo) {
+        right: 10px;
+      }
+
+    }
+  }
+}
+
+#fixed-button-left{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  max-width: 220px;
+  z-index: 10;
+
+      @media (max-width: $ipad) and (min-width:$minimo) {
+           top: 58px;
+           left: 0;
+           max-width: 100%;
+           width: 100%;
+        }
+
+  .btn-icon-round{
+        background-color: $azul-mar;
+        padding: 2px 8px;
+        height: 45px;
+
+         &:hover {
+            background-color: $azul-carbon;
+
+             span:nth-of-type(2){
+              @include derecha-hover;
+              }
+          }
+
+      @media (max-width: $ipad) and (min-width:$minimo) {
+          border-radius: 0;
+          margin: 0;
+          height: 30px;
+          width: 100%;
+        }
+
+      p {
+        font-size: rem(16);
+        line-height: rem(18);
+        margin: 2px 20px 2px 0;
+
+        @media (max-width: $ipad) and (min-width:$minimo) {
+          font-size: rem(15);
+          line-height: rem(17);
+        }
+      }
+
+        span {
+          &:nth-of-type(1) {
+            background-color: $verde-lima;
+            font-size: 50px;
+            height: 46px;
+            width: 50px;
+            padding: 5px;
+            margin-right: 5px;
+           
+
+            @media (max-width: $ipad) and (min-width:$minimo) {
+               display: none;
+              }
+
+          }
+          &:nth-of-type(2) {
+            font-size: 1.3rem;
+            right: 10px;
+          }
+
+
+        }
+
+
+  }
+}

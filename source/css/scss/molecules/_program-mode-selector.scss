@@ -1,0 +1,154 @@
+.selector-modalidad{
+	opacity: 0;
+	pointer-events: none;
+	background-color: #000000cf;
+	backdrop-filter: blur(20px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 2rem;
+	transition: all ease-in-out .4s;
+	&.activo{
+		opacity: 1;
+		pointer-events: all;
+	}
+	.title{
+		font-size: 1.7rem;
+		font-weight: bold;
+		color: white;
+		line-height: 1.2;
+		text-align: center;
+		margin: 0 0 1.5rem;
+	}
+	.description{
+		font-size: 1rem;
+		font-weight: 300;
+		color: #ffffffb0;
+		line-height: 1.4;
+		text-align: center;
+		margin: 0 0 2rem;
+	}
+	.options{
+		display: flex;
+		justify-content: center;
+		.left{
+		}
+		.right{
+		}
+		&>div{
+			padding: 0 1.86rem;
+			&:not(:last-child){
+				border-right: 1px solid #ffffff72;
+			}
+		}
+	}
+	button.mod-option{
+		border: none;
+		padding: 0;
+		background: none;
+		cursor: pointer;
+		span.text{
+			display: block;
+			color: white;
+			text-align: center;
+			font-size: 1rem;
+			font-weight: bold;
+			line-height: 1;
+			margin-bottom: 0.2rem;
+			position: relative;
+			top: -0.37rem;
+			transition: all ease .4s;
+		}
+		figure{
+			border-radius: 2px;
+			width: rem(84);
+			height: rem(84);
+			padding: .7rem;
+			display: block;
+			outline: 2px solid transparent;
+			transition: all ease .4s;
+		}
+		img{
+			display: block;
+			width: 100%;
+			filter: brightness(0) invert(1);
+			transition: all ease .7s;
+		}
+		&.semestral{
+			span.text{
+				color: $semestral;
+			}
+			figure{
+				background-color: $semestral;
+			}
+		}
+		&.anual{
+			span.text{
+				color: $anual;
+			}
+			figure{
+				background-color: $anual;
+			}
+		}
+		&:hover{
+			figure{
+				transform: scale(1.04);
+			}
+			img{
+				transform: scale(1.06);
+			}
+			span.text{
+				color: white;
+			}
+		}
+		&:focus{
+			outline: none;
+			figure{
+				outline-color: white;
+			}
+			span.text{
+				color: white;
+			}
+		}
+	}
+
+	.btn-close{
+		position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+		padding: 0;
+		opacity: .7;
+		cursor: pointer;
+		transition: all ease .4s;
+		&:before, &:after{
+			content: '';
+			width: 1.2rem;
+			height: 2px;
+			background-color: white;
+			position: absolute;
+			display: block;
+		}
+		&:after{
+			transform: rotate(45deg);
+		}
+		&:before{
+			transform: rotate(-45deg);
+		}
+		&:hover{
+			opacity: 1;
+		}
+	}
+}

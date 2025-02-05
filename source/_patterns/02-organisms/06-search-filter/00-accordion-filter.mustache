@@ -1,0 +1,131 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+            <!-- 01-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"oferta", text:"Oferta Académica")}}
+              </div>
+
+              <div id="oferta" class="info collapse in" role="tabpanel" aria-labelledby="titulo-uno">
+                <form>
+                  <input type="checkbox" name="abiertas" value="abiertas" checked><label>Inscripciones abiertas</label>
+                </form>
+              </div>
+            </div>
+            <!-- /01-->
+            <!-- 02-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"nivelAcademico", text:"Nivel académico")}}
+              </div>
+
+              <div id="nivelAcademico" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                <form>
+                  <input type="checkbox" name="pregrado" value="pregrado"><label>Pregrado</label>
+                  <input type="checkbox" name="especialización " value="especialización "><label>Especialización </label>
+                  <input type="checkbox" name="maestria " value="maestria "><label>Maestría </label>
+                  <input type="checkbox" name="doctorado " value="doctorado "><label>Doctorado</label>
+                  <input type="checkbox" name="continuada" value="continuada"><label>Educación continuada </label>
+                </form>
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"facultades", text:"Facultades")}}
+              </div>
+              <div id="facultades" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <input type="checkbox" name="administracion" value="administracion"><label>Administración de Empresas</label>
+                  <input type="checkbox" name="administracion_turisticas " value="administracion_turisticas"><label>Administración de Empresas Turísticas y Hoteleras </label>
+                  <input type="checkbox" name="educacion " value="educacion "><label>Ciencias de la Educación </label>
+                  <input type="checkbox" name="sociales " value="sociales "><label>Ciencias Sociales y Humanas</label>
+                  <input type="checkbox" name="periodismo" value="periodismo"><label>Comunicación Social - Periodismo </label>
+                  <input type="checkbox" name="contaduria" value="contaduria"><label>Contaduría Pública </label>
+                  <input type="checkbox" name="derecho" value="derecho"><label>Derecho </label>
+                  <input type="checkbox" name="economia" value="economia"><label>Economía </label>
+                  <input type="checkbox" name="patrimonio" value="patrimonio"><label>Estudios del Patrimonio Cultural </label>
+                  <input type="checkbox" name="finanzas" value="finanzas"><label>Finazas, Gobierno y Relaciones Internacionales </label>
+                </form>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04-->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                {{> atoms-accordion-filter-button(target:"modalidad", text:"Modalidad")}}
+              </div>
+
+              <div id="modalidad" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                <div class="galleria">
+                  <form>
+                    <input type="checkbox" name="presencial" value="presencial"><label>Presencial</label>
+                    <input type="checkbox" name="semipresencial " value="semipresencial "><label>Semipresencial </label>
+                    <input type="checkbox" name="virtual " value="virtual "><label>Virtual </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /04-->
+            <!-- 05-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                {{> atoms-accordion-filter-button(target:"duracion", text:"Duración")}}
+              </div>
+
+              <div id="duracion" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                <form>
+                  <input type="text" name="nombre" value="" placeholder="6" />
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Meses</option>
+                      <option value="barranquilla">Trimestres</option>
+                      <option value="bucaramanga">Semestres</option>
+                      <option value="cali">Años</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /05-->
+            <!-- 06-->
+            <div class="panel">
+              <div role="tab" id="titulo-seis">
+                {{> atoms-accordion-filter-button(target:"ciudad", text:"Ciudad")}}
+              </div>
+
+              <div id="ciudad" class="info in" role="tabpanel" aria-labelledby="titulo-seis">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Bogotá</option>
+                      <option value="barranquilla">Barranquilla</option>
+                      <option value="bucaramanga">Bucaramanga</option>
+                      <option value="cali">Cali</option>
+                      <option value="cartagena">Cartagena</option>
+                      <option value="cucuta">Cúcuta</option>
+                      <option value="medellin">Medellín</option>
+                      <option value="neiva">Neiva</option>
+                      <option value="pasto">Pasto</option>
+                      <option value="pereira">Pereira</option>
+                      <option value="san-andres">San Andrés</option>
+                      <option value="tunja">Tunja</option>
+                      <option value="villavicencio">Villavicencio</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /06-->
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

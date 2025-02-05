@@ -1,0 +1,13 @@
+.box-shadow{
+	  box-shadow: 0 3px 2px rgba(0,0,0,.2);
+	  display: flex;
+}
+
+.banner-1200x100{
+	padding: 3rem 0;
+	margin: 0 auto;
+
+	@media (max-width:$ipad-01) and (min-width:$minimo) {
+      padding: 0.6rem 0;
+    }
+}

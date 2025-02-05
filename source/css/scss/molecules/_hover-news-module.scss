@@ -1,0 +1,168 @@
+.hover-news {
+	padding: 10px;
+	display: inline-block;
+      @media (max-width:$ipad) and (min-width:$minimo){
+      border-top: thin dotted #cacaca;
+      }
+
+.hover-news-wrapper {
+	position: relative;
+	overflow: hidden;
+
+  a{
+    @media (max-width:$ipad) and (min-width:$minimo){
+      
+      }
+  }
+
+}
+
+.hover-news-image {
+	position: relative;
+	overflow: hidden;
+
+}
+.hover-news-image img {
+	display: block;
+}
+
+.hover-news-title {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    line-height: 1.5em;
+    padding: 2rem 1rem 1rem;
+    color: $azul-cienaga;
+    font-size: 1.4em;
+    text-align: left;
+     background: rgba(255,255,255,0);
+  /* Old Browsers */background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.9) 100%);
+   /* FF3.6+ */background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(30%, rgba(255,255,255,0.7)), color-stop(100%, rgba(0,0,0,0.9)));
+  /* Chrome, Safari4+ */background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.9) 100%);
+   /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.9) 100%);
+   /* Opera 11.10+ */background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.9) 100%);
+   /* IE 10+ */background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 30%, rgba(255,255,255,0.9) 100%);
+  /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+  /* IE6-9 */
+
+    @media (max-width:$ipad) and (min-width:$minimo){
+      position:relative;
+      padding: 5px 0;
+      }
+
+     &:after {
+    background-color: $verde-lima;
+    content: '';
+    display: block;
+    height: 6px;
+    margin-top: 10px;
+    width: 80px;
+
+     @media (max-width:$ipad) and (min-width:$minimo){
+      height: 3px;
+      margin-top: 3px;
+      }
+  }
+  h4{
+    margin:0;
+  }
+}
+
+.hover-news-button {
+	 background: $default;
+	 text-align: center;
+    bottom: 1rem;
+    position: absolute;
+    left: 50%;
+  	margin-left: -50px;
+
+    @media (max-width:$ipad) and (min-width:$minimo){
+      display: none;
+
+      }
+	}
+.hover-news-button a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1em;
+    padding: 0.5em;
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    text-decoration: none;
+    display: block;
+
+     &:hover{
+     	background: $azul-carbon;
+		}	
+	}
+ time.fecha{
+        @media (max-width:$ipad) and (min-width:$minimo){
+        font-size: 12px;
+        }
+ }
+ 
+
+	
+}
+
+.second {
+	.hover-news-wrapper .hover-news-title {
+	-webkit-transition: all 0.2s ease-in 0s;
+	-moz-transition: all 0.2s ease-in 0s;
+	-o-transition: all 0.2s ease-in 0s;
+	transition: all 0.2s ease-in 0s;
+	} 
+	.hover-news-wrapper:hover .hover-news-title {
+	left: -150%;
+        @media (max-width:$ipad) and (min-width:$minimo){
+            left: 0;
+          }
+	}
+
+	.hover-news-description {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;	
+	background: $gris-50;
+	top: 100%;
+	-webkit-transition: all 0.5s ease-in 0s;
+	-moz-transition: all 0.5s ease-in 0s;
+	-o-transition: all 0.5s ease-in 0s;
+	transition: all 0.5s ease-in 0s;
+	display: -webkit-flex;
+  display: flex;
+  align-items: center;
+      @media (max-width:$ipad) and (min-width:$minimo){
+      position:relative;
+      display: block;
+
+      }
+
+		  p{
+		  color: inherit;
+		  line-height: 1.4;
+		  text-align: center;
+		  padding: 1rem 1rem 0px;
+   		margin: 0;
+  		overflow: hidden;
+  		max-height: 57%;
+
+          @media (max-width:$ipad) and (min-width:$minimo){
+          overflow: auto;
+          max-height: 100%;
+          padding: 5px 0;
+          text-align: left;
+          }
+		  }
+	}
+	.hover-news-wrapper:hover .hover-news-description {
+	top: 0;
+	}
+}

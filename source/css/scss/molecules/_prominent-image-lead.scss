@@ -1,0 +1,79 @@
+.img-lead {
+	position: relative;
+	@media (max-width:$ipad) and (min-width:$minimo){
+		display: contents;
+		}
+
+	.carousel-caption{
+		width: 51%;
+		height: 100%;
+    	left: 0;
+    	top: 0;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 0 11% 0 10%;
+    	z-index: 0;
+    	
+
+    	@media (max-width:$ipad) and (min-width:$minimo){
+		width: 100%;
+    	height: fit-content;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	padding: 1% 7%;
+    	position: relative;
+   
+		}
+
+		   .h6 {
+		    display: none;
+			}
+
+		  .h2{
+		  	@media (max-width:$ipad) and (min-width:400px){
+		  		font-size: 1.3125rem;
+    			line-height: 1.5625rem;
+		  	}
+		  }
+
+		 .boton{
+		 	display: none;
+		 }
+	}
+
+	.dark{
+		background: -webkit-linear-gradient(190deg, transparent 20%, rgba(0,0,0,0.7) 0%);
+   
+		@media (max-width:$ipad) and (min-width:$minimo){
+		background: $azul-carbon;
+		}
+
+		.h6 a:hover {color: $gris-plata}
+		.boton:hover {background-color: $gris-plata}
+
+	}
+
+	.light{
+		background: -webkit-linear-gradient(190deg, transparent 20%, rgba(255,255,255,0.7) 0%);
+    	color: #4a4a4a;
+		text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+
+		@media (max-width:$ipad) and (min-width:$minimo){
+		background: $blanco-humo;
+		text-shadow: none;
+		}
+
+		.h2{color: $azul-carbon;}
+	}
+
+	.imagen-destacada{
+	    margin: 0;
+		@media (max-width:$ipad) and (min-width:$minimo){
+		  margin-top: 0;
+		}
+	}
+
+}

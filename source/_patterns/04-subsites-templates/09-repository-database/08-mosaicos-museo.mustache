@@ -1,0 +1,54 @@
+{{> organisms-header }}
+
+<div class="faculty-la-universidad">
+  {{> organisms-secondary-header-menu(faculty-home:"La Universidad") }}
+<div class="contenedor">
+    <div class="centrar">
+      <h3 class="texto-centrado margen-titulo">Consulte los mosaicos de las promociones externadistas entre 1886 y 1996</h3>
+      <div class="columna12">{{> organisms-filter-horizontal-mosaicos-museo }} </div>
+    </div>
+  </div>
+  <div class="centrar">
+    <div class="columnas-alto-fijo">
+      <div class="columna09 columnas-alto-fijo centrar-horizontalmente nodule-tags margen-sencillo padding-minimo">
+
+        <div class="tags">
+          <!--Aquí se carga la palabra clave, la categoría o tipo de servicio-->
+              <ul>
+                <li><a href="#">Inicio</a></li>
+              </ul>
+            </div>
+        </div>
+      <div class="columna03 columnas-alto-fijo centrar-horizontalmente">
+          <form class="columna12">
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Ordenar por</option>
+                      <option value="orden-alfabetico">Orden alfabético</option>
+                      <option value="Recientes">Más reciente</option>
+                      <option value="Popular">Más antiguo</option>
+                      <option value="Popular">Más visitado</option>
+                    </select>
+                  </label>
+                </form>
+
+      </div>
+    </div>
+    <div class="grilla-portal contenido columna12"> 
+      {{> molecules-mosaico-card-01 }}
+      {{> molecules-mosaico-card-02 }}
+      {{> molecules-mosaico-card-03 }}
+      {{> molecules-mosaico-card-01 }}
+      {{> molecules-mosaico-card-02 }}
+      {{> molecules-mosaico-card-03 }}
+      {{> molecules-mosaico-card-01 }}
+      {{> molecules-mosaico-card-02 }}
+      {{> molecules-mosaico-card-03 }}
+      </div>
+      <div class="columna12 margen-inferior-cajas">{{> molecules-pagination}}</div>
+  </div>
+</div>
+{{> organisms-faculty-info(title-footer:"La Universidad") }}
+</div>
+
+{{> organisms-footer }}

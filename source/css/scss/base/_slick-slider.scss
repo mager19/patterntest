@@ -1,0 +1,254 @@
+// Default Variables
+$slick-loader-path: "./" !default;
+
+@function slick-image-url($url) {
+  @if function-exists(image-url) {
+    @return image-url($url);
+  }
+  @else {
+    @return url($slick-loader-path + $url);
+  }
+}
+
+/* Slider */
+.slick-list {
+  .slick-loading & {
+    background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+  }
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: $verde-lima-700;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+
+  &:hover{
+    outline: none;
+    background: $azul-carbon;
+    transition: $transition-background;
+  }
+
+  &:before {
+    width: 20px;
+    height: 36px;
+    position: absolute;
+    top: 12px;
+    left: 11px;
+  }
+}
+
+.slick-prev {
+  left: -25px;
+  [dir="rtl"] & {
+    left: auto;
+    right: 5px;
+  }
+
+  &:before {
+    content: '';
+    background: url(../images/izquierda.svg) no-repeat;
+    width: 16.7px!important;
+    height: 17px!important;
+    [dir="rtl"] & {
+      content: '>';
+    }
+  }
+}
+
+.slick-next {
+  right: -25px;
+
+  [dir="rtl"] & {
+    left: 5px;
+    right: auto;
+  }
+
+  &:before {
+    content: '';
+    background: url(../images/derecha.svg) no-repeat;
+    [dir="rtl"] & {
+      content: '<';
+    }
+  }
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  @media (max-width: $small) {
+    //display: none !important;
+    visibility: hidden;
+  }
+  li {
+    display: inline-block;
+    cursor: pointer;
+
+    button {
+      height: 32px;
+      width: 32px;
+      position: relative;
+      border: 0;
+      display: block;
+      background-color: transparent;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      padding: 4px;
+      margin: 2px;
+      cursor: pointer;
+
+      &:before {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        content: '';
+        border-radius: 15px;
+        background-color: $gris-hierro;
+        transition: $transition-background;
+      }
+    }
+
+    &.slick-active {
+      button:before,
+      &:hover button:before {
+        background-color: $gris-bunker;
+        transition: $transition-background;
+      }
+    }
+
+    &:hover button:before {
+      background-color: $gris-acero;
+    }
+  }
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: stretch;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+
+.slick-slide {
+  float: left;
+  height: auto;
+  min-height: 1px;
+  [dir="rtl"] & {
+    float: right;
+  }
+  img {
+    display: block;
+  }
+  &.slick-loading img {
+    display: none;
+  }
+
+  display: none;
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: flex;
+  }
+  .widget & {
+    display: block;
+    height: 100%;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}

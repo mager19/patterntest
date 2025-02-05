@@ -1,0 +1,105 @@
+footer.footer-general{
+  .footer-blogs{
+    .columna04{
+      section {
+        margin-bottom: 15px;
+      }
+      @media (max-width:$maximo) and (min-width:600px) {
+        float: left;
+        display: inline-block;
+        overflow: hidden;
+        width: 31.33%;
+        margin: 0 1%;
+        min-height: 1px;
+        clear: none;
+      }
+      @media (max-width:599px) and (min-width:$minimo) {
+        display: block;
+        width: 94%;
+        margin: 10px 3%;
+        overflow: hidden;
+      }
+      @media (max-width:599px) and (min-width:$movil-amplio) {
+        padding: 0 13%;
+      }
+      &:nth-child(2),
+      &:nth-child(3){
+        @media (max-width:$maximo) and (min-width:600px) {
+          margin-top: 14px;
+        }
+        @media (max-width:$ipad) and (min-width:minimo) {
+          margin-top: 10px;
+        }
+        @media (max-width:599px) and (min-width:$minimo) {
+          margin-top: 30px;
+        }
+      }
+      &:nth-child(3) section{
+        @media (max-width:$ipad) and (min-width:$movil-amplio) {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    .nombre-blog{
+      max-width: 258px;
+      width: 94%;
+      border-top: thin solid white;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+    .logo img{
+      max-width: 256px;
+      width: 94%;
+    }
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      h4{
+        font-size: rem(17);
+      }
+    }
+
+    ol ol{
+      padding-left: 20px;
+    }
+    ol ul{
+      padding-left: 0;
+    }
+    ul{
+      margin-top: 8px;
+      padding-left:15px;
+      li{
+        line-height: 18px;
+        /*font-weight: 300;*/
+        margin-bottom: 9px;
+      }
+      & > li{
+        &:before{
+          color: $verde-lima;
+          font-size: rem(12);
+          content: "●";
+          position: relative;
+          left: -15px;
+          top: 5px;
+          width: 5px;
+          height: 5px;
+          display: block;
+        }
+      }
+    }
+    ul>ul, ul>ol, ol>ul, ol>ol{
+      margin: 0;
+      li{
+        padding: 2px 0;
+      }
+    }
+    .columna04:nth-child(1) a:nth-child(3){
+      color: inherit;
+      font-size: 1.8rem;
+      padding: inherit;
+      text-decoration: inherit;
+      border-top: inherit;
+      border-bottom: inherit;
+    }
+  }
+}

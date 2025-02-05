@@ -1,0 +1,12 @@
+ .visitenos img{
+		border: 2px solid white;
+		float: left;
+		margin: 5px 10px 5px 0;
+		width:90px;
+
+		@media (max-width:$ipad) and (min-width:$minimo){
+			display: none;
+			visibility: hidden;
+		}
+
+	}

@@ -1,0 +1,157 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div></div></div>
+      <!-- 00-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+                  {{> atoms-search-form(tit-search-form:"Palabra clave o título de publicación")}}
+              </div>
+            </div>
+            <!-- /00-->
+          <!-- 01 año-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-uno">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /01-->
+            <!-- 02 Materia-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"materia", text:"Materia")}}
+              </div>
+
+              <div id="materia" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <input type="checkbox" name="libro" value="registro"><label>Registro</label>
+                  <input type="checkbox" name="libro" value="contrato-gm"><label class="child-category">Contrato de GM</label>
+                   <input type="checkbox" name="libro" value="tenencia"><label class="child-category">Tenencia</label>
+                  <input type="checkbox" name="libro" value="ejecuccion"><label>Ejecución</label>
+                  <input type="checkbox" name="libro" value="constitucion"><label>Constitución</label>
+                  <input type="checkbox" name="libro" value="avaluo"><label>Avalúo</label>
+                  <input type="checkbox" name="libro" value="concepto"><label>Concepto</label>
+                  </form>
+              </div>
+            </div>
+            <!-- /02-->
+      <!-- 03 tipo Jurisprudencia-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"jurisprudencia", text:"Jurisprudencia")}}
+              </div>
+
+              <div id="jurisprudencia" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                 <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="sentencias">Sentencias</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 normatividad -->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                {{> atoms-accordion-filter-button(target:"normatividad", text:"Normatividad")}}
+              </div>
+
+              <div id="normatividad" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                <div class="galleria">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Toda</option>
+                      <option value="legislacion">Legislación</option>
+                      <option value="decretos">Decretos</option>
+                      <option value="resoluciones">Resoluciones</option>
+                      <option value="circular-externa ">Circular Externa</option>
+                    </select>
+                  </label>
+                </form>
+                </div>
+              </div>
+            </div>
+            <!-- /04-->
+            <!-- 05 doctrina-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"doctrina", text:"Doctrina")}}
+              </div>
+
+              <div id="doctrina" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                <form>
+                  <input type="checkbox" name="libro" value="libro"><label>Libro</label>
+                  <input type="checkbox" name="cap-libro" value="cap-libro"><label>Capítulos de libro</label>
+                  <input type="checkbox" name="art-revista" value="art-revista"><label>Artículos de revista</label>
+                  <input type="checkbox" name="papers" value="papers"><label>Papers</label>
+                  <input type="checkbox" name="tesis" value="tesis"><label>Tesis</label>
+                  <input type="checkbox" name="conferencia" value="conferencia"><label>Conferencia</label>
+                  <input type="checkbox" name="conferencia" value="conceptos"><label>Conceptos</label>
+                </form>
+              </div>
+            </div>
+            <!-- /05-->
+            <!-- 06 entidad-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"tipoacceso", text:"Entidad")}}
+              </div>
+
+              <div id="tipoacceso" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                  <form>
+                  <input type="checkbox" name="libro" value="Superintendencia Financiera de Colombia"><label>Superintendencia Financiera de Colombia</label>
+                  <input type="checkbox" name="libro" value="Superintendencia de Sociedades "><label>Superintendencia de Sociedades</label>
+                  <input type="checkbox" name="libro" value="Superintendencia de lndustria y Comercio"><label>Superintendencia de lndustria y Comercio</label>
+                  <input type="checkbox" name="libro" value="Ministerio de Hacienda y Credito Publico"><label>Ministerio de Hacienda y Crédito Público</label>
+                  <input type="checkbox" name="libro" value="Ministerio de Comercio, lndustria y Turismo"><label>Ministerio de Comercio, lndustria y Turismo</label>
+                  <input type="checkbox" name="libro" value="Corte Constitucional "><label>Corte Constitucional</label>
+                  <input type="checkbox" name="libro" value="Corte Suprema de Justicia "><label>Corte Suprema de Justicia</label>
+                  <input type="checkbox" name="libro" value="Congreso"><label>Congreso</label>
+                  <input type="checkbox" name="libro" value="Otros"><label>Otros</label>
+                </form>
+              </div>
+            </div>
+            <!-- /06-->
+            <!-- 07 tipo Decisiones Administrativas-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"decisiones-admin", text:"Decisiones Administrativas")}}
+              </div>
+
+              <div id="decisiones-admin" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                 <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="sentencias">Decisiones Administrativas</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /07-->
+        <div class="panel">
+          <div class="info">
+            <div class="mini-boton select_opt">Limpiar búsqueda</div></div></div>
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+{{> organisms-header-blogs(nombre:"Departamento de Propiedad Intelectual") }}
+
+<div class="faculty-defecto">
+  {{> organisms-faculty-carousel}}
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      <a href="#"> <h3>Últimas Noticias</h3> </a>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> atoms-button(text:"Ver más artículos")}}
+    </div>
+    <aside class="columna04 aside">
+      {{> molecules-newsletter-widget }}
+      {{> molecules-menu-widget }}
+      <div class=" widget widget-custom-html">
+        <article class="info">
+          <h4>Archivo</h4>
+          <label class="dropdown">
+            <select>
+              <option select value="">Seleccione</option>
+            </select>
+          </label>
+        </article>
+      </div>
+    </aside>
+    <div class="columna06">
+      <a href="#"> <h3> Nuevas Creaciones </h3> </a>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+    </div>
+    <div class="columna06">
+      <a href="#"> <h3> Marcas - Signos </h3> </a>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+    </div>
+    <div class="columna12">
+      <a href="#"> <h3> Secreto Empresarial </h3> </a>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

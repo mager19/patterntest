@@ -1,0 +1,42 @@
+<section class="secondary-header-menu menu-hamb" style="background-color: #f15a24;">
+  <div class="centrar">
+    {{# logo }}
+      {{> atoms-brand(logo:"{{logo}}") }}
+    {{/ logo }}
+
+    {{# nombre }}
+      {{> atoms-brand(nombre:"{{{nombre}}}", slogan:"{{slogan}}") }}
+    {{/ nombre }}
+
+  </div>
+
+  <div class="menu-hamburguesa" style="width: 100%; background-color: #ed7a09; padding: 1rem; color: white;">
+    <buttton class="button" style="cursor: pointer; display: flex; flex-direction: row-reverse;">
+      <svg class="icon-menu"><img style="width: 2.5rem; margin: 0 3rem;" src="../../images/icono-menu.svg"></svg>
+    </buttton>
+  <hr> 
+    <nav class="menu-ppal" style="width: 100%; margin: 0 4rem 3rem;">
+      <ul class="ul" style="flex-direction: column;">
+        <li class="li" style="margin: 1rem 0; font-size: 2rem;"><a href="#" class="a">Gobierno y políticas públicas</a></li>
+        <li class="li" style="margin: 1rem 0; font-size: 2rem;"><a href="#" class="a">Finanzas</a></li>
+        <li class="li"><li class="li" style="margin: 1rem 0; font-size: 2rem;"><a href="#" class="a">Relaciones Internacionales</a></li>
+        <li class="li" style="margin: 1rem 0; font-size: 2rem;"><a href="#" class="a">Mundo FIGRI</a></li>
+        <li class="li" style="margin: 1rem 0; font-size: 2rem;"><a href="#" class="a">Podcast</a></li>
+        <li class="li" style="margin: 1rem 0; font-size: 2rem;"><a href="#" class="a">Convocatorias</a></li>
+      </ul>
+  <hr />
+      <ul class="grilla-4">
+        <li><a href="#" class="texto-columna03" style="font-size: 1.8rem; letter-spacing: 1px; font-weight: 300; margin-top: 2rem;">ESCÚCHANOS</a></li>
+        <li><a href="#" class="texto-columna03" style="font-size: 1.8rem; letter-spacing: 1px; font-weight: 300; margin-top: 2rem;">SÍGUENOS</a><a class="columna02" href="#"><img style="width: 50px;" src="../../images/icono-twitter.svg"></a> <a class="columna02" href="#"><img style="width: 50px;" src="../../images/icono-instagram.svg"></a> <a class="columna02" href="#"><img style="width: 50px; "src="../../images/icono-youtube.svg"></a></li>
+        <li><a href="#" class="texto-columna03" style="font-size: 1.8rem; letter-spacing: 1px; font-weight: 300; margin-top: 2rem;">CONTÁCTANOS</a><a href="mailto:revistazero@uexternado.edu.co">revistazero@uexternado.edu.co</a></li>
+        <li style="margin-top: 2rem;"><a href="#" class="texto-columna03"><img style="width: 200px;" src="../../images/logo-uec.svg"></a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<div id="responsive-secondary-menu">
+  <div class="idioma-buscador">
+    {{> molecules-language-picker }}
+    {{> atoms-search-form-header }}
+  </div>
+</div>

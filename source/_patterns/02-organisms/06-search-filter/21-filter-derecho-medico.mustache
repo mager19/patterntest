@@ -1,0 +1,157 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div>
+        <div class="panel">
+          <div class="info">
+            <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button></div></div>
+        </div>
+          </div>
+            <!-- 00 buscador-->
+            <div class="panel">
+              <div class="h5">BUSCADOR</div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+
+                  {{> atoms-search-form(tit-search-form:"Título, palabra clave o número")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+            <!-- 01 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                <div id="libro" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Tribunal</option>
+                        <option value="opcion-1">Corte Constitucional </option>
+                        <option value="opcion-2">Corte Suprema de Justicia - Sala de Casación</option>
+                        <option value="opcion-3">Civil</option>
+                        <option value="opcion-4">Corte Suprema de Justicia - Sala de Casación</option>
+                        <option value="opcion-5">Penal</option>
+                        <option value="opcion-6">Consejo de Estado</option>
+                        <option value="opcion-7">Consejo de Estado - Sección tercera</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /01-->
+            <!-- 02 Fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Magistrad ponente</option>
+                        <option value="opcion-1">Alberto Montaña Plata</option>
+                        <option value="opcion-2">Carlos Betancur Jaramillo</option>
+                        <option value="opcion-3">Daniel Suárez Hernández</option>
+                        <option value="opcion-4">Enrique Gil Botero</option>
+                        <option value="opcion-5">Fernando Giraldo Gutierrez </option>
+                        <option value="opcion-6">Guillermo Sanchez Luque</option>
+                        <option value="opcion-7">Hernan Andrade Rincon</option>
+                        <option value="opcion-8">Jaime Alberto Arrubla Paucar</option>
+                        <option value="opcion-9">Liborio Escallón</option>
+                        <option value="opcion-10">Margarita Cabello Blanco</option>
+                        <option value="opcion-11">Nicolás Yepes Corrales</option>
+                        <option value="opcion-12">Olga Valle de la Hoz</option>
+                        <option value="opcion-13">Pedro Octavio Munar Cadena</option>
+                        <option value="opcion-14">Ramiro Pazos Guerrero</option>
+                        <option value="opcion-15">Stella Conto Díaz del Castillo</option>
+                        <option value="opcion-16">William Namén Vargas</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 ÁREA -->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                {{> atoms-accordion-filter-button(target:"area", text:"Tema principal")}}
+              </div>
+
+              <div id="area" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                 <form>
+                  <input type="checkbox" name="territorio" value="ambulancias-paramedicos"><label>Ambulancias paramédicos</label>
+                  <input type="checkbox" name="empresa" value="carga-de-la-prueba"><label>Carga de la prueba</label>
+                  <input type="checkbox" name="empresa" value="derecho-fundamental-a-la-salud"><label>Derecho fundamental a la salud</label>
+                  <input type="checkbox" name="empresa" value="enfermedades-huerfanas"><label>Enfermedades huérfanas</label>
+                  <input type="checkbox" name="empresa" value="ginecoobstetricia"><label>Ginecoobstetricia</label>
+                  <input type="checkbox" name="empresa" value="historia-clinica"><label>Historia clínica</label>
+                  <input type="checkbox" name="empresa" value="infeccion-nosocomial"><label>Infección nosocomial</label>
+                  <input type="checkbox" name="empresa" value="medicamentos"><label>Medicamentos</label>
+                  <input type="checkbox" name="empresa" value="obligacion-de-seguridad"><label>Obligación de seguridad</label>
+                  <input type="checkbox" name="empresa" value="psiquiatria"><label>Psiquiatría</label>
+                  </form>
+              </div>
+            </div>
+            <!-- /04-->
+            <!-- 05 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Régimen de responsabilidad</option>
+                        <option value="opcion-1">Régimen objetivo</option>
+                        <option value="opcion-2">Régimen subjetivo</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /05-->
+            <!-- 06 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Elementos de la responsabilidad que desarrolla</option>
+                        <option value="opcion-1">Daño</option>
+                        <option value="opcion-2">Culpa</option>
+                        <option value="opcion-3">Nexo causal</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /06-->
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

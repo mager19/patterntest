@@ -1,0 +1,225 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"texto-centrado"
+			],
+			[
+				"l",
+				"flex-end"
+			],
+			[
+				"mag",
+				"margin-left"
+			],
+			[
+				"colu",
+				"columna12"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"AW",
+				"allowfullscreen"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"texto",
+				"texto-centrado"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 124.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jose-luis/Desktop/countdown.html",
+		"/Users/jose-luis/Desktop/documentos-usuales/countdown.html",
+		"/Users/jose-luis/Desktop/code/code1.html",
+		"/Users/jose-luis/Desktop/code/code2.html",
+		"/Users/jose-luis/Desktop/code/code.html",
+		"/Users/jose-luis/Desktop/OneDrive_1_9-19-2023/Año 2025 Periodo 10.htm",
+		"/Users/jose-luis/Downloads/Version Final Calendario Posgrados 2025 Agosto.htm",
+		"/Users/jose-luis/Desktop/faeth-logos.html",
+		"/Users/jose-luis/Downloads/boletin-academico-semana-del-10-al-16-de-julio-2023.html",
+		"/Users/jose-luis/Downloads/prueba-boletin.html",
+		"/Users/jose-luis/Desktop/countdown-45-jornadas-penal.html",
+		"/Users/jose-luis/Desktop/code/templates.html",
+		"/Users/jose-luis/Desktop/code/code3.html",
+		"/Users/jose-luis/Desktop/code/code4.html",
+		"/Users/jose-luis/Desktop/financiera-capacitaciones.html",
+		"/Users/jose-luis/Desktop/elecciones-html/apertura.html",
+		"/Users/jose-luis/Desktop/plantillas-elecciones-consultas/resultados-boletines.html",
+		"/Users/jose-luis/Desktop/widgets.html",
+		"/Users/jose-luis/Desktop/plantillas-elecciones-consultas/instruccioones-votacion.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "05-header-menu-blogs.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

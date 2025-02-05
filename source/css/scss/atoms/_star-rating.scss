@@ -1,0 +1,47 @@
+.star-rating{
+	 display: flex;
+	 flex-direction: column;
+   text-transform: uppercase;
+
+     form{
+     display: flex;
+	   direction: rtl;/* right to left */
+     justify-content: flex-end;
+     }
+
+    p{
+    direction: ltr;
+    color: $gris-acero;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 5px !important;
+    }
+	
+	input[type="radio"] {
+  	display: none;
+	}
+
+
+	label {
+  	color: $gris-hierro;
+    font-size: 0.9rem;
+  	background: transparent !important;
+  	padding: 0 4px !important;
+  	margin: 0 !important;
+
+    &.active{/* Esta clase se debe crear para que el color cambie según la calificacion promedio */
+      color: $gris-acero}
+	}
+
+	label:hover,
+	label:hover ~ label {
+  	color: $egresados;
+	}
+
+	input[type="radio"]:checked ~ label {
+  	color: $egresados;
+  	background: transparent;
+  	padding: 0 4px;
+  	margin: 0 !important;
+	}
+}

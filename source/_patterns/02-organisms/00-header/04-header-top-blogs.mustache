@@ -1,0 +1,23 @@
+<span id="arriba"></span>
+<header class="blogs">
+  <div class="centrar">
+    {{> atoms-logo }}
+  </div>
+  <!--menu-->
+  <div class="barra-superior">
+    <div class="centrar">
+      {{# facultad }}
+        <p>Blog
+          <span class="hidden4">de
+            <span class="hidden3">la facultad de </span>
+            {{ facultad }}
+          </span>
+        </p>
+      {{/ facultad }}
+    </div>
+  </div>
+  <div class="idioma-buscador">
+    {{> molecules-language-picker }}
+    {{> atoms-search-form-header }}
+  </div>
+</header>

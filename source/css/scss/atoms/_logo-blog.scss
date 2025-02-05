@@ -1,0 +1,40 @@
+.logo-blog{
+  padding:3rem 0;
+  width: calc(100% - 320px);
+  float: left;
+  display: block;
+  h3{
+    margin: 0;
+    @media (max-width:$ipad-01) and (min-width:$small) {
+      font-size: rem(28);
+      font-weight: 600;
+      @include fuente-suave;
+    }
+  }
+
+  img {
+    max-height: 123px;
+    width: auto; //Just in case
+  }
+
+  p.slogan{
+    font-size: rem(20);
+    line-height: rem(22);
+    color: $azul-carbon;
+    @media (max-width:$ipad-01) and (min-width:$minimo) {
+      font-size: rem(17);
+      margin-top:3px;
+    }
+  }
+  @media (max-width:$ipad-01) and (min-width:$minimo) {
+    width: 100%;
+    padding: 2.5rem 0 0 0;
+    text-align: /*left */center;
+  }
+
+  &:hover {
+    h3, p {
+      opacity: .8;
+    }
+  }
+}

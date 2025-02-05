@@ -1,0 +1,71 @@
+{{> organisms-header-blogs(nombre:"Noticias", slogan:"El Externado en los medios de comunicación") }}
+
+<div class="faculty-defecto">
+
+  <div class="contenedor">
+    <div class="centrar">
+      <main>
+        <article class="columna08 contenido">
+          <div class="texto">
+            <h1>Noticia de ejemplo</h1>
+            {{> atoms-date }}
+            <b> <a href="#">http://can.mmi-e.com/accesoradio_pub.php?zona_id=5&mes=07&ano=2018&id=TkRRNE16ST0=&tipo=mp3</a>
+            Etiquetas: </b>  Nam ,uctus, mauris, quis, rhoncus
+            <br><br>
+            <div class="columna04">
+              <b> Medio: </b> <a href="#"> Ejemplo </a>
+            </div>
+            <div class="columna04">
+              <b> Nombre del medio: </b> <a href="#"> Ejemplo </a>
+            </div>
+            <div class="columna04">
+              <b> Sección: </b> <a href="#"> Ejemplo </a>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <aside class="columna04 aside">
+        <div class="widget widget-custom-html">
+          <article class="info">
+            <h4>Búsqueda de noticias</h4>
+            <br>
+            <input type="text" name="nombre" value="" />
+            <label class="dropdown">
+              <select>
+                <option select value="">Medio</option>
+              </select>
+            </label>
+            <label class="dropdown">
+              <select>
+                <option select value="">Nombre del medio</option>
+              </select>
+            </label>
+            <label class="dropdown">
+              <select>
+                <option select value="">Sección</option>
+              </select>
+            </label>
+            {{> atoms-button(text:"Buscar noticias")}}
+          </article>
+        </div>
+        <div class="widget widget-custom-html">
+          <article class="info">
+            <h4>Archivo</h4>
+            <br>
+            <ul>
+              <li><a href="http://noticias.uexternado.edu.co/2018/07/umw_document/">julio 2018</a></li>
+              <li><a href="http://noticias.uexternado.edu.co/2018/06/umw_document/">junio 2018</a></li>
+              <li><a href="http://noticias.uexternado.edu.co/2018/05/umw_document/">mayo 2018</a></li>
+              <li><a href="http://noticias.uexternado.edu.co/2018/04/umw_document/">abril 2018</a></li>
+              <li><a href="http://noticias.uexternado.edu.co/2012/09/umw_document/">septiembre 2012</a></li>
+            </ul>
+          </p>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

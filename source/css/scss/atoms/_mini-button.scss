@@ -1,0 +1,20 @@
+.mini-boton, .texto a.mini-boton{
+    @include boton;
+    text-align: center;
+    font-size: 1.35rem;
+    padding: 12px;
+    font-weight: 300;
+    background-color: $verde-lima-700;
+    appearance: none;
+    margin-bottom: 1rem;
+    text-transform: none;
+    &:hover{
+      background-color: $azul-carbon;
+      box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+      text-decoration: none;
+    }
+
+    @media (max-width: $ipad) and (min-width: $minimo ) {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,57 @@
+<!-- El div contenedor .home no es necesario cuando el sitio esté montado en WP ya que el gestor automáticamente le generaría esa clase al body. Sin embargo aqui puse la clase manualemnte para que los estilso que afectan al header de la plantilla home se reflejaran-->
+<div class="home">
+{{> organisms-header }}
+</div>
+<h1 class="hidden" aria-label="Universidad Externado de Colombia">Universidad Externado de Colombia</h1>
+{{> organisms-program-finder }}
+{{> organisms-organisms-opening-basic}}
+
+{{> organisms-news-carousel(class-box-button:"centrar-bt", bts-home: false, btn-general: true) }}
+  <div class="centrar margin-l">
+    <div class="centrar titulo-categoria-noticias-home border-bottom">
+      <h2 class="h1">Agenda</h2>
+        <a href="https://www.uexternado.edu.co/lista-de-eventos/">Ver todos   <span><svg class="icon icon-derecha"><use xlink:href="../../images/iconos.svg#icon-derecha"></use></svg></span></a>
+    </div>
+    <div class="slider-eventos">{{> organisms-carousel-1column }}</div>
+    {{> organisms-event-list }}
+  </div>
+  <hr>
+  <div class="centrar">
+    {{> molecules-search-date-event }}
+  </div>
+
+
+<div style="clear:both"></div>
+<div class="blanco-humo box-shadow" role="region">
+<div class="centrar">
+  <div class="columnas-alto-fijo">
+    <div class="columna06"> {{> atoms-banner-1200x100(url-banner:"https://zonadigital.uexternado.edu.co/", banner-image:"banners/banner-zona-digital-550x100.jpg", banner-alt:"Zona digital")}}</div>
+    <div class="columna06"> {{> atoms-banner-1200x100(url-banner:"https://www.uexternado.edu.co/wp-content/uploads/2022/12/Informativo-82-2022.pdf", banner-image:"banners/banner-informativo-550x100.png", banner-alt:"Informativo 82")}}</div>
+    
+  </div>
+</div>
+</div>
+<main>
+
+  
+
+  <div class="fondo-completo regiones">
+    <div class="centrar">
+      <div class="columna08 contenido">
+        {{> organisms-regions }}
+
+        {{> organisms-blog-list }}
+      </div>
+
+      <aside class="columna04 aside">
+        {{> atoms-media-button(text:"Documental 30 años de la Constitución de 1991", icon-selector:"video", url:"https://youtu.be/648MNdzi_Jc") }}
+        {{> atoms-media-button(text:"Revista Experto", icon-selector:"libro-01", url:"https://www.uexternado.edu.co/wp-content/uploads/2022/04/revista-experto-13.pdf") }}
+        {{> atoms-media-button(text:"El Externado en los medios ", icon-selector:"television", url:"https://noticias.uexternado.edu.co/") }}
+        {{> molecules-rectangle-ad(ad:"banners/banner-300x250px-inscripciones.png") }}
+        {{> organisms-summary-list }}
+
+      </aside>
+    </div>
+  </div>
+</main>
+{{> organisms-footer }}

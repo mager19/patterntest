@@ -1,0 +1,22 @@
+{{> organisms-header }}
+
+<div class="faculty-defecto">
+  <div class="fondo-completo">
+    <div class="centrar">
+      <aside class="columna04 aside"> 
+      {{> organisms-accordion-database-experts-filter }}
+     </aside>
+      <div class="columna08 contenido">
+         <h2 class="h3">Base de Datos de Expertos</h2>
+        {{> molecules-database-expert-card(nom-faculty:"Facultad de Administración de Empresas", class-faculty:"administracion-de-empresas")  }}
+        {{> molecules-database-expert-card(nom-faculty:"Facultad de Ciencias Sociales y Humanas", class-faculty:"ciencias-sociales-y-humanas")  }}
+        {{> molecules-database-expert-card(nom-faculty:"Facultad de Comunicación Social - Periodismo", class-faculty:"comunicacion-social-periodismo")  }}
+        {{> molecules-database-expert-card(nom-faculty:"Facultad de Derecho", class-faculty:"derecho")  }}
+        {{> molecules-database-expert-card(nom-faculty:"Facultad de Economía", class-faculty:"economia")  }}
+        {{> molecules-database-expert-card(nom-faculty:"Facultad de Finanzas, Gobierno y Relaciones Internacionales", class-faculty:"finanzas-gobierno-y-relaciones-internacionales")  }}
+        
+        {{> molecules-pagination}}
+      </div>       
+    </div>
+  </div>
+{{> organisms-footer }}

@@ -1,0 +1,91 @@
+.pagination{
+  max-width: 620px;
+  padding-top: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  a, span{
+    text-align: center;
+    padding: 5px;
+    font-size: rem(19);
+    transition: $transition-color;
+    @media (max-width: $maximo) and (min-width: 570px ) {
+      margin: 8px;
+    }
+    @media (max-width: 569px) and (min-width:440px ) {
+      margin: 8px 5px;
+    }
+    @media (max-width:439px) and (min-width:$minimo ) {
+      margin: 8px 1px;
+    }
+  }
+  span.current{
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    background-color: $azul-carbon;
+    color: white;
+    @media (max-width: $movil-amplio) and (min-width: $minimo ) {
+      width: 35px;
+      height: 35px;
+      font-size: rem(16);
+    }
+  }
+  a.page-numbers{
+    width: 42px;
+    height: 42px;
+    font-weight: 400;
+    transition: $transition-all;
+    border-radius: 0;
+    @media (max-width: $movil-amplio) and (min-width: $minimo ) {
+      width: 35px;
+      height: 35px;
+      font-size: rem(16);
+    }
+    &:hover{
+      background: darken($blanco-humo, 8%);
+      color: $azul-carbon;
+      border-radius: 42px;
+    }
+  }
+  a.prev,
+  a.next{
+    color: $verde-lima-700;
+    font-size: rem(22);
+    position: relative;
+    margin-top: 5px;
+    svg{
+      stroke-width: 2px;
+      padding: 10px;
+      width: 42px;
+      height: 42px;
+      top: 0;
+    }
+    &:hover{
+      color: $azul-carbon;
+    }
+  }
+
+  a.next svg{
+    @include derecha;
+    &:hover{
+      @include derecha-hover;
+      left:-3px;
+    }
+    @media (max-width: $movil-amplio) and (min-width: $minimo ) {
+      left: -6px;
+      top: -3px;
+    }
+  }
+
+  a.prev svg{
+    @include izquierda;
+    &:hover{
+      @include izquierda-hover;
+    }
+    @media (max-width: $movil-amplio) and (min-width: $minimo ) {
+      left: 3px;
+      top: -3px;
+    }
+  }
+}

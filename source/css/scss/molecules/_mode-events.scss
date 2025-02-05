@@ -1,0 +1,71 @@
+.botonera-mode-events{
+
+
+    .buscador-eventos{
+        display: inline;
+        float: left;
+        justify-content: center;
+        width: 40%;
+        margin: 1rem 0;
+
+        @media (max-width:$ipad) and (min-width:$minimo) {
+         width: 90%;
+         display: grid;
+        float: none;
+        justify-content: normal;
+        margin: 10px 1rem;
+        }
+    }
+
+    .botones-select-visualizacion{
+        display: flex;
+        float: right;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+
+        @media (max-width:$ipad) and (min-width:$minimo) {
+         width: 90%;
+        display: grid;
+        float: none;
+        justify-content: normal;
+        margin: 1rem;
+        }
+        
+        h6  {
+            color: $gris-acero;
+            padding: 9px;
+            margin: 0;
+            } 
+
+        .boton, .boton-gris{
+            margin-right: 1rem;
+            padding: 5px 2rem;
+            vertical-align: middle;
+
+            @media (max-width:640px) and (min-width:$minimo){
+            font-size: rem(14);
+            margin-right: 0;
+            padding: 10px 2rem;
+            margin-bottom: 1rem;
+            }
+
+            span{
+                 vertical-align: text-bottom;
+            }
+        }
+
+        .boton-gris span{
+            padding-right: 3px;
+            margin-top: 1px
+        }
+        
+    }
+
+	.contenedor-eventos {
+    margin: 20px 0 30px 0;
+    
+	}
+
+	
+}

@@ -1,0 +1,33 @@
+<div class="faculty-color faculty-observatorio-familia-infacia-adolecencia">
+{{> organisms-header-blogs(nombre:"Observatorio de Servicios Públicos", facultad:"Área servicios públicos Departamento Derecho Economía") }}
+{{> organisms-faculty-carousel}}
+<div class="centrar">
+   <div class="columna12 contenido margin-s padding-minimo">
+      {{> organisms-group-button-seccion}}
+      <h4 class="texto-centrado margin-s padding-minimo">Sectores</h4>
+      {{> organisms-carousel-icons}}
+   </div>
+   <div class="columna12 contenido">
+      <div class="columnas-alto-fijo">
+         <div class="columna06 sigueme-bg margin-s padding-minimo border-radius-s">
+            <h3 class="h3 texto-blanco">Novedades en el sector</h3>
+            <!--Grupo de botones editables desde Wordpress--> 
+            {{> organisms-carousel-books }}
+            <div class="texto-centrado">
+               <hr>
+               <a class="boton" href="#"> Ver todas</a> 
+            </div>
+         </div>
+         <div class="columna06 azul-prusia margin-s padding-minimo border-radius-s">
+            <h3 class="h3 texto-blanco">Eventos</h3>
+            {{> organisms-carousel-1column}}
+            <div class="texto-centrado">
+               <hr>
+               <a class="boton" href="#"> Ver todas</a> 
+            </div>
+         </div>
+         <div style="clear:both;"></div>
+      </div>
+   </div>
+</div>
+{{> organisms-footer-blogs }}

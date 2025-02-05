@@ -1,0 +1,172 @@
+/***** PALETA VERDE LIMA *****/
+$verde-lima-100: #ebf7de;
+$verde-lima-400: #9ad25b;
+$verde-lima-500: #78b92f;
+$verde-lima-700: #4d7b19;
+$verde-lima-800: #304c10;
+$verde-lima-900: #1d2f09;
+
+/***** PALETA UNIVERSIDAD *****/
+$universidad-200: #d5ece1;
+$universidad-800: #00522c;
+$universidad-900: #002e19;
+
+/***** PALETA AZUL CARBÓN *****/
+$azul-carbon-200: #c7d6db;
+$azul-carbon-500: #597b88;
+$azul-carbon-700: #32464d;
+$azul-carbon-900: #141c1f;
+
+/***** PALETA DORADO *****/
+$dorado-100: #f9f5f1;
+$dorado-300: #c5a881;
+$dorado-600: #896029;
+$dorado-900: #201404;
+
+/***** ESCALA DE GRISES *****/
+$blanco: #ffffff;
+$negro: #1a1a1a;
+$gris-50: #f2f2f2;
+$gris-200: #cccccc;
+$gris-600: #666666;
+$gris-700: #4c4c4c;
+$gris-800: #333333;
+
+/***** SEMÁNTICOS *****/
+$exito-100: #e1f9d2;
+$exito-700: #30670e;
+$error-100: #f5dbdc;
+$error-700: #b43133;
+$advertencia-100: #fef6e2;
+$advertencia-700: #945f10;
+$informacion-100: #daf9fb;
+$informacion-700: #0b6f74;
+
+/***** COLORES PARA FACULTADES *****/
+$administracion: #197bbd;
+$comunicacion: #7dc3c6;
+$contaduria: #368387;
+$derecho: #afae30;
+$economia: #c2443e;
+$educacion: #f1987e;
+$finanzas: #f29251;
+$hoteleria: #a32e80;
+$patrimonio: #806cab;
+$sociales: #e7a900;
+$matematicas: #008b95;
+$extranjeros: #006072;
+$lenguas: #fdefda;
+
+/***** COLORES PARA SITIOS *****/
+$amaranto: #812e58;
+$biblioteca: #b8194e;
+$bienestar: #ffd44e;
+$centro-idiomas: #006072;
+$egresados: #e7a900;
+$museo: #f29251;
+$sigueme: #1475a2;
+$unidad-genero: #783b95;
+$asociacion-henri-capitant: #551213;
+
+/***** COLORES PARA ESCUELAS FIGRI *****/
+$esc-arte: #00666b;
+$esc-finanzas: #001283;
+$esc-gobierno: #feaf7a;
+$esc-relaciones-in: #e7a900;
+
+/***** COLORES PARA BLOGS *****/
+$conexion: #bf0f58;
+$comunidad-virtual: #256e7d;
+$economia-abc: #b69688;
+
+/***** COLORES PARA MODALIDADES DE PROGRAMAS *****/
+$anual: #4eacb5;
+$semestral: #b6c6b1;
+
+/***** COLORES DE MARCAS *****/
+$whatsapp: #25cc64;
+
+@import 'variables-old';
+
+$faculties: defecto $verde-lima-700, universidad $universidad-800,
+  administracion-de-empresas $administracion, bienestar-universitario $bienestar,
+  biblioteca-v2 $biblioteca, biblioteca $biblioteca,
+  comunicacion-social-periodismo $comunicacion, contaduria-publica $contaduria,
+  derecho $derecho, economia $economia, economia-abc $economia-abc,
+  ciencias-de-la-educacion $educacion, oficina-de-egresados $egresados,
+  finanzas-gobierno-y-relaciones-internacionales $finanzas, cipe $finanzas,
+  egresados-figri $finanzas, figri-internacional $finanzas,
+  centro-de-estudios-de-posgrados $finanzas,
+  administracion-de-empresas-turisticas-y-hoteleras $hoteleria,
+  estudios-del-patrimonio-cultural $patrimonio, convenio-sigueme $sigueme,
+  departamento-de-matematicas $matematicas,
+  ciencias-sociales-y-humanas $sociales, la-universidad $universidad,
+  comunidad-virtual $comunidad-virtual, linae $sociales,
+  departamento-de-derecho-penal-y-criminologia $derecho,
+  empleabilidad-figri $finanzas, conexion-externado $conexion,
+  centro-de-espanol-para-extranjeros $finanzas,
+  escuela-de-relaciones-internacionales $finanzas,
+  departamento-de-derecho-economico $derecho,
+  centro-de-investigacion-en-filosofia-y-derecho $derecho, intranet $default,
+  esc-finanzas $esc-finanzas, esc-relaciones-in $esc-relaciones-in,
+  esc-gobierno $esc-gobierno, esc-arte $esc-arte, 135-uexternado $dorado,
+  amaranto-museo-virtual $amaranto,
+  observatorio-familia-infacia-adolecencia $derecho,
+  derecho-constitucional $derecho, egresados-faeth $hoteleria,
+  delfos-centro-analisis-datos $sigueme,
+  centro-idiomas-y-cultura $centro-idiomas, journey $journey,
+  museo-archivohistorico $amarillo-oro, plan-de-estudios-derecho $derecho,
+  unidad-de-genero $unidad-genero, cppe $egresados, revista-disg $derecho,
+  asociacion-henri-capitant $asociacion-henri-capitant,
+  departamento-de-derecho-del-transporte $derecho,
+  centro-de-espanol-para-extranjeros $extranjeros,
+  congreso-de-lenguas-minoritarias $lenguas;
+
+/***** FUENTES *****/
+$lato: 'Lato', sans-serif;
+$georgia: Georgia, serif;
+
+$em-base: 16px;
+
+/***** TRANSICIONES *****/
+$transition-color: color ease-in-out 300ms;
+$transition-background: background ease-in-out 300ms;
+$transition-border-color: border-color ease-in-out 300ms;
+$transition-transform: transform ease-in-out 300ms;
+$transition-opacity: opacity ease-in-out 300ms;
+$transition-all: all ease-in-out 300ms;
+$transition-left: left ease-in-out 300ms;
+
+/***** RADIUS *****/
+$radius-s: 3px;
+
+/***** BORDER *****/
+$dotted-border: thin dotted $gris-hierro;
+$solid-border: thin solid $gris-hierro;
+$thickness-border: solid 5px $verde-lima-700;
+$border-s: solid 1px;
+$border-m: solid 3px;
+$border-l: solid 5px;
+
+/***** BREAKPOINTS *****/
+$maximo: 3000px;
+$desktop: 920px;
+$desktop-01: 921px;
+$ipad: 768px;
+$ipad-01: 769px;
+$small: 490px;
+$small-01: 389px;
+$movil-amplio: 400px;
+$movil-amplio02: 399px;
+$movil: 320px;
+$minimo: 50px;
+
+/**** creditos card colors ****/
+$creditos__card--1: #ce4830;
+$creditos__card--2:#b35b27;
+$creditos__card--3: #cb8d2d;
+$creditos__card--4:#7d8216;
+$creditos__card--5:#8696a1;
+$creditos__card--6:#606dd7;
+$creditos__card--7:#997b51;
+$creditos__card--8:#40571a;

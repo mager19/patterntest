@@ -1,0 +1,37 @@
+{{> organisms-header-blogs(nombre:"Departamento de Propiedad Intelectual") }}
+
+<div class="faculty-defecto">
+
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      <h2 class="h1">Archivo: Ejemplo</h2>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> molecules-pagination}}
+    </div>
+
+    <aside class="columna04 aside">
+      {{> molecules-newsletter-widget }}
+      {{> molecules-menu-widget }}
+      <div class=" widget widget-custom-html">
+        <article class="info">
+          <h4>Archivo</h4>
+          <label class="dropdown">
+            <select>
+              <option select value="">Seleccione</option>
+            </select>
+          </label>
+        </article>
+      </div>
+    </aside>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

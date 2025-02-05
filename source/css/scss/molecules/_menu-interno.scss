@@ -1,0 +1,28 @@
+.menu-interno {
+	background-color: #f9f5f1;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	position: relative;
+
+	@media (min-width: 1200px) {
+		padding: 2rem;
+		margin: 0rem auto 0rem;
+	}
+}
+
+.boton-linea {
+	font-size: 1rem;
+	letter-spacing: 0.0125rem;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 8px;
+	color: #666;
+	cursor: pointer;
+	background-color: transparent;
+	border: #666 2px solid;
+	transition: color ease-in-out 0.3s, border-color ease-in-out 0.3s;
+	text-transform: none;
+	text-align: center;
+	font-weight: 600;
+	width: 96%;
+}

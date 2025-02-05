@@ -1,0 +1,27 @@
+{{> organisms-header }}
+<div class="faculty-defecto">
+{{> organisms-secondary-header-menu(faculty-home:"Agencia de noticias")}}
+<main> 
+  <div class="centrar overflow margin-l">
+    <section class="titulo-categoria-noticias centrar-horizontalmente">
+    <h3>{{# category }}{{category}}{{/ category }}{{^ category }}Medio ambiente{{/ category}}</h3>
+    </section>
+    {{> molecules-breaking-news(padding-class:"padding-minimo interna")}}
+    <div class="columna12"> 
+      <div class="lista-noticias">
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+      {{> molecules-news-module-multimedia }}
+        <!--Al hacer clic en el botón se cargan más noticias-->
+      <p class="texto-centrado">   {{> atoms-button(modifier-class:"boton-big", text:"Ver más noticias")}}</p>
+    </div>
+    </div>
+  </div>
+</main>
+{{> organisms-faculty-info(title-footer:"Agencia de Noticias", dir-footer:"Calle 12 # 1-17 este. Edificio A, piso 6.", tel-footer:"601-353 7000, extensión: 3202", correo-footer:"luz.hurtado2@uexternado.edu.co", onlyShare: true)  }}
+{{> organisms-footer }} 

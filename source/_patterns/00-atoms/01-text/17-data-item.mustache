@@ -1,0 +1,10 @@
+<p class="item-info {{# modifier-class }}{{modifier-class }}{{/ modifier-class  }}">
+    <span>
+        <svg class="icon icon-{{# icon }}{{icon}}{{/ icon }}{{^ icon }}calendario-02{{/ icon}}">
+            <use
+                xlink:href="../../images/iconos.svg#icon-{{# icon }}{{icon}}{{/ icon }}{{^ icon }}calendario-02{{/ icon}}">
+            </use>
+        </svg>
+    </span>
+    <strong>{{# item }}{{item}}{{/ item }}{{^ item }}Fecha:{{/ item}}</strong>
+    <span>{{# text }}{{text}}{{/ text }}{{^ text }}Del 22 al 24 de Febrero{{/ text}}</span>

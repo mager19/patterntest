@@ -1,0 +1,45 @@
+.widget_tag_cloud {
+  @include widget;
+  h4, .h4{
+    display: inline-block;
+  }
+  .info{
+    border-bottom: thin dotted $gris-hierro;
+    border-top: thin dotted $gris-hierro;
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+      a{
+        color: $gris-acero;
+        font-size: rem(16) !important;
+        display: inline-block;
+        line-height: rem(30);
+        &:after{
+          content: '·';
+          font-size: rem(20);
+          font-weight: bold;
+          line-height: rem(20);
+          color: $verde-lima;
+          margin: 0 5px;
+        }
+        &.largest{
+          font-weight: 700;
+          font-size: rem(25) !important;
+          color: black;
+        }
+        &.small{
+          font-weight: 700;
+          font-size: rem(18) !important;
+          color: $azul-carbon;
+        }
+        &.medium{
+          font-weight: 500;
+          font-size: rem(20) !important;
+          color: black;
+        }
+        &:hover{
+          color: $verde-lima;
+          transition: $transition-color;
+        }
+      }
+  }
+}

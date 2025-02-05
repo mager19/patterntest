@@ -1,0 +1,14 @@
+<div class="grupo-noticias-categoria {{# faculty-class }}{{ faculty-class }}{{/ faculty-class }}{{ ^ faculty-class}}defecto{{/ faculty-class }}">
+<div class="centrar">
+{{> molecules-news-categories-title }}
+<div class="contenedor-noticias">
+<section class="noticia-principal">{{> molecules-news-basic-big(faculty-class:"defecto", text-class:"h4") }}</section>
+<section class="notas-secundarias">
+	{{> molecules-news-horizontal-small(modifier-class:"h4", faculty-class:"finanzas-gobierno-y-relaciones-internacionales") }}
+	{{> molecules-news-basic-small(modifier-class:"h4", faculty-class:"derecho") }}
+	{{> molecules-news-basic-small(modifier-class:"h4", faculty-class:"contaduria-publica") }}
+</section>
+<div class="titulo-categoria-noticias show3"><a href="">Ver más noticias <span><svg class="icon icon-derecha"><use xlink:href="../../images/iconos.svg#icon-derecha"></use></svg></span></a></div>	
+</div>
+</div>
+</div>

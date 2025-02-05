@@ -1,0 +1,69 @@
+input.range-filter-year {
+  width: 48%;
+}
+
+.ui-widget.ui-widget-content{
+	border: 1px solid #CACACA !important;
+}
+
+
+.ui-widget-header {
+	background: white !important;
+	border:none !important;
+	border-bottom: 1px dotted #aaaaaa !important;
+	border-radius: 0px !important;
+
+
+	.ui-datepicker-prev .ui-icon {
+    background: url(../images/izquierda.svg) no-repeat;
+  	color: white !important;
+	}
+
+	.ui-datepicker-next .ui-icon {
+    background: url(../images/derecha.svg) no-repeat;
+  	color: white !important;
+	}
+}
+
+
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	background: $default !important;
+	border:none !important;
+	top: 10px !important;
+
+}
+
+.ui-datepicker .ui-state-hover{
+	background: $azul-carbon !important;
+}
+
+
+
+.ui-datepicker-month, .ui-datepicker-year {
+	border: 0 !important;
+	background-color: $blanco-humo !important;
+	font-weight: 600;
+	margin-left: 5px !important;
+}
+
+.ui-datepicker-calendar{
+
+	.ui-state-default{
+		background: white !important;
+	    border: 0px !important;
+		padding: 8px;
+    	border-radius: 50%;
+    	text-align: center;
+		}
+
+	.ui-state-highlight{
+		background: $default !important;
+		border: 0px !important;
+		}
+
+		.ui-state-hover {
+	 background: $azul-carbon !important;
+	 color: white !important;	
+} 
+}

@@ -1,0 +1,331 @@
+.carousel-tabs{
+  position: relative;
+  padding: 15px 0;
+  z-index: 0;
+ .info {
+      width: 100%;
+      .tabs {
+        display: flex;
+        justify-content: center;
+        a {
+          height: 55px;
+          margin: 0 8px;
+          padding: 0 20px;
+          position: relative;
+          font-size: rem(30);
+          line-height: rem(25);
+          font-weight: 300;
+          color: $gris-acero;
+          background-color: $blanco-humo;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          border-radius: 7px 7px 0 0;
+          &.active-tab{
+            color: white;
+            z-index: 2;
+            &:nth-child(1){
+              background-color: $verde-lima;
+            }
+            &:nth-child(2){
+              background-color: $rojo-carmin;
+            }
+          }
+          @media (max-width: $ipad) and (min-width: $small){
+            font-size: rem(25);
+          }
+        }
+        @media screen and (max-width: 620px){
+          display: none;
+        }
+      }
+      .links {
+        clear: both;
+        .section {
+          position: relative;
+          .title {
+            height: 60px;
+            display: none;
+            font-size: rem(25);
+            line-height: rem(30);
+            font-weight: 300;
+            padding: 0 7% 0 4%;
+            position: relative;
+            color: white;
+            background-color: $verde-lima;
+            @media screen and (max-width: 620px) {
+              display: flex;
+              align-items: center;
+            }
+            .flecha{
+              width: 22px;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              top: 15px;
+              right: 10px;
+              background-color: transparent;
+              color: white;
+              transform: rotate(-180deg) translateY(0px);
+              transition: $transition-all;
+              font-size: rem(22);
+              svg{
+                stroke-width:1px;
+              }
+            }
+            &.active{ //Esta clase se debe crear para que el color cambie en el titulo
+              opacity: 1;
+              .flecha{
+                transform: rotate(0deg) translateY(0px);
+              }
+            }
+          }
+          .box {
+            overflow: hidden;
+            display: none;
+            padding: 0;
+
+            &.active {
+              display: block;
+            }
+            p, li{
+              font-size: rem(18);
+              line-height: rem(30);
+            }
+          }
+          &:nth-child(1){
+            @media (max-width:$maximo ) and (min-width: 620px){
+              .box{
+                border-top: $verde-lima solid 5px;
+              }
+              #carrusel-principal{
+                  border-bottom: $verde-lima solid 5px;
+                }
+            }
+            .title{
+              background-color: $verde-lima;
+              &.active{
+                background: darken($verde-lima, 4%);
+              }
+            }
+          }
+          &:nth-child(2){
+            #carrusel-principal{
+                border-bottom: $rojo-carmin solid 5px;
+              }
+            @media (max-width:$maximo ) and (min-width: 620px){
+              .box{
+                border-top: $rojo-carmin solid 5px;
+              }
+              #carrusel-principal{
+                #carrusel-thumbs{
+                    @media (max-width:$maximo ) and (min-width:735px){
+                      background-color: $gris-mina;
+                    }
+                  ul li a.active p{
+                    color: $rojo-carmin;
+                  }
+                }
+              }
+            }
+            .title{
+              background-color: $rojo-carmin;
+              &.active{
+                background: darken($rojo-carmin, 4%);
+              }
+            }
+          }
+        }
+      }
+    }
+    #carrusel-principal{
+      height: 600px;
+      #carrusel-thumbs{
+        border-bottom: none;
+        @media (max-width: 3000px) and (min-width: 769px){
+          height: 110px;
+        }
+      }
+    }
+
+}
+
+/*******FIN****//////
+
+/*
+.carousel-tabs{
+  position: relative;
+  margin: 20px 0;
+  border-top: $solid-border;
+  border-bottom: $solid-border;
+  padding: 15px 0;
+  z-index: 0;
+  .info {
+    width: 100%;
+    .tabs   {
+      display: flex;
+      a {
+        width: 32%;
+        height: 60px;
+        margin: 0 1%;
+        padding: 0 35px 0 10px;
+        position: relative;
+        text-transform: uppercase;
+        font-size: rem(17);
+        line-height: rem(18);
+        letter-spacing: .3px;
+        font-weight: 600;
+        color: white;
+        background-color: $azul-cienaga;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &:first-of-type{
+          margin-left: 0;
+        }
+        &:last-of-type{
+          margin-right: 0;
+        }
+
+        &.active-tab{
+          color: $azul-cienaga;
+          z-index: 2;
+          background-color: $blanco-humo;
+          &:hover{
+            text-decoration: underline;
+            background-color: $blanco-humo;
+          }
+          &:before{
+            content: '+';
+            display: none;
+            visibility: hidden;
+          }
+
+          &:after{
+            content: url(../images/menos.svg);
+            display: block;;
+            visibility: visible;;
+          }
+        }
+        &:hover{
+          text-decoration: none;
+          background-color: $azul-carbon;
+        }
+        &:before,
+        &:after{
+          display: block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 19px;
+          right: 10px;
+          color: white;
+        }
+        &:before{
+          content: url(../images/mas.svg);
+          display: block;
+          visibility: visible;
+        }
+        &:after{
+          content: '-';
+          display: none;
+          visibility: hidden;
+        }
+      }
+      @media screen and (max-width: 620px){
+        display: none;
+      }
+    }
+    .links {
+      clear: both;
+      .section {
+        position: relative;
+        background-color: $blanco-humo;
+
+        .title {
+          height: 60px;
+          display: none;
+          text-transform: uppercase;
+          font-size: rem(19);
+          line-height: rem(18);
+          letter-spacing: .3px;
+          font-weight: 600;
+          padding: 0 7% 0 4%;
+          position: relative;
+          color: white;
+          background-color: $azul-cienaga;
+          border-top: solid 2px $azul-carbon;
+
+          @media screen and (max-width: 620px) {
+            display: flex;
+            align-items: center;
+          }
+
+          &:before,
+          &:after{
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 19px;
+            right: 10px;
+            color: white;
+          }
+          &:before{
+            content: url(../images/mas.svg);
+            display: block;
+            visibility: visible;
+          }
+          &:after{
+            content: '-';
+            display: none;
+            visibility: hidden;
+          }
+
+
+          &.active{ //Esta clase se debe crear para que el color cambie en el titulo
+            background-color: $blanco-humo;
+            color: black;
+            &:before{
+              content: '+';
+              display: none;
+              visibility: hidden;
+            }
+
+            &:after{
+              content: url(../images/menos.svg);
+              display: block;;
+              visibility: visible;;
+            }
+            &:hover{
+              text-decoration: underline;
+              background-color: inherit;
+            }
+          }
+          &:hover{
+            text-decoration: none;
+            background-color: $azul-carbon;
+          }
+        }
+        .box {
+          overflow: hidden;
+          display: none;
+          padding: 25px 3% 30px 3%;
+          @media screen and (max-width: 620px) {
+            padding: 2px 4%;
+          }
+          &.active {
+            display: block;
+          }
+          p, li{
+            font-size: rem(18);
+            line-height: rem(30);
+          }
+        }
+      }
+    }
+  }
+}
+*/

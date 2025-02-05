@@ -1,0 +1,28 @@
+image: node:10.13.0
+
+pipelines:
+  branches:
+    staging:
+      - step:
+          name: Build and deploy
+          deployment: Testing
+          caches:
+            - node
+          script:
+            - npm ci && npx gulp patternlab:build
+            - pipe: atlassian/firebase-deploy:0.2.1
+              variables:
+                FIREBASE_TOKEN: $FIREBASE_TOKEN
+                PROJECT_ID: $FIREBASE_PROJECT
+    main:
+      - step:
+          name: Build and deploy
+          deployment: Production
+          caches:
+            - node
+          script:
+            - npm ci && npx gulp patternlab:build
+            - pipe: atlassian/firebase-deploy:0.2.1
+              variables:
+                FIREBASE_TOKEN: $FIREBASE_TOKEN
+                PROJECT_ID: $FIREBASE_PROJECT

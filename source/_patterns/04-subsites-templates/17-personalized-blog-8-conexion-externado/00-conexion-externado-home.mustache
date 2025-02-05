@@ -1,0 +1,26 @@
+<!-- El div contenedor .home no es necesario cuando el sitio esté montado en WP ya que el gestor automáticamente le generaría esa clase al body. Sin embargo aqui puse la clase manualemnte para que los estilos que afectan al header de la plantilla home se reflejaran-->
+
+<div class="faculty-conexion-externado">
+{{> organisms-header-blogs-2(logo:"../../images/logos/conexion-externado.png", facultad:"Comunicación Social - Periodismo", imagen-top:"../../images/logos/logo-sip.png") }}
+ <main>
+ 
+ 	<div class="centrar">
+  		<div class="columna10-grande contenido">
+   		{{> organisms-hover-news-grid }}
+    	{{> molecules-pagination}}
+  		</div>
+
+  		<aside class="columna02-grande aside"> 
+    	<div class="hidden3">{{> organisms-group-icon-button-aside }}</div>
+  		</aside>
+    </div>
+    <div style="clear: both;"></div>
+    
+</main>
+<div class="bottom-mini-buttons-conexion">
+<div class="centrar">
+      {{> molecules-mini-buttons}}
+    </div>
+</div>
+</div> 
+{{> organisms-footer-blogs }}

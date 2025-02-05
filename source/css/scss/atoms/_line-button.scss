@@ -1,0 +1,58 @@
+.boton-linea{
+  @include boton;
+  background-color: transparent;
+  border: white 2px solid;
+  transition: $transition-color, $transition-border-color ;
+  text-transform: none;
+  &:hover{
+    color: $verde-lima-700;
+    border: $verde-lima-700 2px solid;
+    background-color: transparent;
+  }
+
+  &.boton-linea-2 {
+    background-color: $blanco-humo;
+    border: $verde-lima-700 rem(2) solid;
+    color: $verde-lima-700;
+    font-size: rem(16);
+    padding: rem(6) rem(16);
+    text-transform: none;
+    transition: $transition-color, $transition-border-color;
+
+    &:hover{
+      background-color: $blanco-humo;
+      border: $azul-carbon rem(2) solid;
+      color: $azul-carbon;
+    }
+  }
+}
+
+.btn-linea-default, .texto a.btn-linea-default {
+	border-color:$verde-lima-700;
+  border: 2px solid;
+	color: $verde-lima-700;
+  background-color: transparent;
+  text-transform: none;
+	&:hover{
+    color: white;
+    background-color: $verde-lima-700;
+    border-color:$verde-lima-700;
+  }
+}
+
+.btn-linea-faculty, .texto a.btn-linea-faculty {
+  text-transform: none;
+	&:hover{color: white;}
+}
+
+
+.btn-linea-dark, .texto a.btn-linea-dark {
+	border-color: $gris-acero;
+  text-transform: none;
+	color: $gris-acero;
+	&:hover{
+    color: white;
+    background-color: $gris-acero;
+    border-color: $gris-acero;
+  }
+}

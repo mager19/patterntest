@@ -1,0 +1,44 @@
+{{> organisms-header-blogs(nombre:"Centro de Investigación en Política Criminal") }}
+
+<div class="faculty-defecto">
+
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      <h2 class="h1"> Últimas Noticias </h2>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> atoms-button(text:"Ver todas las noticias")}}
+      <div class="contenido">
+        <h2 class="titulo-seccion h1"> Infografía del mes </h2>
+        <a href="#"><h3 class="subtitulo-seccion"> Título infografía </h3> </a>
+        <figure>
+          <a href="#"><img src="../../images/carrusel-home-01.png" alt="Imagen destacada"></a>
+        </figure>
+      </div>
+      <div class="contenido">
+        <h2 class="titulo-seccion h1"> Aliados </h2>
+        <div class="columna06">
+          <a href="#">
+            <img src="../../images/modulo-relacionada.png" alt="Noticia Relacionada" />
+          </a>
+        </div>
+        <div class="columna06">
+          <a href="#">
+            <img src="../../images/modulo-relacionada.png" alt="Noticia Relacionada" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <aside class="columna04 aside">
+      {{> molecules-news-list-widget }}
+      {{> molecules-news-list-widget }}
+      {{> molecules-newsletter-widget }}
+    </aside>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

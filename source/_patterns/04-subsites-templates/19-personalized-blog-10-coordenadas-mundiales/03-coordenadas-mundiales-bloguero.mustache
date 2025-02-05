@@ -1,0 +1,50 @@
+<div class="faculty-escuela-de-relaciones-internacionales">
+
+{{> organisms-header-blogs(nombre:"Escuela de Relaciones Internacionales", facultad:"Finanzas, Gobierno y Relaciones Internacionales") }}
+
+  <div class="contenedor">
+    <div class="centrar">
+      <main>
+        <article class="columna08 contenido">
+          <div class="texto">
+            <h1>Nombre</h1>
+            {{> atoms-lead(lead:"Nam luctus mauris quis rhoncus eleifend. Aliquam gravida porta nulla, vitae varius tortor tincidunt sit amet. Phasellus fringilla magna eros, quis dignissim purus ullamcorper quis. Vivamus laoreet sed justo vel porta.") }}
+            <div class="columna06">
+              <figure>
+                <img class="full-image" src="../../images/evento-conferencista.png" alt="Imagen destacada">
+                <hr>
+              </figure>
+              <p><a class="mail" href="mailto:sitioweb@uexternado.edu.co"> <strong>sitioweb@uexternado.edu.co</strong> </a></p>
+            </div>
+            <div class="columna06 ">
+              <p>Integer at tellus nisl. Suspendisse nulla metus, fermentum a urna laoreet, elementum semper tellus. Aliquam non hendrerit lacus. Curabitur ut lacus est. Cras dictum a diam at dapibus. Maecenas non mauris sem. Vestibulum tempor eget mauris quis pellentesque. Sed a neque facilisis eros egestas blandit. Sed dignissim molestie viverra. Vestibulum ante ipsum primis in faucibus.</p>
+              <p>Integer at tellus nisl. Suspendisse nulla metus, fermentum a urna laoreet, elementum semper tellus. Aliquam non hendrerit lacus. Curabitur ut lacus est. Cras dictum a diam at dapibus. Maecenas non mauris sem. Vestibulum tempor eget mauris quis pellentesque. Sed a neque facilisis eros egestas blandit. Sed dignissim molestie viverra. Vestibulum ante ipsum primis in faucibus.</p>
+            </div>
+          </div>
+         
+        </article>
+      </main>
+
+      <aside class="columna04 aside">
+        {{> organisms-accordion-news(onlyShare: true)}}
+        {{> molecules-text-link-widget }}
+        {{> molecules-menu-widget }}
+        {{> molecules-tag-cloud-widget }}
+        {{> molecules-calendar-wp-widget }}
+      </aside>
+       <div class="columna12">
+            <div class="centrar">
+              <h2 class="h1">Artículos Recientes</h2>
+            </div>
+            <div class="carrusel-relacionadas">
+              <!--Máxiumo 4 noticias relacionadas-->
+              {{> molecules-related-module }}
+              {{> molecules-related-module }}
+              {{> molecules-related-module }}
+              {{> molecules-related-module }}
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+{{> organisms-footer-blogs }}

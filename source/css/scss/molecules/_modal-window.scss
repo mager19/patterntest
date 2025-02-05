@@ -1,0 +1,19 @@
+.cerrar-circular{
+	display: inline-block;
+    float: right;
+    vertical-align: center;
+    font-size: 1.25rem;
+    color: white;
+    background: $default;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    padding: 0px 8px;
+    font-weight: bold;
+    text-align: center;
+
+
+    &:hover {
+      background: $azul-carbon;
+  }
+}

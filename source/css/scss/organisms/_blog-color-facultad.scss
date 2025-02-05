@@ -1,0 +1,49 @@
+/*No aplicar cambios muy especificos de un blog, ya que varios blog tienen la misma clase y los módulos no son iguales,
+ crear un archivo para cada blog*/
+
+.faculty-color {
+
+	.news-resume {
+    margin-top: 10px;
+    padding-top: 0px;
+    border-top: none;
+
+   
+	}
+
+	.informacion-facultad{
+		margin: 0;
+	}
+
+	.titulo-tema{
+		.boton-facultad {
+			width: 100%;
+			text-transform: none;
+		}
+	}
+	.contenedor-tema{
+		border: 1px solid $blanco-humo;
+		margin-bottom: 2rem;
+		padding: 0 10px;
+	}
+
+	.profile-preview-cm {
+		.modulo-relacionado {
+			border-top: solid 5px $finanzas;
+			background-color: $blanco-humo;
+    		margin: 15px 10px;
+    		text-align: center;
+
+    	.info .tags {
+    		justify-content: center;
+    		}
+    	img	{
+    		padding: 10px;
+    	}
+
+   		.info {
+    		padding: 0 15px 15px;
+			}
+		}
+	}
+}

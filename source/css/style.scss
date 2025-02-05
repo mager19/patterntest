@@ -1,0 +1,301 @@
+/****             Estilos Base                ****/
+
+/*
+ * Esta hoja de estilo define las variables
+ * globales que se usan en todo el sitio.
+ */
+@import "scss/base/variables";
+
+/*
+ * Esta hoja de estilos define funciones útiles
+ * para generar los estilos.
+ */
+@import "scss/base/mixins";
+
+/*
+ * Estas dos hojas de estilo normalizan los
+ * estilos por defecto del browser.
+ */
+@import "scss/base/reset";
+@import "scss/base/boilerplate";
+
+/*
+ * Estas hojas de estilo definen clases de
+ * apoyo para colores y fuentes.
+ */
+@import "scss/base/color-helper";
+@import "scss/base/font-helper";
+@import "scss/base/borders-colors";
+
+/*
+ * Esta hoja de estilo define algunas clases que se pueden
+ * apoyar en los cambios necesarios de responsive.
+ */
+@import "scss/base/responsive-helper";
+
+/*
+ * Esta hoja de estilo define los estilos de
+ * la tipografía. Aquí están los estilos base para:
+ * - headings
+ * - párrafos
+ * - blockquotes
+ * - anclas (<a href>)
+ */
+@import "scss/base/typography";
+
+/*
+ * Aquí definimos los íconos con Inconmoon
+ */
+@import "scss/base/icons";
+
+/*
+ * Aquí se definen los estilos base para slick nav
+ */
+@import "scss/base/slick-nav";
+
+/*
+ * Aquí se definen los estilos para el carrusel: slider slider
+ */
+@import "scss/base/slick-slider";
+
+/*
+ * Esta hoja de estilo tiene algunos estilos generales
+ * que no se definieron en otras hojas previas.
+ */
+@import "scss/base/general";
+
+/*
+ * Definimos varios colores dependiendo de la facultad.
+ */
+@import "scss/base/faculties-colors";
+
+/*
+ * Esta hoja, por último, incluye el CSS de Bootstrap
+ */
+@import "scss/base/bootstrap";
+
+/****                 Átomos                  ****/
+@import "scss/atoms/sgs-acreditation";
+@import "scss/atoms/creative-commons";
+@import "scss/atoms/button";
+@import "scss/atoms/mini-button";
+@import "scss/atoms/line-button";
+@import "scss/atoms/icon-button";
+@import "scss/atoms/items-form";
+@import "scss/atoms/select-form";
+@import "scss/atoms/check-radiobutton-form";
+@import "scss/atoms/search-form";
+@import "scss/atoms/search-form-header";
+@import "scss/atoms/table";
+@import "scss/atoms/date";
+@import "scss/atoms/button-universidad";
+@import "scss/atoms/image-button";
+@import "scss/atoms/minisites-button";
+@import "scss/atoms/important";
+@import "scss/atoms/author";
+@import "scss/atoms/logo-blog";
+@import "scss/atoms/allied-logo-button";
+@import "scss/atoms/button-gris";
+@import "scss/atoms/button-whatsapp";
+@import "scss/atoms/az-buttons";
+@import "scss/atoms/alerts";
+@import "scss/atoms/date-picker";
+@import "scss/atoms/icon-button-aside";
+@import "scss/atoms/button-facultad";
+@import "scss/atoms/date-picker";
+@import "scss/atoms/icon-button-aside";
+@import "scss/atoms/time-read";
+@import "scss/atoms/like-counter";
+@import "scss/atoms/star-rating";
+@import "scss/atoms/views-counter";
+@import "scss/atoms/audio";
+@import "scss/atoms/accordion-filter-button";
+@import "scss/atoms/item-magnetic-button";
+@import "scss/atoms/content-tag";
+@import "scss/atoms/tag";
+@import "scss/atoms/tooltip";
+@import "scss/atoms/parallax-group-images";
+@import "scss/atoms/banner-1200x100";
+@import "scss/atoms/circle-icon-button";
+@import "scss/atoms/user-name";
+@import "scss/atoms/password-strength-meter";
+@import "scss/atoms/text-link";
+@import "scss/atoms/user-online-status";
+@import "scss/atoms/notification-count";
+@import "scss/atoms/button-routeslist";
+@import "scss/atoms/image-button-description";
+@import "scss/atoms/corner-ribbon";
+@import "scss/atoms/icon-button-round";
+@import "scss/atoms/program-button";
+@import "scss/atoms/iframe";
+@import "scss/atoms/header-image";
+@import "scss/atoms/live-play";
+@import "scss/atoms/subcategory";
+@import "scss/atoms/stats-item";
+@import "scss/atoms/data-item";
+
+/****                Moléculas                ****/
+@import "scss/molecules/main-menu";
+@import "scss/molecules/top-menu";
+@import "scss/molecules/top-buttons";
+@import "scss/molecules/social-network";
+@import "scss/molecules/language-picker";
+@import "scss/molecules/contact";
+@import "scss/molecules/visit";
+@import "scss/molecules/mineducacion-guard";
+@import "scss/molecules/tags";
+@import "scss/molecules/main-date";
+@import "scss/molecules/related-module";
+@import "scss/molecules/pagination";
+@import "scss/molecules/share-buttons";
+@import "scss/molecules/big-button";
+@import "scss/molecules/mid-button";
+@import "scss/molecules/news-module";
+@import "scss/molecules/program-module";
+@import "scss/molecules/summary-module";
+@import "scss/molecules/event-module";
+@import "scss/molecules/blog-module";
+@import "scss/molecules/law-module";
+@import "scss/molecules/archive-wp-widget";
+@import "scss/molecules/quote-widget";
+@import "scss/molecules/carousel-widget";
+@import "scss/molecules/image-widget";
+@import "scss/molecules/text-image-widget";
+@import "scss/molecules/menu-widget";
+@import "scss/molecules/categories-widget";
+@import "scss/molecules/text-widget";
+@import "scss/molecules/html-widget";
+@import "scss/molecules/events-widget";
+@import "scss/molecules/calendar-widget";
+@import "scss/molecules/call-widget";
+@import "scss/molecules/calendar-wp-widget";
+@import "scss/molecules/recent-comments-widget";
+@import "scss/molecules/newsletter-widget";
+@import "scss/molecules/tag-cloud-widget";
+@import "scss/molecules/news-list-widget";
+@import "scss/molecules/previous-next";
+@import "scss/molecules/ads";
+@import "scss/molecules/prominent-image";
+@import "scss/molecules/caption-image";
+@import "scss/molecules/scroll-image";
+@import "scss/molecules/banner-image";
+@import "scss/molecules/scroll-image-small";
+@import "scss/molecules/news-list-widget";
+@import "scss/molecules/modal-window";
+@import "scss/molecules/allied-logos";
+@import "scss/molecules/molecule-subscription";
+@import "scss/molecules/databases-module";
+@import "scss/molecules/contact-buttons-widget";
+@import "scss/molecules/yoast-faq-block";
+@import "scss/molecules/hover-news-module";
+@import "scss/molecules/hover-news-module";
+@import "scss/molecules/event-module-image";
+@import "scss/molecules/main-date-title";
+@import "scss/molecules/search-date-event";
+@import "scss/molecules/event-date-slider";
+@import "scss/molecules/event-list-module";
+@import "scss/molecules/mode-events";
+@import "scss/molecules/news-podcast-module";
+@import "scss/molecules/magnetic-button";
+@import "scss/molecules/subtitle-button";
+@import "scss/molecules/digital-zone";
+@import "scss/molecules/sign-off";
+@import "scss/molecules/publication-module";
+@import "scss/molecules/prominent-image-lead";
+@import "scss/molecules/youtube-list";
+@import "scss/molecules/video-molecule";
+@import "scss/molecules/square-news-module";
+@import "scss/molecules/live";
+@import "scss/molecules/news-horizontal-small";
+@import "scss/molecules/group-news-horizontal-small";
+@import "scss/molecules/news-basic-big";
+@import "scss/molecules/news-basic-small";
+@import "scss/molecules/breaking-news";
+@import "scss/molecules/news-featured-big";
+@import "scss/molecules/translate-button";
+@import "scss/molecules/news-categories-title";
+@import "scss/molecules/share-vertical";
+@import "scss/molecules/prominent-image-lead-2";
+@import "scss/molecules/links-module";
+@import "scss/molecules/card-image-professor";
+@import "scss/molecules/post-sidebar-banner";
+@import "scss/molecules/contenido-final";
+@import "scss/molecules/program-mode-selector";
+@import "scss/molecules/prominent-image-lead-full-width";
+@import "scss/molecules/menu-interno";
+@import "scss/molecules/creditos-card";
+
+/****               Organismos                ****/
+@import "scss/organisms/header";
+@import "scss/organisms/header-top-blogs";
+@import "scss/organisms/header-menu-blogs";
+@import "scss/organisms/header-blogs";
+@import "scss/organisms/header-buddypress";
+@import "scss/organisms/footer";
+@import "scss/organisms/footer-blogs";
+@import "scss/organisms/gallery";
+@import "scss/organisms/accordion-filter";
+@import "scss/organisms/accordion-content";
+@import "scss/organisms/accordions";
+@import "scss/organisms/admissions";
+@import "scss/organisms/programs";
+@import "scss/organisms/prominent-buttons";
+@import "scss/organisms/event-list";
+@import "scss/organisms/summary-list";
+@import "scss/organisms/news-list";
+@import "scss/organisms/programs";
+@import "scss/organisms/blog-list";
+@import "scss/organisms/laws-list";
+@import "scss/organisms/tabs-wide-screen";
+@import "scss/organisms/tabs-news";
+@import "scss/organisms/related-carousel";
+@import "scss/organisms/faculty-carousel";
+@import "scss/organisms/opening-live";
+@import "scss/organisms/opening-basic";
+@import "scss/organisms/faculty-info";
+@import "scss/organisms/regions";
+@import "scss/organisms/calendar-home";
+@import "scss/organisms/carousel-home";
+@import "scss/organisms/carousel-tabs";
+@import "scss/organisms/secondary-header-search";
+@import "scss/organisms/secondary-header-menu";
+@import "scss/organisms/calendar";
+@import "scss/organisms/form-section";
+@import "scss/organisms/tabs-wide-screen";
+@import "scss/organisms/tabs-news";
+@import "scss/organisms/publication";
+@import "scss/organisms/calendar-carousel-blogs";
+@import "scss/organisms/allied-carousel";
+@import "scss/organisms/carrusel-interno-1columna";
+@import "scss/organisms/carrusel-interno-2columnas";
+@import "scss/organisms/special-events";
+@import "scss/organisms/accordion-repositorio-digital-filter";
+@import "scss/organisms/news-resume";
+@import "scss/organisms/header-blogs-2";
+@import "scss/organisms/blog-conexion";
+@import "scss/organisms/blog-escuela-de-relaciones-internacionales";
+@import "scss/organisms/carousel-agenda";
+@import "scss/organisms/calendar-slider";
+@import "scss/organisms/blog-derecho-a-la-carta";
+@import "scss/organisms/comments-wordpress";
+@import "scss/organisms/carousel-icons";
+@import "scss/organisms/carousel-lead";
+@import "scss/organisms/image-list";
+@import "scss/organisms/header-reduced";
+@import "scss/organisms/blog-observatorio-familia-infacia-adolencia";
+@import "scss/organisms/blog-color-facultad";
+@import "scss/organisms/group-program-buttons";
+@import "scss/organisms/blog-home-der-constitucional";
+@import "scss/organisms/opening-breaking-news";
+@import "scss/organisms/opening-featured";
+@import "scss/organisms/news-category-group";
+@import "scss/organisms/tabs-vertical";
+@import "scss/organisms/program-finder";
+@import "scss/organisms/group-links-module";
+@import "scss/organisms/filter-list";
+@import "scss/organisms/single-zero";
+@import "scss/organisms/program-header-with-mode-selector";
+@import "scss/organisms/blog-conexion-externado";
+@import "scss/organisms/template_section_organisms";
+@import "scss/organisms/creditos";
+@import "scss/organisms/carrusel-interno-3columnas--custom.scss";

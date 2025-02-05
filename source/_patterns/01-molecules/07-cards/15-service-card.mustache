@@ -1,0 +1,35 @@
+<div class="modulo-bases-datos {{# class }}{{class}}{{/ class }}{{^ class }}margen-modulo-grilla padding-minimo{{/ class}} "> 
+      <!--imagen destacada-->
+      <a href="#" target="_blank"><img class="aligncenter margin-none" src="../../images/{{# imagen }}{{imagen}}{{/ imagen }}{{^ imagen }}boton-subtitulo-01.png{{/ imagen}}" alt="" /></a>
+
+  <div class="columna12 informacion-db">
+
+        <!--Los campos que no se llenen quedarán con la clase hidden-->
+        <div class="titulo-db">
+        <div class="columnas-alto-fijo">
+          <div class="columna12 submodulo-db sin-borde">
+            <!--Aquí va la categoría, por ejemplo: Docencia-->
+            <h6 class="entidad-tit"><a href="">{{# category }}{{category}}{{/ category }}{{^ category }}Categoría{{/ category}} </a></h6>
+          </div>
+          <div class="columna12 sin-borde">
+            <div class="tags" style="margin: 0;">
+              <ul>
+                <li style="margin-left: 0;"><a href="#">Asesorías en software especializado</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h4 class="columna12 submodulo-db">{{# titulo }}{{titulo}}{{/ titulo }}{{^ titulo }}Nombre del servicio{{/ titulo}}</h4>
+      </div>
+        <div class="columna12 submodulo-db sin-borde {{# class2 }}{{class2}}{{/ class2 }}{{^ class2 }}active{{/ class2}}">
+          <p class="subtit-db"><span><svg class="icon color-icon icon-articulo"><use xlink:href="../../images/iconos.svg#icon-articulo"></use></svg></span>Descripción:</p>
+          <div class="">
+            {{# text }}{{text}}{{/ text }}{{^ text }} Sit amet, consectetur adipiscing elit. Praesent nec sollicitudin lectus. Proin ullamcorper lobortis tincidunt. Aenean accumsan convallis nisi, nec ullamcorper lorem auctor id. Cras dictum feugiat euismod. {{/ text}}
+          </div>
+        </div> 
+        <div class="columna12 submodulo-db">
+          {{> atoms-line-button(icon-selector:"derecha", modifier-class:"boton-linea-2", text: "Ver servicio") }}
+        </div>
+   </div>
+    <div style="clear: both"></div>
+</div>

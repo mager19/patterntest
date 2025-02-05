@@ -1,0 +1,101 @@
+.fecha-actual-title {
+  background-color: $verde-lima-700;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  .title-agenda {
+    color: white;
+    text-transform: initial;
+    margin: 10px;
+    text-align: center;
+  }
+
+  span:nth-of-type(1) {
+    font-size: rem(45);
+    line-height: 0.8em;
+    font-weight: 700;
+    display: block;
+    float: left;
+    border-right: 1px solid #fff;
+    margin: 10px 10px 10px 0;
+    padding: 0 5px;
+  }
+  span:nth-of-type(2) {
+    font-size: rem(20);
+    font-weight: 700;
+    text-transform: initial;
+    clear: right;
+    display: block;
+    margin: 10px 0 0 0;
+    line-height: 1em;
+  }
+
+  span:nth-of-type(3) {
+    font-size: rem(20);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1em;
+  }
+
+  @media (max-width: $maximo) and (min-width: 1221px) {
+    width: 35%;
+  }
+  @media (max-width: 1220px) and (min-width: 1030px) {
+    width: 35%;
+    .h3 {
+      font-size: 1.9rem;
+    }
+  }
+  @media (max-width: 1029px) and (min-width: 990px) {
+    width: 45%;
+  }
+
+  @media (max-width: 989px) and (min-width: $ipad) {
+    width: 60%;
+  }
+  @media (max-width: $ipad) and (min-width: 660px) {
+    width: 30%;
+  }
+  @media (max-width: 659px) and (min-width: 450px) {
+    width: 200px;
+  }
+  @media (max-width: $ipad) and (min-width: 450px) {
+    width: 100%;
+    span:nth-of-type(1) {
+      font-size: rem(35);
+      margin: 10px;
+    }
+    span:nth-of-type(2),
+    span:nth-of-type(3) {
+      font-size: rem(18);
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .columna05 {
+      visibility: hidden;
+      height: 0px;
+      margin: 0;
+    }
+  }
+  @media (max-width: 449px) and (min-width: $minimo) {
+    width: 100%;
+    span:nth-of-type(1) {
+      font-size: rem(25);
+      margin: 8px;
+    }
+    span:nth-of-type(2),
+    span:nth-of-type(3) {
+      font-size: rem(16);
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .columna05 {
+      visibility: hidden;
+      height: 0px;
+      margin: 0;
+    }
+  }
+}

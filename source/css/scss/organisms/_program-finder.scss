@@ -1,0 +1,108 @@
+.barra-buscador-programas {
+  padding: 10rem 0 1rem;
+  max-width: 100%;
+
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    padding: 3.5rem 0 0.1rem;
+  }
+
+  .buscador-box {
+    color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @media (max-width: $ipad) and (min-width: $minimo) {
+      align-content: center;
+      flex-direction: column;
+      padding: 0 1rem 0;
+    }
+
+    .box-busqueda-1,
+    .box-busqueda-2,
+    .box-busqueda-3 {
+      display: flex;
+      align-items: center;
+      -ms-grid-column-align: center;
+      margin: 0 1%;
+    }
+
+    .box-busqueda-1 {
+      width: 32%;
+
+      h4 {
+        font-style: italic;
+        border-left: 5px solid $verde-lima-400;
+        padding-left: 20px;
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .box-busqueda-2 {
+      width: 53%;
+      padding-right: 3%;
+      border-right: 1px solid $gris-200;
+
+      .search {
+        width: 100%;
+
+        input[type='search'] {
+          margin: 0;
+          padding: 5px 10px;
+        }
+
+        button {
+          background-color: transparent;
+          color: $verde-lima-700;
+          width: 35px;
+          top: 0;
+        }
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid $gris-200;
+      }
+    }
+    .box-busqueda-3 {
+      width: 9%;
+      display: flex;
+      justify-content: center;
+
+      a.btn-mas {
+        color: $museo;
+
+        span {
+          color: $verde-lima-400;
+        }
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .programas-box {
+    @media (max-width: 1200px) and (min-width: $minimo) {
+      max-width: 95%;
+      margin: 0 18px 1rem;
+    }
+
+    .carrusel-programas {
+      height: rem(154px);
+      visibility: hidden;
+
+      &.slick-initialized {
+        height: auto;
+        visibility: visible;
+      }
+    }
+  }
+}

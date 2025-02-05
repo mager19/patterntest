@@ -1,0 +1,107 @@
+header.blogs{
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    position   : relative;
+    top: 0;
+  }
+}
+.menu-blogs{
+
+  .secondary-header-menu{
+    background-color: $blanco-humo;
+    .menu-secundario {
+      background: darken($blanco-humo, 5%);
+      z-index: 2;
+      ul{
+        li{
+          color: $azul-carbon;
+            &:hover {
+            background-color: darken($blanco-humo, 10%) !important;
+            }
+            .sub-menu li:hover {
+            background-color: #fff !important; 
+            }
+        }
+      }
+    }
+    .menu-secundario{
+      .show-secondary-menu{
+        color: $azul-carbon;
+      }
+    }
+    h3{
+      color: $azul-carbon;
+      margin: 0;
+    }
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      margin-top: 0;
+    }
+    &.centlogo {
+      .logo-blog {
+        margin: 0 auto;
+        text-align: center;
+      }
+      @media (min-width: 1285px) {
+        .info-secondary-header {display: none;}
+      }
+    }
+  }
+    
+  .slicknav_menu {
+    background-color: $blanco-humo;
+    .slicknav_nav{
+      a {
+        color: $azul-carbon;
+      }
+    }
+
+    li.slicknav_parent.slicknav_open {
+      background-color: darken($blanco-humo, 4%);
+      .sub-menu{
+        .slicknav_open{
+          background-color: darken($blanco-humo, 8%);
+        }
+      }
+    }
+
+    li:hover {
+      background-color: darken($blanco-humo, 4%);
+      li:hover {
+        background-color: darken($blanco-humo, 8%);
+        li:hover {
+          background-color: darken($blanco-humo, 12%);
+        }
+      }
+    }
+  }
+}
+/*Ajustes para mi comunidad vitual*/
+
+.faculty-comunidad-virtual .secondary-header-menu {
+    background-color: #256e7d !important;
+}
+
+.faculty-comunidad-virtual .secondary-header-menu .info-secondary-header .texto-lateral {
+      color: white;
+}
+
+/*Ajustes para Blog Escuela de Relaciones Internacionales*/
+.faculty-escuela-de-relaciones-internacionales .secondary-header-menu {
+    background-color: $finanzas !important;
+}
+
+.faculty-escuela-de-relaciones-internacionales .secondary-header-menu .info-secondary-header .texto-lateral {
+      color: white;
+}
+
+.faculty-escuela-de-relaciones-internacionales .menu-blogs .secondary-header-menu h3{
+  color: white;
+}
+
+.faculty-escuela-de-relaciones-internacionales .redes-sociales .icono {
+  background-color: transparent;
+  margin: 4px 0px 4px 12px;
+
+    &:hover{
+        background-color: $azul-carbon;
+      }
+  }

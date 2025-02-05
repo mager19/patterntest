@@ -1,0 +1,41 @@
+{{> organisms-header-blogs(logo:"../../images/logos/exalumnos.png", nombre:"Asociación de Antiguos Alumnos") }}
+
+<div class="faculty-defecto">
+
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      {{> atoms-lead(lead:"Nam luctus mauris quis rhoncus eleifend. Aliquam gravida porta nulla, vitae varius tortor tincidunt sit amet. Phasellus fringilla magna eros, quis dignissim purus ullamcorper quis. Vivamus laoreet sed justo vel porta.") }}
+      <h1>Archivo: Ejemplo</h1>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> molecules-pagination}}
+    </div>
+
+    <aside class="columna04 aside">
+      <div class="widget widget-texto"> {{! Only used in http://exalumnos.uexternado.edu.co/category/cat-externadista-emprende/}}
+        <article class="info">
+          <h4>
+            ¿Cómo publicar tu anuncio?
+          </h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at enim a arcu placerat sagittis. Proin nec quam sem. Nam eget commodo lectus. Praesent dapibus nulla nisl, a pellentesque orci aliquam aliquam. Nulla eu neque rhoncus, rhoncus nunc id, malesuada odio. Ut placerat nisl sed purus lacinia aliquam. Nunc at vehicula nisi. Nunc aliquam nunc sit amet quam accumsan feugiat. Nullam lobortis consequat sodales. Nam sed magna suscipit, sodales ligula vel, vestibulum metus. Nulla elementum libero lacus, quis cursus mauris scelerisque nec.</p>
+        </article>
+      </div>
+
+      {{> molecules-news-list-widget }}
+      {{> molecules-news-list-widget }}
+      {{> molecules-tag-cloud-widget }}
+    </aside>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

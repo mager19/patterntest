@@ -1,0 +1,83 @@
+.widget-calendar{
+  @include widget;
+
+    .calendario-home{
+      width: 100%;
+      margin: 0 0 20px 0;
+      table{
+        border-bottom: thin dotted $gris-hierro;
+        margin: 10px 0 15px 0;
+        th{
+          width: 14.9%;
+        }
+         tbody{
+           td{
+             height: 35px;
+             a{
+               padding: 5px 0 13px 0;
+               &:after{
+                 width: 32px;
+                 height: 32px;
+                 top: 21px;
+                 background: $gris-hierro;
+                 @media (max-width: 3000px) and (min-width: 1000px){
+                   width: 27px;
+                   height: 27px;
+                   top: 24px;
+                   left: -2px;
+                 }
+               }
+             }
+             &:after{
+                width: 32px;
+                height: 32px;
+                top: 20px;
+                left: -4px;
+                @media (max-width: 3000px) and (min-width: 1000px){
+                  width: 27px;
+                  height: 27px;
+                  top: 22px;
+                  left: -1px;
+                }
+
+                @media (max-width: 999px) and (min-width: 200px){
+                  top: 20px;
+                  left: 2px;
+                }
+                @media (max-width:350px) and (min-width: 100px){
+                  left: -3px;
+                }
+             }
+             &.hoy{
+               a{
+                 &:after{
+                   width: 32px;
+                   height: 32px;
+                   top: 21px;
+                   left: -4px;
+                  @media (max-width: 3000px) and (min-width: 1000px){
+                    width: 27px;
+                    height: 27px;
+                    top: 24px;
+                  }
+                   @media (max-width: 999px) and (min-width: 200px){
+                     top: 22px;
+                     left: 0;
+                   }
+                   @media (max-width:350px) and (min-width: 100px){
+                     left: -4px;
+                   }
+
+                 }
+               }
+             }
+           }
+         }
+      }
+    }
+
+  h1{
+    display: none;
+    visibility: hidden;
+  }
+}

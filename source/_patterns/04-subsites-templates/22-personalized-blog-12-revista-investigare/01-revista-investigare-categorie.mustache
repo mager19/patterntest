@@ -1,0 +1,27 @@
+{{> organisms-header-blogs(nombre:"Revista Investigare",slogan:"Centro de Investigación en Política Criminal" facultad:"Derecho") }}
+
+<div class="faculty-defecto">
+
+  <div class="centrar overflow">
+  <div class="columna04 contenido texto-centrado blanco-humo">
+      <!--Esta será la imagen destacada y la descripción de la categoría, se debe incluir una opción para incluir el enlace del botón descargar revista -->
+      {{> molecules-publication-module}}
+    </div>
+    <div class="columna08 contenido">
+      <!--El iframe de ISSUU es el contenido opcional-->
+
+      <h4 class="h3">En esta versión:</h4>
+
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> molecules-pagination}}
+    </div>    
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

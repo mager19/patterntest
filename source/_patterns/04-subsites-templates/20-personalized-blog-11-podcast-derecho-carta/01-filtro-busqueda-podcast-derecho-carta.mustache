@@ -1,0 +1,23 @@
+{{> organisms-header-blogs(logo:"../../images/logos/derecho-a-la-carta.png") }}
+
+<div class="faculty-defecto faculty-derecho-a-la-carta">
+  <div class="fondo-completo busqueda-wpsolr padding-none">
+    <div class="centrar">
+      <aside class="columna04 aside"> 
+      {{> organisms-accordion-podcast-filter }}
+     </aside>
+      <div class="columna08 contenido">
+        <!--Este título de activa cuando se selecciona la busqueda de una categoría, materia o palabra en el buscador, indica al usuario lo que buscó-->
+        <h3 class="margen-inferior-cajas"><span><svg class="icon icon-voz"><use xlink:href="../../images/iconos.svg#icon-voz"></use></svg></span>Repositorio</h3>
+        {{> molecules-podcast-card }}
+        {{> molecules-podcast-card }}
+        {{> molecules-podcast-card }}
+        {{> molecules-podcast-card }}
+        {{> molecules-podcast-card }}
+        {{> molecules-podcast-card }}
+        {{> molecules-podcast-card }}
+        {{> molecules-pagination}}
+      </div>       
+    </div>
+  </div>
+{{> organisms-footer-blogs }}

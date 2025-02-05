@@ -1,0 +1,66 @@
+input[type=radio],
+input[type=checkbox] {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+
+  + label,
+  + span {
+    margin: 0 20px 12px 0;
+    min-height:28px;
+    line-height: 24px;
+    clear: none;
+    font-style: normal;
+    padding: 0px 5px 5px 32px;
+    cursor: pointer;
+    background: url(../images/imagenes_sprite_check-radiobutton.svg) no-repeat;
+    display: block;
+
+    a {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+input[type=checkbox] {
+  + label,
+  + span {
+    background-position: rem(-177) rem(3);
+  }
+
+  &:checked {
+    + label,
+    + span {
+      background-position: rem(-117) rem(-96);
+    }
+  }
+}
+
+input[type=radio] {
+  + label,
+  + span {
+    background-position: rem(-56) rem(-196);
+  }
+
+  &:checked {
+    + label,
+    + span {
+      background-position: rem(4) rem(-296);
+    }
+  }
+}
+
+[class*='-radio'],
+[class*='-checkbox'] {
+  > [class*='-list-item']{
+    position: relative;
+  }
+}

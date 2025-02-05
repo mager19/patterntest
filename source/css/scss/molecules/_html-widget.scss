@@ -1,0 +1,54 @@
+.widget-custom-html{
+  @include widget;
+  .boton{
+    font-size: rem(15);
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+  }
+  p{
+    a{
+      text-decoration: underline;
+      display: inline-block;
+      transition: $transition-color;
+      &:hover{
+        color: $verde-lima-700;
+      }
+    }
+  }
+
+  ul{
+    margin: 5px 0;
+    padding-left:20px;
+    & > li{
+    font-size: rem(15);
+      &:before{
+        color: $verde-lima;
+        font-size: rem(12);
+        content: "●";
+        position: relative;
+        left: -15px;
+        top: 5px;
+        width: 5px;
+        height: 5px;
+        display: block;
+      }
+    }
+  }
+  ol{
+    margin: 5px 0;
+    padding-left:20px;
+     & > li{
+    font-size: rem(15);
+    &:before{
+      font-size: rem(15);
+      }
+    }
+  }
+
+  .sin-borde-inferior {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+}

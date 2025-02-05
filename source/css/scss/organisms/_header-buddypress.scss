@@ -1,0 +1,188 @@
+// Header fixed on all sizes
+body.bp-nouveau.home header:not(.blogs) {
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+// hide responsive-menu for non logged users
+header#vc-main-header #responsive-menu {
+  .slicknav_btn {
+    display: none;
+  }
+}
+
+// show responsive-menu for logged in users
+body.bp-nouveau.logged-in header#vc-main-header #responsive-menu {
+  .slicknav_btn {
+    display: block;
+  }
+}
+
+// based on organisms-header
+header#vc-main-header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 610; // need to be more than 600 for some BuddyPress elements
+
+  .logo img {
+    height: 100%;
+    object-fit: contain;
+    width: 90%;
+  }
+
+  @media (max-width: $maximo) and (min-width: $ipad-01) {
+    .logo {
+      height: rem(70);
+      top: rem(20);
+      width: rem(320);
+    }
+  }
+
+  @media (max-width: 768px) and (min-width: 50px) {
+    .logo {
+      width: rem(260);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .avatar {
+    border-radius: 50%;
+  }
+
+  #menu {
+    .menu-principal {
+      background: #305b50;
+      height: rem(40);
+
+      ul {
+        &:first-child {
+          height: rem(40);
+          margin-left: rem(320);
+        }
+
+        li {
+          font-size: rem(16);
+          font-weight: 700;
+          text-transform: none;
+
+          a {
+            padding: rem(9) 0;
+          }
+        }
+      }
+    }
+
+    .menu-superior {
+      .tipo-usuario {
+        float: right;
+        height: rem(35);
+
+        @media (max-width: $maximo) and (min-width: $ipad-01) {
+          > li {
+            font-size: rem(15);
+            height: 100%;
+            line-height: 1.6;
+            padding: rem(4) 0;
+
+            span:last-child svg {
+              transition: $transition-transform;
+            }
+
+            &:hover span:last-child svg {
+              transform: rotate(-180deg);
+            }
+
+            &:first-child {
+              &:hover {
+                background-color: transparent;
+                color: $gris-mina;
+              }
+
+              & > a {
+                padding: 0 rem(20);
+                width: rem(190);
+              }
+            }
+
+            &:last-child {
+              background-color: $azul-cienaga;
+              color: $verde-lima;
+              font-weight: 700;
+
+              & > a {
+                padding: 0 rem(32);
+                width: rem(160);
+              }
+
+              ul li:nth-child(n+8) {
+                background-color: #f0f0f0;
+              }
+            }
+
+            ul {
+              border-color: $verde-lima;
+              width: 100%;
+
+              li {
+                font-weight: 400;
+                padding: rem(8) rem(4);
+
+                &:hover a {
+                  background-color: transparent;
+                  color: $verde-lima;
+                }
+              }
+            }
+
+            a {
+              align-items: center;
+              border: 0;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #menu,
+  #responsive-menu {
+    nav ul {
+      max-width: rem(440);
+
+      @media (max-width: $ipad) {
+        max-width: none;
+      }
+
+      span.notification-count {
+        height: rem(18);
+        width: auto;
+      }
+    }
+
+    @media (max-width: $ipad) and (min-width: $minimo) {
+      .tipo-usuario li {
+        img {
+          margin-right: rem(12);
+        }
+
+        a {
+          align-items: center;
+          display: flex;
+
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.wp-caption-text, .wp-block-image figcaption{
+  margin: 8px 0;
+  font-size: rem(14);
+  line-height: rem(19);
+  letter-spacing: 0.1px;
+  color: $gris-acero;
+  text-align: left;
+  &:after{
+    @media (max-width:$maximo) and (min-width:$ipad){
+    	width: 25%;
+    }
+    width: 80%;
+  	height: 1px;
+  	content: '';
+  	display: block;
+  	margin-top: 15px;
+    background-color: $gris-hierro;
+  	height:1px;
+  }
+}
+
+.alignleft{
+	float: left;
+  margin: 8px 25px 8px 0;
+}
+
+.alignright{
+  float: right;
+  margin: 8px 0 8px 25px;
+}
+.aligncenter{
+  margin: 20px auto;
+	float: none;
+	clear: both;
+  display:block;
+  text-align: center;
+}
+
+@media (max-width:920px) and (min-width:$ipad){
+  .alignleft,
+  .alignright,
+  .aligncenter,
+  .alignright img,
+  .alignleft img{
+    float: none;
+    clear: both;
+	  width: 100% !important;
+    margin: 8px 0;
+  }
+}
+@media (max-width:580px) and (min-width:$minimo){
+  .alignleft,
+  .alignright,
+  .aligncenter,
+  .alignright img,
+  .alignleft img{
+    float: none;
+    clear: both;
+	  width: 100% !important;
+    margin: 8px 0;
+  }
+}

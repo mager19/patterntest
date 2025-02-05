@@ -1,0 +1,77 @@
+<div class="calendar-slider">
+{{# month-text }}
+  <h4>{{ month-text}}</h4>
+{{/ month-text}}
+<table summary="Calendario" id="wp-calendar">
+  <thead id="dias">
+    <tr>
+    <th scope="col" title="Domingo">D</th>
+    <th scope="col" title="Lunes">L</th>
+    <th scope="col" title="Martes">M</th>
+    <th scope="col" title="Miércoles">M</th>
+    <th scope="col" title="Jueves">J</th>
+    <th scope="col" title="Viernes">V</th>
+    <th scope="col" title="Sábado">S</th>
+  </tr>
+  </thead>
+
+  <tbody>
+    <!-- Los td que tienen un <a href=""> son los días que tienen evento-->
+    <tr>
+      <td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td><a href="#">3</a></td><td>4</td>
+    </tr>
+
+    <tr>
+      <td><a href="#">5</a></td><td>6</td><td >7</td><td><a href="#">8</a></td><td><a href="#">9</a></td><td>10</td><td>11</td>
+    </tr>
+
+    <tr>
+      <td><a href="#">12</a></td><td>13</td><td>14</td><td><a href="#">15</a></td><td>16</td><td>17</td><td class="hoy">18</td>
+    </tr>
+
+    <tr>
+      <td><a href="#">19</a></td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+    </tr>
+
+    <tr>
+      <td>26</td><td><a href="#">27</a></td><td>28</td><td>29</td><td>30</td>
+      <td class="pad" colspan="4">&nbsp;</td>
+    </tr>
+
+  </tbody>
+</table>
+    <div class="modulo-busqueda-fecha">
+      <div class="columna05">
+        <label class="dropdown button-search-facultad">
+          <select>
+            <option select value="">Fecha</option>
+            <option select value="">Hoy</option>
+            <option select value="">Esta semana</option>
+            <option select value="">Próxima semana</option>
+            <option select value="">Octubre</option>
+            <option select value="">Noviembre</option>
+          </select>
+        </label>
+      </div>
+      <div class="columna05">
+      <label class="dropdown button-search-facultad">
+        <select>
+                  <option select value="">Facultad</option>
+                  <option value="">Administración de Empresas</option>
+                  <option value="">Administración de Empresas Turísticas y Hoteleras</option>
+                  <option value="">Ciencias de la Educación</option>
+                  <option value="">Ciencias Sociales y Humanas</option>
+                  <option value="">Comunicación Social – Periodismo</option>
+                  <option value="">Contaduría Pública</option>
+                  <option value="">Derecho</option>
+                  <option value="">Decanatura Cultural</option>
+                  <option value="">Economía</option>
+                  <option value="">Estudios del Patrimonio Cultural</option>
+                  <option value="">Finanzas, Gobierno y Relaciones Internacionales</option>
+        </select>
+      </label>
+      </div>
+      <div class="columna02"><button class="button-search-event-lupa boton" href=""><span class=""><svg class="icon icon-lupa"><use xlink:href="../../images/iconos.svg#icon-lupa"></use></svg></span> </button></div>
+      <div style="clear: both;"></div>
+    </div>
+  </div>

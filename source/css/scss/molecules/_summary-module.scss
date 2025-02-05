@@ -1,0 +1,10 @@
+.modulo-resumen{
+  height:auto;
+	padding: 20px 0;
+	border-top: $dotted-border;
+  h6{
+    a{
+      // El color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+    }
+  }
+}

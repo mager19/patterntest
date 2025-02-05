@@ -1,0 +1,91 @@
+.carrusel-relacionadas{
+  visibility: hidden; // Simian: Hide it by default, so js shows it when the slick is already initialized in order to avoid a weird loading transition.
+  border-top: $solid-border;
+  margin: 20px auto 0 auto;
+  max-width: 1200px;
+  @media (max-width:1210px ) and (min-width:$minimo ){
+    margin: 20px 10px 0 10px;
+  }
+
+  &.light{
+    .slick-next, .slick-prev {background: white;}
+    .slick-next:before{background: url(../images/derecha-gris.svg) no-repeat;}  
+    .slick-prev:before{background: url(../images/izquierda-gris.svg) no-repeat;}  
+  }
+
+  .h4{
+    color: inherit;
+    a {
+      text-decoration: none;
+    }
+  }
+  .info{
+    @media (max-width:$maximo ) and (min-width:1000px ){
+      h4, .h4{
+        font-size: rem(20);
+        word-break: break-word;
+      }
+      p{
+        font-size: rem(17);
+        word-break: break-word;
+      }
+    }
+
+    @media (max-width:1000px ) and (min-width:580px){
+      h4, .h4{
+        font-size: rem(18);
+        word-break: break-word;
+      }
+      p{
+        font-size: rem(17);
+        line-height: rem(25);
+        word-break: break-word;
+      }
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    @media (max-width:$maximo ) and (min-width:1300px ){
+      width: 40px;
+      height: 40px;
+      &:before {
+        background-size: 20px;
+        top: 10px;
+        left: 10px;
+      }
+    }
+    @media (max-width:1300px ) and (min-width:$minimo ){
+      width: 36px;
+      height: 36px;
+      &:before {
+        background-size: 18px;
+        top: 8px;
+        left: 8px;
+      }
+    }
+  }
+
+  .slick-prev{
+    @media (max-width:$maximo ) and (min-width:1300px ){
+      left:-40px;
+    }
+    @media (max-width:1300px ) and (min-width:$minimo ){
+      left: -8px;
+    }
+  }
+  .slick-next{
+    @media (max-width:$maximo ) and (min-width:1300px ){
+      right:-40px;
+    }
+    @media (max-width:1300px ) and (min-width:$minimo ){
+      right:-11px;
+    }
+  }
+  &.slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+  .slick-slide>div {
+      margin: 15px 10px;
+  }
+}

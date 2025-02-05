@@ -1,0 +1,63 @@
+.imagen-scroll{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-size:100%;
+  background-size:cover;
+  background-position: center center;
+  @media (max-width:$maximo) and (min-width:$ipad){
+    width:180%;
+    height:450px;
+    display: block;
+    margin:30px -40% 0 -40%;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    position: absolute;
+    left: 0;
+  }
+  @media (max-width:$ipad) and (min-width:$minimo){
+    margin-top: 1rem;
+  }
+}
+.pagina-completa .imagen-scroll + .wp-caption-text{
+   margin: 8px 0;
+  text-align: center;
+  @media (max-width:$maximo) and (min-width:$ipad){
+     margin: 440px auto 0 auto;
+    }
+  &:after{
+    margin: 10px auto 0 auto;
+  }
+}
+.imagen-scroll + .wp-caption-text{
+	position: relative;
+	z-index: 10;
+  @media (max-width:$maximo) and (min-width:$ipad){
+    width: 500px;
+    height: auto;
+    margin-top: 440px;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: $azul-cienaga;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    &:after{
+    	background-color: $verde-lima;
+    	height: 2px;
+    }
+  }
+}
+
+.wp-caption-space{
+  position: relative;
+  z-index: 10;
+  @media (max-width:$maximo) and (min-width:$ipad){
+    width: 80%;
+    margin-top: 110px;
+    margin-bottom: 350px;
+    color: white;
+    text-shadow: 3px 3px 6px black;
+  }
+}

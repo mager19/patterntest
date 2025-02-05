@@ -1,0 +1,28 @@
+.modulo-apertura-en-vivo{
+	width: 100%;
+	height: auto;
+
+	@media (max-width:$desktop) and (min-width:$minimo){
+		display: contents;
+	}
+
+
+	.noticia-principal{
+		height: 75%;
+    	display: block;
+    	overflow: hidden;
+
+    	@media (max-width:$ipad) and (min-width:$minimo){
+    	height: auto;
+		}
+	}
+
+	.noticias-secundarias{
+		height: 25%;
+
+		@media (max-width:$ipad) and (min-width:$minimo){
+    	height: auto;
+    	margin: 10px auto;
+		}
+	}
+}

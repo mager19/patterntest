@@ -1,0 +1,27 @@
+.columnas2-vert {
+    column-rule: thin dotted #cacaca;
+    column-count: 2;
+    column-gap: 5rem;
+
+    @media (max-width:$ipad) and (min-width:$minimo)  {
+      column-count: 1;
+    }
+}
+
+.margen-inferior-cajas{
+    margin-bottom: 2rem;
+}
+
+
+.margen-superior-cajas{
+    margin-top: 2rem;
+}
+
+
+.cajas-centradas {
+     @media (max-width:$ipad ) and (min-width:$minimo)  {
+    display: contents;
+    }
+    .widget-custom-html {width: 100%;}
+}
+ 

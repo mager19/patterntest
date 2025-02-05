@@ -1,0 +1,24 @@
+<article class="{{# class-category }}{{class-category}}{{/ class-category }}{{^ class-category }}administracion{{/ class-category}}">
+  <div class="modulo-relacionado">
+    <a href="#" aria-label="Ver noticia">
+      <!--Esta imagen debe ser de 500 x 305px-->
+      <img src="../../images/{{# img-url }}{{img-url}}{{/ img-url }}{{^ img-url }}carrusel-home-01.png{{/ img-url}}" alt="Noticia Relacionada" />
+    </a>
+    <div class="related-fecha">
+      {{> atoms-date }}
+    </div>
+    <div class="info">
+      {{^ onlyTitle }}
+      
+      <div class="h6"><a href="#">{{# category }}{{category}}{{/ category }}{{^ category }}Administración{{/ category}}</a></div>
+      <h3 class="h4"><a href="#">{{# title }}{{title}}{{/ title}}{{^ title }}III Encuentro de investigación en Educación{{/ title }}</a></h3>
+      {{^ onlyTitle }}
+      <p>{{# text }}{{text}}{{/ text }}{{^ text }}Se expondrán los trabajos de investigación más destacados de los estudiantes graduados de la Facultad, durante el segundo semestre del año 2015.{{/ text}}</p>
+      {{/ onlyTitle }}
+
+      {{> molecules-tags }}  {{/ onlyTitle }}
+    </div>
+    <div class="faculty-color">
+    </div>
+  </div>
+</article>

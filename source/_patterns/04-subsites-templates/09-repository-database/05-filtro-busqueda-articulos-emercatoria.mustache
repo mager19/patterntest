@@ -1,0 +1,20 @@
+{{> organisms-header-blogs(logo:"../../images/logos/revista-emercatoria.png") }}
+<div class="faculty-defecto faculty-derecho-a-la-carta">
+  <div class="fondo-completo busqueda-wpsolr padding-none">
+    <div class="centrar">
+      <aside class="columna04 aside"> 
+      {{> organisms-accordion-articles-filter }}
+     </aside>
+      <div class="columna08 contenido">
+        <h3 class="margen-sencillo">Título del resultado de la búsqueda</h3>
+        {{> molecules-article-card }}
+        {{> molecules-article-card }}
+        {{> molecules-article-card }}
+        {{> molecules-article-card }}
+        {{> molecules-article-card }}
+        {{> molecules-article-card }}
+        {{> molecules-pagination}}
+      </div>       
+    </div>
+  </div>
+{{> organisms-footer-blogs }}

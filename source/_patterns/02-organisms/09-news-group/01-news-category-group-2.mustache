@@ -1,0 +1,35 @@
+{{^ main-position}}
+<div class="columna12 margin-l">
+  <div class="columna12 encabezado-mobile">
+  <h2 >{{# category }}{{category}}{{/ category }}{{^ category }}CATEGORÍA{{/ category}}</h2>
+  </div>
+  <div class="columna01 encabezado-desktop">
+  <h2 class="texto-vertical">{{# category }}{{category}}{{/ category }}{{^ category }}CATEGORÍA{{/ category}}</h2>
+  </div>
+  <div class="columna05">
+  {{> molecules-news-section-primary-module(title:"CONEXIONES: UN VIAJE A TRAVÉS DE LA COMUNICACIÓN", taxonomy-1:"ENTREVISTA") }}
+  </div>        
+  <div class="columna06">
+  {{> molecules-news-section-secondary-module(title:"CINEMATECA DE BOGOTA EPICENTRO CULTURAL", taxonomy-1:"CRÓNICA", icon-selector:"icon-articulo") }}
+  {{> molecules-news-section-secondary-module(title:"LAS DOS VERSIONES DE LA TOMA", taxonomy-1:"REPORTAJE", icon-selector:"icon-podcast") }}
+  </div>
+</div>
+{{/ main-position}}
+
+{{# main-position}}
+<div class="columna12 margin-l">
+  <div class="columna12 encabezado-mobile">
+  <h2 >{{# category }}{{category}}{{/ category }}{{^ category }}CATEGORÍA{{/ category}}</h2>
+  </div>
+  <div class="columna06">
+  {{> molecules-news-section-secondary-module(title:"CINEMATECA DE BOGOTA EPICENTRO CULTURAL", taxonomy-1:"CRÓNICA", icon-selector:"icon-articulo") }}
+  {{> molecules-news-section-secondary-module(title:"LAS DOS VERSIONES DE LA TOMA", taxonomy-1:"REPORTAJE", icon-selector:"icon-podcast") }}
+  </div>
+  <div class="columna05">
+  {{> molecules-news-section-primary-module(title:"CONEXIONES: UN VIAJE A TRAVÉS DE LA COMUNICACIÓN", taxonomy-1:"ENTREVISTA") }}
+  </div>
+  <div class="columna01 encabezado-desktop">
+  <h2 class="texto-vertical">{{# category }}{{category}}{{/ category }}{{^ category }}CATEGORÍA{{/ category}}</h2>
+  </div>
+</div>
+{{/ main-position}}

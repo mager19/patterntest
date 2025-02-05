@@ -1,0 +1,539 @@
+/* Titles */
+h1, .h1 {
+  font-size   : rem(50);
+  font-weight : 300 /*lighter*/;
+  line-height : rem(52);
+  margin      : 10px 0 0 0;
+  color: $azul-carbon;
+  @media (max-width:$ipad) and (min-width:$movil-amplio){
+    font-size: rem(40);
+    line-height: rem(45);
+  }
+  @media (max-width:$movil-amplio) and (min-width:$minimo){
+    font-size: rem(32);
+    line-height: rem(37);
+  }
+}
+.safari{
+  @media (max-width:$ipad) and (min-width:$minimo){
+    h1{
+      font-weight: 400 /*Normal*/;
+    }
+  }
+}
+
+h2, .h2 {
+  font-size: rem(38);
+  line-height: rem(44);
+  font-weight : 900;
+  margin      : 5px 0;
+  @media (max-width:1100px) and (min-width:$movil-amplio){
+    font-size: rem(32);
+    line-height: rem(37);
+  }
+  @media (max-width:$movil-amplio) and (min-width:$minimo){
+    font-size: rem(21);
+    line-height: rem(25);
+  }
+}
+
+.modulo-noticia .info .h4 {
+ color: #222;
+
+}
+
+h3, .h3 {
+  font-size: rem(37);
+  font-weight: 400 /*normal*/;
+  line-height: rem(38);
+  margin: 5px 0 10px 0;
+  color: $azul-carbon;
+  @include fuente-suave;
+  @media (max-width:$ipad) and (min-width:$movil-amplio){
+    font-size: rem(25);
+    line-height: rem(26);
+  }
+  @media (max-width:$movil-amplio) and (min-width:$minimo){
+    font-size: rem(22);
+    line-height: rem(28);
+  }
+}
+
+h3 a:hover{
+  text-decoration: underline;
+}
+
+h4, .h4 {
+  font-size   : rem(23);
+  line-height: 1.2;
+  font-weight : 900 /*bolder*/;
+  margin      : 8px 0 4px 0;
+  @media (max-width:$movil-amplio ) and (min-width:$minimo ){
+    font-size: rem(18);
+  }
+    @media (max-width: $ipad) and (min-width: $minimo ) {
+      margin-top: rem(15);
+    }
+}
+.modulo-resumen .h5 {
+  color: #222;
+}
+
+.info .h5 {
+  color: #222 !important;
+  font-weight: 900;
+}
+
+h5, .h5 {
+  font-size: rem(16);
+  line-height: rem(18);
+  font-weight : 900 /*bolder*/;
+  margin      : 8px 0 4px 0;
+  
+}
+
+h4, .h4,
+h5, .h5 {
+  @include fuente-suave;
+  a{
+    color: inherit;
+    transition: $transition-color;
+    display: inline;
+    &:hover{
+      color: $azul-carbon;
+      background: url(../images/punto-azul-carbon.png) left 92%/1px repeat-x;
+      }
+    }
+}
+
+.contenido .info .h6 {
+  font-size      : rem(17);
+  line-height    : rem(20);
+}
+
+.siguiente, .anterior {
+  .h6 {
+    font-size: 1.125rem;
+    color: #001c24;
+    margin-bottom: 5px;
+    text-transform: none;
+  }
+}
+
+
+
+h6, .h6 {
+  font-size      : rem(13);
+  font-weight    : /*bolder*/ 900;
+  line-height    : rem(16);
+  margin         : 0px 0 6px 0;
+  text-transform : none;
+  a{
+    transition: $transition-color;
+    &:hover{
+      color: $azul-carbon;
+    }
+  }
+  @media (max-width:$ipad ) and (min-width:$minimo ){
+    font-size: rem(15);
+  }
+}
+
+.clear-h {
+  font-size: initial;
+  margin: initial;
+  font-weight: initial;
+  line-height: initial;
+  color: initial;
+}
+
+/*Esta jerarquía es únicamente para el cuerpo de texto de páginas y post */
+.texto{
+  h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+    text-transform: none;
+  }
+  h1 {
+    font-size: rem(38); //38px
+    line-height: rem(44);
+    margin      : 5px 0 20px 0;
+    color: black;
+    @media (max-width:1100px) and (min-width:$movil-amplio){
+      font-size: rem(32);
+      line-height: rem(37);
+    }
+    @media (max-width:$movil-amplio) and (min-width:$minimo){
+      font-size: rem(21);
+      line-height: rem(25);
+    }
+  }
+  h2{
+    font-size: rem(34); //34px
+    line-height: rem(38);
+    margin      : 30px 0 10px 0;
+    @media (max-width:1100px) and (min-width:$movil-amplio){
+      font-size: rem(29);
+      line-height: rem(34);
+    }
+    @media (max-width:$movil-amplio) and (min-width:$minimo){
+      font-size: rem(19);
+      line-height: rem(23);
+    }
+  }
+  h3{
+    font-size: rem(30); //30px
+    line-height: rem(34);
+    margin      : 25px 0 10px 0;
+    @media (max-width:1100px) and (min-width:$movil-amplio){
+      font-size: rem(26);
+      line-height: rem(31);
+    }
+    @media (max-width:$movil-amplio) and (min-width:$minimo){
+      font-size: rem(17);
+      line-height: rem(21);
+    }
+  }
+  h4{
+    font-size: rem(24); //24px
+    line-height: rem(28);
+    margin      :30px 0 10px 0;
+    @media (max-width:1100px) and (min-width:$movil-amplio){
+      font-size: rem(23);
+      line-height: rem(28);
+    }
+    @media (max-width:$movil-amplio) and (min-width:$minimo){
+      font-size: rem(15);
+      line-height: rem(19);
+    }
+  }
+
+  h5{
+    font-size: rem(21); //21px
+    line-height: rem(25);
+    margin      : 30px 0 10px 0;
+    @media (max-width:1100px) and (min-width:$movil-amplio){
+      font-size: rem(20);
+      line-height: rem(25);
+    }
+    @media (max-width:$movil-amplio) and (min-width:$minimo){
+      font-size: rem(13);
+      line-height: rem(17);
+    }
+  }
+  h6{
+    font-size: rem(17); //17px
+    line-height: rem(20);
+    margin      : 5px 0;
+  }
+}
+/* Inline elements */
+p {
+  font-size   : rem(19);
+  font-weight : 400 /*normal*/;
+  line-height : 1.7;
+  margin      : 8px 0 15px 0;
+  @media (max-width:$movil-amplio) and (min-width:$minimo){
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+}
+
+a{
+  color           : inherit;
+  display         : block;
+  text-decoration : none;
+
+  &.enlace{
+    transition: $transition-color;
+    &:hover{
+      color: $verde-lima-700;
+    }
+  }
+}
+
+
+ul{
+	  list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.texto{
+  a{
+    color: $verde-lima-700;
+    display: inline-block;
+    text-transform: none;
+    &:hover{
+      text-decoration: underline;
+    }
+    &.boton-icono{
+      color: white;
+      display: flex;
+    }
+  }
+
+  ul{
+    margin: 2px 0;
+    padding-left:40px;
+    & > li{
+      &:before{
+        color: $verde-lima-700;
+        font-size: rem(12);
+        content: "●";
+        position: relative;
+        left: -15px;
+        top: 5px;
+        width: 5px;
+        height: 5px;
+        display: block;
+      }
+    }
+  }
+
+
+
+  ol{
+    list-style: none;
+    counter-reset: section;
+    margin: 2px 0;
+    padding-left:55px;
+    & > li{
+      &:before{
+        color: $verde-lima-700;
+        font-size: rem(19);
+        font-weight: 700;
+        counter-increment: section;
+        content:  "." counters(section, ".") " ";
+        position: relative;
+        left: -45px;
+        top: 5px;
+        width: 40px;
+        height: 5px;
+        display: block;
+        text-align: right;
+        direction: rtl;
+      }
+    }
+  }
+
+ol ol{
+  padding-left: 20px;
+
+}
+ol ul{
+  padding-left: 20px;
+}
+
+
+  ul>ul,
+  ul>ol,
+  ol>ul,
+  ol>ol{
+    margin: 0;
+    li{
+      padding: 2px 0;
+    }
+  }
+
+
+
+  li{
+    font-size: rem(19);
+    line-height: 1.5;
+    padding: 8px 0 ;
+    font-weight: 400;
+    @media (max-width:$movil-amplio) and (min-width:$minimo){
+      font-size: rem(17);
+      line-height: 1.4;
+    }
+  }
+  .sin-bullet{
+    ul{
+      padding-left: 0;
+        & > li{
+      &:before{
+          color: transparent !important;
+        }
+      }
+    }
+  }
+}
+
+
+blockquote{
+  -moz-osx-font-smoothing : grayscale;
+  -webkit-font-smoothing  : antialiased;
+  border                  : none;
+  color                   : $gris-acero;
+  font-size               : rem(22);
+  line-height             : rem(32);
+  margin: 1rem 0;
+  padding: 2rem 2rem 2rem 3rem;
+  position: relative;
+  font-style: italic;
+
+  &.wp-block-quote.is-style-large {
+    p {
+      font-size: rem(28);
+    }
+    cite {
+      font-size: rem(28);
+    }
+  }
+
+  &:after {
+    background-color: $verde-lima-700;
+    content: '';
+    display: block;
+    height: 6px;
+    margin-top: 20px;
+    width: 80px;
+  }
+
+  p {
+    font-size   : inherit;
+    line-height : inherit;
+  }
+
+  @media (max-width: $ipad) and (min-width: $minimo ) {
+     width: 100%;
+     font-size: rem(20);
+     line-height: rem(30);
+     padding: 1rem 1rem 1rem 2rem;
+
+     &.wp-block-quote.is-style-large {
+      p {
+        font-size: rem(19);
+      }
+      cite {
+        font-size: rem(29);
+      }
+    }
+     &:before {
+       font-size: rem(63);
+       top: 20px;
+     }
+    }
+}
+.entradilla{
+	font-size:rem(22);
+	line-height:rem(34);
+	color:$gris-acero;
+  @include antialised;
+	margin-bottom:25px;
+  @media (max-width:1100px) and (min-width:$movil-amplio){
+    font-size: rem(20);
+    line-height: rem(31);
+  }
+  @media (max-width:$movil-amplio) and (min-width:$minimo){
+    font-size: rem(16);
+    line-height: rem(24);
+    margin-bottom: 15px;
+  }
+}
+.zero{
+  blockquote{
+    color: white;
+    background-color: #643e90;
+    font-weight: 400;
+    padding: 1rem 3rem;    
+    font-style: italic;
+    &:after {
+      display: none;
+    }
+  }  
+}
+
+.caption-text{
+    color: #666;
+    font-size: .875rem;
+    margin: 10px 0 5px;
+    line-height: 1.1875rem;
+
+}
+
+.texto-blanco{
+  color: white !important;
+}
+
+.puntaje-minimo{
+  font-size: .68em;
+}
+
+.logo-blog {
+  .h3{
+    color: #31464d !important;
+    margin: 0;
+  }
+}
+
+/* Márgenes para títulos, para ajustar estilo automático de títulos*/
+.margen-titulo{
+ margin: 30px 0 !important;
+}
+
+.margen-sencillo{
+ margin: 15px 0 !important;
+}
+
+/* Decoracion títulos */
+.subrayado:after{
+      content:'';
+      display:block;
+      height: 5px;
+      width: 7rem;
+    position: relative;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 10px auto;
+      background-color: $verde-lima-700;
+    
+}
+
+.subrayado-der:after{
+      content:'';
+      display:block;
+      height: 5px;
+      width: 7rem;
+    position: relative;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: 10px 0 0 0; 
+       background-color: $verde-lima-700;
+}
+
+.division-titulo{
+      border-bottom: thin solid #cacaca;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      }
+/*  */
+
+/* CSS para fondos oscuros*/
+
+.fondo-oscuro{
+  color: $blanco;
+
+ 
+  
+  &.texto{
+    h1, h2, h3, h4, h5, h6{
+      color: $blanco;
+    }
+  p{
+    color: $blanco;
+  }
+  a{color: $verde-lima-400;} 
+
+  ul{
+    & > li{
+      color: $blanco;
+      &:before{
+        color: $verde-lima-400;
+      }
+    }
+  }
+  }
+}

@@ -1,0 +1,108 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+              <div class="titulo-acordeon"><h4>Filtro de búsqueda</h4>
+               <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button>
+             </div>
+           </div>
+         <!-- 00-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+                  {{> atoms-search-form(tit-search-form:"Grupo, título o palabra clave")}}
+              </div>
+            </div>
+          <!-- /00-->
+          <!-- 02 Fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 RECURSO-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"recurso", text:"Tipo de recurso")}}
+              </div>
+
+              <div id="recurso" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <input type="checkbox" name="materia1" value="documento"><label><span class="icon-category-color defecto"><svg class="icon icon-documento">
+            <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-documento"></use></svg></span> Documento</label>
+                  <input type="checkbox" name="materia2" value="presentacion-pdf"><label><span  class="icon-category-color defecto"><svg class="icon icon-multimedia"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-multimedia"></use></svg></span> Presentación (PDF)</label>
+                  <input type="checkbox" name="materia3" value="infografia"><label><span  class="icon-category-color defecto"><svg class="icon icon-foto-03"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-foto-03"></use></svg></span> Infografía (PDF)</label>
+                  <input type="checkbox" name="materia4" value="Poster"><label><span  class="icon-category-color defecto"><svg class="icon icon-foto-02"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-foto-02"></use></svg></span> Poster (PDF)</label>
+                  <input type="checkbox" name="materia5" value="video"><label><span  class="icon-category-color defecto"><svg class="icon icon-video"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-video"></use></svg></span> Video</label>
+          <input type="checkbox" name="materia5" value="pagina-web"><label><span  class="icon-category-color defecto"><svg class="icon icon-imac"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-imac"></use></svg></span> Página web</label>
+          <input type="checkbox" name="materia5" value="revista-digital"><label><span  class="icon-category-color defecto"><svg class="icon icon-libro-02"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-libro-02"></use></svg></span> Revista digital</label>
+          <input type="checkbox" name="materia5" value="podcast"><label><span  class="icon-category-color defecto"><svg class="icon icon-voz"> <use xlink:href="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/iconos.svg#icon-voz"></use></svg></span> Podcast</label>
+      
+                  </form>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 ÁREA -->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                {{> atoms-accordion-filter-button(target:"area", text:"Área de análisis")}}
+              </div>
+
+              <div id="area" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                 <form>
+                  <input type="checkbox" name="territorio" value="territorio"><label>Territorio</label>
+                  <input type="checkbox" name="empresa" value="empresa"><label>Empresa</label>
+             
+                  </form>
+              </div>
+            </div>
+            <!-- /04-->
+
+            <!-- 05 semestre-->
+             <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"semestre", text:"Semestre")}}
+              </div>
+
+              <div id="semestre" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Todos</option>
+                      <option value="1-semestre">Primer semestre</option>
+                      <option value="2-semestre">Segundo semestre</option>
+                      <option value="3-semestre">Tercer semestre</option>
+                      <option value="4-semestre">Cuarto semestre </option>
+                      <option value="5-semestre">Quinto semestre</option>
+                      <option value="6-semestre">Sexto semestre</option>
+                      <option value="7-semestre">Séptimo semestre</option>
+                      <option value="8-semestre">Octavo semestre</option>
+                      <option value="9-semestre">Noveno semestre</option>
+                      <option value="10-semestre">Décimo semestre</option>
+
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /05-->
+       
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

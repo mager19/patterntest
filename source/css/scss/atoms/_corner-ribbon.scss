@@ -1,0 +1,203 @@
+.box-ribbon {
+    z-index: 7;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    @media (max-width:1385px) and (min-width:$ipad) {
+      position: absolute;
+      left: 0;
+      top: 80px;
+      z-index: 1;
+      width: 18%;
+      }
+
+       @media (max-width:$ipad) and (min-width:$minimo) {
+        position: absolute;
+        right: 0px;
+        top: 56px;
+
+      }
+
+    .ribbon {
+      width: 165px;
+      height: 165px;
+      overflow: hidden;
+      position: absolute;
+
+        @media (max-width:1385px) and (min-width:$ipad) {
+          height: 22px;
+          overflow: visible;
+          width: 100%;
+        }
+
+        @media (max-width:$ipad) and (min-width:$minimo) {
+        width: 100%;
+        overflow: visible;
+        height: 40px;
+
+      }
+
+   /* Decoración opcional de ribete*/
+    &after{
+        display:none;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 4px solid #D18328;
+
+        @media (max-width:$maximo) and (min-width:1385px) {
+          display:none;
+        }
+           @media (max-width:$ipad) and (min-width:$minimo) {
+          display:none;
+        }
+      }
+
+      &:before{
+        display:none;
+        position: absolute;
+        z-index: -2;
+        content: '';
+        display: block;
+
+        @media (max-width:$maximo) and (min-width:1385px) {
+          display:none;
+        }
+        @media (max-width:$ipad) and (min-width:$minimo) {
+          display:none;
+        }
+      }
+        
+    } 
+
+     /* Ribete texto y color*/
+    .ribbon span {
+      position: absolute;
+      display: flex;
+      width: 230px;
+      padding: 5% 50px;
+      background-color: $amarillo-oro;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      color: #fff;
+      font-size: 1rem;
+      text-shadow: 0 1px 1px rgba(0,0,0,.2);
+      text-align: center;
+      height: 55px;
+      line-height: 1rem;
+      font-weight: 500;
+      justify-content: center;
+      align-content: center;
+      flex-flow: column;
+
+      p{
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0;
+
+      }
+
+      b, strong {
+        display: contents;
+         }
+
+
+      @media (max-width:1385px) and (min-width:$ipad) {
+            width: 100%;
+            height: auto;
+            padding: 4px 10px;
+
+      }
+
+      @media (max-width:$ipad) and (min-width:$minimo) { 
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+      }
+
+      @media (max-width:1385px) and (min-width:$minimo) {
+
+          &:hover{
+        background-color: $gris-plata;
+
+          } 
+
+          b, strong {
+                display: inline;
+                margin-left: 5px;
+
+         }
+   
+      }  
+
+
+    }
+
+    /* top left*/
+    .ribbon-top-left {
+      top: 0;
+      left: 0;
+
+      &:hover{
+        filter: grayscale(1);
+        }
+
+         @media (max-width:$ipad) and (min-width:$minimo) { 
+           left: 0;
+      }
+
+      }
+
+    
+    
+      .ribbon-top-left::after{
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+      }
+      .ribbon-top-left::after{
+        bottom: -7px;
+        right: 0;
+      }
+
+      .ribbon-top-left::before{
+        display: none;
+        border-bottom-color: transparent;
+        bottom: -7px;
+        left: auto;
+        right: -20px;
+        border: 14px solid #ab6713;
+        border-right-color: transparent;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+
+        &:hover{
+        border-color: #001C25;
+         }
+          }
+
+    .ribbon-top-left span {
+      right: 0px;
+      top: 30px;
+      transform: rotate(-50deg);
+        @media (max-width: 1385px) and (min-width:$minimo) {
+        right: 0;
+        top: 0;
+        transform: rotate(0deg);
+      }
+    }
+}
+
+.header-home{
+  .box-ribbon{
+    @media (max-width:1385px) and (min-width:$ipad) {
+      top: 115px;
+    }
+  }
+}

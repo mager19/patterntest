@@ -1,0 +1,24 @@
+{{> organisms-header-blogs(logo:"../../images/logos/derecho-a-la-carta.png") }}
+
+<div class="faculty-defecto faculty-derecho-a-la-carta">
+  <div class="contenedor">
+    <div class="centrar">
+      <main>
+        <article class="columna08 contenido">
+            {{> molecules-podcast-card }}
+            {{> organisms-news-resume(titulo:"Pódcast relacionados") }}<!-- en otros Pdcast solo se muestra la fecha, el link y la imagen-->
+
+        </article>
+      </main>
+
+      <aside class="columna04 aside"> 
+         {{> molecules-news-list-widget(titulo:"Top 10") }}  <!-- en el top 10 solo se muestra la fecha, el link y la imagen-->
+      {{> molecules-tag-cloud-widget(titulo:"¿Dónde nos escuchan?",icon-tag:"icon-globo-01") }} <!-- cloud tag con los paises-->
+      {{> atoms-media-button(text:"Sugerencias",icon:"icon-conversacion")}}
+      </aside>
+    </div>
+  </div>
+
+</div>
+
+{{> organisms-footer-blogs }}

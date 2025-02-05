@@ -1,0 +1,92 @@
+<div class="modulo-bases-datos columnas-alto-fijo centrar-horizontalmente border-radius-s">
+  <div class="columna12 facultad">
+    <div class="h6 {{^ class-faculty }}defecto{{/ class-faculty }}{{# class-faculty }}{{class-faculty}}{{/ class-faculty }}"><span>{{^ name-faculty }}Facultad{{/ name-faculty }}{{# name-faculty }}{{name-faculty}}{{/ name-faculty }}</span></div>
+    <div class="h6 {{^ class-faculty2 }}hidden{{/ class-faculty2 }}{{# class-faculty2 }}{{class-faculty2}}{{/ class-faculty2 }}"><span>{{^ name-faculty2 }}Facultad 2{{/ name-faculty2 }}{{# name-faculty2 }}{{name-faculty2}}{{/ name-faculty2 }}</span></div>
+    <div class="h6 {{^ class-faculty3 }}hidden{{/ class-faculty3 }}{{# class-faculty3 }}{{class-faculty3}}{{/ class-faculty3 }}"><span>{{^ name-faculty3 }}Facultad 3{{/ name-faculty3 }}{{# name-faculty3 }}{{name-faculty3}}{{/ name-faculty3 }}</span></div>
+  </div>
+  <div class="columna12 titulo-db">
+    <h4>Nombre Apellido</h4>
+  </div>
+  <div class="columna03 informacion-db"><div class="thumb">{{> atoms-avatar(avatar-img:"avatar-ms-600x600.jpg", avatar-class:"border-radius-m")}}</div></div>
+  <div class="columna09 informacion-db"> 
+    <!--Los campos que no se llenen quedarán con la clase hidden-->
+    <div  class="submodulo-db border-top">
+      <div class="columna12 padding-inferior-min">
+          <p class="destacado">{{# cargo }}{{cargo}}{{/ cargo }}{{^ cargo }}Docente investigador{{/ cargo}} </p>
+        </div>
+      <div class="columna12 padding-inferior-min">
+        <p class="subtit-db"><span>
+          <svg class="icon color-icon  icon-correo">
+            <use xlink:href="../../images/iconos.svg#icon-correo"></use>
+          </svg>
+          </span>Correo electrónico</p>
+        <a href="">{{# correo }}{{correo}}{{/ correo }}{{^ correo }}monica.santamaria01@est.uexternado.edu.co{{/ correo}}</a> </div>
+      <div class="columna08">
+        <p class="subtit-db"><span>
+          <svg class="icon color-icon icon-telefono">
+            <use xlink:href="../../images/iconos.svg#icon-telefono"></use>
+          </svg>
+          </span> Teléfono de contacto</p>
+        {{# tel }}{{tel}}{{/ tel }}{{^ tel }}  (57) 601-3537000, ext.: 3001 {{/ tel }} </div>
+      <div class="columna04 guia"> <a href="#" target="_blank"><span>
+        <svg class="icon color-icon icon-lupa">
+          <use xlink:href="../../images/iconos.svg#icon-lupa"></use>
+        </svg>
+        </span>Ver CvLac</a> </div>
+    </div>
+  </div>
+  <div class="columna12 informacion-db">
+    <div class="submodulo-db">
+      <p class="subtit-db"><span>
+        <svg class="icon color-icon icon-hombre-mujer">
+          <use xlink:href="../../images/iconos.svg#icon-hombre-mujer"></use>
+        </svg>
+        </span> Perfil</p>
+      <p>(100 caracteres máximo) Sit amet, consectetur adipiscing elit. Praesent nec sollicitudin lectus. Proin ullamcorper lobortis tincidunt. Aenean accumsan convallis nisi, nec ullamcorper lorem auctor id. Cras dictum feugiat euismod. Sed ac mi non mi accumsan dignissim. Quisque eu quam bibendum, malesuada metus et, tempus turpis. Vestibulum lectus quam, elementum non enim ac, dictum luctus libero. Sed interdum eros est. Vivamus odio eros, faucibus a interdum eget, molestie sit amet purus. Pellentesque interdum tempor tincidunt. Aenean vehicula aliquet ullamcorper. Sed eget finibus erat, non molestie erat. Phasellus volutpat justo a auctor lacinia. Mauris sed enim sit amet turpis dapibus semper eget. </p>
+    </div>
+  </div>
+  <div class="columna12 informacion-db">
+    <div class="submodulo-db">
+      <p class="subtit-db"><span>
+        <svg class="icon color-icon icon-publicaciones">
+          <use xlink:href="../../images/iconos.svg#icon-publicaciones"></use>
+        </svg>
+        </span>Publicaciones recientes</p>
+      <div class="list">
+        <ul>
+          <li class="borde-inferior">Aenean vehicula aliquet ullamcorper. Sed eget finibus erat, non molestie erat. 
+            <br><a href="#" target="_blank"><span><svg class="icon color-icon  icon-derecha"><use xlink:href="../../images/iconos.svg#icon-derecha"></use></svg></span> Consultar aquí </a></li>
+          <li class="borde-inferior">Pellentesque interdum tempor tincidunt. Aenean vehicula aliquet ullamcorper. Sed eget finibus erat, non molestie erat.</li>
+          <li class="borde-inferior">Phasellus volutpat justo a auctor lacinia. Mauris sed enim sit amet turpis dapibus semper eget. 
+            <br><a href="#" target="_blank"><span><svg class="icon color-icon  icon-derecha"><use xlink:href="../../images/iconos.svg#icon-derecha"></use></svg></span> Consultar aquí </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="informacion-db">
+    <div class="columnas-alto-fijo submodulo-db sin-borde ">
+      <div class="columna06 lateral">
+        <p class="subtit-db"><span><svg class="icon color-icon  icon-cerebro"><use xlink:href="../../images/iconos.svg#icon-cerebro"></use></svg></span> Área de conocimiento</p>
+        <div class="tags">
+          <ul>
+            <li><a href="#">Agronomía, Veterinaria y afines </a></li>
+            <li><a href="#">Economía, Administración, Contaduría y afines </a></li>
+          </ul>
+        </div>
+      </div>
+            <div class="columna06">
+        <p class="subtit-db"> <span><svg class="icon color-icon  icon-etiquetas"><use xlink:href="../../images/iconos.svg#icon-etiquetas"></use></svg></span> Palabras clave</p>
+        <div class="tags">
+          <ul>
+            <li><a href="#">Arte y feminismo</a></li>
+            <li><a href="#">Ciudad, territorio y género</a></li>
+            <li><a href="#">Comunicación social y género</a></li>
+            <li><a href="#">Conflicto armado, guerras y violencia de género</a></li>
+            <li><a href="#">Cuerpo y sexualidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,21 @@
+    .important {
+     padding: 10px 0 10px 65px;
+     background: #fff;
+     border-radius: 0 4rem 4rem 0;
+     margin-left: -43px;
+     border: solid 2px $azul-carbon;
+     margin-top: 30px;
+     width: 100%;
+     margin-bottom: 30px;
+     
+     @media (max-width:$maximo) and (min-width:$ipad) {
+        padding: 10px 0 10px 100px;
+        background: #fff;
+        border-radius: 0 4rem 4rem 0;
+        margin-left: -43px;
+        border: solid 2px $azul-carbon;
+        margin-top: 30px;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    }

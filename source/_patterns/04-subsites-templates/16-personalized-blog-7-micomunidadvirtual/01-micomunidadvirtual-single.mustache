@@ -1,0 +1,65 @@
+<div class="faculty-comunidad-virtual">
+{{> organisms-header-blogs(logo:"../../images/logos/comunidadvirtual.png") }}
+<div class="magnetic-menu">{{> molecules-magnetic-buttons }}</div>
+
+  {{> molecules-prominent-image-faculty }}
+  <div class="contenedor">
+    <div class="centrar">
+      <main>
+        <article class="columna08 contenido">
+          <div class="info">
+            <div class="h6"><a href="#">Categoría</a></div>
+            {{> atoms-date }}
+            <div class="texto"><h1 class="texto-centrado">Título</h1></div>
+          </div>
+          <div class="texto fondo-com-virtual" >
+            
+            {{> atoms-lead(lead:"Nam luctus mauris quis rhoncus eleifend. Aliquam gravida porta nulla, vitae varius tortor tincidunt sit amet. Phasellus fringilla magna eros, quis dignissim purus ullamcorper quis. Vivamus laoreet sed justo vel porta.") }}
+            {{> atoms-author }}
+
+            <h2>Ruta innovación</h2>
+            <p>Nam luctus mauris quis rhoncus eleifend. Aliquam gravida porta nulla, vitae varius tortor tincidunt sit amet. Phasellus fringilla magna eros, quis dignissim purus ullamcorper quis. Vivamus laoreet sed justo vel porta.</p>
+            <h3>¡Bienvenido, es hora de empezar!</h3>
+             <figure>
+            <img src="../../images/carrusel-home-01.png" alt="Imagen destacada">
+          </figure>
+            <h4>Nuestra ruta de docente innovador está conformada por cuatro pasos sencillos…</h4>
+
+              <p style="text-align: center;"><a class="boton" href="#" target="_blank" rel="noopener">Haga clic aquí para conocer en qué <br>
+                lugar  de la ruta debe empezar</a></p>
+
+          </div>
+          {{> molecules-previous-next }}
+        </article>
+      </main>
+
+      <aside class="columna04 aside">
+        {{> organisms-accordion-news}}
+        {{> molecules-quote-widget }}
+        {{> molecules-text-image-widget }}
+        {{> molecules-image-widget }}
+        {{> molecules-carousel-widget }}
+         {{> molecules-text-link-widget }}
+         {{> molecules-html-widget }}    
+        
+          
+      </aside>
+
+      <div class="columna12">
+        <div class="centrar">
+          <h2 class="h1">Artículos Relacionados</h2>
+        </div>
+        <div class="carrusel-relacionadas">
+          <!--Máxiumo 4 noticias relacionadas-->
+          {{> molecules-related-module }}
+          {{> molecules-related-module }}
+          {{> molecules-related-module }}
+          {{> molecules-related-module }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="clear: both; height: 3rem"></div>
+{{> organisms-allied-carousel }}
+{{> organisms-footer-blogs }}

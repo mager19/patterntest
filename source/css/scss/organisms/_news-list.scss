@@ -1,0 +1,11 @@
+.lista-noticias{
+  article{
+    &:last-of-type{
+      border-bottom: $solid-border;
+      margin-bottom: 20px;
+    }
+    &:first-of-type{
+      margin-top: 10px;
+    }
+  }
+}

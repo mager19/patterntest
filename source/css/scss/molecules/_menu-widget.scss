@@ -1,0 +1,51 @@
+.widget_nav_menu{
+  list-style: none;
+  @include widget;
+
+  .info {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size   : rem(23);
+    line-height: 1.2;
+    font-weight : 900 /*bolder*/;
+    margin      : 8px 0 20px 0;
+    @media (max-width:$movil-amplio ) and (min-width:$minimo ){
+      font-size: rem(18);
+    }
+      @media (max-width: $ipad) and (min-width: $minimo ) {
+        margin-top: rem(15);
+      }
+  }
+  li{
+    /*font-weight: 900;*/
+    border-top: $dotted-border;
+    &:last-of-type{
+      border-bottom: $dotted-border;
+      margin-bottom: 20px;
+    }
+    a{
+      padding: 12px 0;
+      &:hover{
+        color: $verde-lima;
+      }
+    }
+    .sub-menu{
+      border-top: $dotted-border;
+
+      li{
+        margin-left: 22px;
+        &:first-of-type{
+          border-top:none;
+        }
+        &:last-of-type{
+
+          border-bottom: none;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

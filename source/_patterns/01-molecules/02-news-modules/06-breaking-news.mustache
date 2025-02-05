@@ -1,0 +1,18 @@
+<article class="breaking-news {{^ padding-class  }}{{/ padding-class }}{{# padding-class }}{{padding-class}}{{/ padding-class }}">
+<div class="content">
+<div class="multimedia">
+  <!--Puede ser un video o una imagen--> 
+  {{> atoms-image }}
+
+</div>
+<section class="titulo">
+  
+  <p class="h3 subrayado-der">{{# tit }}{{tit}}{{/ tit }}{{^ tit }}Título de la transmisión en vivo con un máximo de 75 caracteres de texto{{/ tit}}</p>
+
+  <p class="lead hidden3">Lead del correo de 30 palabras o 200 caracteres sed ante pellentesque, posuere leo id, eleif dolor. Class aptent taciti socios. Pellentesque nunc purus, sodales quis augue eu, ultricies fringilla nisi. </p> 
+
+   <p>{{> atoms-button(modifier-class:"boton-claro", text:"Más información") }}</p>
+
+</section>
+</div>
+</article>

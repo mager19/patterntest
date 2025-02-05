@@ -1,0 +1,130 @@
+.tabs-vertical {
+  margin: 2rem 1rem;
+  padding: 1rem 0;
+
+  .info {
+    display: flex;
+
+    .tabs {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+
+      .itemtag {
+        -ms-flex-pack: left;
+        justify-content: left;
+        border-bottom: $dotted-border;
+        text-align: left;
+        margin: 0;
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &.active-tab {
+          background-color: $azul-carbon-700;
+          color: white;
+          border-bottom: none;
+
+          &:before {
+            content: '+';
+            display: none;
+            visibility: hidden;
+          }
+
+          &:after {
+            content: url(../images/derecha-defecto.svg);
+            display: block;
+            visibility: visible;
+          }
+        }
+
+        &:before {
+          content: url(../images/mas-gris.svg);
+          display: block;
+          visibility: visible;
+        }
+        &:after {
+          content: '-';
+          display: none;
+          visibility: hidden;
+        }
+      }
+      @media (max-width: 621px) {
+        display: none;
+      }
+    }
+
+    .links {
+      width: 70%;
+
+      .section {
+        background-color: transparent;
+
+        .box {
+          padding: 10px 30px;
+
+          @media (max-width: 768px) {
+            max-height: 500px;
+            overflow: scroll;
+            scroll-padding-top: 48px;
+          }
+
+          ul {
+            list-style: disc;
+            padding-left: 40px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+          }
+
+          li {
+            margin: 0.5rem 0;
+          }
+
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 100%;
+      }
+    }
+  }
+  #acordeon-content {
+    > br {
+      display: none;
+    }
+  }
+  .modulo-acordeon-content {
+    background-color: transparent;
+
+    .panel {
+      .info:not(.in) {
+        display: none;
+      }
+      .info {
+        width: 100%;
+        margin-top: -20px;
+        background-color: #fff;
+        -webkit-transition: all .45s ease 0s;
+        transition: all .45s ease 0s;
+        &.in {
+          display: inline-block;
+        }
+      }
+    }
+
+    .titulo-acordeon {
+      margin: 0;
+      margin-bottom: 20px;
+      display: inline-block;
+      width: 100%;
+      float: left;
+    }
+  }
+}

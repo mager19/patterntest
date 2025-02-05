@@ -1,0 +1,14 @@
+.carrusel-iconos{
+
+	.slick-next, .slick-prev {
+		background: $gris-hierro;
+		border-radius: 1rem;
+
+		&:hover{
+      	background-color: $azul-carbon;
+    	}
+	}
+	.slick-slide>div {
+		margin: 0 auto;
+	}
+}

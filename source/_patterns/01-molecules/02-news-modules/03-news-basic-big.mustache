@@ -1,0 +1,12 @@
+<article class="news-basic-big {{# faculty-class }}{{ faculty-class }}{{/ faculty-class }}{{ ^ faculty-class}}defecto{{/ faculty-class }}">
+  <div class="content">
+  <div class="multimedia"> 
+    <!--Puede ser un video o una imagen--> 
+    <a href="">{{> atoms-iframe }}</a> </div>
+  <section class="titulo"> 
+    <a href=""><p class="{{# text-class }}{{ text-class }}{{/ text-class }}{{ ^ text-class}}h3{{/ text-class }}">{{# tit }}{{tit}}{{/ tit }}{{^ tit }}Título de la noticia principal con un máximo de 75 caracteres de texto{{/ tit}}</p>
+      <p class="lead hidden3">Lead del correo de 30 palabras o 200 caracteres sed ante pellentesque, posuere leo id, eleifFIN dolor. Class aptent taciti socios. Pellentesque nunc purus, sodales quis augue eu, ultricies fringilla nisi. </p> 
+    </a>
+  </section>
+  </div>
+</article>

@@ -1,0 +1,27 @@
+
+<div class="faculty-defecto"> 
+{{> organisms-header-blogs(nombre:"Laboratorio Interdisciplinar de Medición de Dinámicas Sociales", slogan:"LabMediSocial") }}
+
+  <div class="centrar overflow">
+    <main>
+      <div class="columna12 contenido pagina-completa">
+      <!--Estas son las categorías, que pueden ser creadas desde Wordpress-->
+        <h2 class="h1">Nuestro equipo</h2>
+          {{> atoms-lead(lead:"Integer at tellus nisl. Suspendisse nulla metus, fermentum a urna laoreet, elementum semper tellus. ") }}
+        <div class="grilla-portal">
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+          {{> molecules-profile-module }}
+        </div>
+        {{> molecules-pagination}}
+      </div>
+    </main>
+  </div>
+</div>
+{{> organisms-footer-blogs }}

@@ -1,0 +1,28 @@
+{{> organisms-header-blogs(logo:"../../images/logos/agoramercatorum.png", facultad:"Derecho") }}
+
+<div class="faculty-defecto">
+
+
+  <div class="contenedor">
+    <div class="centrar">
+      <div class="columna08 contenido">
+        <h2 class="h1">Archivo: Ejemplo</h2>
+        {{> atoms-lead(lead:"Nam luctus mauris quis rhoncus eleifend. Aliquam gravida porta nulla, vitae varius tortor tincidunt sit amet. Phasellus fringilla magna eros, quis dignissim purus ullamcorper quis. Vivamus laoreet sed justo vel porta.") }}
+
+        <div class="lista-noticias">
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+          {{> molecules-news-module }}
+        </div>
+        {{> molecules-pagination}}
+      </div>
+      <aside class="columna04 aside">
+        {{> molecules-tag-cloud-widget }}
+        {{> molecules-menu-widget }}
+      </aside>
+    </div>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

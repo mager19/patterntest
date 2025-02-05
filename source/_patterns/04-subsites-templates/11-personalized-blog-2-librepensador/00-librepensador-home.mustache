@@ -1,0 +1,60 @@
+<head>
+  <script src="../../js/patterns/libre-pensador/ammap.min.js" type="text/javascript"></script>
+  <script src="../../js/patterns/libre-pensador/worldLow.js" type="text/javascript"></script>
+  <script src="../../js/patterns/libre-pensador/main.js"></script>
+</head>
+{{> organisms-header-blogs(logo:"../../images/logos/librepensador.png", facultad:"Finazas, Gobierno y Relaciones Internacionales") }}
+
+<div class="faculty-defecto">
+  {{> organisms-carousel-tabs }}
+  <div class="centrar overflow">
+    <div class="columna12">
+      <div class="columna12 ammap texto-justificado">
+        <h1 class="titulo-seccion">CALEIDOSCOPIO</h1>
+        <p>Entérese de las noticias mas recientes. Pulse sobre el país de su interés.</p>
+        <div id="mapdiv"></div>
+        <div class="rss-feed">
+          <iframe src="http://librepensador.uexternado.edu.co/l1bRe3-3xT3rNaD0-U3C/wp-content/themes/librepensador/paises/index.php?pais=World%20News&localizacion=cf=all" name="tweets" height="500" width="100%" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div class="columna06 texto-justificado">
+        <h3> PRENSA MASTICADA </h4>
+        {{> molecules-news-module }}
+        <div class="botones-destacados">
+          <div class="columna06">
+            <a class="mini-boton" href="#primeraseccion">
+              <b>Opción uno</b>
+              <br>Texto extra
+            </a>
+          </div>
+          <div class="columna06">
+            <a class="mini-boton" href="#segundaseccion">
+              <b>Opción dos</b>
+              <br>Texto extra
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="columna06 texto-justificado">
+        <h3> ENTREVISTA </h4>
+        {{> molecules-news-module }}
+        <div class="botones-destacados">
+          <div class="columna06">
+            <a class="mini-boton" href="#primeraseccion">
+              <b>Opción uno</b>
+              <br>Texto extra
+            </a>
+          </div>
+          <div class="columna06">
+            <a class="mini-boton" href="#segundaseccion">
+              <b>Opción dos</b>
+              <br>Texto extra
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

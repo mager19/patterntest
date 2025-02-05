@@ -1,0 +1,119 @@
+/*Ajustes para el blog del Departamento de Derecho Constitucional*/
+
+.faculty-derecho-constitucional .botones-destacados{
+  font-size: 1.7rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  @media (max-width: $ipad) and (min-width: $movil-amplio) {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  @media (max-width: $movil-amplio02) and (min-width: $minimo) {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+.faculty-derecho-constitucional .modulo-relacionado h4 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  margin: 8px 0;
+
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin: 5px 0;
+  }
+}
+.faculty-derecho-constitucional .modulo-relacionado h6 {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+.faculty-derecho-constitucional .texto h1 {
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+}
+
+.faculty-derecho-constitucional {
+  .icono {
+    background-color: $sigueme;
+  }
+
+  .carrusel-facultad .carousel-indicators li.active {
+    background-color: $sigueme;
+  }
+
+  .calendario-home table tbody td {
+    &.hoy {
+      color: white;
+      a {
+        &:after {
+          background-color: $derecho;
+          color: white;
+        }
+        &:hover {
+          &:after {
+            background-color: $sigueme;
+          }
+        }
+      }
+      &:after {
+        background-color: $derecho;
+      }
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    background: $gris-acero;
+  }
+  .texto a {
+    color: $derecho;
+  }
+
+  .modulo-evento.defecto .fecha-evento .fondo {
+    background: $sigueme;
+  }
+
+  .modulo-evento.defecto .h6 {
+    color: $sigueme;
+  }
+
+  .modulo-acordeon {
+    border-top: solid 5px $derecho;
+  }
+  .modulo-acordeon.filtro .panel .titulo-acordeon {
+    color: $sigueme !important;
+  }
+
+  .modulo-acordeon.filtro .limpiador-busqueda {
+    background-color: $derecho;
+    color: white;
+    &:hover {
+      background-color: $azul-carbon;
+    }
+  }
+
+  .modulo-acordeon.filtro .panel {
+    .titulo-acordeon {
+      a {
+        span {
+          &.flecha {
+            color: $sigueme;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination a.next,
+  .pagination a.prev {
+    color: $sigueme;
+  }
+}

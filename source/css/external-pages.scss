@@ -1,0 +1,130 @@
+/****             Estilos Base                ****/
+
+/*
+ * Esta hoja de estilo define las variables
+ * globales que se usan en todo el sitio.
+ */
+@import 'scss/base/variables';
+
+/*
+ * Esta hoja de estilos define funciones útiles
+ * para generar los estilos.
+ */
+@import 'scss/base/mixins';
+
+/*
+ * Estas dos hojas de estilo normalizan los
+ * estilos por defecto del browser.
+ */
+@import 'scss/base/reset';
+@import 'scss/base/boilerplate';
+
+/*
+ * Estas hojas de estilo definen clases de
+ * apoyo para colores y fuentes.
+ */
+@import 'scss/base/color-helper';
+@import 'scss/base/font-helper';
+
+/*
+ * Esta hoja de estilo define algunas clases que se pueden
+ * apoyar en los cambios necesarios de responsive.
+ */
+@import 'scss/base/responsive-helper';
+
+/*
+ * Esta hoja de estilo define los estilos de
+ * la tipografía. Aquí están los estilos base para:
+ * - headings
+ * - párrafos
+ * - blockquotes
+ * - anclas (<a href>)
+ */
+@import 'scss/base/typography';
+
+/*
+ * Aquí definimos los íconos con Inconmoon
+ */
+@import 'scss/base/icons';
+
+/*
+ * Aquí se definen los estilos base para slick nav
+ */
+@import 'scss/base/slick-nav';
+
+/*
+ * Aquí se definen los estilos para el carrusel: slider slider
+ */
+@import 'scss/base/slick-slider';
+
+/*
+ * Esta hoja de estilo tiene algunos estilos generales
+ * que no se definieron en otras hojas previas.
+ */
+@import 'scss/base/general';
+
+/*
+ * Definimos varios colores dependiendo de la facultad.
+ */
+@import 'scss/base/faculties-colors';
+
+/*
+ * Esta hoja, por último, incluye el CSS de Bootstrap
+ */
+@import 'scss/base/bootstrap';
+
+/****                 Átomos                  ****/
+@import 'scss/atoms/sgs-acreditation';
+@import 'scss/atoms/button';
+@import 'scss/atoms/line-button';
+@import 'scss/atoms/icon-button';
+@import 'scss/atoms/items-form';
+@import 'scss/atoms/select-form';
+@import 'scss/atoms/check-radiobutton-form';
+@import 'scss/atoms/search-form';
+@import 'scss/atoms/search-form-header';
+@import 'scss/atoms/table';
+@import 'scss/atoms/date';
+
+/****                Moléculas                ****/
+@import 'scss/molecules/main-menu';
+@import 'scss/molecules/top-menu';
+@import 'scss/molecules/top-buttons';
+@import 'scss/molecules/social-network';
+@import 'scss/molecules/contact';
+@import 'scss/molecules/visit';
+@import 'scss/molecules/mineducacion-guard';
+@import 'scss/molecules/tags';
+@import 'scss/molecules/related-module';
+@import 'scss/molecules/pagination';
+@import 'scss/molecules/big-button';
+@import 'scss/molecules/news-module';
+@import 'scss/molecules/blog-module';
+@import 'scss/molecules/quote-widget';
+@import 'scss/molecules/carousel-widget';
+@import 'scss/molecules/image-widget';
+@import 'scss/molecules/text-image-widget';
+@import 'scss/molecules/menu-widget';
+@import 'scss/molecules/text-widget';
+@import 'scss/molecules/calendar-widget';
+@import 'scss/molecules/ads';
+@import 'scss/molecules/prominent-image';
+@import 'scss/molecules/caption-image';
+@import 'scss/molecules/scroll-image';
+
+/****               Organismos                ****/
+@import 'scss/organisms/header';
+@import 'scss/organisms/footer';
+@import 'scss/organisms/accordion-filter';
+@import 'scss/organisms/accordion-content';
+@import 'scss/organisms/accordions';
+@import 'scss/organisms/prominent-buttons';
+@import 'scss/organisms/summary-list';
+@import 'scss/organisms/news-list';
+@import 'scss/organisms/programs';
+@import 'scss/organisms/blog-list';
+@import 'scss/organisms/faculty-carousel';
+@import 'scss/organisms/faculty-info';
+@import 'scss/organisms/regions';
+@import 'scss/organisms/secondary-header-search';
+@import 'scss/organisms/secondary-header-menu';

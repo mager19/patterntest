@@ -1,0 +1,62 @@
+.modulo-video{
+	background-color: $blanco-humo;
+	max-width: 800px !important;
+	margin: 10px !important;
+	
+	.thumb-video{
+		overflow: hidden;
+		width: 100%;
+	a {
+		position: relative;
+
+		&:hover:after{
+			background:$default;
+			transform: scale(1.1);
+		}
+
+		&:after{
+			content: url(../images/play.svg);
+			display: block;
+	    	position: absolute;
+	    	left: 45%;
+	    	top: 45%;
+	    	background: $gris-hierro;
+	    	border-radius: 50%;
+	    	height: 40px;
+	    	width:  40px;
+	    	padding: 10px 10px 6px 10px;
+	    	box-shadow: 0 1px 2px rgba(0,0,0,.6);
+	    	transition: $transition-transform;
+	    	}
+
+	   }
+		img{
+
+		width: 100%;
+		transition: transform ease-in-out .3s;
+		&:hover{
+	    		transform: scale(1.1);
+	    	}
+		}
+	}
+		
+	.info{
+		padding: 1rem;
+		a{
+			font-size: 1.2rem;
+		    font-weight: 600;
+		    line-height: 1.4rem;
+		    text-decoration: none;
+
+		    @media (max-width:$ipad) and (min-width:$minimo){
+				font-size: 1rem;
+				line-height: 1.2rem;		    	
+		    }
+
+			&:hover{color:$default;}
+
+			&:after{display:none;}
+
+		}
+	}
+}

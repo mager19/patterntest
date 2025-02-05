@@ -1,0 +1,53 @@
+.widget-events{
+  @include widget;
+  .lista-eventos{
+    article{
+      width: 100%;
+      padding-right: 0;
+      &:nth-of-type(even){
+        padding-left: 0;
+      }
+      &:first-of-type{
+        border-top: thin dotted #cacaca;
+        padding-top: 15px;
+      }
+    }
+
+    .modulo-evento{
+      .fecha-evento{
+        width: 40px;
+        margin-right: 8px;
+        .fondo{
+          width: 40px;
+          height: 40px;
+          border-radius: 40px;
+          background-color: $verde-lima;
+          span:first-of-type{
+            font-size: 1.25rem;
+            line-height: .35rem;
+            padding-top: 10.5px;
+          }
+          span:nth-of-type(2){
+            font-size:.77em;
+          }
+        }
+      }
+      .info{
+        width: calc(100% - 48px);
+        h5, .h5 {
+          margin-top: 0;
+          font-size: .95rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+  .boton{
+    margin-bottom: 20px;
+  }
+
+}

@@ -1,0 +1,15 @@
+<li class="magnetic">
+	<a href="#">
+	{{^ icon }}
+	<span>
+		<svg class="icon icon-cohete-2 icon-menu-magnetico "><use xlink:href="../../images/iconos.svg#icon-cohete-2"></use></svg>
+	</span>
+	{{/ icon }}
+	{{# icon }}
+	<span>
+		<svg class="icon {{icon}} icon-menu-magnetico "><use xlink:href="../../images/iconos.svg#{{icon}}"></use></svg>
+	</span>
+	{{/ icon }}
+    {{^ text }}Botón{{/ text }} {{# text }}{{text}}{{/ text }}
+	</a>
+</li>

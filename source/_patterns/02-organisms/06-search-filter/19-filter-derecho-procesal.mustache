@@ -1,0 +1,111 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div>
+       <div class="panel">
+          <div class="info">
+            <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button></div></div>
+      
+      </div></div>
+            <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+
+                  {{> atoms-search-form(tit-search-form:"Título, palabra clave o número")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+            <!-- 01 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                <div id="libro" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Libro</option>
+                        <option value="opcion-1">Libro 1</option>
+                        <option value="opcion-2">Libro 2</option>
+                        <option value="opcion-3">Libro 3</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /01-->
+          <!-- 02 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Sección</option>
+                        <option value="opcion-1">Sección 1</option>
+                        <option value="opcion-2">Sección 2</option>
+                        <option value="opcion-3">Sección 3</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-cuatro">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Título</option>
+                        <option value="opcion-1">Título 1</option>
+                        <option value="opcion-2">Título 2</option>
+                        <option value="opcion-3">Título 3</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04 menú desplegable-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                <div id="Sección" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+                  <form>
+                    <label class="dropdown">
+                      <select>
+                        <option value="" selected="selected">Capítulo</option>
+                        <option value="opcion-1">Capítulo 1</option>
+                        <option value="opcion-2">Capítulo 2</option>
+                        <option value="opcion-3">Capítulo 3</option>
+
+                      </select>
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /04-->
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

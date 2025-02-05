@@ -1,0 +1,43 @@
+<div class="modulo-bases-datos"> 
+  <div class="columna03 informacion-db">
+    <div class="submodulo-db sin-borde-inferior">
+      <!--imagen destacada-->
+      <a href="#" target="_blank"><img class="aligncenter" src="../../images/{{# imagen }}{{imagen}}{{/ imagen }}{{^ imagen }}caratula-libro.jpg{{/ imagen}}" alt="" /></a>
+    </div> 
+  </div>
+  <div class="columna09 informacion-db">
+      <div class="columna12 submodulo-db sin-borde-inferior">
+        <!--Cada DIV se debe deshabilitar con display: none; en caso de que el campo no esté diligenciado-->
+        <div class="titulo-db">
+        <div class="centrar-horizontalmente">
+          <div class="columna04">
+            <!--Aquí va el número, por ejemplo así: Número 177-->
+            <h6 class="entidad-tit">{{# numero }}{{numero}}{{/ numero }}{{^ numero }}Número{{/ numero}} </h6>
+          </div>
+          <div class="columna08">
+            <p class="box-fecha">{{> atoms-date(format:"{{format}}")}}</p>
+          </div>
+        </div>
+        <h4 class="columna12 submodulo-db">{{# titulo }}{{titulo}}{{/ titulo }}{{^ titulo }}Título del libro{{/ titulo}}</h4>
+      </div>
+      <!--Los campos que no se llenen quedarán con la clase hidden-->
+        <div class="columna12 submodulo-db sin-borde-inferior  {{# class1 }}{{class1}}{{/ class1 }}{{^ class1 }}active{{/ class1}}">
+          <p class="subtit-db"><span><svg class="icon color-icon icon-hombre-mujer"><use xlink:href="../../images/iconos.svg#icon-hombre-mujer"></use></svg></span>Autor(a)</p>
+          <div class="autor">
+            <a href="">Nombre</a>
+          </div>
+        </div> 
+        <div class="columna12 submodulo-db {{# class2 }}{{class2}}{{/ class2 }}{{^ class2 }}active{{/ class2}}">
+          <p class="subtit-db"><span><svg class="icon color-icon icon-articulo"><use xlink:href="../../images/iconos.svg#icon-articulo"></use></svg></span>Descripción:</p>
+          <div class="">
+            {{# text }}{{text}}{{/ text }}{{^ text }}Texto{{/ text}}
+          </div>
+        </div> 
+        <div class="columna12 submodulo-db">
+          {{> atoms-line-button(modifier-class:"boton-linea-2", text: "Ver revista") }}
+        </div>
+      </div>
+       
+   </div>
+    <div style="clear: both"></div>
+</div>

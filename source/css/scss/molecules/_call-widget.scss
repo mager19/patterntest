@@ -1,0 +1,17 @@
+
+.widget-call-button section{
+  background-color: $blanco-humo;
+  padding: 0 15px 0 15px;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  transition: $transition-all;
+  height: 0px;
+}
+.widget-call-button section.active {
+  padding: 20px 15px 20px 15px;
+  height: auto;
+  overflow: visible;
+  visibility: visible;
+  opacity: 1;
+}

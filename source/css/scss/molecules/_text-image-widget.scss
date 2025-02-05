@@ -1,0 +1,55 @@
+.widget-text-image{
+  @include widget;
+  article{
+    overflow: hidden;
+    @media (max-width:$ipad) and (min-width:$movil-amplio){
+      .info{
+        width: 75%;
+        float: left;
+        display: block;
+      }
+      a.image-widget{
+        width: 23%;
+        float: left;
+        margin: 0 0 0 2%;
+      }
+    }
+    p{
+      a{
+        text-decoration: underline;
+        font-weight: bold;
+        display: inline-block;
+        transition: $transition-color;
+        &:hover{
+          color: $verde-lima;
+        }
+      }
+    }
+
+    .boton{
+      font-size: rem(15);
+      text-decoration: none;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+.columna03-grande{
+  .widget-text-image{
+    article{
+      @media (max-width:999px) and (min-width:$movil-amplio){
+        .info{
+          width: 75%;
+          float: left;
+          display: block;
+        }
+        a.image-widget{
+          width: 23%;
+          float: left;
+          margin: 0 0 0 2%;
+        }
+      }
+    }
+  }
+}

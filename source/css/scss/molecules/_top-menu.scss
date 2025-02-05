@@ -1,0 +1,578 @@
+#menu {
+  .menu-superior {
+    background-color : white;
+    height           : 35px;
+    position         : absolute;
+    top              : 0;
+    width            : 100%;
+
+    &:before {
+      background-color  : $gris-hierro;
+      content           : '';
+      display           : inline-block;
+      float             : left;
+      height            : 41px;
+      left              : -11px;
+      position          : absolute;
+      top               : -3px;
+      transform         : rotate(-32deg);
+      width             : 1px;
+    }
+
+    .contenido {
+      align-items : center;
+      display     : flex;
+      height      : 35px;
+      margin      : 0 auto;
+      max-width   : 1200px;
+      width       : 100%;
+    }
+
+    nav {
+      margin-left : 0%;
+      width       : 100%;
+    }
+  }
+}
+
+/*Tipo Usuario */
+.tipo-usuario {
+  li {
+    color: $gris-mina;
+    position: relative;
+    z-index: 3;
+  }
+
+ 
+
+  @media (max-width:$maximo) and (min-width:$ipad-01){
+    align-items : center;
+    display     : flex;
+    float       : left;
+
+    li {
+      font-size: rem(14);
+      padding: 8px 0 8px 3px;
+      margin-left: -1px;
+
+      a {
+        padding: 0 3px 0 3px;
+      }
+
+      &:hover {
+        color: white;
+
+        .sub-menu {
+          display    : block;
+          top        : 35px;
+          visibility : visible;
+        }
+      }
+
+      .sub-menu {
+        background-color : white;
+        box-shadow       : 0 6px 12px rgba(0, 0, 0, 0.4);
+        display          : none;
+        left             : 0;
+        position         : absolute;
+        top              : 27px;
+        visibility       : hidden;
+        width            : /*100%*/ 142px;
+
+        li {
+          border-bottom  : thin dotted $gris-hierro;
+          font-size      : inherit;
+          text-transform: initial;
+          background: initial;
+          color: initial;
+          border-radius: initial;
+          margin-left: initial;
+          height: initial;
+
+          &:last-child {
+            border-bottom: none; 
+          }
+
+          &:hover a {
+            color: white;
+            background-color: white;
+          }
+
+          a {
+            padding: 3px 2px 3px 5px;
+            border-right: 2px solid white;
+            line-height: rem(15);
+            
+            &:before {display: none;}
+
+          }
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        a {
+          border-right: 1px solid $dorado;
+        }
+
+        &:hover {
+          background-color: $dorado;
+        }
+        .sub-menu {
+          border-bottom    : 3px solid $dorado;
+          li {
+            &:hover {
+              a {
+                color: $dorado;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        a {
+          border-right: 1px solid $dorado;
+        }
+
+        &:hover {
+          background-color: $dorado;
+        }
+        .sub-menu {
+          border-bottom    : 3px solid $dorado;
+          li {
+            &:hover {
+              a {
+                color: $dorado;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        a {
+          border-right: 1px solid $dorado;
+        }
+
+        &:hover {
+          background-color: $dorado;
+        }
+        .sub-menu {
+          border-bottom    : 3px solid $dorado;
+          li {
+            &:hover {
+              a {
+                color: $dorado;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        a {
+          border-right: 1px solid $dorado;
+        }
+
+        &:hover {
+          background-color: $dorado;
+        }
+        .sub-menu {
+          border-bottom    : 3px solid $dorado;
+          li {
+            &:hover {
+              a {
+                color: $dorado;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(5) {
+        a {
+          border-right: 1px solid $comunidad-virtual;
+          padding-left:20px;
+
+          @media (max-width: 880px) and (min-width:$ipad){padding-left:2px;} 
+
+          @media (max-width:$ipad) and (min-width:$minimo){
+              padding-left:8%;
+          }
+
+          &:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/iphone.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            display: inline-block;
+            margin-left:-20px;
+
+             @media (max-width: 880px) and (min-width:$ipad){display: none;} 
+            
+          }
+        }
+
+        &:hover {
+          background-color: $comunidad-virtual;
+        }
+        .sub-menu {
+          border-bottom    : 3px solid $comunidad-virtual;
+          li {
+            &:hover {
+              a {
+                color: $comunidad-virtual;
+              }
+            }
+          }
+        }
+      }
+     &:nth-child(6) {
+        a {
+          padding-left:25px;
+
+          @media (max-width: 880px) and (min-width:$ipad){padding-left:2px;} 
+
+          @media (max-width:$ipad) and (min-width:$minimo){
+              padding-left:8%;
+          }
+
+          &:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-image: url(../images/mail.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            display: inline-block;
+            margin-left:-20px;
+
+              @media (max-width: 880px) and (min-width:$ipad){display: none;}  
+            
+          }      
+        }
+
+        &:hover {
+          background-color: $sigueme;
+        }
+        .sub-menu {
+          border-bottom    : 3px solid $sigueme;
+          li {
+            &:hover {
+              a {
+                color: $sigueme;
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-child(7) {
+        background-color: $error-700;
+        color: white;
+        border-radius: 1rem;
+        height: 26px;
+        line-height: 0.6rem;
+        margin-left: 5px;
+
+        &:hover {
+          background-color: $azul-carbon-700;
+        }
+        .sub-menu {
+          border-bottom: 3px solid $rojo-carmin;
+
+          li {
+            &:hover {
+              a {
+                color: $rojo-carmin;
+              }
+            }
+          }
+        }
+      }
+       &:nth-child(8) {
+        background-color: $finanzas;
+        color: white;
+        border-radius: 1rem;
+        height: 26px;
+        line-height: 0.6rem;
+        margin-left: 5px;
+
+
+        &:hover {
+          background-color: $azul-carbon-700;
+        }
+        .sub-menu {
+          border-bottom: 3px solid $rojo-carmin;
+
+          li {
+            &:hover {
+              a {
+                color: $rojo-carmin;
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+
+  /*-- Ajuste para tamaño del menu en tablets --*/
+  @media (max-width:1054px) and (min-width:$ipad-01){
+        li {
+    font-size: rem(11);
+    line-height: rem(19);
+    padding: 8px 0 8px 1px; 
+    }
+  }
+
+
+  /*-- slicknav tipo-usuario --*/
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    li a:before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    li {
+       a {
+
+        a:before {
+          display: none;
+          visibility: hidden;
+        }
+      }
+
+      &:nth-child(1) a:before {
+        background-color: $verde-lima;
+      }
+
+      &:nth-child(2) a:before {
+        background-color: $rojo-carmin;
+      }
+
+      &:nth-child(3) a:before {
+        background-color: $amarillo-oro;
+      }
+
+      &:nth-child(4) a:before {
+        background-color: $dorado;
+      }
+
+       &:nth-child(5) a:before {
+        background-image: url(../images/iphone.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        filter: brightness(10);
+      }
+       &:nth-child(6) a:before {
+        background-image: url(../images/mail.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        filter: brightness(10);
+      }
+      &:nth-child(7) a:before {
+        display: none;
+      }
+      &:nth-child(8) a:before {
+        display: none;
+      }
+
+    }
+
+    .slicknav_parent li a {
+      &:before {
+        display: none;
+        visibility: hidden;
+      }
+
+      &:hover {
+        color: $rojo-carmin;
+      }
+    }
+
+  }
+}
+
+
+/*menu-interior-header */
+
+.menu-interior-header {
+  li {
+    color: $gris-mina;
+    position: relative;
+    z-index: 3;
+  }
+
+
+  @media (max-width:$maximo) and (min-width:$ipad-01){
+    align-items : center;
+    display     : flex;
+    float       : left;
+
+    li {
+        font-size: 1rem;
+        padding: 8px 0 8px 3px;
+        margin-left: 10px;
+
+      a {
+        padding: 0 3px 0 3px;
+      }
+
+      &:hover {
+        color: white;
+
+        .sub-menu {
+          display    : block;
+          top        : 35px;
+          visibility : visible;
+        }
+      }
+
+      .sub-menu {
+        background-color : white;
+        box-shadow       : 0 6px 12px rgba(0, 0, 0, 0.4);
+        display          : none;
+        left             : 0;
+        position         : absolute;
+        top              : 27px;
+        visibility       : hidden;
+        width            : /*100%*/ 142px;
+
+        li {
+          border-bottom  : thin dotted $gris-hierro;
+          font-size      : inherit;
+          text-transform: initial;
+          background: initial;
+          color: initial;
+          border-radius: initial;
+          margin-left: initial;
+          height: initial;
+
+          &:last-child {
+            border-bottom: none; 
+          }
+
+          &:hover a {
+            color: white;
+            background-color: white;
+          }
+
+          a {
+            padding: 3px 2px 3px 5px;
+            border-right: 2px solid white;
+            line-height: rem(15);
+            
+            &:before {display: none;}
+
+          }
+          &:hover {
+            background-color: white;
+          }
+        }
+      }
+
+    }
+  }
+
+  /*-- Ajuste para tamaño del menu en tablets --*/
+  @media (max-width:1054px) and (min-width:$ipad-01){
+        li {
+    font-size: rem(11);
+    line-height: rem(19);
+    padding: 8px 0 8px 1px; 
+    }
+  }
+
+
+  /*-- slicknav menu-interior-header --*/
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    li a:before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    li {
+       a {
+
+        a:before {
+          display: none;
+          visibility: hidden;
+        }
+      }
+
+    }
+
+    .slicknav_parent li a {
+      &:before {
+        display: none;
+        visibility: hidden;
+      }
+
+      &:hover {
+        color: $rojo-carmin;
+      }
+    }
+
+  }
+}
+
+/* secondary-header-menu */
+
+.secondary-header-menu {
+
+    .menu-superior-simple {
+        position: relative;
+        top: 50%;
+        transform: translateY(35%);
+    }
+
+
+  & + #responsive-secondary-menu{
+    background-color: $blanco-humo;
+    @media (max-width:$maximo) and (min-width:$ipad-01) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 5;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}
+
+/*Slicknav generales*/
+.slicknav_menu {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after{ clear: both; }
+
+  /* Button Text */
+  .slicknav_menutxt {
+    display: none;
+    visibility:hidden;
+    line-height: 1.2em;
+    float: left;
+  }
+}

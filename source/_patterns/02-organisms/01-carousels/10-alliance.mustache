@@ -1,0 +1,25 @@
+<div>
+  <div class="centrar">
+    <h2 class="h1">{{^ title }}Alianzas{{/ title }} {{# title }}{{title}}{{/ title }}</h2>
+  </div>
+  <div class="carrusel-relacionadas">
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+    {{> molecules-service-module }}
+  </div>
+  {{# button }}{{/ button }}
+  {{^ button }}
+  <div class="centrar texto-centrado">
+    <a class="boton" href="#"> Ver todas</a>
+     {{> atoms-button(text:"ver todas")}}
+  </div>
+  <div class="centrar">
+    <hr>
+  </div>
+  {{/ button }}
+</div>

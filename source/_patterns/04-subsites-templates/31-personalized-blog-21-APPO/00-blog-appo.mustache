@@ -1,0 +1,63 @@
+{{> organisms-header-blogs(nombre:"Observatorio APPO") }}
+
+<div class="faculty-defecto">
+
+  {{> organisms-carousel-with-lead}}
+  <div class="centrar overflow">
+    <div class="columna12">
+        <div class="columnas-alto-fijo" style="margin-top: 2rem; margin-bottom: 2rem;">
+            <div class="columna04">
+               <h4 class="texto">Título 1</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               <a class="boton boton-2" href="#">Ver más</a>
+            </div>
+            <div class="columna04">
+               <h4 class="texto">Título 1</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               <a class="boton boton-2" href="#">Ver más</a>
+            </div>
+            <div class="columna04">
+               <h4 class="texto">Título 1</h4>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               <a class="boton boton-2" href="#">Ver más</a>
+            </div>
+        </div>
+    </div>
+    <div class="grilla-portal contenido columna12"> 
+      {{> molecules-card-sencilla-appo }}
+      {{> molecules-card-sencilla-appo }}
+      {{> molecules-card-sencilla-appo }}
+    </div>
+<div style="clear: both"></div>
+
+    <article class="breaking-news {{^ padding-class  }}{{/ padding-class }}{{# padding-class }}{{padding-class}}{{/ padding-class }}" style="background-color: white; padding: 2rem 0 2rem;">
+<div class="content">
+<div class="multimedia">
+  <!--Puede ser un video o una imagen--> 
+  {{> atoms-image }}
+
+</div>
+<section class="titulo">
+  
+  <p class="h3 subrayado-der" style="color: #32464d;">{{# tit }}{{tit}}{{/ tit }}{{^ tit }}Título{{/ tit}}</p>
+
+  <p class="lead hidden3" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+
+   <p>{{> atoms-button(modifier-class:"boton-claro", text:"Ver más") }}</p>
+
+</section>
+</div>
+</article>
+    
+    <div class="grilla-portal contenido columna12"> 
+      {{> molecules-service-card }}
+      {{> molecules-service-card }}
+      {{> molecules-service-card }}
+    </div>
+
+    <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</blockquote>
+
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

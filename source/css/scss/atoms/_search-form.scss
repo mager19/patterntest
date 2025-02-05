@@ -1,0 +1,43 @@
+form.search {
+  font-weight: 300;
+  height: 45px;
+  position: relative;
+
+  input[type=search] {
+    padding-right: rem(50);
+  }
+
+  button {
+    width: 45px;
+    height: 100%;
+    background-color: $azul-cienaga;
+    display: block;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: white;
+    font-size: rem(30);
+    line-height: 0;
+    transition: $transition-background;
+    padding: 0;
+
+    &:hover {
+      background-color: $azul-carbon;
+    }
+  }
+
+  &.type-date {
+    display: flex;
+    overflow: hidden;
+    height: auto;
+    justify-content: space-between;
+  }
+}
+
+.safari {
+  .search {
+    font-weight: 400;
+  }
+}

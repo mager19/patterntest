@@ -1,0 +1,39 @@
+<div class="faculty-color faculty-observatorio-familia-infacia-adolecencia">
+   {{> organisms-header-blogs(nombre:"Observatorio de Servicios Públicos", facultad:"Área servicios públicos Departamento Derecho Economía") }}
+   <div class="faculty-defecto">
+      <div class="centrar overflow">
+         <main>
+            <article class="columna08 contenido">
+               <div class="grilla-portal-2columnas">
+                  {{> molecules-related-module-2 }}
+                  {{> molecules-related-module-2 }}
+               </div>
+               {{> molecules-pagination}}
+
+               {{> organisms-a-comment}}
+
+            </article>
+         </main> 
+         <aside class="columna04 aside">
+            {{> organisms-accordion-news(onlyShare: true) }} 
+            {{> molecules-events-widget }}
+            {{> molecules-newsletter-widget }}
+         </aside>
+      </div>    
+      <div class="columna12">
+         <div class="centrar">
+            <h2 class="h1">Artículos Recientes</h2>
+         </div>
+         <div class="carrusel-relacionadas">
+            <!--Máxiumo 4 noticias relacionadas-->
+            {{> molecules-related-module }}
+            {{> molecules-related-module }}
+            {{> molecules-related-module }}
+            {{> molecules-related-module }}
+         </div>
+         {{> molecules-pagination}} 
+          
+      </div>
+   </div>
+</div>
+{{> organisms-footer-blogs }}

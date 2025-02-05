@@ -1,0 +1,13 @@
+ <article class="item img-lead {{# class-on }}{{class-on}}{{/ class-on }}{{^ class-on }}{{/ class-on }} {{# class-category }}{{class-category}}{{/ class-category }}{{^ class-category }}administracion{{/ class-category }}">
+          <figure class="ajuste-imagen imagen-destacada">
+  			<!--Esta imagen debe ser de 1300 x 867px. -->
+  			<img src="../../images/carrusel-home-01.png" alt="Noticia">
+			</figure>
+				<!--Selecione la clase light o dark para el fondo oscuro o claro, esto debe poder ser gestionable desde el administrador -->
+        <div class="carousel-caption {{# class-color }}{{class-color}}{{/ class-color }}{{^ class-color }}light{{/ class-color }}">
+          <div class="h6"><a href="#">{{# text-category }}{{text-category}}{{/ text-category }}{{^ text-category }}Administración{{/ text-category }}</a></div>
+          <p class="h2">Evocación de los profesores externadistas desaparecidos</p>
+          <p class="h5">Seleccione la clase light o dark para el fondo. Para este lead lo recomendado es máximo 140 caracteres. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod justo ut lacus dolor sit amet.</p>
+          {{> atoms-button(text:"Seguir leyendo") }}
+        </div>
+</article>

@@ -1,0 +1,73 @@
+.btn-lista,
+.texto a.btn-lista{
+    background-color: #efefef;
+    font-size: 1.125rem;
+    letter-spacing: .0125rem;
+    display: block;
+    padding: 8px 8px 8px 30px ;
+    color: $gris-acero;
+    transition: background ease-in-out .3s;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+    border-radius: 5px;
+    
+    &:hover{
+      background-color: $azul-carbon;
+      box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+      text-decoration: none;
+      color: white;
+    }
+
+    &:before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: $verde-lima-700;
+    border-radius: 50%;
+    left: 5px;
+    top: 12px;
+    z-index: 2;
+    
+    }
+  
+}
+
+.bts-list{
+  margin: 10px;
+  overflow: hidden;
+  .title-list{
+    background-color: $verde-lima-700;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+
+  }
+    a.v-list, .v-list{
+      &:after { 
+          position: absolute;
+          content: '';
+          width: 2px;
+          left: 14px;
+          bottom: -30px;
+          height: 500px;
+          background-color: $verde-lima-700;
+          z-index: 1;
+        }
+    }   
+
+    p:last-child {
+      a.v-list:after {display:none;}
+        
+    }
+
+    a:last-child{
+      .v-list:after {display:none;}
+    }
+
+
+} 

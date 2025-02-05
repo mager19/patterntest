@@ -1,0 +1,41 @@
+{
+  "name": "externado",
+  "description": "Patternlab para el sitio de la Universidad Externado de Colombia",
+  "main": "",
+  "authors": [
+    "Pablo Garcia",
+    "Luz Eliana Garzon",
+    "David Guzman",
+    "Ivan Vasquez"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Pattern",
+    "Lab",
+    "Atomic",
+    "Web",
+    "Design",
+    "Node",
+    "Gulp",
+    "Javascript"
+  ],
+  "homepage": "http://uexternado.edu.co",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/js/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.12.2",
+    "bootstrap": "3.3.5",
+    "slicknav": "1.0.1",
+    "slick-carousel": "^1.5.9",
+    "lightgallery": "~1.3.6",
+    "jquery.lazyload": "~1.9.7",
+    "fitvids": "~1.2.0"
+  }
+}

@@ -1,0 +1,34 @@
+@import 'scss/base/variables';
+@import 'scss/base/mixins';
+
+footer-externado,
+header-externado {
+  @import 'scss/base/reset';
+
+  font-family : $lato;
+
+  .icon.icon-abajo {
+    line-height: 1.4;
+    vertical-align: middle;
+  }
+
+  @import 'scss/base/icons';
+  @import 'scss/base/slick-nav';
+  @import 'scss/base/typography';
+  @import 'scss/base/general';
+  @import 'scss/base/bootstrap';
+  @import 'scss/base/responsive-helper';
+
+  @import 'scss/atoms/button';
+
+  @import 'scss/molecules/contact';
+  @import 'scss/molecules/main-menu';
+  @import 'scss/molecules/mineducacion-guard';
+  @import 'scss/molecules/social-network';
+  @import 'scss/molecules/top-buttons';
+  @import 'scss/molecules/top-menu';
+  @import 'scss/molecules/visit';
+
+  @import 'scss/organisms/header';
+  @import 'scss/organisms/footer';
+}

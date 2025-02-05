@@ -1,0 +1,39 @@
+.item-info {
+    color: $azul-carbon-700;
+    display: inline;
+    margin: 0 20px 0 0px;
+
+    p {
+        padding: 4px 0 0 24px;
+
+        @media (max-width:$small) and (min-width:$minimo) {
+            margin: 4px;
+        }
+
+        strong {
+            display: inline-block;
+        }
+
+        span {
+            margin: 0 4px;
+
+            &.icon {
+                @media (max-width: $maximo) and (min-width: $movil-amplio02) {
+                    font-size: rem(27);
+                }
+
+                margin: 0;
+                font-size: rem(22);
+            }
+        }
+
+    }
+    &.list{
+        display: block;
+        &:first-child {display: inline;}
+        span {display: block;
+            &:first-child {display: inline;}
+        }
+        
+    }
+}

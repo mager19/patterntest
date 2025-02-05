@@ -1,0 +1,54 @@
+<div class="carrusel-agenda">
+  <div class="carousel slide" id="carrusel-agenda-home" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carrusel-agenda-home" data-slide-to="0" class=""></li>
+      <li data-target="#carrusel-agenda-home" data-slide-to="1" class="active"></li>
+      <li data-target="#carrusel-agenda-home" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner" aria-label="Noticias">
+      <article class="item active">
+        <div class="ajuste-imagen" style="background-image: url(../../images/carrusel-home-01.png);">
+          <!--Esta imagen debe ser de 1400 x 933px. Imagen destacada-->
+        </div>
+
+        <div class="carousel-caption">
+          <h4>01 Evocación de los profesores externadistas desaparecidos</h4>
+          {{> molecules-event-date-slider }}
+        </div>
+        <div class="degrade"></div>
+      </article>
+
+      <article class="item">
+        <div class="ajuste-imagen" style="background-image: url(../../images/carrusel-home-01.png);">
+          <!--Esta imagen debe ser de 1400 x 933px. Imagen destacada-->
+        </div>
+        <div class="carousel-caption">
+          <h4>02 Evocación de los profesores externadistas desaparecidos</h4>
+          {{> molecules-event-date-slider }}
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="ajuste-imagen" style="background-image: url(../../images/carrusel-home-01.png);">
+         <!--Esta imagen debe ser de 1400 x 933px. Imagen destacada-->
+        </div>
+        <div class="carousel-caption">
+          <h4>03 Evocación de los profesores externadistas desaparecidos</h4>
+          {{> molecules-event-date-slider }}
+        </div>
+      </article>
+    </div>
+
+
+
+    <!-- Carousel nav -->
+    <a class="left carousel-control" data-target="#carrusel-agenda-home" role="button" data-slide="prev" aria-label="anterior">
+      <span></span>
+    </a>
+    <a class="right carousel-control" data-target="#carrusel-agenda-home"  role="button" data-slide="next" aria-label="siguiente">
+      <span></span>
+    </a>
+  </div>
+  <div  class="calendario-box-slider">{{> organisms-calendar-slider(month-text:"Octubre 2019") }}</div>
+</div>

@@ -1,0 +1,201 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+    <div class="caja-encima">
+      <div>
+        <label class="wdm_label"></label>
+        <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+        <div class="wdm_ul" id="wpsolr_section_facets">
+
+          <div class="panel">
+            <div class="titulo-acordeon">
+              <div class="h4">Búsqueda de recursos digitales</div>
+              <div class="panel">
+                 <div class="info"><button class="select_opt limpiador-busqueda">Limpiar búsqueda</button></div></div>
+                  </div>
+
+          </div>
+           <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-cero">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="Buscador">
+
+                  {{> atoms-search-form(tit-search-form:"Palabra clave")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+
+          <!-- 01-->
+          <div class="panel">
+            <div role="tab" id="titulo-uno">
+              {{> atoms-accordion-filter-button(target:"alfabetico", text:"Por Orden alfabético")}}
+            </div>
+
+            <div id="alfabetico" class="info collapse in" role="tabpanel" aria-labelledby="titulo-uno">
+              <form>
+                {{> atoms-az-button}}
+              </form>
+            </div>
+          </div>
+          <!-- /01-->
+          <!-- 02-->
+          <div class="panel">
+            <div role="tab" id="titulo-tres">
+              {{> atoms-accordion-filter-button(target:"por-facultad", text:"Por facultad")}}
+            </div>
+            <div id="por-facultad" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+              <form>
+                <input id="administracion-de-empresas" type="checkbox" name="facultad" value="administracion-de-empresas">
+                <label for="administracion-de-empresas">
+                  Administración de Empresas
+                  <span class="circulo administracion-de-empresas"></span>
+                </label>
+                <input id="administracion-de-empresas-turisticas-y-hoteleras" type="checkbox" name="facultad" value="administracion-de-empresas-turisticas-y-hoteleras">
+                <label for="administracion-de-empresas-turisticas-y-hoteleras">
+                  Administración de Empresas Turísticas y Hoteleras
+                  <span class="circulo administracion-de-empresas-turisticas-y-hoteleras"></span>
+                </label>
+                <input id="biblioteca" type="checkbox" name="facultad" value="biblioteca">
+                <label for="biblioteca">
+                  Biblioteca
+                  <span class="circulo biblioteca"></span>
+                </label>
+                <input id="bienestar-universitario" type="checkbox" name="facultad" value="bienestar-universitario">
+                <label for="bienestar-universitario">
+                  Bienestar Universitario
+                  <span class="circulo bienestar-universitario"></span>
+                </label>
+                <input id="centro-de-educacion-virtual" type="checkbox" name="facultad" value="centro-de-educacion-virtual">
+                <label for="centro-de-educacion-virtual">
+                  Centro de Educación Virtual
+                  <span class="circulo centro-de-educacion-virtual"></span>
+                </label>
+                <input id="ciencias-de-la-educacion" type="checkbox" name="facultad" value="ciencias-de-la-educacion">
+                <label for="ciencias-de-la-educacion">
+                  Ciencias de la Educación
+                  <span class="circulo ciencias-de-la-educacion"></span>
+                </label>
+                <input id="ciencias-sociales-y-humanas" type="checkbox" name="facultad" value="ciencias-sociales-y-humanas">
+                <label for="ciencias-sociales-y-humanas">
+                  Ciencias Sociales y Humanas
+                  <span class="circulo ciencias-sociales-y-humanas"></span>
+                </label>
+                <input id="comunicacion-social-periodismo" type="checkbox" name="facultad" value="comunicacion-social-periodismo">
+                <label for="comunicacion-social-periodismo">
+                  Comunicación Social - Periodismo
+                  <span class="circulo comunicacion-social-periodismo"></span>
+                </label>
+                <input id="contaduria-publica" type="checkbox" name="facultad" value="contaduria-publica">
+                <label for="contaduria-publica">
+                  Contaduría Pública
+                  <span class="circulo contaduria-publica"></span>
+                </label>
+                <input id="derecho" type="checkbox" name="facultad" value="derecho">
+                <label for="derecho">
+                  Derecho
+                  <span class="circulo derecho"></span>
+                </label>
+                <input id="economia" type="checkbox" name="facultad" value="economia">
+                <label for="economia">
+                  Economía
+                  <span class="circulo economia"></span>
+                </label>
+                <input id="finanzas-gobierno-y-relaciones-internacionales" type="checkbox" name="facultad" value="finanzas-gobierno-y-relaciones-internacionales">
+                <label for="finanzas-gobierno-y-relaciones-internacionales">
+                  Finanzas, Gobierno y Relaciones Internacionales
+                  <span class="circulo finanzas-gobierno-y-relaciones-internacionales"></span>
+                </label>
+                <input id="la-universidad" type="checkbox" name="facultad" value="1">
+                <label for="la-universidad">
+                  La Universidad
+                  <span class="circulo la-universidad"></span>
+                </label>
+                <input id="estudios-del-patrimonio-cultural" type="checkbox" name="facultad" value="estudios-del-patrimonio-cultural">
+                <label for="estudios-del-patrimonio-cultural">
+                  Estudios del Patrimonio Cultural
+                  <span class="circulo estudios-del-patrimonio-cultural"></span>
+                </label>
+              </form>
+            </div>
+          </div>
+          <!-- /02-->
+          <!-- 03-->
+          <div class="panel">
+            <div role="tab" id="titulo-cuatro">
+            {{> atoms-accordion-filter-button(target:"area-conocimiento", text:"Por área del conocimiento")}}
+              </div>
+
+              <div id="area-conocimiento" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cuatro">
+                <div class="galleria">
+                  <form style="overflow: visible;">
+                    <input id="area-administrativas" type="checkbox" name="administrativas" value="administrativas"><label for="area-administrativas">Ciencias Administrativas, Contables, Económicas y Financieras <span class="cuadrado fondo-cacef">Admin</span></label>
+                    <input id="area-sociales" type="checkbox" name="sociales" value="sociales"><label for="area-sociales">Ciencias Sociales y Humanas <span class="cuadrado fondo-sociales">Soc</span></label>
+                    <input id="area-comunicacion" type="checkbox" name="comunicacion" value="comunicacion"><label for="area-comunicacion">Comunicación e Información <span class="cuadrado fondo-comunicacion">Com</span></label>
+                    <input id="area-derecho" type="checkbox" name="derecho" value="derecho"><label for="area-derecho">Derecho <span class="cuadrado fondo-derecho">Der</span></label>
+                    <input id="area-multidisciplinar" type="checkbox" name="multidisciplinar" value="multidisciplinar"><label for="area-multidisciplinar">Multidisciplinar <span class="cuadrado fondo-multidisciplinar" title="Contenido sobre varias disciplinas">Mul</span></label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- /03-->
+            <!-- 04-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                {{> atoms-accordion-filter-button(target:"tiporecurso", text:"Por tipo de recurso")}}
+              </div>
+
+              <div id="tiporecurso" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+               <form style="overflow: visible;">
+                <input id="ebook" type="checkbox" name="ebook" value="ebook"><label for="ebook">eBook: libros digitales </label>
+                <input id="revistas" type="checkbox" name="revistas" value="revistas"><label for="revistas">Revista: boletines, magacines, journals y periódicos </label>
+                <input id="audiovisual" type="checkbox" name="audiovisual" value="audiovisual"><label for="audiovisual">Audiovisual: videos, audios e imágenes </label>
+                <input id="info-juridica" type="checkbox" name="info-juridica" value="info-juridica"><label for="info-juridica">Información Jurídica: jurisprudencia y legislación </label>
+                <input id="referencial" type="checkbox" name="referencial" value="referencial"><label for="referencial">Referencial: provee referencias bibliográficas </label>
+              </form>
+            </div>
+          </div>
+          <!-- /04-->
+        <!-- 05-->
+            <div class="panel">
+              <div role="tab" id="titulo-cinco">
+                {{> atoms-accordion-filter-button(target:"tipoperfil", text:"Por tipo de perfil")}}
+              </div>
+
+              <div id="tipoperfil" class="info collapse in" role="tabpanel" aria-labelledby="titulo-cinco">
+               <form style="overflow: visible;">
+                <input id="activos" type="checkbox" name="activos" value="activos"><label for="estudiantes">Activos (Estudiantes, Docentes, Investigadores y Administrativos)</label>
+                
+                <input id="egresados" type="checkbox" name="egresados" value="egresados"><label for="egresados">Egresados</label>
+              </form>
+            </div>
+          </div>
+          <!-- /05-->
+                    <!-- 06-->
+          <div class="panel">
+            <div role="tab" id="titulo-seis">
+              {{> atoms-accordion-filter-button(target:"tipoacceso", text:"Por tipo de acceso")}}
+            </div>
+
+            <div id="tipoacceso" class="info collapse in" role="tabpanel" aria-labelledby="titulo-seis">
+             <form>
+              <label class="dropdown">
+                <select>
+                  <option value="" selected="selected">Todos</option>
+                  <option value="acceso-abierto">Acceso abierto</option>
+                  <option value="acceso-cerrado">Por suscripción</option>
+                </select>
+              </label>
+            </form>
+          </div>
+        </div>
+        <!-- /06-->
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

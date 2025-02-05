@@ -1,0 +1,52 @@
+<div class="youtube-list vertical-list-youtube  {{^ class-modifier }}sin-fondo{{/ class-modifier  }} {{# class-modifier  }}{{class-modifier }}{{/ class-modifier  }}">
+<div class="centrar"><h3 class="margen-inferior-cajas subrayado-der">{{^ title }}Últimos videos{{/ title }} {{# title }}{{title}}{{/ title }}</h3></div>
+<div class="centrar columnas-alto-fijo">
+<div class="columna12  reproductor"  style="margin-bottom: 1.5rem;">
+
+<iframe id="video" width="100%"  height="300"  name="video" src="https://www.youtube.com/embed/nBplq2_rHl8?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>></iframe>
+
+
+</div>
+
+
+<div class="columna12">
+<!--Máximo 5 videos -->
+<select class="lista-videos" name="name" size="3" onchange="video.location.href=this.options[this.selectedIndex].value">
+
+<option class="item-video" value="https://www.youtube.com/embed/nBplq2_rHl8?rel=0?feature=player_detailpage&amp;autoplay=1"  style="background-image: url(../../images/boton-subtitulo-01.png);">
+
+Video 1
+
+</option>
+
+<option  class="item-video"  value="https://www.youtube.com/embed/qPyJYmahhp0?rel=0?feature=player_detailpage&amp;autoplay=1" style="background-image: url(../../images/boton-subtitulo-02.png);">
+
+Video 2
+
+</option>
+
+<option  class="item-video"  value="https://www.youtube.com/embed/RbuTfex3-l8?rel=0?feature=player_detailpage&amp;autoplay=1" style="background-image: url(../../images/boton-subtitulo-03.png);">
+
+Video 3
+
+</option>
+<option  class="item-video"  value="https://www.youtube.com/embed/m0zUfr4v8_g?rel=0?feature=player_detailpage&amp;autoplay=1" style="background-image: url(../../images/boton-subtitulo-01.png);">
+
+Video 4
+
+</option>
+<option  class="item-video"  value="https://www.youtube.com/embed/m0zUfr4v8_g?rel=0?feature=player_detailpage&amp;autoplay=1" style="background-image: url(../../images/boton-subtitulo-01.png);">
+
+Video 5
+
+</option>
+
+</select>
+
+</div>
+</div>
+<div class="centrar">
+	<hr>
+ 	{{> atoms-button }}
+ </div>
+</div>

@@ -1,0 +1,78 @@
+<section class="secondary-header-menu">
+  <div class="centrar">
+    {{# logo }}
+      {{> atoms-brand(logo:"{{logo}}") }}
+    {{/ logo }}
+
+    {{# nombre }}
+      {{> atoms-brand(nombre:"{{{nombre}}}", slogan:"{{slogan}}") }}
+    {{/ nombre }}
+
+    <div class="info-secondary-header">
+      <div class="imagen-izquierda-top-blogs hidden3">
+        {{# imagen-top }}
+        <a href=""><img src="{{ imagen-top }}"></a>
+        {{/ imagen-top }}
+        </div>
+      {{> molecules-social-network(networks_title:" ")}}
+      <div class="texto-lateral">
+        <a href="#">Enlace ejemplo</a><br>
+        <span>11 de Noviembre del 2018</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-secundario">
+    <div class="centrar">
+      <a href="#" class="show-secondary-menu">
+        Menú
+        <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li class="mini-boton">
+            <a href="#">
+              <div class="main-link">
+                Periodismo joven
+                <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+              </div>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="#">Libertad de expresión</a></li>
+              <li><a href="#">Política</a></li>
+              <li><a href="#">País</a></li>
+              <li><a href="#">Educación</a></li>
+              <li><a href="#">Medio ambiente</a></li>
+              <li><a href="#">Sociedad</a></li>
+              <li><a href="#">Cultura</a></li>
+              <li><a href="#">Ciencia y tecnología</a></li>
+            </ul>
+          </li>
+          <li class="mini-boton">
+            <a href="#">
+              <div class="main-link">
+                Comunicación social
+                <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+              </div>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="#">Investigación</a></li> <li><a href="#">Creación</a></li>
+              <li><a href="#">Comunicación estratégica</a></li>
+              <li><a href="#">Impacto social</a></li>
+              <li><a href="#">Innovación y emprendimiento</a></li>
+              <li><a href="#">Comunicación política</a></li>
+            </ul>
+          </li>
+          <li class="mini-boton"><a href="#">Nuestra facultad</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+<div id="responsive-secondary-menu">
+  <div class="idioma-buscador">
+    {{> molecules-language-picker }}
+    {{> atoms-search-form-header }}
+    {{> organisms-group-icon-button-aside }}
+  </div>
+</div>

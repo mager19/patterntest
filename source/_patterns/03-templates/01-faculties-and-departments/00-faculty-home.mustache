@@ -1,0 +1,55 @@
+{{> organisms-header }}
+
+<div class="faculty-asociacion-henri-capitant">
+  {{> organisms-secondary-header-menu(faculty-home:"Asociación Henri Capitant")}}
+  <main>
+    {{> organisms-faculty-carousel}}
+    <!--Modulo exclusivo para Administración de Empresas-->
+    <div class="blanco-humo padding-medio columnas-alto-fijo box-shadow centrar-flex">
+    <div class="columna06">
+          {{> molecules-info-accreditations(title:"Acreditaciones Internacionales")}}
+          <p class="texto-centrado caption-text">Hacemos parte del 1% de las Escuelas de Administración en el mundo que cuentan con estas dos acreditaciones: AACSB & AMBA.</p>
+    </div>
+    <div class="columna04"><!--Creé un nuevo módulo en un div columna04-->
+      <h4 class="centrar texto-centrado subrayado">Programa de privilegios</h4>
+      <div class="centrar cajas-centradas">
+        <div class="box-logo">
+          <a href="https://www.uexternado.edu.co/administracion-de-empresas/privilegios/"> <img class="logo-aliados img-responsive" src="https://www.uexternado.edu.co/wp-content/uploads/2022/03/logo-privilegios.png" alt="Privilegios"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!--Modulo fin-->
+    <div class="centrar">
+
+      {{> organisms-group-button-08}}
+    </div>
+
+    <div class="centrar">
+      {{> molecules-mini-buttons}}
+    </div>
+  </main>
+
+  <div class="centrar overflow">
+    <div class="columna09-grande ">
+      {{> organisms-news-list }}
+    </div>
+
+    <aside class="columna03-grande aside">
+      {{> molecules-calendar-widget }}
+      {{> molecules-events-widget }}
+      {{> molecules-quote-widget }}
+      {{> molecules-image-widget }}
+      {{> molecules-text-link-widget }}
+      {{> molecules-carousel-widget }}
+      {{> molecules-menu-widget }}
+    </aside>
+  </div>
+
+  {{> organisms-faculty-info }}
+</div>
+
+{{> organisms-footer }}

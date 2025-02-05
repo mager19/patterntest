@@ -1,0 +1,43 @@
+<div class="faculty-color faculty-derecho-constitucional"> 
+  {{> organisms-header-blogs(nombre:"Departamento de Derecho Constitucional ", facultad:"Derecho") }}
+  
+  {{> organisms-faculty-carousel}}
+  <main class="fondo-completo" style="border-top: solid 5px #b9bc01;">
+    <div class="centrar"> 
+      {{> organisms-calendar-for-home(calendar-title:"Agenda de eventos") }}
+      {{> organisms-event-list }} </div>
+  </main>
+  <div style="clear: both;"></div>
+  <div class="centrar"> 
+    <!--Grupo de categorías editables desde Wordpress--> 
+    {{> organisms-group-button-08}} 
+  </div>
+  <div class="centrar">
+    <div class="columnas-alto-fijo margin-l ">
+      <div class="columna06 sigueme-bg margin-s padding-minimo border-radius-s">
+        <h3 class="h3 texto-blanco">Últimas publicaciones</h3>
+        <!--Grupo de botones editables desde Wordpress--> 
+        {{> organisms-carousel-books }}
+        <div class="texto-centrado">
+          <hr>
+          <a class="boton" href="#"> Ver todas</a> </div>
+      </div>
+      <div class="columna06 azul-prusia margin-s padding-minimo border-radius-s">
+        <h3 class="h3 texto-blanco">Noticias</h3>
+        {{> organisms-carousel-1column}}
+        <div class="texto-centrado">
+          <hr>
+          <a class="boton" href="#"> Ver todas</a> </div>
+      </div>
+      <div style="clear:both;"></div>
+      
+      <!--Grupo de botones editables desde Wordpress--> 
+      {{> organisms-group-subtitle-button}} </div>
+  </div>
+  <div class="centrar overflow">
+    <div class="columna04 contenido"> {{> molecules-mailpoet-form-widget(titulo:"Suscríbase y reciba nuestras novedades")}} </div>
+    <div class="columna04 contenido"> {{> molecules-social-widget}} </div>
+    <div class="columna04 contenido"> {{> molecules-social-widget}} </div>
+  </div>
+</div>
+{{> organisms-footer-blogs }} 

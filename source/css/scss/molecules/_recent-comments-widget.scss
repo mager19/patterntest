@@ -1,0 +1,38 @@
+.widget_recent_comments {
+  @include widget;
+  .boton{
+    font-size: rem(15);
+    text-decoration: none;
+    &:hover{
+      color: white;
+    }
+  }
+  a{
+    text-decoration: underline;
+    display: inline-block;
+    transition: $transition-color;
+    &:hover{
+      color: $verde-lima;
+    }
+  }
+
+  ul{
+    margin: 2px 0;
+    padding-left:20px;
+    & > li{
+      &:before{
+        color: $verde-lima;
+        font-size: rem(12);
+        content: "●";
+        position: relative;
+        left: -15px;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        display: block;
+      }
+    }
+  }
+  ol{
+    padding-left:20px;}
+}

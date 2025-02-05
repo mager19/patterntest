@@ -1,0 +1,121 @@
+.breaking-news {
+  background-color: $azul-carbon-700;
+  padding: 110px 0 20px;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: 1790px) {
+    height: auto;
+  }
+
+    &.padding-minimo{
+
+       @media (max-width: $ipad) and (min-width: $minimo) {
+        padding: 0!important;
+
+        .aligncenter{
+        margin:0;
+        }
+      }
+    }
+
+  @media (max-width: $ipad) and (min-width: $minimo) {
+    padding: 40px 0 1rem 0;
+  }
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    @media (max-width: $ipad) and (min-width: $minimo) {
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: column;
+    }
+
+    section.titulo {
+      align-items: flex-start;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      width: 45%;
+
+      .h3 {
+        color: white;
+        font-weight: 600;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          margin: 10px 0;
+          background-color: $verde-lima-400;
+
+          @media (max-width: $ipad) {
+            display: none;
+          }
+        }
+
+        @media (max-width: 990px) and (min-width: $ipad) {
+          font-size: 1.5625rem;
+          line-height: 1.625rem;
+        }
+      }
+
+      a.boton {
+        border-radius: 5px;
+      }
+
+      @media (min-width: 1790px) {
+        width: 30%;
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+        align-items: center;
+      }
+    }
+
+    .multimedia {
+      padding: 1rem;
+      width: 55%;
+      display: flex;
+      align-items: center;
+
+      @media (min-width: 1790px) {
+        width: 70%;
+      }
+
+      @media (max-width: $ipad) and (min-width: $minimo) {
+        width: 100%;
+        padding: 0;
+      }
+
+      .featured-video-plus {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .fvp-onload {
+        display: none;
+      }
+    }
+  }
+}

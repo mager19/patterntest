@@ -1,0 +1,128 @@
+.carrusel-agenda { 
+  position: relative;
+  z-index: 0;
+
+  .carousel-control {
+    width:13%;
+    @include carousel-control;
+    &.left span,
+    &.right span{
+  		top:28%;
+  	}
+    &.left span{
+      @media (max-width:450px) and (min-width:$minimo){
+        width:38px;
+        height: 100px;
+        background-position: -488px 200px;
+      }
+    }
+    &.right span{
+      @media (max-width:450px) and (min-width:$minimo){
+        width:38px;
+        height: 100px;
+        background-position: -530px 200px;
+        right: 2px;
+      }
+    }
+  }
+
+  h4, .h4 {
+    color: inherit;
+    margin-bottom: 20px;
+    @include h2-carrusel;
+
+    @media (max-width:$ipad) and (min-width:$minimo){
+    text-align: center;
+    }
+  }
+
+  .carousel-indicators{
+    bottom: 0;
+    li{
+      @include indicadores-carrusel;
+    }
+    @media (max-width:$ipad) and (min-width:$minimo){
+    margin-bottom: 0;
+    }
+  }
+  .carousel-caption{
+    z-index: 5;
+    left: 10%;
+    right: 50%;
+    padding-bottom: 40px;
+    text-align: left;
+    @media (max-width:$ipad) and (min-width:$minimo){
+      left: 0;
+      right: 0;
+      padding-bottom: 10px;
+      padding: 0 15%;
+    }
+  }
+
+  .ajuste-imagen{
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+      @media (max-width:$ipad) and (min-width:$movil-amplio){
+      height: 320px;
+      }
+      @media (max-width:$movil-amplio) and (min-width:$minimo){
+      height: 400px;
+      
+      }
+
+      img{
+        @media (max-width:$movil-amplio) and (min-width:$minimo){
+        
+        }
+      }
+    }
+
+  .item{
+    &:before{
+      content: '';
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      @include degrade-lineal-negro;
+    }
+
+
+    video {
+      width: 100%;
+    }
+
+    &.has-video{
+
+      .ajuste-imagen {
+        img {
+          display: inline;
+          @media (min-width: 1024px) {
+            display: none;
+          }
+        }
+
+        video {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          @media (min-width: 1024px) {
+            display: block;
+          }
+        }
+      }
+
+    }
+  }
+
+}

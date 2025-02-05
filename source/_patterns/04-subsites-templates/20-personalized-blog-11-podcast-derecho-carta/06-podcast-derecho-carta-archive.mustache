@@ -1,0 +1,32 @@
+{{> organisms-header-blogs(logo:"../../images/logos/derecho-a-la-carta.png") }}
+
+<div class="faculty-defecto faculty-derecho-a-la-carta">
+
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      <h2 class="h1">Categoría</h2>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> molecules-pagination}}
+    </div>
+
+    <aside class="columna04 aside">
+      {{> molecules-news-list-widget(titulo:"Top 10") }}  <!-- en el top 10 solo se muestra la fecha, el link y la imagen-->
+      {{> molecules-tag-cloud-widget(titulo:"¿Dónde nos escuchan?",icon-tag:"icon-globo-01") }} <!-- cloud tag con los paises-->
+      {{> atoms-media-button(text:"Sugerencias",icon:"icon-conversacion")}}
+      {{> molecules-news-list-widget(titulo:"Otros pódcast") }} <!-- en otros Podcast solo se muestra la fecha, el link y la imagen-->
+    </aside>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

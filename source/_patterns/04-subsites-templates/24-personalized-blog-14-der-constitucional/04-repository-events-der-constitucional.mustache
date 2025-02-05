@@ -1,0 +1,27 @@
+<div class="faculty-color faculty-derecho-constitucional"> 
+  {{> organisms-header-blogs(nombre:"Departamento de Derecho Constitucional ", facultad:"Derecho") }}
+  
+<div class="faculty-derecho-constitucional">
+  <div class="fondo-completo busqueda-wpsolr padding-none">
+    <div class="centrar">
+      <aside class="columna04 aside"> 
+      {{> organisms-accordion-events-filter }}
+     </aside>
+      <div class="columna08 contenido">
+        <h2 class="h3 margen-inferior-cajas">Historico de eventos</h2>
+        {{> molecules-event-card(class-faculty:"derecho")}}
+        {{> molecules-event-video-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho")  }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+        {{> molecules-event-card(class-faculty:"derecho") }}
+
+        {{> molecules-pagination}}
+      </div>       
+    </div>
+  </div>
+{{> organisms-footer-blogs }}

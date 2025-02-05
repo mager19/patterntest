@@ -1,0 +1,72 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+          <div class="titulo-acordeon"><div class="h4">Filtro de búsqueda</div>
+       <div class="panel">
+          <div class="info">
+            <button class="select_opt limpiador-busqueda"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span> Limpiar búsqueda</button></div></div>
+      
+      </div></div>
+            <!-- 00 buscador-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+
+                  {{> atoms-search-form(tit-search-form:"Título, panelista o palabra clave")}}
+
+              </div>
+            </div>
+            <!-- /00-->
+          <!-- 02 fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /02-->
+            <!-- 03 volumne-->
+            <div class="panel">
+              <div role="tab" id="titulo-tres">
+                {{> atoms-accordion-filter-button(target:"volumen", text:"Grupo")}}
+              </div>
+
+              <div id="volumen" class="info collapse in" role="tabpanel" aria-labelledby="titulo-tres">
+                <form>
+                  <label class="dropdown">
+                    <select>
+                      <option value="" selected="selected">Todos</option>
+                      <option value="Categoría 1"> Grupo de Derechos Humanos y DIH</option>
+                      <option value="Categoría 2">Grupo de Justicia Constitucional</option>
+                      <option value="Categoría 3">Grupo de Género</option>
+                      <option value="Categoría 4">Grupo de Derecho Económicos </option>
+                      <option value="Categoría 5">Grupo de Derecho Internacional</option>
+                      <option value="Categoría 6">Grupo de Justicia Transicional</option>
+                      <option value="Categoría 7">Grupo de Asuntos Políticos, Derecho Parlamentario y Derecho Electoral</option>
+                      <option value="Categoría 8">Grupo de Filosofía del Derecho</option>
+
+                    </select>
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- /03-->
+
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

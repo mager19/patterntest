@@ -1,0 +1,15 @@
+<article class="modulo-blog derecho" aria-label="artículo">
+  <a href="#">
+    <!--Esta imagen debe ser de 140 x 140px, cortada desde el centro-->
+    <img src="../../images/modulo-blog.png" alt="Blog" />
+  </a>
+  <div class="info">
+  	  {{^ onlyShare }}
+      <div class="h6"><a href="#"> {{^ category }}Derecho{{/ category }}{{# category }}{{category}}{{/ category }}</a></div>
+	  {{/ onlyShare }}
+      <h3 class="h4"><a href="#">{{^ titulo }}Derecho,  Arte y Cultura{{/ titulo }}{{# titulo }}{{titulo}}{{/ titulo }}</a></h3>
+      {{^ onlyShare }}
+      <a class="enlace" href="#">{{^ enlace }}derechoarteycultura.uexternado.edu.co{{/ enlace }}{{# enlace }}{{enlace}}{{/ enlace }}</a>
+      {{/ onlyShare }}
+    </div>
+</article>

@@ -1,0 +1,57 @@
+.form-section {
+  width: 100%;
+  /*height: 200px;*/
+  background-color: #6b243f; // TODO: Validar esto cuando definamos lo del mixin de facultad
+  overflow: hidden;
+  padding: 50px 0;
+  .h3 {
+    color: white;
+  }
+  .columna06{
+    overflow: visible;
+  }
+  .search {
+    margin: 0px 0 30px 0;
+    @media (max-width:580px) and (min-width:$minimo) {
+      width: 100%;
+    }
+  }
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    margin-top: 3.675rem;
+  }
+  #auto-results {
+  	border-radius: 4px;
+  	background-color: rgba(255,255,255,0.8);
+  	background: -moz-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+  	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.8)), color-stop(100%, rgba(255,255,255,0.8)));
+  	background: -webkit-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+  	background: -o-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+  	background: -ms-linear-gradient(left, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+  	background: linear-gradient(to right, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+  	margin-top: 0;
+  	position: absolute;
+  	padding: 10px;
+  	z-index: 2;
+  	width: auto;
+  	max-width: 350px;
+    h3, .h3{
+    	margin: 5px 0 10px 0;
+      font-size: 1.7rem;
+      color: white;
+    }
+    li {
+        border: medium none;
+        list-style: outside none none;
+        padding-left: 5px;
+        &:hover {
+            background-color: #3875D7;
+            color: white;
+            cursor: pointer;
+        }
+    }
+  }
+}
+ .form-section + aside.informacion-facultad {
+  margin-top: 0;
+}

@@ -1,0 +1,28 @@
+<div class="modulo-bases-datos {{# class }}{{class}}{{/ class }}{{^ class }}margen-modulo-grilla padding-minimo{{/ class}} "> 
+      <!--imagen destacada-->
+      <a href="#" target="_blank"><img class="aligncenter margin-none" src="../../images/{{# imagen }}{{imagen}}{{/ imagen }}{{^ imagen }}mosaico-01.jpg{{/ imagen}}" alt="" /></a>
+
+  <div class="columna12 informacion-db">
+
+        <!--Los campos que no se llenen quedarán con la clase hidden-->
+        <div class="titulo-db">
+        <div class="columnas-alto-fijo">
+          <div class="columna12 submodulo-db sin-borde">
+            <!--Aquí va la categoría, por ejemplo: Docencia-->
+            <h6 class="entidad-tit"><a href="">{{# category }}{{category}}{{/ category }}{{^ category }}Sede Edificio las Galerías{{/ category}} </a></h6>
+          </div>
+        </div>
+        <h4 class="columna12 submodulo-db">{{# titulo }}{{titulo}}{{/ titulo }}{{^ titulo }}Promoción 1889{{/ titulo}}</h4>
+      </div>
+        <div class="columna12 submodulo-db sin-borde {{# class2 }}{{class2}}{{/ class2 }}{{^ class2 }}active{{/ class2}}">
+          <p class="subtit-db"><span><svg class="icon color-icon icon-articulo"><use xlink:href="../../images/iconos.svg#icon-foto-03"></use></svg></span>Descripción:</p>
+          <div class="">
+            {{# text }}{{text}}{{/ text }}{{^ text }} Lorem ipsum dolor sit amet. {{/ text}}
+          </div>
+        </div> 
+        <div class="columna12 submodulo-db">
+          {{> atoms-line-button(icon-selector:"derecha", modifier-class:"boton-linea-2", text: "Ver más") }}
+        </div>
+   </div>
+    <div style="clear: both"></div>
+</div>

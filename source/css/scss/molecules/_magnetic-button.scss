@@ -1,0 +1,88 @@
+/*Esta clase .magnetic-menu se incluye en la plantilla donde se va a incluir el menu magnetico*/
+.magnetic-menu {
+    position: fixed;
+    top: 28%;
+    right: -4px;
+    transition: margin-right .4s;
+    z-index: 800 !important;
+    width: 110px !important;
+    
+
+    @media (max-width:$ipad){
+        position: initial;
+        width: 100% !important;
+      }     
+}
+.magnetic-menu.small{
+  width: 80px !important;
+  @media (max-width:$ipad){
+   width: 100% !important;
+  } 
+}
+
+
+/*Clases del menu-magnetico*/
+
+.titulo-menu-magnetico{
+   display: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    padding: 1rem 10px;
+    z-index: 12; 
+
+    @media (max-width:$ipad){
+        display: block;
+        float: left;
+        position: relative;
+        z-index: 12; 
+        }
+}
+
+
+#menu-magnetico {
+  .texto-blanco{
+  color: white;
+  }
+}
+
+#responsive-menu-magnetico {
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+
+    @media (max-width:$ipad){
+        display: block;
+        visibility: hidden;
+        }
+
+
+  .slicknav_nav {
+    background-color : $blanco-humo !important;
+    
+    a{
+      color: $gris-acero !important;
+      border-bottom: 1px solid $gris-hierro;
+    }
+
+    li:hover {
+      background-color: $gris-hierro !important; 
+    }
+
+  }
+
+  .slicknav_icon-bar {
+    background-color: white;
+  }
+}
+
+#menu {
+  .menu,
+  .menu-principal,
+  .menu-superior {
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      display:none;
+      visibility: hidden;
+    }
+  }
+}

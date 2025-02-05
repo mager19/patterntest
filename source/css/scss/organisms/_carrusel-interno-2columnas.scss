@@ -1,0 +1,9 @@
+.carrusel-interno-2columnas{
+	max-width: 930px;
+	margin: 0 auto;
+	&.carousel-books{
+		.slick-slide>div {
+			margin: 15px 10px;
+		}
+	}
+}

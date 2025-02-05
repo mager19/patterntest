@@ -1,0 +1,38 @@
+/*Ajustes para color top  Observatorio de familia, infancia y adolescencia*/
+
+.faculty-observatorio-familia-infacia-adolecencia .secondary-header-menu {
+    background-color: $derecho ;
+}
+
+.faculty-observatorio-familia-infacia-adolecencia .secondary-header-menu .info-secondary-header .texto-lateral {
+      color: white;
+}
+
+.faculty-observatorio-familia-infacia-adolecencia .menu-blogs .secondary-header-menu h3{
+  color: white;
+}
+
+.faculty-observatorio-familia-infacia-adolecencia .redes-sociales .icono {
+  background-color: transparent;
+  margin: 4px 0px 4px 12px;
+
+    &:hover{
+        background-color: $azul-carbon;
+      }
+  }
+
+.faculty-observatorio-familia-infacia-adolecencia {
+  .modulo-relacionado {
+    border: none;
+    text-align: left;
+    margin: 15px 5px;
+
+    .info .tags {
+    justify-content: left;
+      }
+
+   .info {
+    padding: 15px 0;
+    }
+  }
+}

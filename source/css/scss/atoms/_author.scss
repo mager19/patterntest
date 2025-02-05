@@ -1,0 +1,32 @@
+.autor{
+  font-weight: 700;
+  margin-top: 0;
+  strong{
+    font-weight: 900;
+    color: $azul-cienaga;
+  }
+  a{
+    display: inline;
+    color: $azul-carbon;
+    line-height: 22px;
+    border-bottom: 1.5px solid $verde-lima-700;
+    transition: $transition-color;
+    &:hover{
+      color: $verde-lima-700;
+      text-decoration: none;
+    }
+  }
+  p, a {
+      &:after {
+      content: ',';
+      display: inline-flex;
+      margin: 0 4px 0 1px;
+      }
+     &:last-child:after {
+        display: none;
+      }
+    }
+}
+
+
+

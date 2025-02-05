@@ -1,0 +1,31 @@
+<div class="faculty-color faculty-derecho-constitucional"> 
+  {{> organisms-header-blogs(nombre:"Departamento de Derecho Constitucional ", facultad:"Derecho") }}
+  
+
+  <div class="centrar overflow">
+    <div class="columna08 contenido">
+      <h2 class="h1">Archivo: Ejemplo</h2>
+      <div class="lista-noticias">
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+        {{> molecules-news-module }}
+      </div>
+      {{> molecules-pagination}}
+    </div>
+
+    <aside class="columna04 aside">
+      {{> molecules-text-link-widget }}
+      {{> molecules-menu-widget }}
+      {{> molecules-tag-cloud-widget }}
+      {{> molecules-calendar-wp-widget }}
+    </aside>
+  </div>
+</div>
+
+{{> organisms-footer-blogs }}

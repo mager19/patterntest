@@ -1,0 +1,153 @@
+.calendario-box-slider{
+    position: absolute;
+    width: 350px;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+    
+
+      @media (max-width:930px) and (min-width:$ipad) {
+        width: 300px;
+        right: 10%;
+      }
+
+      @media (max-width:$ipad) and (min-width:$minimo) {
+       position: relative;
+       width: 100%;
+       right: 0;
+      }
+    
+}
+    .calendar-slider{
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10% 15px 15px 15px;
+      border-radius: 0 0 10px 10px;
+      margin-bottom: 10px;
+      z-index: 1;
+      margin-right: 2%;
+      width: 100%;
+      @media (max-width:$ipad) and (min-width:$minimo) {
+        padding: 15px 15px 0;
+      }
+
+      .calendar-date{
+        text-align: center;
+        text-transform: capitalize;
+      }
+           
+      h4  {
+            margin-bottom: 5px;
+            text-align: center;
+          }
+
+      table{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border-spacing: 5px;
+        thead{
+          tr{
+            height: 24px;
+
+            &:after{
+              border-bottom: $solid-border;
+              border-top: $solid-border;
+              content: '';
+              height: 23px;
+              position: absolute;
+              width: 100%;
+              left: 0;
+            }
+
+            &:after{
+              top: 6px;
+            }
+          }
+        }
+        th{
+          text-align:center;
+          width: 14.28%; /* Is the proportion for each day, obtained from; 100 / 7 */
+
+        }
+        tbody{
+          tr{
+            height: 30px;}
+
+          td{
+            height: 25px;
+            width: 25px;
+            text-align: center;
+            transition: $transition-background;
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+            top: 0;
+            padding: 2px;
+            
+            &:after{
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 3px;
+                left: 5px;
+                right: 0;
+                margin: 0 auto;
+                display: block;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px; 
+            }
+            &.hoy{
+              color: white;
+              a{
+                &:after{
+                  background-color: $verde-lima-700;
+                  color: white;
+                }
+                &:hover{
+                  &:after{
+                    background-color: $azul-carbon;
+                  }
+                }
+              }
+              &:after{
+                background-color: $verde-lima-700;
+                top: 1px;
+                right: 4px;
+
+              }
+            }
+            a{
+              position: absolute;
+              top: 1px;
+              padding: 5px;
+              z-index: 2;
+              width: 100%;
+              &:after{
+                content: '';
+                position: relative;
+                z-index: -1;
+                top: 0px;
+                margin: -25px auto;
+                display: block;
+                border-radius: 50%;
+                background-color: $gris-hierro;
+                width: 30px;
+                height: 30px;
+              }
+              
+              &:hover{
+                color: white;
+                &:after{
+                  background-color: $azul-carbon;
+                }
+              }
+            }
+          }
+        }
+      }
+      .modulo-busqueda-fecha{
+        margin-bottom: 0;
+      }
+  }

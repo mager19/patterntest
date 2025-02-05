@@ -1,0 +1,55 @@
+<div class="modulo-acordeon filtro">
+  <div role="tablist" aria-multiselectable="true" class="filter-tablist">
+    <div class="fondo-transparente"></div>
+      <div class="caja-encima">
+        <div>
+          <label class="wdm_label"></label>
+          <input type="hidden" name="sel_fac_field" id="sel_fac_field">
+          <div class="wdm_ul" id="wpsolr_section_facets">
+
+        <div class="panel">
+              <div class="titulo-acordeon"><h4>Filtro de búsqueda</h4>
+               <button class="select_opt boton-gris margin-s"><span><svg class="icon color-icon icon-eliminar-01"><use xlink:href="../../images/iconos.svg#icon-eliminar-01"></use></svg></span>Limpiar búsqueda</button>
+             </div>
+           </div>
+         <!-- 00-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"busqueda-general", text:"Buscador")}}
+              </div>
+              <div id="busqueda-general" class="info collapse in cajon-busqueda-db" role="tabpanel" aria-labelledby="titulo-uno">
+                  {{> atoms-search-form(tit-search-form:"Título, problema o palabra clave")}}
+              </div>
+            </div>
+          <!-- /00-->
+            <!-- 01 Materia-->
+            <div class="panel">
+              <div role="tab" id="titulo-uno">
+                {{> atoms-accordion-filter-button(target:"materia", text:"Referencia del proceso")}}
+              </div>
+              <div id="materia" class="info collapse in" role="tabpanel" aria-labelledby="titulo-uno">
+                <form>
+                  <input type="checkbox" name="constitucionalidad" value="constitucionalidad"><label>Constitucionalidad</label>
+                  <input type="checkbox" name="tutela" value="tutela"><label>Tutela</label>
+                  <input type="checkbox" name="conflicto-jurisdiccion" value="conflicto-jurisdiccion"><label>Conflicto de jurisdicción</label>
+                  <input type="checkbox" name="ley-aprobatoria-tratado" value="ley-aprobatoria-tratado"><label>Ley aprobatoria de tratado</label>
+                  </form>
+              </div>
+            </div>
+            <!-- /01-->
+          <!-- 02 Fecha-->
+            <div class="panel">
+              <div role="tab" id="titulo-dos">
+                {{> atoms-accordion-filter-button(target:"date", text:"Fecha")}}
+              </div>
+
+              <div id="date" class="info collapse in" role="tabpanel" aria-labelledby="titulo-dos">
+                {{> atoms-date-filter-select}}
+              </div>
+            </div>
+            <!-- /02-->
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,188 @@
+.idioma {
+  background-color : $azul-carbon;
+  color            : white;
+  display          : inline-block;
+  float            : left;
+  font-size        : rem(14);
+  height           : 35px;
+  margin-right     : 26px;
+  width            : 34px;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 880px) and (min-width:$ipad){
+       margin-right     : 17px;
+    } 
+
+  &:before {
+    border-bottom : 36px inset transparent;
+    border-right  : 23px solid $azul-carbon;
+    content       : '';
+    left          : -22px;
+    position      : absolute;
+    top           : 0;
+
+    @media (max-width: 880px) and (min-width:$ipad){
+       border-right  : 15px solid $azul-carbon;
+       left          : -15px;
+    } 
+  }
+
+  &:after {
+    border-left : 23px solid $azul-carbon;
+    border-top  : 35px inset transparent;
+    content     : '';
+    left        : 34px;
+    position    : absolute;
+    top         : 0;
+
+    @media (max-width: 880px) and (min-width:$ipad){
+      border-left : 15px solid $azul-carbon;
+    } 
+  }
+
+  a {
+    display: block!important;
+    height: 100%;
+    padding: 7px 0!important;
+  }
+
+  @media (max-width:$ipad) and (min-width:$minimo){
+    width: 110px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: inherit;
+    margin: 20px 0 20px 4%;
+    border: none;
+    background-color: $azul-cienaga;
+
+    &:before,
+    &:after {
+      height: 50px;
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  /* Estilos para dropdown (select normal) */
+  label.dropdown{
+    margin: 0;
+    height: 35px;
+    display: none;
+    &:before{
+      display: none;
+    }
+    &:after{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #78b92f;
+    height: 0;
+    right: -2px;
+    top: 15px;
+    }
+    select{
+      width: 114px;
+      height: 35px;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      color: white;
+      font-size: rem(16);
+      font-weight: 600;
+      padding: 0 5px 0 12px;
+      margin-left: -12px;
+      position: absolute;
+      z-index: 7;
+      -moz-osx-font-smoothing : grayscale;
+      -webkit-font-smoothing  : antialiased;
+    }
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      display: block;
+    }
+  }
+
+  & > a.idioma-desktop{
+    @media (max-width:$ipad) and (min-width:$minimo) {
+      display: none !important;
+    }
+  }
+}
+
+.caret {
+  border-left    : 4px solid transparent;
+  border-right   : 4px solid transparent;
+  border-top     : 4px dashed #98C441;
+  display        : inline-block;
+  height         : 0;
+  margin-left    : 2px;
+  vertical-align : middle;
+  width          : 0;
+}
+/* Estilos para dropdown-menu (bootstrap) */
+.dropdown-menu {
+  background-clip  : padding-box;
+  background-color : white;
+  border-bottom    : 3px solid $azul-carbon;
+  box-shadow       : 0 6px 12px rgba(0, 0, 0, 0.4);
+  display          : none!important;
+  float            : left;
+  left             : 0;
+  list-style       : none;
+  margin           : 0;
+  min-width        : 80px;
+  padding          : 0;
+  position         :absolute;
+  text-align       : left;
+  top              : 100%;
+  z-index          : 1;
+
+  li {
+    &:last-child a {
+      border:none;
+    }
+
+    a {
+      border-bottom : thin dotted $gris-hierro !important;
+      color         : $gris-mina !important;
+      font-size     : inherit;
+      padding       : 12px !important;
+      position      : relative;
+
+      &:hover,
+      &:focus {
+        background-color : white;
+        color            : $verde-lima !important;
+      }
+    }
+  }
+
+}
+
+.idioma-buscador {
+  display  : block;
+  float    : right;
+  position : absolute;
+  right    : 0;
+  top      : 0;
+  background: white;
+  z-index: 2;
+
+  @media (max-width:$ipad) and (min-width:$minimo) {
+    position: relative;
+    float: none;
+    display: block;
+    background: none;
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.open > .dropdown-menu {
+  display: block!important;
+}
+
+.open > a {
+  outline: 0;
+}

@@ -1,0 +1,60 @@
+.default-color{
+	color: $default;
+	font-size: 2rem;
+	padding: 0.4rem;
+
+}
+
+.subscription-texto {
+	color: $default;
+	font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+    order: 1;
+}
+
+.botones-subscription{
+
+	padding: 0.5rem 0;
+}
+
+/*Estilos plugin newsletter*/
+
+.wysija-paragraph{
+    display: grid;
+    margin: 5px 0;
+}
+
+.formError{
+	order: 3;
+    position: relative !important;
+    bottom: 0px !important;
+}
+
+.formErrorContent{
+	color: rgb(229, 65, 68) !important;
+    background: rgba(229, 65, 68, 0.3) !important;
+    font-weight: 600 !important;
+    font-family: Lato, sans-serif !important;
+    border-color: rgb(255, 179, 180) !important;
+    padding: .75rem;
+    margin: 0.5rem 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.updated{
+    color: #ca9a04 !important;
+    background-color: rgba(255,212,78,.3) !important;
+    border-color: #ffeaaa !important;
+    font-weight: 600 !important;
+    font-family: Lato,sans-serif !important;
+    padding: .75rem;
+    margin: .5rem 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.wysija-input{
+    order: 2;
+}

@@ -1,0 +1,93 @@
+.grilla-portal{
+  .square-news{
+    max-width: 100%;
+    margin: 0 10px 2rem 5px;
+  }
+}
+
+.square-news{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto 2rem;
+  padding: 0 10px;
+
+
+  .news-button {
+      padding: 5px 10px;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+
+    .boton-linea{
+      background: $sigueme;
+      font-size: 1rem;
+      padding: 5px;
+      color: white;
+
+       &:hover{
+        background: $verde-lima-700;
+        border-color: white;
+        color: white;;
+       }
+       
+
+    }
+  }
+
+
+  .contenido-square-news{
+
+    padding: 10px;
+    margin: -4rem 1rem 0 1rem;
+    background: $blanco-humo;
+
+    .title{
+      h4{
+        margin: 0;
+      }
+    }
+
+
+  }
+  .fecha{
+    left: 0;
+    top: 0;
+    color: white;
+    background: $sigueme;
+    padding: 10px;
+    position: absolute; 
+    margin: 0;
+
+  }
+
+  .hover-news-image{
+    -ms-flex-align: center;
+    background: white;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    top:0;
+    left: 0;
+    position: relative;    
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: fit-content;
+
+    img{
+      
+      height: auto;
+      max-width: max-content;
+      width: 100%;
+
+
+    }
+  }
+
+}

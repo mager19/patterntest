@@ -1,0 +1,175 @@
+.event-list-module{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  height:auto;
+  background-color: $blanco-humo;
+  margin: 40px 10px !important;
+  text-align: left;
+  position: relative;
+   @media (max-width:$movil-amplio) and (min-width:$minimo){
+      display: block;
+    }
+
+  .imagen-cuadrada-event{
+    overflow:hidden;
+    padding-left: 5px;
+    img{
+    margin: 13px 0px 10px 0px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    }
+  }
+
+  .fecha-cinta{
+    margin-top: -30px;
+  }
+
+  .fecha-evento{
+    text-align: center;
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    margin-left: -8px;
+    top: 1rem;
+    .fondo{
+      display: flex;
+      flex-direction: row;
+      // El background-color está deifnido desde el archivo mixin de facultad
+      margin-top: -45px;
+      align-items: center;
+      padding-right: 0.7rem;
+      &:before {
+        border-bottom: 8px inset transparent;
+        border-right: 8px solid #141C1F;
+        content: '';
+        left: 0px;
+        position: absolute;
+        top: 29px;
+        top: -16px;
+      }
+
+     
+      span:first-of-type{
+        font-size: rem(16);
+        line-height: rem(12);
+        font-weight: 700;
+        padding: 5px;
+        color: white;
+            line-height: 1.2;
+      }
+      span:nth-of-type(2){
+        font-size: rem(16);
+        line-height: rem(12);
+        padding: 5px 0;
+        color: white;
+        line-height: 1.2;
+        padding-right: 7px;
+        font-weight: 700;
+        &:before{
+          content: '/ ';
+        }
+      }
+    }
+  }
+
+  .content-evento{
+    display: flex;
+    padding-left: 12px;
+  }
+
+  .info{
+    width: 100%;
+    padding: 5px 10px 15px 10px;
+    p{
+      margin: 0 0 5px;
+      font-style: italic;
+      line-height: rem(21);
+      font-size: rem(17);
+
+      strong{
+      font-weight: 900;
+      }
+    }
+    .h5 {
+      color: inherit;
+      margin-top: 0;
+      margin-bottom: 1px;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    h6, .h6 {
+      display: inline-block;
+      text-transform: uppercase;
+      // El color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+      a{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.event-card{
+  max-width: 100%;
+  background-color: white;
+  padding: .5rem 0 0;
+  width: rem(379px);
+  position: relative;
+  .h6{
+    max-width: 100%;
+    a{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .h5{
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      /* autoprefixer: on */
+  }
+  p.location{
+    font-size: 1.0625rem;
+    line-height: 1.3125rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+  }
+
+  .autor{
+    font-weight: 500;
+    }
+
+  .faculty-color{
+    background: $universidad;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    @each $faculty in $faculties {
+      &.#{nth($faculty, 1)} {
+        background-color: nth($faculty, 2);
+      }
+    }
+  }  
+}
+
+
+.event-list-module{
+  .fecha-cinta{
+    margin-top: 15px;
+  }
+}

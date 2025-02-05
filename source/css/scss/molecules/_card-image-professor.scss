@@ -1,0 +1,57 @@
+.card-image-professor {
+    background-color: $azul-carbon-700;
+    padding: 10px 10px 2rem 10px;
+    border-radius: 10px;
+    margin: 0 auto 2rem;
+    max-width: 500px;
+    color: white;
+
+    .round {
+        margin: 1rem;
+    }
+
+    article {
+        border-bottom: $dotted-border;
+        padding: 10px 5px;
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.3rem;
+            margin-left: 30px;
+
+            span {
+                color: $verde-lima-400;
+                margin-right: 10px;
+                margin-left: -30px;
+
+            }
+        }
+
+        a {
+            color: $verde-lima-400;
+            &:hover{
+                text-decoration: underline;
+            }
+
+        }
+
+        ul {
+            padding: 5px;
+        }
+
+        .redes-sociales {
+            margin: 0 0 20px;
+
+            a {
+                color: $azul-carbon-900;
+                background-color: $verde-lima-400;
+
+                &:hover{
+                    background-color: $azul-carbon-200;
+                }
+
+            }
+        }
+    }
+}

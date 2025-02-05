@@ -1,0 +1,98 @@
+.slider-eventos{
+float: left;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  @media (max-width:$maximo) and (min-width:915px) {
+    width: 35%;
+    margin-right: 3%;
+  }
+  @media (max-width:920px) and (min-width:$ipad) {
+    width: 310px;
+    margin-right: 3%;
+  }
+
+  @media (max-width:$ipad) and (min-width:600px) {
+    width: 250px;
+    margin-right: 3%;
+  }
+
+  @media (max-width:600px) and (min-width:$minimo) {
+    width: 100%;
+    float: none;
+  }
+
+}
+  .modulo-centrado {
+	margin: 15px auto;
+}
+
+.modulo-evento-image{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 5px;
+  position: relative;
+
+  .fecha-evento{
+    margin: 0;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  	.fondo{
+      width: 60px;
+    	height: 60px;
+      min-width: 100%;
+      // El background-color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+      span:first-of-type{
+       	font-size: rem(25);
+      	line-height: rem(14);
+      	font-weight: 900;
+        padding-top: 15px;
+      	width: 100%;
+        display: block;
+      }
+      span:nth-child-of-type(2){
+      	font-size: rem(12);
+      	font-weight: 600;
+      	line-height: rem(.3);
+      }
+    }
+    hr{
+    	border-top: thin solid black;
+      width: 60%;
+      margin: 15px auto;
+    }
+  }
+
+  .info{
+    width: 100%;
+    padding: 0 15px 15px 15px;
+    p{
+    	margin: 0;
+    	font-style: italic;
+    	line-height: rem(21);
+      font-size: rem(17);
+    }
+    .h5 {
+      color: inherit;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    h6, .h6 {
+      display: inline-block;
+      // El color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+      a{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}

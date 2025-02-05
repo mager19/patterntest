@@ -1,0 +1,38 @@
+.lista-eventos{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  article{
+    width: 50%;
+    &:nth-of-type(odd){
+      padding-right: 1%;
+    }
+
+    &:nth-of-type(even){
+      padding-left: 1%;
+    }
+  /*  margin: 0 3% 0 0;*/
+    @media (max-width:920px) and (min-width:$minimo){
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+}
+.texto {
+
+  .lista-eventos {
+
+    article {
+      width: 100%;
+      margin: 20px 0;
+      a {
+        color: #222;
+
+        &:hover {
+          background: none;
+          color: $azul-carbon;
+        }
+      }
+    }
+  }
+}

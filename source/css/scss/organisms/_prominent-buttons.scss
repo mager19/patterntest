@@ -1,0 +1,22 @@
+.botones-destacados{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.5rem 0;
+  grid-gap: 1rem;
+  @media (max-width:$movil-amplio02) and (min-width:$minimo) {
+    overflow: hidden;
+  }
+  @media (max-width: $ipad){
+    grid-template-columns: 1fr;
+  }
+}
+
+.botones-destacados-iguales {
+  margin: 0 auto;
+  float: none;
+  display: block;
+  @media (max-width:$movil-amplio02) and (min-width:$minimo) {
+    overflow: hidden;
+  }
+}
+

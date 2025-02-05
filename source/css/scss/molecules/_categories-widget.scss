@@ -1,0 +1,22 @@
+.widget_categories {
+  @include widget;
+  h4, .h4{
+    display: inline-block;
+  }
+  .info{
+    border-bottom: thin dotted $gris-hierro;
+    border-top: thin dotted $gris-hierro;
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+    li{
+      color: $gris-acero;
+      font-size: rem(16);
+      display: block;
+      line-height: rem(30);
+      a:hover{
+        color: $verde-lima;
+        transition: $transition-color;
+      }
+    }
+  }
+}

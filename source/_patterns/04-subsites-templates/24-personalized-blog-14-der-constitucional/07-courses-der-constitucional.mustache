@@ -1,0 +1,16 @@
+<div class="faculty-color faculty-derecho-constitucional"> 
+  {{> organisms-header-blogs(nombre:"Departamento de Derecho Constitucional ", facultad:"Derecho") }}
+  
+  <div class="centrar overflow">
+    <main>
+      <div class="columna12 contenido pagina-completa">
+      <!--Estas son las categorías, que pueden ser creadas desde Wordpress-->
+        <h2 class="h1">Categoría (Cátedras, Comunidades, Intensificaciones, Líneas de investigación, Observatorios) </h2>
+          {{> atoms-lead(lead:"Integer at tellus nisl. Suspendisse nulla metus, fermentum a urna laoreet, elementum semper tellus. ") }}
+        {{> organisms-hover-news-grid}}
+        {{> molecules-pagination}}
+      </div>
+    </main>
+  </div>
+</div>
+{{> organisms-footer-blogs }}

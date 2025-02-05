@@ -1,0 +1,83 @@
+<section class="secondary-header-menu">
+  <div class="centrar">
+    {{# logo }}
+      {{> atoms-brand(logo:"{{logo}}") }}
+    {{/ logo }}
+
+    {{# nombre }}
+      {{> atoms-brand(nombre:"{{{nombre}}}", slogan:"{{slogan}}") }}
+    {{/ nombre }}
+
+
+    <div class="info-secondary-header">
+      {{> molecules-social-network(networks_title:" ")}}
+      <div class="texto-lateral">
+        <a href="#">Enlace ejemplo</a><br>
+
+        <span>11 de Noviembre del 2018</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-secundario">
+    <div class="centrar">
+      <a href="#" class="show-secondary-menu">
+        Menú
+        <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="main-link">
+                Nosotros
+                <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+              </div>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Historia</a></li>
+              <li><a href="#">Profesores</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <div class="main-link">
+                Programas
+                <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+              </div>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="#">Finanzas Internacionales</a></li>
+              <li>
+                <a href="#">
+                  <div class="main-link">
+                    Relaciones Interpersonales
+                    <span><svg class="icon icon-abajo"><use xlink:href="../../images/iconos.svg#icon-abajo"></use></svg></span>
+                  </div>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="#">Gobierno y política</a></li>
+                  <li class="menu-item"><a href="#">Finanzas y economía</a></li>
+                  <li class="menu-item"><a href="#">Cultura</a></li>
+                  <li class="menu-item"><a href="#">Sociedad</a></li>
+                  <li class="menu-item"><a href="#">Juventud y deportes</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Gobierno en línea</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Etiquetas</a></li>
+          <li><a href="#">Categorías</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+<div id="responsive-secondary-menu">
+  <div class="idioma-buscador">
+    {{> molecules-language-picker }}
+    {{> atoms-search-form-header }}
+  </div>
+</div>

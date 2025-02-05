@@ -1,0 +1,79 @@
+.widget-cita{
+  @include widget;
+  text-align: center;
+  overflow: hidden;
+  @media (max-width:$ipad) and (min-width:$movil-amplio){
+    text-align: left;
+  }
+  article{
+    @media (max-width:$ipad) and (min-width:$movil-amplio){
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .info{
+
+        width: 73%;
+        width: calc(100% - 190px);
+      }
+    }
+    img{
+      @media (max-width:$ipad) and (min-width:$movil-amplio){
+        float: left;
+        display: block;
+        margin: 15px;
+      }
+      width: 140px;
+      height: 140px;
+      border-radius:140px;
+      margin: 15px auto 0 auto;
+    }
+    .info{
+      p{
+        &:before,
+        &:after{
+          content: '"';
+        }
+        a{
+          text-decoration: underline;
+          font-weight: bold;
+          display: inline-block;
+          transition: $transition-color;
+          &:hover{
+            color: $verde-lima;
+          }
+        }
+      }
+      em{
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+.columna03-grande{
+  .widget-cita{
+    @media (max-width:999px) and (min-width:$movil-amplio){
+      text-align: left;
+    }
+    article{
+      @media (max-width:999px) and (min-width:$movil-amplio){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .info{
+
+          width: 73%;
+          width: calc(100% - 190px);
+        }
+      }
+      img{
+        @media (max-width:999px) and (min-width:$movil-amplio){
+          float: left;
+          display: block;
+          margin: 15px;
+        }
+      }
+    }
+  }
+}

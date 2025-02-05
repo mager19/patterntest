@@ -1,0 +1,31 @@
+{{> organisms-header }}
+
+<div class="faculty-defecto faculty-unidad-de-genero">
+
+  {{> organisms-secondary-header-menu(faculty-home:"Unidad de género")}}
+  {{> atoms-header-image(title-home:"Banco de referentes en Estudios Feministas y de Género")}}
+
+  <div class="fondo-completo">
+    <div class="centrar">
+      <aside class="columna04 aside filtro-faculty"> 
+        
+      {{> organisms-organisms-accordion-repository-referents }}
+
+     </aside>
+      <div class="columna08 contenido filtro-faculty">
+        {{> molecules-profile-card(class-faculty:"administracion-de-empresas",name-faculty:"Facultad de Administración de Empresas") }}
+        {{> molecules-profile-card(class-faculty:"ciencias-sociales-y-humanas",name-faculty:"Facultad de Ciencias Sociales y Humanas", class-faculty2:"comunicacion-social-periodismo",name-faculty2:"Facultad de Comunicación Social – Periodismo") }}
+        {{> molecules-profile-card(class-faculty:"contaduria-publica",name-faculty:"Facultad de Contaduría Pública") }}
+        {{> molecules-profile-card(class-faculty:"economia",name-faculty:"Facultad de Economía") }}
+        {{> molecules-profile-card(class-faculty:"ciencias-sociales-y-humanas",name-faculty:"Facultad de Ciencias Sociales y Humanas") }}
+        {{> molecules-profile-card(class-faculty:"derecho",name-faculty:"Facultad de Derecho") }}
+        {{> molecules-profile-card(class-faculty:"derecho",name-faculty:"Facultad de Derecho") }}
+        {{> molecules-profile-card(class-faculty:"administracion-de-empresas",name-faculty:"Facultad de Administración de Empresas") }}
+        {{> molecules-profile-card(class-faculty:"comunicacion-social-periodismo",name-faculty:"Facultad de Comunicación Social – Periodismo") }}
+        {{> molecules-profile-card(class-faculty:"derecho",name-faculty:"Facultad de Derecho") }}
+        
+        {{> molecules-pagination}}
+      </div>       
+    </div>
+  </div>
+{{> organisms-footer }}

@@ -1,0 +1,177 @@
+/***** CLASES UNIVERSIDAD *****/
+.universidad-200 {
+  background-color: $universidad-200;
+}
+.universidad-800 {
+  background-color: $universidad-800;
+}
+.universidad-900 {
+  background-color: $universidad-900;
+}
+
+/***** CLASES DORADO *****/
+.dorado-100 {
+  background-color: $dorado-100;
+}
+.dorado-300 {
+  background-color: $dorado-300;
+}
+.dorado-600 {
+  background-color: $dorado-600;
+}
+.dorado-900 {
+  background-color: $dorado-900;
+}
+
+
+
+/***** CLASES VERDE LIMA *****/
+.verde-lima-100 {
+  background-color: $verde-lima-100;
+}
+.verde-lima-400 {
+  background-color: $verde-lima-400;
+}
+
+.verde-lima-500 {
+  background-color: $verde-lima-500;
+}
+
+.verde-lima-700 {
+  background-color: $verde-lima-700;
+}
+
+.verde-lima-900 {
+  background-color: $verde-lima-900;
+}
+
+/***** CLASES AZUL CARBÓN *****/
+.azul-carbon-200 {
+  background-color: $azul-carbon-200;
+}
+.azul-carbon-500 {
+  background-color: $azul-carbon-500;
+}
+.azul-carbon-700 {
+  background-color: $azul-carbon-700;
+}
+.azul-carbon-900 {
+  background-color: $azul-carbon-900;
+}
+
+/***** CLASES PARA ESCALA DE GRISES *****/
+.blanco {
+  background-color: $blanco;
+}
+.negro {
+  background-color: $negro;
+}
+.gris-50 {
+  background-color: $gris-50;
+}
+.gris-200 {
+  background-color: $gris-200;
+}
+.gris-600 {
+  background-color: $gris-600;
+}
+.gris-700 {
+  background-color: $gris-700;
+}
+.gris-800 {
+  background-color: $gris-800;
+}
+
+/***** SEMÁNTICOS *****/
+
+.exito-100{
+  background-color: $exito-100;
+}
+.exito-700{
+  background-color:$exito-700;
+}
+.error-100{
+  background-color:$error-100;
+}
+.error-700{
+  background-color:$error-700;
+}
+.advertencia-100{
+  background-color:$advertencia-100;
+}
+.advertencia-700{
+  background-color:$advertencia-700;
+}
+.informacion-100{
+  background-color:$informacion-100;
+}
+.informacion-700{
+  background-color:$informacion-700;
+}
+
+
+
+/***** CLASES PARA FACULTADES *****/
+.administracion-bg {
+  background-color: $administracion;
+}
+.comunicacion-bg {
+  background-color: $comunicacion;
+}
+.contaduria-bg {
+  background-color: $contaduria;
+}
+.derecho-bg {
+  background-color: $derecho;
+}
+.economia-bg {
+  background-color: $economia;
+}
+.educacion-bg {
+  background-color: $educacion;
+}
+.finanzas-bg {
+  background-color: $finanzas;
+}
+.hoteleria-bg {
+  background-color: $hoteleria;
+}
+.patrimonio-bg {
+  background-color: $patrimonio;
+}
+.sociales-bg {
+  background-color: $sociales;
+}
+
+/***** CLASES PARA SITIOS *****/
+.biblioteca-bg {
+  background-color: $biblioteca;
+}
+.bienestar-bg {
+  background-color: $bienestar;
+}
+.centro-idiomas-bg {
+  background-color: $centro-idiomas;
+}
+.egresados-bg {
+  background-color: $egresados;
+}
+.sigueme-bg {
+  background-color: $sigueme;
+}
+.unidad-genero-bg {
+  background-color: $unidad-genero;
+}
+
+/***** COLORES PARA BLOGS *****/
+.conexion-bg {
+  background-color: $conexion;
+}
+.comunidad-virtual-bg {
+  background-color: $comunidad-virtual;
+}
+.economia-abc {
+  background-color: $economia-abc;
+}
+
+@import 'color-helper-old';
