@@ -8,6 +8,7 @@ body {
   /*Solo para la home se necesita width y height 100%*/
   width: 100%;
   height: 100%;
+  position: inherit !important;
 
   &.home {
     height: 100%;
@@ -700,21 +701,4 @@ p {
   main.contenido{
     margin: 0;
   }
-}
-
-// asidetemplate 3
-.aside__template3 {
-	opacity: 0.98;
-	position: fixed;
-	top: 17%;
-	z-index: 800;
-
-	.btn-icon-round span:nth-of-type(1) {
-		background-color: #25cc64 !important;
-	}
-}
-
-.informacion-facultad {
-	position: relative;
-	z-index: 900;
 }

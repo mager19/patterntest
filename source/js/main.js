@@ -27,65 +27,41 @@ $(document).ready(function () {
 
   const stickyMenu = document.getElementById("uexternado__institutional__stickyMenu");
 
-  function throttle(func) {
-    var lastCall = 0;
-    var scheduled = false;
+  if (stickyMenu) {
+    function throttle(func) {
+      var lastCall = 0;
+      var scheduled = false;
 
-    return function () {
-      var now = Date.now(); // Cambié a Date.now() porque es más compatible con ES5
-      var args = arguments; // Capturamos los argumentos para poder pasarlos más tarde
+      return function () {
+        var now = Date.now();
+        var args = arguments;
 
-      if (scheduled) return;
+        if (scheduled) return;
 
-      if (now - lastCall >= 300) {
-        lastCall = now;
-        func.apply(this, args); // Usamos apply para pasar el contexto y los argumentos
-      } else {
-        scheduled = true;
-        requestAnimationFrame(function () {
-          lastCall = Date.now();
-          scheduled = false;
-          func.apply(this, args); // Usamos apply aquí también para el contexto y los argumentos
-        });
-      }
-    };
-  }
-
-  function checkSticky() {
-    if (window.pageYOffset > 60) {
-      stickyMenu.classList.add("sticky__menu__institutional");
-    } else {
-      stickyMenu.classList.remove("sticky__menu__institutional");
+        if (now - lastCall >= 300) {
+          lastCall = now;
+          func.apply(this, args);
+        } else {
+          scheduled = true;
+          requestAnimationFrame(function () {
+            lastCall = Date.now();
+            scheduled = false;
+            func.apply(this, args);
+          });
+        }
+      };
     }
-  }
 
-  window.addEventListener("scroll", throttle(checkSticky), {
-    passive: true
-  });
-
-  // aside template 3
-  var elementoFijo = document.querySelector('.aside__template3');
-
-  if (elementoFijo) {
-    var ajustarPosicion = function () {
-      var scrollPos = window.scrollY + window.innerHeight;
-      var documentHeight = document.documentElement.scrollHeight;
-      var distanciaAlFinal = documentHeight - scrollPos;
-
-      if (distanciaAlFinal <= 800) {
-        // Si estamos a 800px o menos del final
-        elementoFijo.style.position = 'absolute';
-        elementoFijo.style.bottom = '0'; // Queda 800px del final
-        elementoFijo.style.top = 'auto';
+    function checkSticky() {
+      if (window.pageYOffset > 60) {
+        stickyMenu.classList.add("sticky__menu__institutional");
       } else {
-        // Volver a posición fija si estamos lejos del final
-        elementoFijo.style.position = 'fixed';
-        elementoFijo.style.bottom = 'auto';
-        elementoFijo.style.top = '17%'; // Ajusta este valor según necesites
+        stickyMenu.classList.remove("sticky__menu__institutional");
       }
-    };
+    }
 
-    window.addEventListener('scroll', ajustarPosicion);
-    ajustarPosicion();
+    window.addEventListener("scroll", throttle(checkSticky), {
+      passive: true,
+    });
   }
 });

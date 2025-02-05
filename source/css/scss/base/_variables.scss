@@ -86,44 +86,25 @@ $semestral: #b6c6b1;
 /***** COLORES DE MARCAS *****/
 $whatsapp: #25cc64;
 
-@import 'variables-old';
+@import "variables-old";
 
-$faculties: defecto $verde-lima-700, universidad $universidad-800,
-  administracion-de-empresas $administracion, bienestar-universitario $bienestar,
-  biblioteca-v2 $biblioteca, biblioteca $biblioteca,
-  comunicacion-social-periodismo $comunicacion, contaduria-publica $contaduria,
-  derecho $derecho, economia $economia, economia-abc $economia-abc,
-  ciencias-de-la-educacion $educacion, oficina-de-egresados $egresados,
-  finanzas-gobierno-y-relaciones-internacionales $finanzas, cipe $finanzas,
-  egresados-figri $finanzas, figri-internacional $finanzas,
-  centro-de-estudios-de-posgrados $finanzas,
-  administracion-de-empresas-turisticas-y-hoteleras $hoteleria,
-  estudios-del-patrimonio-cultural $patrimonio, convenio-sigueme $sigueme,
-  departamento-de-matematicas $matematicas,
-  ciencias-sociales-y-humanas $sociales, la-universidad $universidad,
-  comunidad-virtual $comunidad-virtual, linae $sociales,
-  departamento-de-derecho-penal-y-criminologia $derecho,
-  empleabilidad-figri $finanzas, conexion-externado $conexion,
-  centro-de-espanol-para-extranjeros $finanzas,
-  escuela-de-relaciones-internacionales $finanzas,
-  departamento-de-derecho-economico $derecho,
-  centro-de-investigacion-en-filosofia-y-derecho $derecho, intranet $default,
-  esc-finanzas $esc-finanzas, esc-relaciones-in $esc-relaciones-in,
-  esc-gobierno $esc-gobierno, esc-arte $esc-arte, 135-uexternado $dorado,
-  amaranto-museo-virtual $amaranto,
-  observatorio-familia-infacia-adolecencia $derecho,
-  derecho-constitucional $derecho, egresados-faeth $hoteleria,
-  delfos-centro-analisis-datos $sigueme,
-  centro-idiomas-y-cultura $centro-idiomas, journey $journey,
-  museo-archivohistorico $amarillo-oro, plan-de-estudios-derecho $derecho,
-  unidad-de-genero $unidad-genero, cppe $egresados, revista-disg $derecho,
-  asociacion-henri-capitant $asociacion-henri-capitant,
-  departamento-de-derecho-del-transporte $derecho,
-  centro-de-espanol-para-extranjeros $extranjeros,
-  congreso-de-lenguas-minoritarias $lenguas;
+$faculties: defecto $verde-lima-700, universidad $universidad-800, administracion-de-empresas $administracion, bienestar-universitario $bienestar,
+	biblioteca-v2 $biblioteca, biblioteca $biblioteca, comunicacion-social-periodismo $comunicacion, contaduria-publica $contaduria, derecho $derecho,
+	economia $economia, economia-abc $economia-abc, ciencias-de-la-educacion $educacion, oficina-de-egresados $egresados,
+	finanzas-gobierno-y-relaciones-internacionales $finanzas, cipe $finanzas, egresados-figri $finanzas, figri-internacional $finanzas,
+	centro-de-estudios-de-posgrados $finanzas, administracion-de-empresas-turisticas-y-hoteleras $hoteleria, estudios-del-patrimonio-cultural $patrimonio,
+	convenio-sigueme $sigueme, departamento-de-matematicas $matematicas, ciencias-sociales-y-humanas $sociales, la-universidad $universidad,
+	comunidad-virtual $comunidad-virtual, linae $sociales, departamento-de-derecho-penal-y-criminologia $derecho, empleabilidad-figri $finanzas,
+	conexion-externado $conexion, centro-de-espanol-para-extranjeros $finanzas, escuela-de-relaciones-internacionales $finanzas,
+	departamento-de-derecho-economico $derecho, centro-de-investigacion-en-filosofia-y-derecho $derecho, intranet $default, esc-finanzas $esc-finanzas,
+	esc-relaciones-in $esc-relaciones-in, esc-gobierno $esc-gobierno, esc-arte $esc-arte, 135-uexternado $dorado, amaranto-museo-virtual $amaranto,
+	observatorio-familia-infacia-adolecencia $derecho, derecho-constitucional $derecho, egresados-faeth $hoteleria, delfos-centro-analisis-datos $sigueme,
+	centro-idiomas-y-cultura $centro-idiomas, journey $journey, museo-archivohistorico $amarillo-oro, plan-de-estudios-derecho $derecho,
+	unidad-de-genero $unidad-genero, cppe $egresados, revista-disg $derecho, asociacion-henri-capitant $asociacion-henri-capitant,
+	departamento-de-derecho-del-transporte $derecho, centro-de-espanol-para-extranjeros $extranjeros, congreso-de-lenguas-minoritarias $lenguas;
 
 /***** FUENTES *****/
-$lato: 'Lato', sans-serif;
+$lato: "Lato", sans-serif;
 $georgia: Georgia, serif;
 
 $em-base: 16px;
@@ -161,12 +142,108 @@ $movil-amplio02: 399px;
 $movil: 320px;
 $minimo: 50px;
 
-/**** creditos card colors ****/
-$creditos__card--1: #ce4830;
-$creditos__card--2:#b35b27;
-$creditos__card--3: #cb8d2d;
-$creditos__card--4:#7d8216;
-$creditos__card--5:#8696a1;
-$creditos__card--6:#606dd7;
-$creditos__card--7:#997b51;
-$creditos__card--8:#40571a;
+$faculties2: (
+	defecto: $verde-lima-700,
+	administracion-de-empresas: $administracion,
+	bienestar-universitario: $bienestar,
+	biblioteca-v2: $biblioteca,
+	biblioteca: $biblioteca,
+	comunicacion-social-periodismo: $comunicacion,
+	contaduria-publica: $contaduria,
+	derecho: $derecho,
+	economia: $economia,
+	economia-abc: $economia-abc,
+	ciencias-de-la-educacion: $educacion,
+	oficina-de-egresados: $egresados,
+	finanzas-gobierno-y-relaciones-internacionales: $finanzas,
+	cipe: $finanzas,
+	egresados-figri: $finanzas,
+	figri-internacional: $finanzas,
+	centro-de-estudios-de-posgrados: $finanzas,
+	administracion-de-empresas-turisticas-y-hoteleras: $hoteleria,
+	estudios-del-patrimonio-cultural: $patrimonio,
+	convenio-sigueme: $sigueme,
+	ciencias-sociales-y-humanas: $sociales,
+	la-universidad: $universidad,
+	comunidad-virtual: $comunidad-virtual,
+	linae: $sociales,
+	departamento-de-derecho-penal-y-criminologia: $derecho,
+	empleabilidad-figri: $finanzas,
+	conexion-externado: $conexion,
+	centro-de-espanol-para-extranjeros: $finanzas,
+	escuela-de-relaciones-internacionales: $finanzas,
+	departamento-de-derecho-economico: $derecho,
+	centro-de-investigacion-en-filosofia-y-derecho: $derecho,
+	intranet: $default,
+	esc-finanzas: $esc-finanzas,
+	esc-relaciones-in: $esc-relaciones-in,
+	esc-gobierno: $esc-gobierno,
+	esc-arte: $esc-arte,
+	// 135-uexternado: $dorado,todo: error con nombre de variable
+	amaranto-museo-virtual: $amaranto,
+	observatorio-familia-infacia-adolecencia: $derecho,
+	derecho-constitucional: $derecho,
+	egresados-faeth: $hoteleria,
+	delfos-centro-analisis-datos: $sigueme,
+	centro-idiomas-y-cultura: $centro-idiomas,
+	journey: $journey,
+	museo-archivohistorico: $amarillo-oro,
+	plan-de-estudios-derecho: $derecho,
+	unidad-de-genero: $unidad-genero,
+	cppe: $egresados,
+	revista-disg: $derecho,
+	asociacion-henri-capitant: $asociacion-henri-capitant,
+);
+
+$faculties2: (
+	defecto: $verde-lima-700,
+	administracion-de-empresas: $administracion,
+	bienestar-universitario: $bienestar,
+	biblioteca-v2: $biblioteca,
+	biblioteca: $biblioteca,
+	comunicacion-social-periodismo: $comunicacion,
+	contaduria-publica: $contaduria,
+	derecho: $derecho,
+	economia: $economia,
+	economia-abc: $economia-abc,
+	ciencias-de-la-educacion: $educacion,
+	oficina-de-egresados: $egresados,
+	finanzas-gobierno-y-relaciones-internacionales: $finanzas,
+	cipe: $finanzas,
+	egresados-figri: $finanzas,
+	figri-internacional: $finanzas,
+	centro-de-estudios-de-posgrados: $finanzas,
+	administracion-de-empresas-turisticas-y-hoteleras: $hoteleria,
+	estudios-del-patrimonio-cultural: $patrimonio,
+	convenio-sigueme: $sigueme,
+	ciencias-sociales-y-humanas: $sociales,
+	la-universidad: $universidad,
+	comunidad-virtual: $comunidad-virtual,
+	linae: $sociales,
+	departamento-de-derecho-penal-y-criminologia: $derecho,
+	empleabilidad-figri: $finanzas,
+	conexion-externado: $conexion,
+	centro-de-espanol-para-extranjeros: $finanzas,
+	escuela-de-relaciones-internacionales: $finanzas,
+	departamento-de-derecho-economico: $derecho,
+	centro-de-investigacion-en-filosofia-y-derecho: $derecho,
+	intranet: $default,
+	esc-finanzas: $esc-finanzas,
+	esc-relaciones-in: $esc-relaciones-in,
+	esc-gobierno: $esc-gobierno,
+	esc-arte: $esc-arte,
+	// 135-uexternado: $dorado,todo: error con nombre de variable
+	amaranto-museo-virtual: $amaranto,
+	observatorio-familia-infacia-adolecencia: $derecho,
+	derecho-constitucional: $derecho,
+	egresados-faeth: $hoteleria,
+	delfos-centro-analisis-datos: $sigueme,
+	centro-idiomas-y-cultura: $centro-idiomas,
+	journey: $journey,
+	museo-archivohistorico: $amarillo-oro,
+	plan-de-estudios-derecho: $derecho,
+	unidad-de-genero: $unidad-genero,
+	cppe: $egresados,
+	revista-disg: $derecho,
+	asociacion-henri-capitant: $asociacion-henri-capitant,
+);

@@ -1,15 +1,15 @@
-image: node:10.13.0
+image: node:20.18.1
 
 pipelines:
   branches:
-    staging:
+    update-mario:
       - step:
           name: Build and deploy
           deployment: Testing
           caches:
             - node
           script:
-            - npm ci && npx gulp patternlab:build
+            - npm ci && npm run pl:build
             - pipe: atlassian/firebase-deploy:0.2.1
               variables:
                 FIREBASE_TOKEN: $FIREBASE_TOKEN

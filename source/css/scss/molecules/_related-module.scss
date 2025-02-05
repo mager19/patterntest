@@ -1,189 +1,181 @@
 .modulo-relacionado {
-  max-width: 100%;
-  height: auto;
-  background-color: white;
-  margin: 15px 10px;
-  border: $solid-border;
-  text-align: center;
+	max-width: 100%;
+	height: auto;
+	background-color: white;
+	margin: 15px 10px;
+	border: $solid-border;
+	text-align: center;
 
-  img {
-    width: 100%;
-    margin: 0 0 5px 0;
+	img {
+		width: 100%;
+		margin: 0 0 5px 0;
+	}
 
-  }
+	.blog-list-2columns {
+		max-height: 13em;
+		object-fit: cover;
+		min-height: 10em;
+		object-fit: cover;
+	}
 
-  .blog-list-2columns {
-    max-height: 13em;
-    object-fit: cover;
-    min-height: 10em;
-    object-fit: cover;
-  }
+	.info {
+		padding: 10px 15px 15px;
+		.fecha {
+			float: right;
+			margin-top: 8px;
+			margin-bottom: 25px;
+			font-size: 11px;
+			padding: 10px 15px 15px;
+		}
+		p {
+			font-size: 1rem;
+		}
+		.link {
+			color: $verde-lima-700;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.boton,
+		.boton-gris {
+			font-size: 1rem;
+		}
 
+		.tags {
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			span {
+				svg {
+					color: $universidad-800;
+					width: rem(13);
+				}
+			}
+		}
 
-  .info {
-    padding: 10px 15px 15px;
-    .fecha{
-      float: right;
-      margin-top: 8px;
-      margin-bottom: 25px;
-      font-size: 11px;
-      padding: 10px 15px 15px;
-    }
-    p{
-      font-size: 1rem;
-    }
-    .link{
-      color: $verde-lima-700;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-    .boton, .boton-gris{
-      font-size: 1rem;
-    }
+		h6,
+		.h6 {
+			display: block;
+			text-align: left;
+			// El color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
+			a {
+				font-weight: 600;
+				color: $gris-600;
+				&:after {
+					display: none;
+					visibility: hidden;
+				}
+			}
+		}
 
-    .tags {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      span{
-        svg{
-          color: $universidad-800;
-          width: rem(13);
-        }
-      }
-    }
+		.h4 {
+			text-align: left;
+			font-size: 18px;
+			color: $negro;
+		}
 
-    h6, .h6 {
-      display: block;
-      text-align: left;
-      // El color está deifnido desde el archivo: _color-helper TODO: Validar esto cuando definamos lo del mixin de facultad
-      a {
-        font-weight: 600;
-        color: $gris-600;
-        &:after {
-          display: none;
-          visibility: hidden;
-        }
-      }
-    }
-    
-    .h4{
-      text-align: left;
-      font-size: 18px;
-      color: $negro;
-    }
+		p {
+			line-height: 1.6;
+			text-align: left;
+		}
 
-    p {
-      line-height: 1.6;
-      text-align: left;
-    }
+		.autor {
+			font-size: 0.9rem;
+			font-weight: 400;
+			margin: 0;
+		}
 
-    .autor {
-      font-size: .9rem;
-      font-weight: 400;
-      margin: 0;
-    }
+		.meta {
+			.fecha {
+				font-size: 0.7rem;
+			}
 
-    .meta {
-      .fecha {
-        font-size: .7rem;
-      }
+			.time-read {
+				justify-content: center;
+				font-size: 0.7rem;
+				font-weight: 400;
+				line-height: 0.8125rem;
+				color: $azul-carbon;
+			}
+		}
+	}
 
-      .time-read {
-        justify-content: center;
-        font-size: .7rem;
-        font-weight: 400;
-        line-height: .8125rem;
-        color: $azul-carbon;
-      }
-    }
-  }
+	.faculty-color {
+		height: 5px;
+		background-color: $universidad;
+		@each $key, $value in $faculties2 {
+			&.#{$key} {
+				background-color: $value;
+			}
+		}
+		width: 100%;
+	}
 
-  .faculty-color{
-    height: 5px;
-    background-color: $universidad;
-    @each $faculty in $faculties {
-      &.#{nth($faculty, 1)} {
-        background-color: nth($faculty, 2);
-      }
-    }
-    width: 100%;
-  }
+	.zoom-imagen-modulo {
+		overflow: hidden;
 
-  .zoom-imagen-modulo {
-    overflow: hidden;
+		img {
+			margin: 0;
+			transition: -webkit-transform 0.3s ease-in-out;
+			transition: transform 0.3s ease-in-out;
+			transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 
-    img {
-      margin: 0;
-      transition: -webkit-transform .3s ease-in-out;
-      transition: transform .3s ease-in-out;
-      transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+			&:hover {
+				-webkit-transform: scale(1.05);
+				-ms-transform: scale(1.05);
+				transform: scale(1.05);
+			}
+		}
+	}
 
+	&.logo {
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+	}
 
-      &:hover {
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-      }
-    }
-  }
+	// Used in exalumnos.uexternado.edu.co
+	.big-icon {
+		margin: 0 auto;
 
+		span {
+			width: 100%;
+			height: auto;
+			color: $verde-lima;
 
-  &.logo {
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-  }
-
-  // Used in exalumnos.uexternado.edu.co
-  .big-icon {
-    margin: 0 auto;
-
-    span {
-      width: 100%;
-      height: auto;
-      color: $verde-lima;
-
-      svg {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
+			svg {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
 }
 
 .mr-opcion2 {
-  border: none;
-  border-bottom: medium solid $gris-hierro;
-  background: #fbfbfb;
-  text-align: left;
+	border: none;
+	border-bottom: medium solid $gris-hierro;
+	background: #fbfbfb;
+	text-align: left;
 
+	.info {
+		.meta {
+			.time-read {
+				justify-content: left;
+			}
+		}
 
-  .info {
+		.tags {
+			justify-content: right;
+		}
 
-    .meta {
-
-      .time-read {
-        justify-content: left;
-      }
-
-    }
-
-    .tags{
-      justify-content: right;
-    }
-
-    .h6 {
-      font-size: .8125rem;
-    }
-
-  }
-
+		.h6 {
+			font-size: 0.8125rem;
+		}
+	}
 }
 
-.related-fecha{
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 16px 16px 20px;
+.related-fecha {
+	display: flex;
+	flex-direction: row-reverse;
+	padding: 16px 16px 20px;
 }

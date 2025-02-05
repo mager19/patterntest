@@ -1,68 +1,103 @@
 {
-  "paths": {
-    "source": {
-      "root": "./source/",
-      "patterns": "./source/_patterns/",
-      "data": "./source/_data/",
-      "meta": "./source/_meta/",
-      "annotations": "./source/_annotations/",
-      "styleguide": "./node_modules/styleguidekit-assets-default/dist/",
-      "patternlabFiles": "./node_modules/styleguidekit-mustache-default/views/",
-      "js": "./source/js",
-      "images": "./source/images",
-      "fonts": "./source/fonts",
-      "css": "./source/css/"
-    },
-    "public": {
-      "root": "./public/",
-      "patterns": "./public/patterns/",
-      "data": "./public/styleguide/data/",
-      "annotations": "./public/annotations/",
-      "styleguide": "./public/styleguide/",
-      "js": "./public/js",
-      "images": "./public/images",
-      "fonts": "./public/fonts",
-      "css": "./public/css"
-    },
-    "wordpress": "../wp-content/themes/externado_theme/js"
-  },
-  "styleGuideExcludes": [
-  ],
-  "defaultPattern": "viewall-atoms-all",
-  "defaultShowPatternInfo": false,
-  "cleanPublic" : true,
-  "patternExtension": "mustache",
-  "ignored-extensions": ["scss", "DS_Store", "less"],
-  "ignored-directories": ["scss"],
-  "debug": false,
-  "ishControlsHide": {
-    "s": false,
-    "m": false,
-    "l": false,
-    "full": false,
-    "random": false,
-    "disco": false,
-    "hay": true,
-    "mqs": false,
-    "find": false,
-    "views-all": false,
-    "views-annotations": false,
-    "views-code": false,
-    "views-new": false,
-    "tools-all": false,
-    "tools-docs": false
-  },
-  "ishMinimum": "240",
-  "ishMaximum": "2600",
-  "patternStateCascade": ["inprogress", "inreview", "complete"],
-  "patternStates": {},
-  "patternExportPatternPartials": [],
-  "patternExportDirectory": "./pattern_exports/",
-  "cacheBust": true,
-  "starterkitSubDir": "dist",
-  "outputFileSuffixes": {
-    "rendered": ".rendered",
-    "rawTemplate": "",
-    "markupOnly": ".markup-only"
-  }
+	"cacheBust": true,
+	"cleanPublic": true,
+	"defaultPattern": "viewall-atoms-global",
+	"defaultShowPatternInfo": false,
+	"ishControlsHide": {
+		"s": false,
+		"m": false,
+		"l": false,
+		"full": false,
+		"random": false,
+		"disco": false,
+		"hay": true,
+		"mqs": false,
+		"find": false,
+		"views-all": false,
+		"views-annotations": false,
+		"views-code": false,
+		"views-new": false,
+		"tools-all": false,
+		"tools-docs": false
+	},
+	"ishViewportRange": {
+		"s": [240, 500],
+		"m": [500, 800],
+		"l": [800, 2600]
+	},
+	"logLevel": "info",
+	"outputFileSuffixes": {
+		"rendered": ".rendered",
+		"rawTemplate": "",
+		"markupOnly": ".markup-only"
+	},
+	"paths": {
+		"source": {
+			"root": "./source/",
+			"patterns": "./source/_patterns/",
+			"data": "./source/_data/",
+			"meta": "./source/_meta/",
+			"annotations": "./source/_annotations/",
+			"styleguide": "dist/",
+			"patternlabFiles": {
+				"general-header": "views/partials/general-header.mustache",
+				"general-footer": "views/partials/general-footer.mustache",
+				"patternSection": "views/partials/patternSection.mustache",
+				"patternSectionSubgroup": "views/partials/patternSectionSubgroup.mustache",
+				"viewall": "views/viewall.mustache"
+			},
+			"js": "./source/js",
+			"images": "./source/images",
+			"fonts": "./source/fonts",
+			"css": "./source/css"
+		},
+		"public": {
+			"root": "public/",
+			"patterns": "public/patterns/",
+			"data": "public/styleguide/data/",
+			"annotations": "public/annotations/",
+			"styleguide": "public/styleguide/",
+			"js": "public/js",
+			"images": "public/images",
+			"fonts": "public/fonts",
+			"css": "public/css"
+		},
+		"wordpress": "../wp-content/themes/externado_theme/js"
+	},
+	"patternExtension": "hbs",
+	"patternStateCascade": ["inprogress", "inreview", "complete"],
+	"patternExportAll": false,
+	"patternExportDirectory": "pattern_exports",
+	"patternExportPatternPartials": [],
+	"patternExportPreserveDirectoryStructure": true,
+	"patternExportRaw": false,
+	"patternMergeVariantArrays": true,
+	"renderFlatPatternsOnViewAllPages": false,
+	"serverOptions": {
+		"wait": 1000
+	},
+	"starterkitSubDir": "dist",
+	"styleGuideExcludes": [],
+	"theme": {
+		"color": "light",
+		"density": "compact",
+		"layout": "vertical"
+	},
+	"uikits": [
+		{
+			"name": "uikit-workshop",
+			"package": "@pattern-lab/uikit-workshop",
+			"outputDir": "",
+			"enabled": true,
+			"excludedPatternStates": [],
+			"excludedTags": []
+		}
+	],
+	"patternWrapClassesEnable": false,
+	"patternWrapClassesKey": [],
+	"engines": {
+		"handlebars": {
+			"extend": "helpers/*.js"
+		}
+	}
 }

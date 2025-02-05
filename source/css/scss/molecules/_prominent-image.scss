@@ -1,16 +1,30 @@
 .imagen-destacada {
-  position: relative;
-  margin: 0;
+	position: relative;
+	margin: 0;
 
-  @media (max-width:$maximo) and (min-width:$ipad) {
-    margin: -60px 0 0 0;
-  }
+	@media (max-width: $maximo) and (min-width: $ipad) {
+		margin: -60px 0 0 0;
+	}
 
-  @media (max-width:$ipad) and (min-width:$minimo) {
-    margin-top: 50px;
-  }
+	@media (max-width: $ipad) and (min-width: $minimo) {
+		margin-top: 50px;
+	}
 }
 
 .imagen-destacada-facultad {
-  margin-top: 0;
+	margin-top: 0;
+}
+
+.faculty-conexion {
+	.imagen-destacada-facultad {
+		@media (min-width: 1140px) {
+			height: 1080px;
+
+			img {
+				height: 100%;
+				object-fit: cover;
+				margin: 0;
+			}
+		}
+	}
 }

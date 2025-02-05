@@ -221,9 +221,6 @@
 @import "scss/molecules/post-sidebar-banner";
 @import "scss/molecules/contenido-final";
 @import "scss/molecules/program-mode-selector";
-@import "scss/molecules/prominent-image-lead-full-width";
-@import "scss/molecules/menu-interno";
-@import "scss/molecules/creditos-card";
 
 /****               Organismos                ****/
 @import "scss/organisms/header";
@@ -272,7 +269,7 @@
 @import "scss/organisms/accordion-repositorio-digital-filter";
 @import "scss/organisms/news-resume";
 @import "scss/organisms/header-blogs-2";
-@import "scss/organisms/blog-conexion";
+// @import 'scss/organisms/blog-conexion';
 @import "scss/organisms/blog-escuela-de-relaciones-internacionales";
 @import "scss/organisms/carousel-agenda";
 @import "scss/organisms/calendar-slider";
@@ -296,6 +293,3 @@
 @import "scss/organisms/single-zero";
 @import "scss/organisms/program-header-with-mode-selector";
 @import "scss/organisms/blog-conexion-externado";
-@import "scss/organisms/template_section_organisms";
-@import "scss/organisms/creditos";
-@import "scss/organisms/carrusel-interno-3columnas--custom.scss";

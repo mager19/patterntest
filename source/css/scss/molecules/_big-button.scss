@@ -1,89 +1,89 @@
 .boton-grande {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: rem(266);
-  overflow: hidden;
-  background: $universidad;
-  margin: 8px;
-  @each $faculty in $faculties {
-    &.#{nth($faculty, 1)} {
-      background-color: nth($faculty, 2);
-    }
-  }
-  &:hover {
-    .imagen {
-      filter: grayscale(100%);
-    }
-    .info {
-      background-color: $universidad-800;
-      color: $blanco;
-    }
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: rem(266);
+	overflow: hidden;
+	background: $universidad;
+	margin: 8px;
+	@each $key, $value in $faculties2 {
+		&.#{$key} {
+			background-color: $value;
+		}
+	}
+	&:hover {
+		.imagen {
+			filter: grayscale(100%);
+		}
+		.info {
+			background-color: $universidad-800;
+			color: $blanco;
+		}
+	}
 
-  @media (max-width: $movil-amplio02) and (min-width: $minimo) {
-    background-color: $gris-50;
-    height: rem(62);
-    width: 100%;
-    border: 0.5px solid $gris-600;
-    display: flex;
-    flex-direction: row;
-  }
-  .imagen {
-    height: rem(201);
-    width: 100%;
-    background-size: cover;
-    position: relative;
-    margin-bottom: rem(3);
-    @media (max-width: $movil-amplio02) and (min-width: $minimo) {
-      width: rem(97);
-      height: rem(62);
-      &::before {
-        content: '';
-        z-index: 2;
-        position: absolute;
-        background-color: $universidad;
-        height: rem(62);
-        width: 100%;
-        opacity: 0.4;
-        @each $faculty in $faculties {
-          &.#{nth($faculty, 1)} {
-            background-color: nth($faculty, 2);
-          }
-        }
-      }
-    }
-    img {
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
-      @media (max-width: $movil-amplio02) and (min-width: $minimo) {
-        height: rem(62);
-      }
-    }
-  }
-  .info {
-    height: rem(62);
-    background: $gris-50;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: $movil-amplio02) and (min-width: $minimo) {
-      width: 76%;
-      height: 3.8125rem;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      padding-left: 3%;
-    }
-    .h4 {
-      margin: 0;
-      line-height: 1;
-      text-align: center;
-      @media (max-width: $movil-amplio02) and (min-width: $minimo) {
-        font-weight: 500;
-      }
-    }
-  }
+	@media (max-width: $movil-amplio02) and (min-width: $minimo) {
+		background-color: $gris-50;
+		height: rem(62);
+		width: 100%;
+		border: 0.5px solid $gris-600;
+		display: flex;
+		flex-direction: row;
+	}
+	.imagen {
+		height: rem(201);
+		width: 100%;
+		background-size: cover;
+		position: relative;
+		margin-bottom: rem(3);
+		@media (max-width: $movil-amplio02) and (min-width: $minimo) {
+			width: rem(97);
+			height: rem(62);
+			&::before {
+				content: "";
+				z-index: 2;
+				position: absolute;
+				background-color: $universidad;
+				height: rem(62);
+				width: 100%;
+				opacity: 0.4;
+				@each $key, $value in $faculties2 {
+					&.#{$key} {
+						background-color: $value;
+					}
+				}
+			}
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+			@media (max-width: $movil-amplio02) and (min-width: $minimo) {
+				height: rem(62);
+			}
+		}
+	}
+	.info {
+		height: rem(62);
+		background: $gris-50;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: $movil-amplio02) and (min-width: $minimo) {
+			width: 76%;
+			height: 3.8125rem;
+			-ms-flex-align: start;
+			align-items: flex-start;
+			padding-left: 3%;
+		}
+		.h4 {
+			margin: 0;
+			line-height: 1;
+			text-align: center;
+			@media (max-width: $movil-amplio02) and (min-width: $minimo) {
+				font-weight: 500;
+			}
+		}
+	}
 }
